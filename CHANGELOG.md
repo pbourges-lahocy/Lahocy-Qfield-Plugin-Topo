@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.4] - 2026-09-13
+
+### Debug temporaire
+
+- Ajout de toasts "DEBUG: ..." sur les boutons de categorie et de fermeture de la palette, pour diagnostiquer un rapport terrain ou tapoter sur "Reseaux"/"Voirie" ne provoquait aucun changement visible. A retirer une fois la cause identifiee.
+
 ## [0.2.3] - 2026-09-13
 
 ### Ajoute

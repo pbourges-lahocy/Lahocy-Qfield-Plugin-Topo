@@ -150,7 +150,10 @@ Item {
             Button {
                 text: "✕"
                 flat: true
-                onClicked: palette.closeRequested()
+                onClicked: {
+                    iface.mainWindow().displayToast("DEBUG: clic fermeture");
+                    palette.closeRequested();
+                }
             }
         }
 
@@ -187,7 +190,10 @@ Item {
                                 Layout.fillWidth: true
                                 Layout.preferredHeight: 56
                                 text: modelData.label
-                                onClicked: palette.selectedCategoryIndex = index
+                                onClicked: {
+                                    iface.mainWindow().displayToast("DEBUG: clic categorie " + index + " (" + modelData.label + ")");
+                                    palette.selectedCategoryIndex = index;
+                                }
                             }
                         }
                     }
