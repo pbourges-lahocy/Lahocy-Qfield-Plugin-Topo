@@ -150,10 +150,7 @@ Item {
             Button {
                 text: "✕"
                 flat: true
-                onClicked: {
-                    iface.mainWindow().displayToast("DEBUG: clic fermeture");
-                    palette.closeRequested();
-                }
+                onClicked: palette.closeRequested()
             }
         }
 
@@ -165,13 +162,12 @@ Item {
             clip: true
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
-            ColumnLayout {
+            StackLayout {
                 width: palette.width - 20
-                spacing: 10
+                currentIndex: palette.selectedCode !== "" ? 2 : (palette.selectedCategoryIndex !== -1 ? 1 : 0)
 
                 // --- Niveau 1 : palette principale (categories) ---
                 ColumnLayout {
-                    visible: palette.selectedCategoryIndex === -1
                     Layout.fillWidth: true
                     spacing: 6
 
@@ -190,10 +186,7 @@ Item {
                                 Layout.fillWidth: true
                                 Layout.preferredHeight: 56
                                 text: modelData.label
-                                onClicked: {
-                                    iface.mainWindow().displayToast("DEBUG: clic categorie " + index + " (" + modelData.label + ")");
-                                    palette.selectedCategoryIndex = index;
-                                }
+                                onClicked: palette.selectedCategoryIndex = index
                             }
                         }
                     }
@@ -201,7 +194,6 @@ Item {
 
                 // --- Niveau 2 : sous-palette (codes de la categorie) ---
                 ColumnLayout {
-                    visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
                     Layout.fillWidth: true
                     spacing: 6
 
@@ -240,7 +232,6 @@ Item {
 
                 // --- Pose du point (contextuel, code choisi) ---
                 ColumnLayout {
-                    visible: palette.selectedCode !== ""
                     Layout.fillWidth: true
                     spacing: 8
 

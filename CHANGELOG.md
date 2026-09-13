@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.5] - 2026-09-13
+
+### Corrige
+
+- La palette ne changeait pas d'ecran en tapant sur une categorie : le clic etait bien recu (confirme par debug), mais alterner `visible` sur 3 `ColumnLayout` freres a l'interieur d'un `ScrollView` ne redeclenchait pas correctement l'affichage. Remplace par un `StackLayout` (l'outil concu pour "un seul ecran visible a la fois"), plus robuste. Retrait des toasts de debug.
+
 ## [0.2.4] - 2026-09-13
 
 ### Debug temporaire
