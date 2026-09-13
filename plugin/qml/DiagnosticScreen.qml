@@ -3,6 +3,7 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import org.qfield
+import Theme
 
 // Ecran de diagnostic GNSS/QField.
 //

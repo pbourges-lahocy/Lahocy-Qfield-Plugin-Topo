@@ -21,7 +21,7 @@ Dialog {
     property var dashBoard: iface.findItemByObjectName('dashBoard')
     property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatureFormDrawer')
 
-    property var result: null
+    property var computedPoint: null
 
     parent: iface.mainWindow().contentItem
     title: qsTr("Leve polaire")
@@ -37,19 +37,19 @@ Dialog {
             TopoEngine.isValidNumber(yStationField.text) &&
             TopoEngine.isValidNumber(gisementField.text) &&
             TopoEngine.isValidNumber(distanceField.text)) {
-            polarSurvey.result = TopoEngine.polarPoint(
+            polarSurvey.computedPoint = TopoEngine.polarPoint(
                 Number(xStationField.text),
                 Number(yStationField.text),
                 Number(gisementField.text),
                 Number(distanceField.text)
             );
         } else {
-            polarSurvey.result = null;
+            polarSurvey.computedPoint = null;
         }
     }
 
     function createPointFeature() {
-        if (!polarSurvey.result) {
+        if (!polarSurvey.computedPoint) {
             return;
         }
         if (!dashBoard) {
@@ -69,7 +69,7 @@ Dialog {
             return;
         }
 
-        var wkt = "POINT(" + polarSurvey.result.x + " " + polarSurvey.result.y + ")";
+        var wkt = "POINT(" + polarSurvey.computedPoint.x + " " + polarSurvey.computedPoint.y + ")";
         var geometry = GeometryUtils.createGeometryFromWkt(wkt);
         var feature = FeatureUtils.createFeature(activeLayer, geometry);
 
@@ -141,15 +141,15 @@ Dialog {
         Label {
             Layout.fillWidth: true
             font.bold: true
-            text: polarSurvey.result
-                ? qsTr("Point calcule : X=%1  Y=%2").arg(polarSurvey.result.x.toFixed(3)).arg(polarSurvey.result.y.toFixed(3))
+            text: polarSurvey.computedPoint
+                ? qsTr("Point calcule : X=%1  Y=%2").arg(polarSurvey.computedPoint.x.toFixed(3)).arg(polarSurvey.computedPoint.y.toFixed(3))
                 : qsTr("Renseignez les 4 champs pour calculer le point")
         }
 
         Button {
             Layout.fillWidth: true
             text: qsTr("Creer le point dans la couche active")
-            enabled: polarSurvey.result !== null
+            enabled: polarSurvey.computedPoint !== null
             onClicked: polarSurvey.createPointFeature()
         }
     }
