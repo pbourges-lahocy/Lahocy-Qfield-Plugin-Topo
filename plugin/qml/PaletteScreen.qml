@@ -6,15 +6,24 @@ import org.qfield
 import org.qgis
 import Theme
 
-// Test d'interaction "palette a 2 niveaux", inspire du fonctionnement reel
-// de Land2Map : une palette principale de categories, un appui sur une
-// categorie ouvre sa sous-palette de codes precis, puis un panneau
-// contextuel "pose du point" apparait une fois un code choisi.
+// Panneau de palette ancre a droite de l'ecran, non modal : contrairement
+// a une Dialog, il reste ouvert et accessible en permanence pendant que
+// l'utilisateur continue a naviguer/zoomer sur la carte - c'est ce
+// fonctionnement (jamais de popup a rouvrir) qui rend Land2Map fluide sur
+// le terrain.
+//
+// Toujours 2 niveaux : palette principale de categories -> sous-palette de
+// codes -> panneau contextuel "pose du point".
 //
 // Catalogue ci-dessous : donnees d'exemple pour tester l'interaction,
 // PAS le catalogue Lahocy definitif.
-Dialog {
+Item {
     id: palette
+
+    property bool panelVisible: false
+    function toggle() {
+        panelVisible = !panelVisible;
+    }
 
     property var dashBoard: iface.findItemByObjectName('dashBoard')
     property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatureFormDrawer')
@@ -33,23 +42,12 @@ Dialog {
     property bool excentrementEnabled: false
 
     parent: iface.mainWindow().contentItem
-    title: qsTr("Palette (test)")
-    modal: true
-    standardButtons: Dialog.Close
-    x: (parent.width - width) / 2
-    y: (parent.height - height) / 2
-    width: Math.min(360, parent.width - 20)
-    height: Math.min(implicitHeight, parent.height - 20)
-
-    onClosed: {
-        selectedCategoryIndex = -1;
-        selectedCode = "";
-    }
-
-    function reset() {
-        selectedCategoryIndex = -1;
-        selectedCode = "";
-    }
+    anchors.top: parent.top
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    width: 260
+    visible: panelVisible
+    z: 1000
 
     function findAttributeIndex(layer) {
         var candidates = ["code", "CODE", "Code"];
@@ -106,146 +104,185 @@ Dialog {
         overlayFeatureFormDrawer.state = 'Add';
         overlayFeatureFormDrawer.featureModel.feature = feature;
         overlayFeatureFormDrawer.open();
-        palette.close();
+        // Le panneau reste ouvert : on revient a la sous-palette pour
+        // enchainer directement sur le prochain point du meme theme.
+    }
+
+    Rectangle {
+        anchors.fill: parent
+        color: Theme.mainBackgroundColor
+    }
+
+    Rectangle {
+        anchors.left: parent.left
+        anchors.top: parent.top
+        anchors.bottom: parent.bottom
+        width: 1
+        color: Theme.gray
     }
 
     ColumnLayout {
-        width: parent.width
-        spacing: 10
+        anchors.fill: parent
+        anchors.margins: 10
+        spacing: 8
 
-        // --- Niveau 1 : palette principale (categories) ---
-        ColumnLayout {
-            visible: palette.selectedCategoryIndex === -1
+        RowLayout {
             Layout.fillWidth: true
-            spacing: 6
-
-            Label { text: qsTr("Categories"); font.bold: true }
-
-            GridLayout {
-                Layout.fillWidth: true
-                columns: 2
-                columnSpacing: 8
-                rowSpacing: 8
-
-                Repeater {
-                    model: palette.categories
-
-                    delegate: Button {
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: 56
-                        text: modelData.label
-                        onClicked: palette.selectedCategoryIndex = index
-                    }
-                }
-            }
-        }
-
-        // --- Niveau 2 : sous-palette (codes de la categorie) ---
-        ColumnLayout {
-            visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
-            Layout.fillWidth: true
-            spacing: 6
-
-            RowLayout {
-                Layout.fillWidth: true
-                Button {
-                    text: qsTr("< Categories")
-                    onClicked: palette.selectedCategoryIndex = -1
-                }
-                Label {
-                    Layout.fillWidth: true
-                    horizontalAlignment: Text.AlignRight
-                    font.bold: true
-                    text: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].label : ""
-                }
-            }
-
-            GridLayout {
-                Layout.fillWidth: true
-                columns: 4
-                columnSpacing: 6
-                rowSpacing: 6
-
-                Repeater {
-                    model: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].codes : []
-
-                    delegate: Button {
-                        Layout.fillWidth: true
-                        Layout.preferredHeight: 44
-                        text: modelData
-                        onClicked: palette.selectedCode = modelData
-                    }
-                }
-            }
-        }
-
-        // --- Pose du point (contextuel, code choisi) ---
-        ColumnLayout {
-            visible: palette.selectedCode !== ""
-            Layout.fillWidth: true
-            spacing: 8
-
-            RowLayout {
-                Layout.fillWidth: true
-                Button {
-                    text: qsTr("< Codes")
-                    onClicked: palette.selectedCode = ""
-                }
-                Label {
-                    Layout.fillWidth: true
-                    horizontalAlignment: Text.AlignRight
-                    font.bold: true
-                    text: qsTr("Code %1").arg(palette.selectedCode)
-                }
-            }
-
-            Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
-
-            Label { text: qsTr("Pose du point"); font.bold: true }
-
-            RowLayout {
-                spacing: 6
-                Button {
-                    text: qsTr("1 pt")
-                    highlighted: palette.poseMode === "1pt"
-                    onClicked: palette.poseMode = "1pt"
-                }
-                Button {
-                    text: qsTr("2 pts")
-                    highlighted: palette.poseMode === "2pt"
-                    onClicked: palette.poseMode = "2pt"
-                }
-                Button {
-                    text: qsTr("3 pts")
-                    highlighted: palette.poseMode === "3pt"
-                    onClicked: palette.poseMode = "3pt"
-                }
-            }
-
-            RowLayout {
-                Label { text: qsTr("Excentrement") }
-                Item { Layout.fillWidth: true }
-                Switch {
-                    checked: palette.excentrementEnabled
-                    onCheckedChanged: palette.excentrementEnabled = checked
-                }
-            }
-
-            Label {
-                Layout.fillWidth: true
-                wrapMode: Text.WordWrap
-                font.pixelSize: 11
-                color: Theme.gray
-                text: palette.poseMode === "1pt"
-                    ? qsTr("Pose direct sur la position actuelle.")
-                    : qsTr("Modes 2/3 points et excentrement : a cabler plus tard (POC).")
-            }
-
+            Label { text: qsTr("Palette (test)"); font.bold: true; Layout.fillWidth: true }
             Button {
-                Layout.fillWidth: true
-                text: qsTr("Lever le point (position actuelle)")
-                enabled: palette.poseMode === "1pt"
-                onClicked: palette.leverPointCourant()
+                text: "✕"
+                flat: true
+                onClicked: palette.panelVisible = false
+            }
+        }
+
+        Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
+
+        ScrollView {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            clip: true
+            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+
+            ColumnLayout {
+                width: palette.width - 20
+                spacing: 10
+
+                // --- Niveau 1 : palette principale (categories) ---
+                ColumnLayout {
+                    visible: palette.selectedCategoryIndex === -1
+                    Layout.fillWidth: true
+                    spacing: 6
+
+                    Label { text: qsTr("Categories"); font.bold: true }
+
+                    GridLayout {
+                        Layout.fillWidth: true
+                        columns: 2
+                        columnSpacing: 8
+                        rowSpacing: 8
+
+                        Repeater {
+                            model: palette.categories
+
+                            delegate: Button {
+                                Layout.fillWidth: true
+                                Layout.preferredHeight: 56
+                                text: modelData.label
+                                onClicked: palette.selectedCategoryIndex = index
+                            }
+                        }
+                    }
+                }
+
+                // --- Niveau 2 : sous-palette (codes de la categorie) ---
+                ColumnLayout {
+                    visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
+                    Layout.fillWidth: true
+                    spacing: 6
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Button {
+                            text: qsTr("< Categories")
+                            onClicked: palette.selectedCategoryIndex = -1
+                        }
+                        Label {
+                            Layout.fillWidth: true
+                            horizontalAlignment: Text.AlignRight
+                            font.bold: true
+                            text: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].label : ""
+                        }
+                    }
+
+                    GridLayout {
+                        Layout.fillWidth: true
+                        columns: 4
+                        columnSpacing: 6
+                        rowSpacing: 6
+
+                        Repeater {
+                            model: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].codes : []
+
+                            delegate: Button {
+                                Layout.fillWidth: true
+                                Layout.preferredHeight: 44
+                                text: modelData
+                                onClicked: palette.selectedCode = modelData
+                            }
+                        }
+                    }
+                }
+
+                // --- Pose du point (contextuel, code choisi) ---
+                ColumnLayout {
+                    visible: palette.selectedCode !== ""
+                    Layout.fillWidth: true
+                    spacing: 8
+
+                    RowLayout {
+                        Layout.fillWidth: true
+                        Button {
+                            text: qsTr("< Codes")
+                            onClicked: palette.selectedCode = ""
+                        }
+                        Label {
+                            Layout.fillWidth: true
+                            horizontalAlignment: Text.AlignRight
+                            font.bold: true
+                            text: qsTr("Code %1").arg(palette.selectedCode)
+                        }
+                    }
+
+                    Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
+
+                    Label { text: qsTr("Pose du point"); font.bold: true }
+
+                    RowLayout {
+                        spacing: 6
+                        Button {
+                            text: qsTr("1 pt")
+                            highlighted: palette.poseMode === "1pt"
+                            onClicked: palette.poseMode = "1pt"
+                        }
+                        Button {
+                            text: qsTr("2 pts")
+                            highlighted: palette.poseMode === "2pt"
+                            onClicked: palette.poseMode = "2pt"
+                        }
+                        Button {
+                            text: qsTr("3 pts")
+                            highlighted: palette.poseMode === "3pt"
+                            onClicked: palette.poseMode = "3pt"
+                        }
+                    }
+
+                    RowLayout {
+                        Label { text: qsTr("Excentrement") }
+                        Item { Layout.fillWidth: true }
+                        Switch {
+                            checked: palette.excentrementEnabled
+                            onCheckedChanged: palette.excentrementEnabled = checked
+                        }
+                    }
+
+                    Label {
+                        Layout.fillWidth: true
+                        wrapMode: Text.WordWrap
+                        font.pixelSize: 11
+                        color: Theme.gray
+                        text: palette.poseMode === "1pt"
+                            ? qsTr("Pose direct sur la position actuelle.")
+                            : qsTr("Modes 2/3 points et excentrement : a cabler plus tard (POC).")
+                    }
+
+                    Button {
+                        Layout.fillWidth: true
+                        text: qsTr("Lever le point (position actuelle)")
+                        enabled: palette.poseMode === "1pt"
+                        onClicked: palette.leverPointCourant()
+                    }
+                }
             }
         }
     }

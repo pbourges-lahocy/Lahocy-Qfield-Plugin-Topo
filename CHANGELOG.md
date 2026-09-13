@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.1] - 2026-09-13
+
+### Modifie
+
+- `PaletteScreen.qml` retravaille en panneau ancre a droite de l'ecran (non modal) au lieu d'une Dialog. Le panneau reste ouvert en permanence pendant qu'on continue a naviguer sur la carte, comme la palette de Land2Map - plus besoin de rouvrir une popup a chaque point leve. Le menu "Palette (test)" bascule maintenant sa visibilite au lieu de l'ouvrir/fermer.
+
 ## [0.2.0] - 2026-09-13
 
 ### Ajoute

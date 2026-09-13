@@ -42,7 +42,7 @@ Item {
                 diagnosticScreen.open();
                 break;
             case "palette_test":
-                paletteScreen.open();
+                paletteScreen.toggle();
                 break;
             case "gnss":
                 openPlaceholder(qsTr("GNSS"));
