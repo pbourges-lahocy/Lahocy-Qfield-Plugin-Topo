@@ -43,6 +43,8 @@ Item {
                 break;
             case "palette_test":
                 paletteScreen.toggle();
+                topBarPanel.panelVisible = paletteScreen.panelVisible;
+                bottomBarPanel.panelVisible = paletteScreen.panelVisible;
                 break;
             case "gnss":
                 openPlaceholder(qsTr("GNSS"));
@@ -73,6 +75,14 @@ Item {
 
     LahocyTopo.PaletteScreen {
         id: paletteScreen
+    }
+
+    LahocyTopo.TopBarPanel {
+        id: topBarPanel
+    }
+
+    LahocyTopo.BottomBarPanel {
+        id: bottomBarPanel
     }
 
     LahocyTopo.PlaceholderScreen {

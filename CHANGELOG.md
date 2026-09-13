@@ -3,6 +3,16 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.2] - 2026-09-13
+
+### Ajoute
+
+- `TopBarPanel.qml` et `BottomBarPanel.qml` : panneaux de test ancres en haut et en bas de l'ecran, affiches en meme temps que la palette (droite) via l'entree de menu "Palette (test)", pour juger si 3 panneaux ancres simultanement restent utilisables.
+
+### Note technique
+
+- `mapCanvas` expose des proprietes `rightMargin`/`bottomMargin` reglables pour reserver de l'espace (pas de survol), mais aucune `topMargin`. Les modifier depuis un plugin ecraserait le binding interne de QField pour ses propres tiroirs - non fait pour l'instant, les 3 panneaux restent en survol.
+
 ## [0.2.1] - 2026-09-13
 
 ### Modifie
