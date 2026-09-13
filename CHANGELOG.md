@@ -3,6 +3,16 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.3] - 2026-09-13
+
+### Ajoute
+
+- Excentrement fonctionnel dans la palette (mode 1 pt) : gisement + distance depuis la position actuelle, calcule via `TopoEngine.polarPoint` (le meme moteur que le leve polaire).
+
+### Corrige
+
+- Le bouton "X" du panneau palette ferme maintenant aussi les panneaux haut/bas de test (auparavant seul le panneau de droite se fermait).
+
 ## [0.2.2] - 2026-09-13
 
 ### Ajoute

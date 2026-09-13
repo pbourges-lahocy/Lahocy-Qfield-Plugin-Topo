@@ -75,6 +75,12 @@ Item {
 
     LahocyTopo.PaletteScreen {
         id: paletteScreen
+
+        onCloseRequested: {
+            paletteScreen.panelVisible = false;
+            topBarPanel.panelVisible = false;
+            bottomBarPanel.panelVisible = false;
+        }
     }
 
     LahocyTopo.TopBarPanel {

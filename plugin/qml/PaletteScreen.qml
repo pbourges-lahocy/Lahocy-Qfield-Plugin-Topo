@@ -6,6 +6,8 @@ import org.qfield
 import org.qgis
 import Theme
 
+import "TopoEngine.js" as TopoEngine
+
 // Panneau de palette ancre a droite de l'ecran, non modal : contrairement
 // a une Dialog, il reste ouvert et accessible en permanence pendant que
 // l'utilisateur continue a naviguer/zoomer sur la carte - c'est ce
@@ -24,6 +26,8 @@ Item {
     function toggle() {
         panelVisible = !panelVisible;
     }
+
+    signal closeRequested()
 
     property var dashBoard: iface.findItemByObjectName('dashBoard')
     property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatureFormDrawer')
@@ -70,6 +74,20 @@ Item {
             iface.mainWindow().displayToast(qsTr("Position actuelle indisponible"));
             return;
         }
+
+        var targetX = p.x;
+        var targetY = p.y;
+
+        if (palette.excentrementEnabled) {
+            if (!TopoEngine.isValidNumber(gisementField.text) || !TopoEngine.isValidNumber(distanceField.text)) {
+                iface.mainWindow().displayToast(qsTr("Gisement et distance d'excentrement requis"));
+                return;
+            }
+            var offsetPoint = TopoEngine.polarPoint(p.x, p.y, Number(gisementField.text), Number(distanceField.text));
+            targetX = offsetPoint.x;
+            targetY = offsetPoint.y;
+        }
+
         if (!dashBoard) {
             iface.mainWindow().displayToast(qsTr("Impossible d'acceder au tableau de bord QField"));
             return;
@@ -87,7 +105,7 @@ Item {
             return;
         }
 
-        var wkt = "POINT(" + p.x + " " + p.y + ")";
+        var wkt = "POINT(" + targetX + " " + targetY + ")";
         var geometry = GeometryUtils.createGeometryFromWkt(wkt);
         var feature = FeatureUtils.createFeature(activeLayer, geometry);
 
@@ -132,7 +150,7 @@ Item {
             Button {
                 text: "✕"
                 flat: true
-                onClicked: palette.panelVisible = false
+                onClicked: palette.closeRequested()
             }
         }
 
@@ -266,19 +284,42 @@ Item {
                         }
                     }
 
+                    GridLayout {
+                        visible: palette.excentrementEnabled
+                        Layout.fillWidth: true
+                        columns: 2
+                        columnSpacing: 8
+
+                        Label { text: qsTr("Gisement (gon)") }
+                        TextField {
+                            id: gisementField
+                            Layout.fillWidth: true
+                            inputMethodHints: Qt.ImhFormattedNumbersOnly
+                        }
+
+                        Label { text: qsTr("Distance (m)") }
+                        TextField {
+                            id: distanceField
+                            Layout.fillWidth: true
+                            inputMethodHints: Qt.ImhFormattedNumbersOnly
+                        }
+                    }
+
                     Label {
                         Layout.fillWidth: true
                         wrapMode: Text.WordWrap
                         font.pixelSize: 11
                         color: Theme.gray
                         text: palette.poseMode === "1pt"
-                            ? qsTr("Pose direct sur la position actuelle.")
-                            : qsTr("Modes 2/3 points et excentrement : a cabler plus tard (POC).")
+                            ? (palette.excentrementEnabled
+                                ? qsTr("Pose decalee de la position actuelle (gisement + distance).")
+                                : qsTr("Pose direct sur la position actuelle."))
+                            : qsTr("Modes 2/3 points : a cabler plus tard (POC).")
                     }
 
                     Button {
                         Layout.fillWidth: true
-                        text: qsTr("Lever le point (position actuelle)")
+                        text: qsTr("Lever le point")
                         enabled: palette.poseMode === "1pt"
                         onClicked: palette.leverPointCourant()
                     }
