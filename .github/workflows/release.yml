@@ -1,0 +1,49 @@
+name: Release plugin
+
+# Publie une nouvelle version du plugin quand on pousse un tag vX.Y.Z.
+# L'asset "lahocy-topo.zip" garde toujours le meme nom : c'est ce qui
+# permet a QField de mettre a jour le plugin en place plutot que d'en
+# installer un doublon (voir README.md).
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Verify metadata.txt version matches the tag
+        run: |
+          META_VERSION=$(grep -E '^version=' plugin/metadata.txt | cut -d= -f2)
+          if [ "$META_VERSION" != "${{ steps.version.outputs.version }}" ]; then
+            echo "::error::plugin/metadata.txt version ($META_VERSION) ne correspond pas au tag (${{ steps.version.outputs.version }})"
+            exit 1
+          fi
+
+      - name: Build plugin zip
+        run: |
+          cd plugin
+          zip -r "../lahocy-topo.zip" . -x "*.DS_Store"
+          cp "../lahocy-topo.zip" "../lahocy-topo-${{ steps.version.outputs.version }}.zip"
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "lahocy-topo.zip" \
+            "lahocy-topo-${{ steps.version.outputs.version }}.zip" \
+            --title "Lahocy Topo ${{ steps.version.outputs.version }}" \
+            --generate-notes
