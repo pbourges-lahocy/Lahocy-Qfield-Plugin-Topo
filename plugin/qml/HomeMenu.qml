@@ -31,7 +31,8 @@ Dialog {
                 { key: "stakeout", label: qsTr("Implantation") },
                 { key: "traverse", label: qsTr("Polygonale") },
                 { key: "devices", label: qsTr("Appareils") },
-                { key: "diagnostic", label: qsTr("Diagnostic") }
+                { key: "diagnostic", label: qsTr("Diagnostic") },
+                { key: "palette_test", label: qsTr("Palette (test)") }
             ]
 
             delegate: Button {

@@ -41,6 +41,9 @@ Item {
             case "diagnostic":
                 diagnosticScreen.open();
                 break;
+            case "palette_test":
+                paletteScreen.open();
+                break;
             case "gnss":
                 openPlaceholder(qsTr("GNSS"));
                 break;
@@ -66,6 +69,10 @@ Item {
 
     LahocyTopo.PolarSurveyScreen {
         id: polarSurveyScreen
+    }
+
+    LahocyTopo.PaletteScreen {
+        id: paletteScreen
     }
 
     LahocyTopo.PlaceholderScreen {

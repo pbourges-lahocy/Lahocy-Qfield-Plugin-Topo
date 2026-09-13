@@ -3,6 +3,14 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.0] - 2026-09-13
+
+### Ajoute
+
+- `PaletteScreen.qml` : prototype d'interaction "palette a 2 niveaux" (categories -> sous-palette de codes -> pose du point), inspire du fonctionnement reel de Land2Map. Catalogue d'exemple (pas le catalogue Lahocy definitif). Accessible temporairement via l'entree de menu "Palette (test)".
+- Mode "1 pt" fonctionnel : leve le point a la position GNSS actuelle et l'ajoute a la couche ponctuelle active (formulaire QField standard pour validation), avec tentative de renseignement d'un champ "code" si la couche en possede un.
+- Modes "2 pts"/"3 pts" et excentrement : presents dans l'interface mais non cables (a developper).
+
 ## [0.1.1] - 2026-09-13
 
 ### Corrige
