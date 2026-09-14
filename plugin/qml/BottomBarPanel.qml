@@ -13,6 +13,10 @@ import Theme
 // QField utilise en interne pour ses propres tiroirs, donc pas fait ici.
 // Ce panneau reste en survol comme les deux autres, pour une comparaison
 // homogene pendant le test.
+//
+// anchors.bottomMargin: mainWindow.sceneBottomMargin pour ne pas passer
+// sous les boutons de navigation Android (retour/accueil/multitaches),
+// quand ils sont affiches a l'ecran plutot que geres par gestes.
 Item {
     id: bottomBar
 
@@ -20,6 +24,7 @@ Item {
 
     parent: iface.mainWindow().contentItem
     anchors.bottom: parent.bottom
+    anchors.bottomMargin: iface.mainWindow().sceneBottomMargin
     anchors.left: parent.left
     anchors.right: parent.right
     height: 40

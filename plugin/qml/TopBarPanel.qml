@@ -9,13 +9,16 @@ import Theme
 // et bottomMargin - voir PaletteScreen.qml et BottomBarPanel.qml pour le
 // detail de cette contrainte). Sert uniquement a juger si 3 panneaux
 // ancres simultanement (haut/droite/bas) restent utilisables a l'ecran.
+//
+// Positionne sous mainWindow.sceneTopMargin pour ne pas passer sous la
+// barre d'etat Android (heure, icones systeme).
 Item {
     id: topBar
 
     property bool panelVisible: false
 
     parent: iface.mainWindow().contentItem
-    anchors.top: parent.top
+    y: iface.mainWindow().sceneTopMargin
     anchors.left: parent.left
     anchors.right: parent.right
     height: 40

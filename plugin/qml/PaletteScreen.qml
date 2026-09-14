@@ -55,10 +55,10 @@ Popup {
     property bool excentrementEnabled: false
 
     parent: iface.mainWindow().contentItem
-    x: parent.width - width
-    y: 0
+    x: parent.width - width - iface.mainWindow().sceneRightMargin
+    y: iface.mainWindow().sceneTopMargin
     width: 260
-    height: parent.height
+    height: parent.height - iface.mainWindow().sceneTopMargin - iface.mainWindow().sceneBottomMargin
     padding: 0
     modal: false
     dim: false

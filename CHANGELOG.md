@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.5] - 2026-09-14
+
+### Corrige
+
+- Les panneaux haut/bas/droite passaient sous la barre d'etat Android et les boutons de navigation systeme (visible sur capture). Utilisation de `mainWindow.sceneTopMargin` / `sceneBottomMargin` / `sceneRightMargin` (proprietes QField refletant la zone sure du systeme) pour positionner les 3 panneaux correctement, quel que soit l'appareil.
+
 ## [0.3.4] - 2026-09-14
 
 ### Corrige
