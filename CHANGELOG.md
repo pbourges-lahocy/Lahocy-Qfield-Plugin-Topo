@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.8] - 2026-09-15
+
+### Debug temporaire
+
+- Le point clignote (rendu actif confirme) mais l'ecran ne change toujours pas : la theorie "boucle de rendu endormie" est donc fausse. Remise du label de debug texte (`DEBUG cat=... code=...`), en permanence visible en haut du panneau, pendant que l'animation tourne : si meme ce texte ne se met pas a jour malgre un rendu actif prouve, le probleme n'est pas le repaint mais la reevaluation du binding lui-meme.
+
 ## [0.3.7] - 2026-09-15
 
 ### Debug temporaire

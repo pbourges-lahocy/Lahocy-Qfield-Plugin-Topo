@@ -178,9 +178,20 @@ Popup {
         }
     }
 
-    Rectangle {
+    Label {
+        id: debugLabel
         anchors.top: header.bottom
-        anchors.topMargin: 8
+        anchors.topMargin: 4
+        anchors.left: parent.left
+        anchors.leftMargin: 10
+        font.pixelSize: 10
+        color: Theme.gray
+        text: "DEBUG cat=" + palette.selectedCategoryIndex + " code=" + palette.selectedCode
+    }
+
+    Rectangle {
+        anchors.top: debugLabel.bottom
+        anchors.topMargin: 4
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.leftMargin: 10
@@ -191,8 +202,8 @@ Popup {
 
     Item {
         id: content
-        anchors.top: header.bottom
-        anchors.topMargin: 18
+        anchors.top: debugLabel.bottom
+        anchors.topMargin: 12
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
