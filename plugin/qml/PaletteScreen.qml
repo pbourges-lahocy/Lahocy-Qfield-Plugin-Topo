@@ -172,10 +172,21 @@ Item {
         color: Theme.gray
     }
 
+    Label {
+        id: debugLabel
+        anchors.top: header.bottom
+        anchors.topMargin: 9
+        anchors.left: parent.left
+        anchors.leftMargin: 10
+        font.pixelSize: 10
+        color: Theme.gray
+        text: "DEBUG cat=" + palette.selectedCategoryIndex + " code=" + palette.selectedCode
+    }
+
     Item {
         id: content
         anchors.top: header.bottom
-        anchors.topMargin: 18
+        anchors.topMargin: 30
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
@@ -202,7 +213,10 @@ Item {
                         Layout.fillWidth: true
                         Layout.preferredHeight: 56
                         text: modelData.label
-                        onClicked: palette.selectedCategoryIndex = index
+                        onClicked: {
+                            palette.selectedCategoryIndex = index;
+                            iface.mainWindow().displayToast("DEBUG: selectedCategoryIndex=" + palette.selectedCategoryIndex);
+                        }
                     }
                 }
             }

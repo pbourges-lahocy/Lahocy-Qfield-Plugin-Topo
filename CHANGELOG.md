@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.1] - 2026-09-14
+
+### Debug temporaire
+
+- La grille de categories s'affiche desormais (confirme par l'utilisateur), mais taper sur une categorie ne fait toujours rien. Ajout d'un label de debug permanent (visible en permanence, pas un toast) affichant `selectedCategoryIndex` et `selectedCode` en temps reel, pour voir directement si le clic met a jour l'etat ou non, sans avoir a capter un message qui disparait.
+
 ## [0.3.0] - 2026-09-14
 
 ### Corrige
