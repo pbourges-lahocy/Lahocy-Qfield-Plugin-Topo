@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.6] - 2026-09-14
+
+### Debug temporaire
+
+- Le test "dossier neuf" (cachetest) n'a rien change : le probleme n'est pas un cache. Hypothese actuelle : QField utilise une boucle de rendu specifique pour le canvas carte (economie de batterie) qui semble egalement regir le reste de la fenetre, et nos changements d'etat internes ne declenchent pas ce cycle - seul un evenement natif QField (toast) le fait. Test : `iface.logMessage(...)` (ecriture silencieuse dans le journal, sans popup visible) a la place du toast, pour voir si un evenement natif SANS affichage visible suffit aussi a forcer le redessin.
+
 ## [0.3.5] - 2026-09-14
 
 ### Corrige

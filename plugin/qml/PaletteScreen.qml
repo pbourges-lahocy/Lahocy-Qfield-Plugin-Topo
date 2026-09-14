@@ -206,7 +206,10 @@ Popup {
                         Layout.fillWidth: true
                         Layout.preferredHeight: 56
                         text: modelData.label
-                        onClicked: palette.selectedCategoryIndex = index
+                        onClicked: {
+                            palette.selectedCategoryIndex = index;
+                            iface.logMessage("DEBUG nudge: selectedCategoryIndex=" + palette.selectedCategoryIndex);
+                        }
                     }
                 }
             }
