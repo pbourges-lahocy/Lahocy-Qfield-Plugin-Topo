@@ -46,6 +46,9 @@ Item {
                 topBarPanel.panelVisible = paletteScreen.panelVisible;
                 bottomBarPanel.panelVisible = paletteScreen.panelVisible;
                 break;
+            case "minimal_test":
+                minimalTestScreen.open();
+                break;
             case "gnss":
                 openPlaceholder(qsTr("GNSS"));
                 break;
@@ -93,6 +96,10 @@ Item {
 
     LahocyTopo.PlaceholderScreen {
         id: placeholderScreen
+    }
+
+    LahocyTopo.MinimalTestScreen {
+        id: minimalTestScreen
     }
 
     function openPlaceholder(title) {

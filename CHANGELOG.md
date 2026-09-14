@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.9] - 2026-09-15
+
+### Debug temporaire
+
+- Ajout de `MinimalTestScreen.qml` ("Test minimal" dans le menu) : un seul bouton, un seul Label, dans une vraie `Dialog` (meme mecanisme que Diagnostic/Leve qui fonctionnent). Objectif : determiner si le probleme de rafraichissement touche absolument tout le plugin, y compris le cas le plus simple possible, ou seulement la palette.
+
 ## [0.3.8] - 2026-09-15
 
 ### Debug temporaire

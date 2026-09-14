@@ -32,7 +32,8 @@ Dialog {
                 { key: "traverse", label: qsTr("Polygonale") },
                 { key: "devices", label: qsTr("Appareils") },
                 { key: "diagnostic", label: qsTr("Diagnostic") },
-                { key: "palette_test", label: qsTr("Palette (test)") }
+                { key: "palette_test", label: qsTr("Palette (test)") },
+                { key: "minimal_test", label: qsTr("Test minimal") }
             ]
 
             delegate: Button {
