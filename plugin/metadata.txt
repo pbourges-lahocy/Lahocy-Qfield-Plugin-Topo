@@ -3,5 +3,5 @@ name=Lahocy Topo
 description=Carnet topographique metier Lahocy pour QField (POC)
 author=Lahocy
 icon=icon.svg
-version=0.3.6
+version=0.3.7
 homepage=https://github.com/pbourges-lahocy/Lahocy-Qfield-Plugin-Topo

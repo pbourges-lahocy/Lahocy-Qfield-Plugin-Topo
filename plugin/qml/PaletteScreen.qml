@@ -158,6 +158,19 @@ Popup {
         anchors.margins: 10
 
         Label { text: qsTr("Palette (test)"); font.bold: true; Layout.fillWidth: true }
+        Rectangle {
+            id: nudgeDot
+            width: 8
+            height: 8
+            radius: 4
+            color: Theme.mainColor
+            SequentialAnimation on opacity {
+                loops: Animation.Infinite
+                running: palette.visible
+                NumberAnimation { from: 1; to: 0.2; duration: 500 }
+                NumberAnimation { from: 0.2; to: 1; duration: 500 }
+            }
+        }
         Button {
             text: "✕"
             flat: true

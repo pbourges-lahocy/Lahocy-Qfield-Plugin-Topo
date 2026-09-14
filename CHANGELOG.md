@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.7] - 2026-09-15
+
+### Debug temporaire
+
+- `iface.logMessage()` (silencieux) ne force pas non plus le redessin, contrairement au toast - ce qui n'est donc pas "n'importe quel appel natif" mais quelque chose lie a l'affichage visuel du toast lui-meme. Test suivant : un petit point clignotant (animation d'opacite en boucle infinie) en haut du panneau, actif tant que celui-ci est ouvert - si une animation active en continu maintient la boucle de rendu "eveillee", nos changements d'etat pourraient enfin s'afficher pendant qu'elle tourne.
+
 ## [0.3.6] - 2026-09-14
 
 ### Debug temporaire
