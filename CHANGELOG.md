@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.8] - 2026-09-14
+
+### Corrige
+
+- La v0.2.7 (sans debug) restait bloquee sur l'ecran des categories sur tablette, alors que la v0.2.6 (avec toasts de debug) fonctionnait avec un code par ailleurs identique. Hypothese : le `StackLayout` changeait bien d'etat en interne, mais l'ecran ne se repeignait pas sur cet appareil sans l'effet de bord visuel des toasts. Remplace par un `Loader` qui charge un `Component` different par ecran (Categories/Codes/Pose) : detruire et recreer l'ecran a chaque changement force un vrai repaint, plus fiable que de simplement basculer l'ecran courant d'un `StackLayout`.
+
 ## [0.2.7] - 2026-09-14
 
 ### Corrige

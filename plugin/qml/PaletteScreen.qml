@@ -64,7 +64,7 @@ Item {
         return -1;
     }
 
-    function leverPointCourant() {
+    function leverPointCourant(gisementText, distanceText) {
         if (!positioning || !positioning.active) {
             iface.mainWindow().displayToast(qsTr("Positionnement inactif"));
             return;
@@ -79,11 +79,11 @@ Item {
         var targetY = p.y;
 
         if (palette.excentrementEnabled) {
-            if (!TopoEngine.isValidNumber(gisementField.text) || !TopoEngine.isValidNumber(distanceField.text)) {
+            if (!TopoEngine.isValidNumber(gisementText) || !TopoEngine.isValidNumber(distanceText)) {
                 iface.mainWindow().displayToast(qsTr("Gisement et distance d'excentrement requis"));
                 return;
             }
-            var offsetPoint = TopoEngine.polarPoint(p.x, p.y, Number(gisementField.text), Number(distanceField.text));
+            var offsetPoint = TopoEngine.polarPoint(p.x, p.y, Number(gisementText), Number(distanceText));
             targetX = offsetPoint.x;
             targetY = offsetPoint.y;
         }
@@ -162,166 +162,180 @@ Item {
             clip: true
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
-            StackLayout {
-                id: paletteStack
+            Loader {
                 width: palette.width - 20
-                currentIndex: palette.selectedCode !== "" ? 2 : (palette.selectedCategoryIndex !== -1 ? 1 : 0)
+                sourceComponent: palette.selectedCode !== ""
+                    ? poseComponent
+                    : (palette.selectedCategoryIndex !== -1 ? codesComponent : categoriesComponent)
+            }
+        }
+    }
 
-                // --- Niveau 1 : palette principale (categories) ---
-                ColumnLayout {
-                    Layout.fillWidth: true
-                    spacing: 6
+    // Les 3 ecrans sont des Component charges par un Loader plutot que des
+    // enfants visible/invisible d'un StackLayout : sur certains appareils,
+    // alterner la visibilite ne redeclenchait pas un vrai repaint (bascule
+    // d'etat confirmee correcte en debug, mais rien ne s'affichait). Un
+    // Loader detruit et recree l'ecran a chaque changement, ce qui force
+    // le repaint de facon fiable.
 
-                    Label { text: qsTr("Categories"); font.bold: true }
+    Component {
+        id: categoriesComponent
 
-                    GridLayout {
+        ColumnLayout {
+            spacing: 6
+
+            Label { text: qsTr("Categories"); font.bold: true }
+
+            GridLayout {
+                Layout.fillWidth: true
+                columns: 2
+                columnSpacing: 8
+                rowSpacing: 8
+
+                Repeater {
+                    model: palette.categories
+
+                    delegate: Button {
                         Layout.fillWidth: true
-                        columns: 2
-                        columnSpacing: 8
-                        rowSpacing: 8
-
-                        Repeater {
-                            model: palette.categories
-
-                            delegate: Button {
-                                Layout.fillWidth: true
-                                Layout.preferredHeight: 56
-                                text: modelData.label
-                                onClicked: palette.selectedCategoryIndex = index
-                            }
-                        }
+                        Layout.preferredHeight: 56
+                        text: modelData.label
+                        onClicked: palette.selectedCategoryIndex = index
                     }
                 }
+            }
+        }
+    }
 
-                // --- Niveau 2 : sous-palette (codes de la categorie) ---
-                ColumnLayout {
+    Component {
+        id: codesComponent
+
+        ColumnLayout {
+            spacing: 6
+
+            RowLayout {
+                Layout.fillWidth: true
+                Button {
+                    text: qsTr("< Categories")
+                    onClicked: palette.selectedCategoryIndex = -1
+                }
+                Label {
                     Layout.fillWidth: true
-                    spacing: 6
+                    horizontalAlignment: Text.AlignRight
+                    font.bold: true
+                    text: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].label : ""
+                }
+            }
 
-                    RowLayout {
+            GridLayout {
+                Layout.fillWidth: true
+                columns: 4
+                columnSpacing: 6
+                rowSpacing: 6
+
+                Repeater {
+                    model: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].codes : []
+
+                    delegate: Button {
                         Layout.fillWidth: true
-                        Button {
-                            text: qsTr("< Categories")
-                            onClicked: palette.selectedCategoryIndex = -1
-                        }
-                        Label {
-                            Layout.fillWidth: true
-                            horizontalAlignment: Text.AlignRight
-                            font.bold: true
-                            text: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].label : ""
-                        }
-                    }
-
-                    GridLayout {
-                        Layout.fillWidth: true
-                        columns: 4
-                        columnSpacing: 6
-                        rowSpacing: 6
-
-                        Repeater {
-                            model: palette.selectedCategoryIndex !== -1 ? palette.categories[palette.selectedCategoryIndex].codes : []
-
-                            delegate: Button {
-                                Layout.fillWidth: true
-                                Layout.preferredHeight: 44
-                                text: modelData
-                                onClicked: palette.selectedCode = modelData
-                            }
-                        }
+                        Layout.preferredHeight: 44
+                        text: modelData
+                        onClicked: palette.selectedCode = modelData
                     }
                 }
+            }
+        }
+    }
 
-                // --- Pose du point (contextuel, code choisi) ---
-                ColumnLayout {
-                    Layout.fillWidth: true
-                    spacing: 8
+    Component {
+        id: poseComponent
 
-                    RowLayout {
-                        Layout.fillWidth: true
-                        Button {
-                            text: qsTr("< Codes")
-                            onClicked: palette.selectedCode = ""
-                        }
-                        Label {
-                            Layout.fillWidth: true
-                            horizontalAlignment: Text.AlignRight
-                            font.bold: true
-                            text: qsTr("Code %1").arg(palette.selectedCode)
-                        }
-                    }
+        ColumnLayout {
+            spacing: 8
 
-                    Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
-
-                    Label { text: qsTr("Pose du point"); font.bold: true }
-
-                    RowLayout {
-                        spacing: 6
-                        Button {
-                            text: qsTr("1 pt")
-                            highlighted: palette.poseMode === "1pt"
-                            onClicked: palette.poseMode = "1pt"
-                        }
-                        Button {
-                            text: qsTr("2 pts")
-                            highlighted: palette.poseMode === "2pt"
-                            onClicked: palette.poseMode = "2pt"
-                        }
-                        Button {
-                            text: qsTr("3 pts")
-                            highlighted: palette.poseMode === "3pt"
-                            onClicked: palette.poseMode = "3pt"
-                        }
-                    }
-
-                    RowLayout {
-                        Label { text: qsTr("Excentrement") }
-                        Item { Layout.fillWidth: true }
-                        Switch {
-                            checked: palette.excentrementEnabled
-                            onCheckedChanged: palette.excentrementEnabled = checked
-                        }
-                    }
-
-                    GridLayout {
-                        visible: palette.excentrementEnabled
-                        Layout.fillWidth: true
-                        columns: 2
-                        columnSpacing: 8
-
-                        Label { text: qsTr("Gisement (gon)") }
-                        TextField {
-                            id: gisementField
-                            Layout.fillWidth: true
-                            inputMethodHints: Qt.ImhFormattedNumbersOnly
-                        }
-
-                        Label { text: qsTr("Distance (m)") }
-                        TextField {
-                            id: distanceField
-                            Layout.fillWidth: true
-                            inputMethodHints: Qt.ImhFormattedNumbersOnly
-                        }
-                    }
-
-                    Label {
-                        Layout.fillWidth: true
-                        wrapMode: Text.WordWrap
-                        font.pixelSize: 11
-                        color: Theme.gray
-                        text: palette.poseMode === "1pt"
-                            ? (palette.excentrementEnabled
-                                ? qsTr("Pose decalee de la position actuelle (gisement + distance).")
-                                : qsTr("Pose direct sur la position actuelle."))
-                            : qsTr("Modes 2/3 points : a cabler plus tard (POC).")
-                    }
-
-                    Button {
-                        Layout.fillWidth: true
-                        text: qsTr("Lever le point")
-                        enabled: palette.poseMode === "1pt"
-                        onClicked: palette.leverPointCourant()
-                    }
+            RowLayout {
+                Layout.fillWidth: true
+                Button {
+                    text: qsTr("< Codes")
+                    onClicked: palette.selectedCode = ""
                 }
+                Label {
+                    Layout.fillWidth: true
+                    horizontalAlignment: Text.AlignRight
+                    font.bold: true
+                    text: qsTr("Code %1").arg(palette.selectedCode)
+                }
+            }
+
+            Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
+
+            Label { text: qsTr("Pose du point"); font.bold: true }
+
+            RowLayout {
+                spacing: 6
+                Button {
+                    text: qsTr("1 pt")
+                    highlighted: palette.poseMode === "1pt"
+                    onClicked: palette.poseMode = "1pt"
+                }
+                Button {
+                    text: qsTr("2 pts")
+                    highlighted: palette.poseMode === "2pt"
+                    onClicked: palette.poseMode = "2pt"
+                }
+                Button {
+                    text: qsTr("3 pts")
+                    highlighted: palette.poseMode === "3pt"
+                    onClicked: palette.poseMode = "3pt"
+                }
+            }
+
+            RowLayout {
+                Label { text: qsTr("Excentrement") }
+                Item { Layout.fillWidth: true }
+                Switch {
+                    checked: palette.excentrementEnabled
+                    onCheckedChanged: palette.excentrementEnabled = checked
+                }
+            }
+
+            GridLayout {
+                visible: palette.excentrementEnabled
+                Layout.fillWidth: true
+                columns: 2
+                columnSpacing: 8
+
+                Label { text: qsTr("Gisement (gon)") }
+                TextField {
+                    id: gisementField
+                    Layout.fillWidth: true
+                    inputMethodHints: Qt.ImhFormattedNumbersOnly
+                }
+
+                Label { text: qsTr("Distance (m)") }
+                TextField {
+                    id: distanceField
+                    Layout.fillWidth: true
+                    inputMethodHints: Qt.ImhFormattedNumbersOnly
+                }
+            }
+
+            Label {
+                Layout.fillWidth: true
+                wrapMode: Text.WordWrap
+                font.pixelSize: 11
+                color: Theme.gray
+                text: palette.poseMode === "1pt"
+                    ? (palette.excentrementEnabled
+                        ? qsTr("Pose decalee de la position actuelle (gisement + distance).")
+                        : qsTr("Pose direct sur la position actuelle."))
+                    : qsTr("Modes 2/3 points : a cabler plus tard (POC).")
+            }
+
+            Button {
+                Layout.fillWidth: true
+                text: qsTr("Lever le point")
+                enabled: palette.poseMode === "1pt"
+                onClicked: palette.leverPointCourant(gisementField.text, distanceField.text)
             }
         }
     }
