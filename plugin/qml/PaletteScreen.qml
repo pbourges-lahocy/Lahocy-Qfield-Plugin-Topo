@@ -197,6 +197,7 @@ Item {
             anchors.fill: parent
             opacity: palette.selectedCategoryIndex === -1 ? 1 : 0
             enabled: palette.selectedCategoryIndex === -1
+            Behavior on opacity { NumberAnimation { duration: 80 } }
             spacing: 6
 
             Label { text: qsTr("Categories"); font.bold: true }
@@ -230,6 +231,7 @@ Item {
             anchors.fill: parent
             opacity: (palette.selectedCategoryIndex !== -1 && palette.selectedCode === "") ? 1 : 0
             enabled: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
+            Behavior on opacity { NumberAnimation { duration: 80 } }
             spacing: 6
 
             RowLayout {
@@ -272,6 +274,7 @@ Item {
             anchors.fill: parent
             opacity: palette.selectedCode !== "" ? 1 : 0
             enabled: palette.selectedCode !== ""
+            Behavior on opacity { NumberAnimation { duration: 80 } }
             spacing: 8
 
             RowLayout {

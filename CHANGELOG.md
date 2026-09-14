@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.3] - 2026-09-14
+
+### Corrige
+
+- Le debug confirme un scenario precis : le 1er tap fonctionne (l'etat interne change et l'ecran categories devient bien `enabled: false`), mais le repaint visuel ne se fait pas - l'ecran categories reste affiche a l'identique, donc les taps suivants atterrissent sur des boutons desormais desactives, d'ou "plus rien ne se passe" apres le premier tap. Ajout d'un `Behavior on opacity` (micro-animation 80ms) sur les 3 ecrans : une animation force toujours un vrai repaint frame par frame, contrairement a un changement de propriete instantane qui semble etre saute par le moteur de rendu sur cet appareil.
+
 ## [0.3.2] - 2026-09-14
 
 ### Corrige
