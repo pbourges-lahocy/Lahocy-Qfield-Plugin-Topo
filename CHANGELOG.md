@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.7] - 2026-09-14
+
+### Corrige
+
+- Navigation de la palette confirmee fonctionnelle sur tablette avec le build de debug v0.2.6 (memes changements que la v0.2.5, plus instrumentation). La panne rapportee sur la v0.2.5 etait donc probablement un souci d'installation/cache et non un bug du `StackLayout`. Retrait des toasts et du titre de debug.
+
 ## [0.2.6] - 2026-09-14
 
 ### Debug temporaire
