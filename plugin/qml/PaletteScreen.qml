@@ -163,15 +163,18 @@ Item {
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
 
             StackLayout {
+                id: paletteStack
                 width: palette.width - 20
                 currentIndex: palette.selectedCode !== "" ? 2 : (palette.selectedCategoryIndex !== -1 ? 1 : 0)
+
+                onCurrentIndexChanged: iface.mainWindow().displayToast("DEBUG: currentIndex=" + currentIndex)
 
                 // --- Niveau 1 : palette principale (categories) ---
                 ColumnLayout {
                     Layout.fillWidth: true
                     spacing: 6
 
-                    Label { text: qsTr("Categories"); font.bold: true }
+                    Label { text: qsTr("Categories") + " (DEBUG idx=" + paletteStack.currentIndex + ")"; font.bold: true }
 
                     GridLayout {
                         Layout.fillWidth: true
@@ -186,7 +189,11 @@ Item {
                                 Layout.fillWidth: true
                                 Layout.preferredHeight: 56
                                 text: modelData.label
-                                onClicked: palette.selectedCategoryIndex = index
+                                onClicked: {
+                                    iface.mainWindow().displayToast("DEBUG: clic " + index + " selCat.before=" + palette.selectedCategoryIndex);
+                                    palette.selectedCategoryIndex = index;
+                                    iface.mainWindow().displayToast("DEBUG: selCat.after=" + palette.selectedCategoryIndex);
+                                }
                             }
                         }
                     }

@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.6] - 2026-09-14
+
+### Debug temporaire
+
+- Le correctif StackLayout de la v0.2.5 ne resout pas le probleme sur tablette (confirme par l'utilisateur, version bien a jour, app redemarree). Remise de toasts de debug plus detailles (valeur de `selectedCategoryIndex` avant/apres clic, valeur de `currentIndex` du StackLayout, index affiche directement dans le titre "Categories") pour localiser precisement ou ca casse sur cet appareil.
+
 ## [0.2.5] - 2026-09-13
 
 ### Corrige
