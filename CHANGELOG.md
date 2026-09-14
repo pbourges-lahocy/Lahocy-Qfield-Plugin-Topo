@@ -3,6 +3,13 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.4] - 2026-09-14
+
+### Corrige
+
+- Diagnostic complet obtenu : la propriete `selectedCategoryIndex` se met bien a jour au clic (confirme via toast affichant 0/1/2/3), mais AUCUN element visuel du panneau ne se repeint jamais tout seul - ni le texte de debug, ni les ecrans en opacite/visible. Le micro-animation de la 0.3.3 n'aurait pas suffi non plus (le probleme touche aussi un simple binding de texte, pas seulement opacity/visible).
+- Nos autres ecrans qui fonctionnent de facon fiable (Diagnostic, Leve, menu d'accueil) sont tous des `Dialog`, geres par le systeme d'Overlay natif de QtQuick Controls. La palette etait un simple `Item` reparente a la main, en dehors de ce systeme. Reecriture complete en `Popup` non modal (`modal: false`, `closePolicy: Popup.NoAutoClose`, ancre a droite via x/y/height) : meme mecanisme de rendu fiable que les Dialog, sans bloquer la carte ni se fermer tout seul.
+
 ## [0.3.3] - 2026-09-14
 
 ### Corrige

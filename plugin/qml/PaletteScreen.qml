@@ -8,25 +8,27 @@ import Theme
 
 import "TopoEngine.js" as TopoEngine
 
-// Panneau de palette ancre a droite de l'ecran, non modal : contrairement
-// a une Dialog, il reste ouvert et accessible en permanence pendant que
-// l'utilisateur continue a naviguer/zoomer sur la carte - c'est ce
-// fonctionnement (jamais de popup a rouvrir) qui rend Land2Map fluide sur
-// le terrain.
+// Panneau de palette ancre a droite de l'ecran.
+//
+// Implemente comme un Popup non modal (closePolicy: NoAutoClose) plutot
+// qu'un simple Item reparente : tous les autres ecrans du plugin qui
+// fonctionnent de facon fiable (Diagnostic, Leve, menu d'accueil) sont
+// des Dialog, donc geres par le systeme d'Overlay natif de QtQuick
+// Controls. En Item simple, les mises a jour visuelles (visible, opacity,
+// texte lie a une propriete) ne se repeignaient pas de facon fiable sur
+// certains appareils testes (confirme par debug : la propriete change
+// bien en interne, mais rien ne se redessine tant qu'un element externe -
+// un toast - ne force pas un repaint global). Le Popup utilise le meme
+// mecanisme d'Overlay que les Dialog, donc le meme repaint fiable, tout
+// en restant non modal (la carte reste utilisable derriere) et sans se
+// fermer tout seul.
 //
 // Toujours 2 niveaux : palette principale de categories -> sous-palette de
 // codes -> panneau contextuel "pose du point".
 //
-// Les 3 ecrans sont 3 blocs ancres en anchors.fill sur la meme zone,
-// bascules par "visible". Pas de ScrollView/StackLayout/Loader : ces
-// approches ont chacune pose un probleme de taille/repaint sur certains
-// appareils pendant les tests. Un anchors.fill direct donne a chaque
-// ecran une geometrie explicite des le depart, sans dependre d'un calcul
-// de taille en chaine.
-//
 // Catalogue ci-dessous : donnees d'exemple pour tester l'interaction,
 // PAS le catalogue Lahocy definitif.
-Item {
+Popup {
     id: palette
 
     property bool panelVisible: false
@@ -53,12 +55,27 @@ Item {
     property bool excentrementEnabled: false
 
     parent: iface.mainWindow().contentItem
-    anchors.top: parent.top
-    anchors.right: parent.right
-    anchors.bottom: parent.bottom
+    x: parent.width - width
+    y: 0
     width: 260
+    height: parent.height
+    padding: 0
+    modal: false
+    dim: false
+    closePolicy: Popup.NoAutoClose
     visible: panelVisible
-    z: 1000
+
+    background: Rectangle {
+        color: Theme.mainBackgroundColor
+
+        Rectangle {
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.bottom: parent.bottom
+            width: 1
+            color: Theme.gray
+        }
+    }
 
     function findAttributeIndex(layer) {
         var candidates = ["code", "CODE", "Code"];
@@ -133,19 +150,6 @@ Item {
         // enchainer directement sur le prochain point du meme theme.
     }
 
-    Rectangle {
-        anchors.fill: parent
-        color: Theme.mainBackgroundColor
-    }
-
-    Rectangle {
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        width: 1
-        color: Theme.gray
-    }
-
     RowLayout {
         id: header
         anchors.top: parent.top
@@ -172,21 +176,10 @@ Item {
         color: Theme.gray
     }
 
-    Label {
-        id: debugLabel
-        anchors.top: header.bottom
-        anchors.topMargin: 9
-        anchors.left: parent.left
-        anchors.leftMargin: 10
-        font.pixelSize: 10
-        color: Theme.gray
-        text: "DEBUG cat=" + palette.selectedCategoryIndex + " code=" + palette.selectedCode
-    }
-
     Item {
         id: content
         anchors.top: header.bottom
-        anchors.topMargin: 30
+        anchors.topMargin: 18
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
@@ -195,9 +188,7 @@ Item {
         // --- Ecran 1 : palette principale (categories) ---
         ColumnLayout {
             anchors.fill: parent
-            opacity: palette.selectedCategoryIndex === -1 ? 1 : 0
-            enabled: palette.selectedCategoryIndex === -1
-            Behavior on opacity { NumberAnimation { duration: 80 } }
+            visible: palette.selectedCategoryIndex === -1
             spacing: 6
 
             Label { text: qsTr("Categories"); font.bold: true }
@@ -215,10 +206,7 @@ Item {
                         Layout.fillWidth: true
                         Layout.preferredHeight: 56
                         text: modelData.label
-                        onClicked: {
-                            palette.selectedCategoryIndex = index;
-                            iface.mainWindow().displayToast("DEBUG: selectedCategoryIndex=" + palette.selectedCategoryIndex);
-                        }
+                        onClicked: palette.selectedCategoryIndex = index
                     }
                 }
             }
@@ -229,9 +217,7 @@ Item {
         // --- Ecran 2 : sous-palette (codes de la categorie) ---
         ColumnLayout {
             anchors.fill: parent
-            opacity: (palette.selectedCategoryIndex !== -1 && palette.selectedCode === "") ? 1 : 0
-            enabled: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
-            Behavior on opacity { NumberAnimation { duration: 80 } }
+            visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
             spacing: 6
 
             RowLayout {
@@ -272,9 +258,7 @@ Item {
         // --- Ecran 3 : pose du point (contextuel, code choisi) ---
         ColumnLayout {
             anchors.fill: parent
-            opacity: palette.selectedCode !== "" ? 1 : 0
-            enabled: palette.selectedCode !== ""
-            Behavior on opacity { NumberAnimation { duration: 80 } }
+            visible: palette.selectedCode !== ""
             spacing: 8
 
             RowLayout {
