@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.0] - 2026-09-14
+
+### Corrige
+
+- La grille de categories restait toujours vide malgre le correctif de largeur (v0.2.9). Reecriture complete de la navigation de la palette : abandon de `ScrollView` + `StackLayout`/`Loader` au profit de 3 blocs `anchors.fill: parent` bascules par `visible`, directement enfants d'une zone de contenu elle-meme ancree. Chaque ecran a desormais une geometrie explicite des sa creation, sans dependre d'un calcul de taille en chaine (Layout dans ScrollView dans Loader). C'est la structure la plus simple et la plus directe testee jusqu'ici pour ce panneau.
+
 ## [0.2.9] - 2026-09-14
 
 ### Corrige

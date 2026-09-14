@@ -17,6 +17,13 @@ import "TopoEngine.js" as TopoEngine
 // Toujours 2 niveaux : palette principale de categories -> sous-palette de
 // codes -> panneau contextuel "pose du point".
 //
+// Les 3 ecrans sont 3 blocs ancres en anchors.fill sur la meme zone,
+// bascules par "visible". Pas de ScrollView/StackLayout/Loader : ces
+// approches ont chacune pose un probleme de taille/repaint sur certains
+// appareils pendant les tests. Un anchors.fill direct donne a chaque
+// ecran une geometrie explicite des le depart, sans dependre d'un calcul
+// de taille en chaine.
+//
 // Catalogue ci-dessous : donnees d'exemple pour tester l'interaction,
 // PAS le catalogue Lahocy definitif.
 Item {
@@ -139,50 +146,45 @@ Item {
         color: Theme.gray
     }
 
-    ColumnLayout {
-        anchors.fill: parent
+    RowLayout {
+        id: header
+        anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.margins: 10
-        spacing: 8
 
-        RowLayout {
-            Layout.fillWidth: true
-            Label { text: qsTr("Palette (test)"); font.bold: true; Layout.fillWidth: true }
-            Button {
-                text: "✕"
-                flat: true
-                onClicked: palette.closeRequested()
-            }
-        }
-
-        Rectangle { Layout.fillWidth: true; height: 1; color: Theme.gray }
-
-        ScrollView {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            clip: true
-            ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-
-            Loader {
-                width: palette.width - 20
-                sourceComponent: palette.selectedCode !== ""
-                    ? poseComponent
-                    : (palette.selectedCategoryIndex !== -1 ? codesComponent : categoriesComponent)
-            }
+        Label { text: qsTr("Palette (test)"); font.bold: true; Layout.fillWidth: true }
+        Button {
+            text: "✕"
+            flat: true
+            onClicked: palette.closeRequested()
         }
     }
 
-    // Les 3 ecrans sont des Component charges par un Loader plutot que des
-    // enfants visible/invisible d'un StackLayout : sur certains appareils,
-    // alterner la visibilite ne redeclenchait pas un vrai repaint (bascule
-    // d'etat confirmee correcte en debug, mais rien ne s'affichait). Un
-    // Loader detruit et recree l'ecran a chaque changement, ce qui force
-    // le repaint de facon fiable.
+    Rectangle {
+        anchors.top: header.bottom
+        anchors.topMargin: 8
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.leftMargin: 10
+        anchors.rightMargin: 10
+        height: 1
+        color: Theme.gray
+    }
 
-    Component {
-        id: categoriesComponent
+    Item {
+        id: content
+        anchors.top: header.bottom
+        anchors.topMargin: 18
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: 10
 
+        // --- Ecran 1 : palette principale (categories) ---
         ColumnLayout {
-            width: parent ? parent.width : 0
+            anchors.fill: parent
+            visible: palette.selectedCategoryIndex === -1
             spacing: 6
 
             Label { text: qsTr("Categories"); font.bold: true }
@@ -204,14 +206,14 @@ Item {
                     }
                 }
             }
+
+            Item { Layout.fillHeight: true }
         }
-    }
 
-    Component {
-        id: codesComponent
-
+        // --- Ecran 2 : sous-palette (codes de la categorie) ---
         ColumnLayout {
-            width: parent ? parent.width : 0
+            anchors.fill: parent
+            visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
             spacing: 6
 
             RowLayout {
@@ -245,14 +247,14 @@ Item {
                     }
                 }
             }
+
+            Item { Layout.fillHeight: true }
         }
-    }
 
-    Component {
-        id: poseComponent
-
+        // --- Ecran 3 : pose du point (contextuel, code choisi) ---
         ColumnLayout {
-            width: parent ? parent.width : 0
+            anchors.fill: parent
+            visible: palette.selectedCode !== ""
             spacing: 8
 
             RowLayout {
@@ -340,6 +342,8 @@ Item {
                 enabled: palette.poseMode === "1pt"
                 onClicked: palette.leverPointCourant(gisementField.text, distanceField.text)
             }
+
+            Item { Layout.fillHeight: true }
         }
     }
 }
