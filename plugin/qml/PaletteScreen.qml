@@ -182,6 +182,7 @@ Item {
         id: categoriesComponent
 
         ColumnLayout {
+            width: parent ? parent.width : 0
             spacing: 6
 
             Label { text: qsTr("Categories"); font.bold: true }
@@ -210,6 +211,7 @@ Item {
         id: codesComponent
 
         ColumnLayout {
+            width: parent ? parent.width : 0
             spacing: 6
 
             RowLayout {
@@ -250,6 +252,7 @@ Item {
         id: poseComponent
 
         ColumnLayout {
+            width: parent ? parent.width : 0
             spacing: 8
 
             RowLayout {

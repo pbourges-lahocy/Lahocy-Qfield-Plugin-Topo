@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.2.9] - 2026-09-14
+
+### Corrige
+
+- Apres le passage au `Loader` (v0.2.8), le titre "Categories" s'affichait mais la grille de boutons restait invisible : le `ColumnLayout` charge par le `Loader` n'avait pas de largeur explicite, donc ses enfants en `Layout.fillWidth` se retrouvaient a largeur nulle. Ajout de `width: parent.width` sur le `ColumnLayout` racine des 3 ecrans.
+
 ## [0.2.8] - 2026-09-14
 
 ### Corrige
