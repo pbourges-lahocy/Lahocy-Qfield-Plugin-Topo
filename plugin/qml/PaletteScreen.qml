@@ -195,7 +195,8 @@ Item {
         // --- Ecran 1 : palette principale (categories) ---
         ColumnLayout {
             anchors.fill: parent
-            visible: palette.selectedCategoryIndex === -1
+            opacity: palette.selectedCategoryIndex === -1 ? 1 : 0
+            enabled: palette.selectedCategoryIndex === -1
             spacing: 6
 
             Label { text: qsTr("Categories"); font.bold: true }
@@ -227,7 +228,8 @@ Item {
         // --- Ecran 2 : sous-palette (codes de la categorie) ---
         ColumnLayout {
             anchors.fill: parent
-            visible: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
+            opacity: (palette.selectedCategoryIndex !== -1 && palette.selectedCode === "") ? 1 : 0
+            enabled: palette.selectedCategoryIndex !== -1 && palette.selectedCode === ""
             spacing: 6
 
             RowLayout {
@@ -268,7 +270,8 @@ Item {
         // --- Ecran 3 : pose du point (contextuel, code choisi) ---
         ColumnLayout {
             anchors.fill: parent
-            visible: palette.selectedCode !== ""
+            opacity: palette.selectedCode !== "" ? 1 : 0
+            enabled: palette.selectedCode !== ""
             spacing: 8
 
             RowLayout {

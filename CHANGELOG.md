@@ -3,6 +3,12 @@
 Toutes les versions notables du plugin sont documentees ici.
 Format inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.3.2] - 2026-09-14
+
+### Corrige
+
+- Preuve obtenue via le label de debug (v0.3.1) : `selectedCategoryIndex` se met bien a jour au clic, mais l'ecran ne changeait jamais visuellement malgre `visible: <expression>` correcte - sur cet appareil, un item qui passe invisible/visible en superposition exacte avec un autre ne semble pas provoquer de reel repaint. Remplace `visible` par `opacity: 0/1` + `enabled` sur les 3 ecrans, qui force un repaint reel (contrairement a `visible`, `opacity` modifie le noeud de rendu directement).
+
 ## [0.3.1] - 2026-09-14
 
 ### Debug temporaire
