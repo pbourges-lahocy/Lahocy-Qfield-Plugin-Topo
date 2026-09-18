@@ -20,21 +20,20 @@ Popup {
   required property var station
   required property var devices
   required property var mainWindow
-  property bool collapsed: false
-
   readonly property bool droitier: engine.droitier
   readonly property real safeTop: mainWindow.sceneTopMargin !== undefined ? mainWindow.sceneTopMargin : 0
   readonly property real safeBottom: mainWindow.sceneBottomMargin !== undefined ? mainWindow.sceneBottomMargin : 0
   readonly property real safeRight: mainWindow.sceneRightMargin !== undefined ? mainWindow.sceneRightMargin : 0
   readonly property real safeLeft: mainWindow.sceneLeftMargin !== undefined ? mainWindow.sceneLeftMargin : 0
   readonly property real cell: 52
-  readonly property real openWidth: 4 * cell + 3 * 4 + 54   // poignée + marges du panneau et de la palette
+  readonly property real openWidth: 4 * cell + 3 * 4 + 28   // marges du panneau et de la palette
 
+  // collé au bord et aux angles de l'écran (zone sûre du système)
   parent: mainWindow.contentItem
-  x: droitier ? parent.width - width - safeRight - 6 : safeLeft + 6
-  y: safeTop + 6
-  width: collapsed ? 34 : openWidth
-  height: parent.height - safeTop - safeBottom - 12
+  x: droitier ? parent.width - width - safeRight : safeLeft
+  y: safeTop
+  width: openWidth
+  height: parent.height - safeTop - safeBottom
   padding: 0
   modal: false
   dim: false
@@ -44,35 +43,13 @@ Popup {
     color: QfTheme.darkTheme ? "#1f1f1f" : "#ffffff"
     border.color: QfTheme.darkTheme ? "#505050" : "#d4d4d4"
     border.width: 1
-    radius: 8
     opacity: 0.97
   }
 
   contentItem: Item {
-    // poignée de repli
-    Rectangle {
-      width: 26; height: 56; radius: 8
-      anchors.verticalCenter: parent.verticalCenter
-      anchors.left: panel.droitier ? parent.left : undefined
-      anchors.right: panel.droitier ? undefined : parent.right
-      anchors.margins: 4
-      color: QfTheme.darkTheme ? "#3a3a3a" : "#ececec"
-      z: 5
-      Image {
-        anchors.centerIn: parent
-        source: Qt.resolvedUrl("../theme/ui/") + ((panel.collapsed !== panel.droitier) ? "replier_droite" : "replier_gauche") + (QfTheme.darkTheme ? "_w" : "") + ".svg"
-        width: 18; height: 18; sourceSize.width: 36; sourceSize.height: 36
-      }
-      MouseArea { anchors.fill: parent; onClicked: panel.collapsed = !panel.collapsed }
-    }
-
     ColumnLayout {
-      visible: !panel.collapsed
       anchors.fill: parent
-      anchors.leftMargin: panel.droitier ? 34 : 6
-      anchors.rightMargin: panel.droitier ? 6 : 34
-      anchors.topMargin: 6
-      anchors.bottomMargin: 6
+      anchors.margins: 6
       spacing: 6
 
       /* ---------------- palette ---------------- */

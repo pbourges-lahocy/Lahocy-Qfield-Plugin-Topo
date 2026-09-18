@@ -34,10 +34,11 @@ Popup {
   readonly property string gnssState: engine.qualityState
   readonly property string tpsState: !devices.tpsConnected ? "none" : (devices.tpsLocked || station.driver === "simulateur") ? "ok" : "warn"
 
+  // laisse libre le bouton de menu QField (trois traits) en haut à gauche
   parent: mainWindow.contentItem
-  x: droitier ? safeLeft + menuGap : safeLeft + reserve + 8
+  x: droitier ? safeLeft + menuGap : safeLeft + reserve
   y: safeTop + 6
-  width: parent.width - safeLeft - safeRight - menuGap - reserve - 16
+  width: parent.width - safeLeft - safeRight - menuGap - reserve - (droitier ? 6 : 12)
   height: 48
   padding: 4
   modal: false

@@ -103,6 +103,8 @@ Item {
       "x": s.x, "y": s.y, "z": s.z, "hi": s.hi, "v0": s.v0, "statut": "active", "nb_ref": s.refs.filter(r => !r.exclue).length,
       "params_json": JSON.stringify({ "oriente": s.oriente, "refs": s.refs }), "horodatage": Core.nowIso()
     });
+    // nouvel objet : les liaisons QML sur station.current (V0, liste des références) se rafraîchissent
+    current = Object.assign({}, s, { "refs": s.refs.slice() });
     changed();
   }
 

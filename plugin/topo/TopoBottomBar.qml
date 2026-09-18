@@ -24,10 +24,11 @@ Popup {
   readonly property bool wide: width > 820
   readonly property bool hasCandidate: engine.clickCandidate !== null
 
+  // collée au bord bas et à l'angle opposé au panneau
   parent: mainWindow.contentItem
-  x: droitier ? safeLeft + 8 : safeLeft + reserve + 8
-  y: parent.height - safeBottom - height - 6
-  width: parent.width - safeLeft - safeRight - reserve - 16
+  x: droitier ? safeLeft : safeLeft + reserve
+  y: parent.height - safeBottom - height
+  width: parent.width - safeLeft - safeRight - reserve
   height: 52
   padding: 4
   modal: false
@@ -38,7 +39,6 @@ Popup {
     color: QfTheme.darkTheme ? "#1f1f1f" : "#ffffff"
     border.color: bar.hasCandidate ? QfTheme.mainColor : (QfTheme.darkTheme ? "#505050" : "#d4d4d4")
     border.width: bar.hasCandidate ? 2 : 1
-    radius: 8
     opacity: 0.96
   }
 

@@ -1,4 +1,6 @@
-## Lahocy Topo 0.6.0 — nouvelle interface
+## Lahocy Topo 0.6.1 — nouvelle interface
+
+0.6.1 : panneaux collés aux bords, correction de l'affichage du V0 et des références dans le menu Station.
 
 Interface repensée en trois zones : **barre du haut** (source GNSS / station avec sa
 qualité, hauteur de canne ou de prisme, modules), **barre du bas** (consigne, confirmation

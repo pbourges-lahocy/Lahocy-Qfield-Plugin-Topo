@@ -2,6 +2,16 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.6.1] - 2026-09-18
+
+### Modifié
+
+- Panneau latéral et barre du bas collés aux bords et aux angles de l'écran, sans poignée de repli ; la barre du haut laisse libre le bouton de menu QField.
+
+### Corrigé
+
+- Menu Station : le V0 et la liste des visées de référence ne se rafraîchissaient pas après une visée (l'objet station était modifié en place). Le calcul était juste : vérifié au simulateur, mise en station par coordonnées, visée de référence et point mesuré à la position attendue au millimètre.
+
 ## [0.6.0] - 2026-09-18
 
 ### Modifié
