@@ -2,6 +2,17 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.5.1] - 2026-09-18
+
+### Ajouté
+
+- Application compagnon Android **Lahocy Topo Link** (`companion/`, Kotlin) : liaison Bluetooth avec la station totale (GeoCOM sur SPP), le DISTO (BLE) et le détecteur (SPP), même contrat HTTP local que le pont Python ; écran de test de liaison ; service de premier plan. Publiée dans la release (`lahocy-topolink.apk`, signée par les secrets `TOPOLINK_*`) et compilée à chaque modification (`companion-ci.yml`).
+
+### Modifié
+
+- Menu station : indication du champ port (COM ou nom Bluetooth ; vide = station choisie dans l'application compagnon).
+- Documentation : installation Android, deux implémentations du pont.
+
 ## [0.5.0] - 2026-09-18
 
 ### Modifié

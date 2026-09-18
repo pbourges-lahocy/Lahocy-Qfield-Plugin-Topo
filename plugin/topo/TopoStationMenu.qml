@@ -254,7 +254,7 @@ Dialog {
             Text { text: "Appareil :"; color: QfTheme.mainTextColor }
             ComboBox { id: driverBox; model: ["simulateur", "geocom"]; currentIndex: Math.max(0, model.indexOf(station.driver)) }
             Text { text: "Port COM :"; color: QfTheme.mainTextColor }
-            TextField { id: portField; text: station.port; Layout.preferredWidth: 90 }
+            TextField { id: portField; text: station.port; Layout.preferredWidth: 90; placeholderText: "COM5 / nom BT" }
             Text { text: "Vitesse :"; color: QfTheme.mainTextColor }
             TextField { id: baudField; text: String(station.baud); Layout.preferredWidth: 90; inputMethodHints: Qt.ImhDigitsOnly }
             Text { text: "Mesure :"; color: QfTheme.mainTextColor }

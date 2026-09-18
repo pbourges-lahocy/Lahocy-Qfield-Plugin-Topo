@@ -4,7 +4,8 @@ name: Release plugin
 # L'asset "lahocy-topo.zip" garde toujours le même nom : c'est ce qui
 # permet à QField de mettre à jour le plugin en place plutôt que d'en
 # installer un doublon (voir README.md). Le projet QField générique est
-# publié à côté ("LahocyTopo-projet.zip"), ainsi que le pont local.
+# publié à côté ("LahocyTopo-projet.zip"), ainsi que le pont local (Windows)
+# et l'application compagnon Android ("lahocy-topolink.apk").
 
 on:
   push:
@@ -55,3 +56,49 @@ jobs:
             "lahocy-bridge.zip" \
             --title "Lahocy Topo ${{ steps.version.outputs.version }}" \
             --notes-file RELEASE_NOTES.md
+
+  companion:
+    # Application compagnon Android (pont appareils) : ajoutée à la release une
+    # fois celle-ci créée, pour qu'un échec de build Android ne bloque pas le plugin.
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: "8.9"
+
+      - name: Signing key (secrets TOPOLINK_*)
+        env:
+          KS_B64: ${{ secrets.TOPOLINK_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$KS_B64" ]; then
+            echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/topolink.p12"
+            echo "TOPOLINK_KEYSTORE=$RUNNER_TEMP/topolink.p12" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Pas de clé de signature (secret TOPOLINK_KEYSTORE_B64) : APK signé avec une clé jetable, désinstaller l'ancienne version avant mise à jour"
+          fi
+
+      - name: Build release APK
+        working-directory: companion
+        env:
+          TOPOLINK_KEYSTORE_PASSWORD: ${{ secrets.TOPOLINK_KEYSTORE_PASSWORD }}
+          TOPOLINK_KEY_ALIAS: ${{ secrets.TOPOLINK_KEY_ALIAS }}
+          TOPOLINK_KEY_PASSWORD: ${{ secrets.TOPOLINK_KEY_PASSWORD }}
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          IFS=. read -r A B C <<< "$V"
+          CODE=$((A * 10000 + B * 100 + C))
+          gradle --no-daemon assembleRelease -PversionName="$V" -PversionCode="$CODE"
+          cp app/build/outputs/apk/release/app-release.apk ../lahocy-topolink.apk
+
+      - name: Add APK to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" lahocy-topolink.apk --clobber

@@ -42,10 +42,34 @@ Le récepteur est configuré dans QField (interne, Bluetooth NMEA, NTRIP, hauteu
 Le plugin lit la position et applique ses propres seuils de précision (bouton **Param.**),
 avec le voyant vert / orange / rouge du logiciel de référence.
 
-### 4. Station totale, disto, détecteur (pont local)
+### 4. Station totale, disto, détecteur
 
-Un plugin QField ne peut pas ouvrir de port série ou Bluetooth : le pilotage passe par le
-**pont local** `lahocy-bridge.zip` (Python), à lancer sur la tablette Windows.
+Un plugin QField ne peut pas ouvrir de port série ou Bluetooth : le pilotage passe par un
+petit programme « pont » sur la tablette, qui parle aux appareils et répond au plugin sur
+`127.0.0.1:8765`. Sur le terrain il n'y a donc que deux applications : QField (avec le GNSS,
+interne, Bluetooth NMEA ou application constructeur) et le pont, qui ne sert que lorsqu'on
+sort la station.
+
+#### Tablette Android : application compagnon « Lahocy Topo Link »
+
+`lahocy-topolink.apk` est dans la release.
+
+1. Installer l'APK (autoriser l'installation depuis ce fichier), accorder les permissions
+   Bluetooth et notifications au premier lancement.
+2. Appairer la station dans les réglages Bluetooth d'Android (station allumée, Bluetooth
+   actif, mode GeoCOM ; licence GeoCOM robotique nécessaire pour ATR, recherche et moteurs).
+3. Ouvrir Lahocy Topo Link, choisir la station dans la liste, **Tester la liaison** : le
+   journal affiche le nom de l'instrument, les angles et la batterie.
+4. **Démarrer le pont** (une notification permanente reste affichée), revenir dans QField :
+   **Menu station → Paramètres** → appareil `geocom`, port vide → **Connecter**.
+
+Le DISTO (Bluetooth Smart) et le détecteur de réseaux (Bluetooth série) passent par la même
+application. Le pilote `simulateur` fonctionne sans appareil, comme l'« Entrée clavier » du
+logiciel de référence.
+
+#### Tablette Windows : pont Python
+
+Le **pont local** `lahocy-bridge.zip` (Python) rend le même service sur Windows.
 
 Première étape, **valider la liaison avec la station** sans QField (port COM du couplage
 Bluetooth ou de la poignée radio, station en mode GeoCOM) :
@@ -63,9 +87,7 @@ python bridge/topo_bridge.py
 ```
 
 Dans le plugin : **Menu station → Paramètres** → appareil `geocom`, port COM de la station
-(Bluetooth interne ou poignée RH17), **Connecter**. Le pilote `simulateur` (entrée clavier)
-permet de dérouler tout le cycle sans appareil, comme l'« Entrée clavier » du logiciel de référence.
-Sur Android, le pont devra être porté dans une application compagnon (même API HTTP).
+(Bluetooth interne ou poignée RH17), **Connecter**.
 
 ## Cycle de test
 
@@ -90,7 +112,11 @@ messages) : les recopier telles quelles pour correction.
 
 3. Le workflow [`.github/workflows/release.yml`](.github/workflows/release.yml) vérifie la
    version, zippe `plugin/` en `lahocy-topo.zip` (+ copie versionnée), `project/LahocyTopo`
-   en `LahocyTopo-projet.zip` et `bridge/` en `lahocy-bridge.zip`, puis publie la release.
+   en `LahocyTopo-projet.zip` et `bridge/` en `lahocy-bridge.zip`, publie la release, puis
+   compile l'application compagnon Android et l'ajoute en `lahocy-topolink.apk` (signée avec
+   la clé des secrets `TOPOLINK_*` du dépôt ; sauvegarde locale de la clé hors dépôt).
+   Chaque modification de `companion/` sur `main` est aussi compilée par
+   [`companion-ci.yml`](.github/workflows/companion-ci.yml) (APK de debug en artefact).
 
 ## Outils bureau
 

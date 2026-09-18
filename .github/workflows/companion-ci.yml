@@ -1,0 +1,37 @@
+name: Companion app (Android)
+
+# Compile l'application compagnon à chaque modification de companion/ (contrôle
+# de compilation, APK de debug en artefact). L'APK de release est publié par
+# release.yml au push d'un tag.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "companion/**"
+      - ".github/workflows/companion-ci.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: "8.9"
+
+      - name: Build debug APK
+        working-directory: companion
+        run: gradle --no-daemon assembleDebug -PversionName=dev
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lahocy-topolink-debug
+          path: companion/app/build/outputs/apk/debug/app-debug.apk

@@ -1,10 +1,14 @@
-## Lahocy Topo 0.5.0 — renommage complet et outil de test de liaison station
+## Lahocy Topo 0.5.1 — application compagnon Android pour la station totale
 
-Reprise complète du plugin sur le principe d'interface du logiciel de référence :
-palette 2 colonnes et sous‑palettes, boîte mesure et dessin (GNSS / station totale),
-objets actifs multiples, excentrements, carnet de terrain et carnet polaire,
-implantation, menu station (mise en station, visées de référence, station libre,
-pilotage), détection. Catalogue générique converti du thème du logiciel de référence « Sbaa ».
+Le plugin QField reproduit le principe d'interface du logiciel de référence : palette
+2 colonnes et sous‑palettes, boîte mesure et dessin (GNSS / station totale), objets actifs
+multiples, excentrements, carnet de terrain et carnet polaire, implantation, menu station
+(mise en station, visées de référence, station libre, pilotage), détection.
+
+Nouveau : **Lahocy Topo Link**, application Android qui ouvre la liaison Bluetooth avec la
+station totale (GeoCOM), le DISTO et le détecteur, et répond au plugin sur `127.0.0.1:8765`.
+Elle permet de **tester la liaison avec la station** (nom d'instrument, angles, batterie)
+avant tout levé.
 
 ### Fichiers de la release
 
@@ -12,11 +16,12 @@ pilotage), détection. Catalogue générique converti du thème du logiciel de r
 |---|---|
 | `lahocy-topo.zip` | plugin QField (« Install plugin from URL ») |
 | `LahocyTopo-projet.zip` | projet QField générique (GeoPackage + .qgs) à ouvrir dans QField |
-| `lahocy-bridge.zip` | pont local Python pour station totale / disto / détecteur (tablette Windows) |
+| `lahocy-topolink.apk` | application compagnon Android (station totale / disto / détecteur) |
+| `lahocy-bridge.zip` | pont local Python pour tablette Windows |
 
 ### État
 
-Testé sur QField Windows 4.3.3 : palette, levé GNSS (simulateur NMEA), symbole, texte,
-carnet, mise en station, levé et excentrement au simulateur de station totale via le pont,
-continuer / supprimer, paramètres. 30 tests unitaires des calculs (`tests/`). Reste à tester sur tablette
-Android et avec de vrais appareils. Voir `CHANGELOG.md`, `README.md` et `docs/SPEC_LahocyTopo.md`.
+Plugin testé sur QField Windows 4.3.3 (GNSS simulé, simulateur de station via le pont),
+30 tests unitaires des calculs. L'application compagnon et le pilote GeoCOM n'ont pas encore
+été essayés avec une vraie station : commencer par **Tester la liaison** dans Lahocy Topo Link.
+Voir `README.md` (installation), `CHANGELOG.md` et `docs/SPEC_LahocyTopo.md`.

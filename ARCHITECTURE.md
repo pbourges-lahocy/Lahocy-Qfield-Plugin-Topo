@@ -37,7 +37,9 @@ plugin/                    plugin d'application QField (zippé par la release : 
     TopoDialogs.qml         dialogues (texte, excentrements, seuils GNSS, réglages, simulateur…)
     TopoBtn.qml             bouton carré de palette
 project/LahocyTopo/        projet QField générique (GeoPackage + .qgs), zippé dans la release
-bridge/                    pont local Python : serveur HTTP + pilotes (simulateur, GeoCOM, disto BLE, détecteur)
+bridge/                    pont local Python (Windows) : serveur HTTP + pilotes (simulateur, GeoCOM, disto BLE, détecteur)
+companion/                 application compagnon Android « Lahocy Topo Link » (Kotlin) : même contrat HTTP,
+                           Bluetooth SPP (GeoCOM, détecteur) et BLE (DISTO), service de premier plan, test de liaison
 tools/                     scripts bureau : conversion d'un thème, génération du projet
 docs/                      spécification
 ```
@@ -54,34 +56,27 @@ docs/                      spécification
 
 ## Appareils
 
-Un plugin QML ne peut pas ouvrir de port série / Bluetooth. Le pont local
-(`bridge/topo_bridge.py`) expose des primitives « mesurer / tourner / chercher / lire une
-distance » en HTTP sur `127.0.0.1:8765` ; le plugin fait tous les calculs. Aujourd'hui le
-pont tourne sur tablette Windows (Python).
+Un plugin QML ne peut pas ouvrir de port série / Bluetooth : une station totale se pilote en
+**dialogue** (requête GeoCOM → réponse), alors que QField n'offre aux plugins que des
+récepteurs GNSS en lecture seule et que le QML de Qt 6 n'expose ni Bluetooth ni port série.
+Le plugin parle donc à un **pont** en HTTP sur `127.0.0.1:8765` qui expose des primitives
+« mesurer / tourner / chercher / lire une distance » ; le plugin fait tous les calculs.
 
-**Avant tout : valider la liaison avec la station** avec `bridge/geocom_test.py` (port COM,
-nom d'instrument, batterie, angles, verrouillage, mesure), sans QField.
+Deux implémentations du même contrat (routes et JSON identiques, voir `docs/SPEC_LahocyTopo.md` §14.2) :
 
-### Connexion directe des appareils dans QField (Android) : options
+- **Android : `companion/` (Lahocy Topo Link, Kotlin)**. Service de premier plan avec
+  serveur HTTP (NanoHTTPD) lié à `127.0.0.1`, pilotes portés ligne à ligne du pont Python :
+  `GeoComDriver` (Bluetooth SPP, RFCOMM), `DistoBle` (GATT, service Leica), `SerialDetector`
+  (SPP), simulateurs. Le « port » envoyé par le plugin est une adresse MAC, un nom Bluetooth
+  ou vide (station choisie dans l'application). L'écran unique sert à choisir la station,
+  tester la liaison (mêmes étapes que `geocom_test.py`) et démarrer / arrêter le pont.
+- **Windows : `bridge/` (Python, pyserial / bleak)**, avec `bridge/geocom_test.py` pour
+  valider la liaison sans QField.
 
-Pourquoi ce n'est pas immédiat : une station totale se pilote en **dialogue** (requête
-GeoCOM → réponse), alors que QField n'offre aux plugins que des récepteurs GNSS en lecture
-seule (Bluetooth NMEA, TCP, UDP, fichier, capteurs QGIS) et que le QML de Qt 6 n'expose plus
-ni Bluetooth ni port série. Trois voies, de la plus rapide à la plus intégrée :
-
-1. **Application compagnon Android** (Kotlin) : service en arrière‑plan qui ouvre la
-   liaison Bluetooth SPP avec la station et sert **le même contrat HTTP** que le pont Python
-   sur `127.0.0.1`. Le plugin ne change pas ; les pilotes GeoCOM se portent ligne à ligne.
-   Quelques centaines de lignes, pas de build QField. C'est la voie recommandée à court terme.
-2. **Contribution à QField** : ajouter au cœur C++ un type QML générique de socket
-   Bluetooth/série accessible aux plugins (`org.qfield.core`). Une fois accepté en amont
-   (OPENGIS.ch), le plugin parlerait GeoCOM directement depuis le QML. Délai incertain,
-   mais c'est la seule vraie solution « directement dans QField ».
-3. **Build QField maison** avec ce type : contrôle total, mais maintenance d'une version
-   forkée sur Android (NDK, vcpkg) — à réserver si la voie 2 échoue.
-
-Dans les trois cas, le plugin garde la même couche `TopoDevices.qml` : seul le transport
-change (HTTP local aujourd'hui, socket QML demain).
+Voie « directement dans QField » : elle passerait par une contribution au cœur C++ de QField
+(un type QML de socket Bluetooth/série pour les plugins, à faire accepter par OPENGIS.ch) ou
+par un build QField maison. Le plugin garderait la même couche `TopoDevices.qml` : seul le
+transport changerait.
 
 ## Leçons du POC (Android)
 
