@@ -56,6 +56,26 @@ BAP_REFL_USE, BAP_REFL_LESS = 0, 1
 # TMC_INCLINE_PRG
 TMC_MEA_INC, TMC_AUTO_INC, TMC_PLANE_INC = 0, 1, 2
 
+# Codes retour TMC qui sont des avertissements : les valeurs renvoyées restent utilisables.
+TMC_WARNINGS = {
+    1280: "mesure sans correction complète",
+    1281: "précision non garantie",
+    1282: "angles seuls valides (pas de distance)",
+    1283: "angles seuls valides, sans correction complète (instrument calé ?)",
+    1284: "angles seuls valides, précision non garantie",
+}
+TMC_ANGLE_ONLY = {1282, 1283, 1284}
+ERRORS = {
+    2: "paramètre invalide", 5: "fonction non implémentée sur cet instrument", 6: "délai dépassé",
+    9: "commande interrompue", 12: "fonction indisponible (licence GeoCOM ?)",
+    1285: "pas de mesure d'angle (instrument calé, compensateur ?)", 1286: "PPM erroné",
+    1287: "distance non mesurée", 1288: "instrument occupé", 1289: "pas de signal (prisme visé ?)",
+    8704: "délai ATR dépassé", 8710: "aucune cible trouvée", 8711: "plusieurs cibles",
+    8712: "environnement défavorable (lumière, reflets)", 8714: "ATR / verrouillage non activé",
+    8716: "précision ATR insuffisante", 8720: "hors zone de travail",
+    1792: "moteur non prêt", 1793: "moteur occupé", 1794: "contrôleur moteur non démarré",
+}
+
 PRISM_TYPES = {"round": 0, "mini": 1, "tape": 2, "360": 3, "user1": 4, "user2": 5, "user3": 6, "mini360": 7, "miniZero": 8, "user": 9, "ndsTape": 10, "grz121": 11, "maMPR122": 12, "standard": 0}
 
 
@@ -76,6 +96,7 @@ class GeoComDriver(TPSDriver):
         self.laser = False
         self.reflectorless = False
         self._joystick_running = False
+        self.last_warning = ""
 
     # ------------------------------------------------------------------ bas niveau
     def connect(self):
@@ -127,8 +148,20 @@ class GeoComDriver(TPSDriver):
 
     def check(self, rc, what):
         if rc != 0:
-            self.last_error = "%s : code GeoCOM %d" % (what, rc)
+            label = ERRORS.get(rc) or TMC_WARNINGS.get(rc)
+            self.last_error = "%s : code GeoCOM %d%s" % (what, rc, " (%s)" % label if label else "")
             raise GeoComError(self.last_error)
+
+    def check_tmc(self, rc, what, need_distance):
+        """Comme check(), mais accepte les avertissements TMC (valeurs utilisables)."""
+        if rc == 0:
+            self.last_warning = ""
+            return
+        warn = TMC_WARNINGS.get(rc)
+        if warn and not (need_distance and rc in TMC_ANGLE_ONLY):
+            self.last_warning = warn
+            return
+        self.check(rc, what)
 
     # ------------------------------------------------------------------ configuration
     def setup(self, state):
@@ -150,19 +183,27 @@ class GeoComDriver(TPSDriver):
                 self.check(rc, "type de cible")
                 self.reflectorless = (target == BAP_REFL_LESS)
             rc, vals = self.request(BAP_MeasDistanceAngle, [BAP_DEF_DIST], timeout=30)
-            self.check(rc, "mesure")
+            self.check_tmc(rc, "mesure", need_distance=True)
             hz, v, sd = float(vals[0]), float(vals[1]), float(vals[2])
+            if sd <= 0:
+                raise GeoComError("distance non mesurée (prisme visé ?)")
             self.last_hz, self.last_v, self.last_sd = rad2gr(hz), rad2gr(v), sd
-            return {"hz": rad2gr(hz), "v": rad2gr(v), "sd": sd}
+            obs = {"hz": rad2gr(hz), "v": rad2gr(v), "sd": sd}
+            if self.last_warning:
+                obs["warn"] = self.last_warning
+            return obs
         finally:
             self.busy = False
 
     def angles(self, sim=None):
         rc, vals = self.request(TMC_GetAngle5, [TMC_AUTO_INC])
-        self.check(rc, "lecture des angles")
+        self.check_tmc(rc, "lecture des angles", need_distance=False)
         hz, v = float(vals[0]), float(vals[1])
         self.last_hz, self.last_v = rad2gr(hz), rad2gr(v)
-        return {"hz": rad2gr(hz), "v": rad2gr(v)}
+        obs = {"hz": rad2gr(hz), "v": rad2gr(v)}
+        if self.last_warning:
+            obs["warn"] = self.last_warning
+        return obs
 
     def poll(self):
         if not self.connected or self.busy:

@@ -55,6 +55,28 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
         const val BAP_REFL_LESS = 1
         const val TMC_AUTO_INC = 1
 
+        /** Codes retour TMC qui sont des avertissements : les valeurs renvoyées restent utilisables. */
+        val TMC_WARNINGS = mapOf(
+            1280 to "mesure sans correction complète",
+            1281 to "précision non garantie",
+            1282 to "angles seuls valides (pas de distance)",
+            1283 to "angles seuls valides, sans correction complète (instrument calé ?)",
+            1284 to "angles seuls valides, précision non garantie"
+        )
+        /** Angles seuls : pas de distance dans la réponse. */
+        val TMC_ANGLE_ONLY = setOf(1282, 1283, 1284)
+
+        val ERRORS = mapOf(
+            2 to "paramètre invalide", 5 to "fonction non implémentée sur cet instrument", 6 to "délai dépassé",
+            9 to "commande interrompue", 12 to "fonction indisponible (licence GeoCOM ?)",
+            1285 to "pas de mesure d'angle (instrument calé, compensateur ?)", 1286 to "PPM erroné",
+            1287 to "distance non mesurée", 1288 to "instrument occupé", 1289 to "pas de signal (prisme visé ?)",
+            8704 to "délai ATR dépassé", 8710 to "aucune cible trouvée", 8711 to "plusieurs cibles",
+            8712 to "environnement défavorable (lumière, reflets)", 8714 to "ATR / verrouillage non activé",
+            8716 to "précision ATR insuffisante", 8720 to "hors zone de travail",
+            1792 to "moteur non prêt", 1793 to "moteur occupé", 1794 to "contrôleur moteur non démarré"
+        )
+
         val PRISM_TYPES = mapOf(
             "round" to 0, "mini" to 1, "tape" to 2, "360" to 3, "user1" to 4, "user2" to 5, "user3" to 6,
             "mini360" to 7, "miniZero" to 8, "user" to 9, "ndsTape" to 10, "grz121" to 11, "maMPR122" to 12, "standard" to 0
@@ -70,6 +92,9 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
     private var joystickRunning = false
     private var batteryTime = 0L
     var deviceName: String = ""
+        private set
+    /** Dernier avertissement TMC (1280…1284), vide si la dernière lecture était propre. */
+    @Volatile var lastWarning = ""
         private set
 
     // ------------------------------------------------------------------ bas niveau
@@ -181,9 +206,22 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
 
     private fun check(rc: Int, what: String) {
         if (rc != 0) {
-            lastError = "$what : code GeoCOM $rc"
+            val label = ERRORS[rc] ?: TMC_WARNINGS[rc]
+            lastError = "$what : code GeoCOM $rc" + (if (label != null) " ($label)" else "")
             throw GeoComError(lastError)
         }
+    }
+
+    /** Comme check(), mais accepte les avertissements TMC (valeurs utilisables). */
+    private fun checkTmc(rc: Int, what: String, needDistance: Boolean) {
+        if (rc == 0) { lastWarning = ""; return }
+        val warn = TMC_WARNINGS[rc]
+        if (warn != null && !(needDistance && rc in TMC_ANGLE_ONLY)) {
+            lastWarning = warn
+            AppLog.d("GeoCOM : $what : avertissement $rc ($warn)")
+            return
+        }
+        check(rc, what)
     }
 
     // ------------------------------------------------------------------ configuration
@@ -210,13 +248,16 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
                 reflectorless = target == BAP_REFL_LESS
             }
             val (rc, vals) = request(BAP_MeasDistanceAngle, listOf(BAP_DEF_DIST), 30000)
-            check(rc, "mesure")
+            checkTmc(rc, "mesure", needDistance = true)
             if (vals.size < 3) throw GeoComError("mesure incomplète : $vals")
             val hz = rad2gr(vals[0].toDouble())
             val v = rad2gr(vals[1].toDouble())
             val sd = vals[2].toDouble()
+            if (sd <= 0.0) throw GeoComError("distance non mesurée (prisme visé ?)")
             lastHz = hz; lastV = v; lastSd = sd
-            return JSONObject().put("hz", hz).put("v", v).put("sd", sd)
+            val obs = JSONObject().put("hz", hz).put("v", v).put("sd", sd)
+            if (lastWarning.isNotEmpty()) obs.put("warn", lastWarning)
+            return obs
         } finally {
             busy = false
         }
@@ -224,12 +265,14 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
 
     override fun angles(sim: JSONObject?): JSONObject {
         val (rc, vals) = request(TMC_GetAngle5, listOf(TMC_AUTO_INC))
-        check(rc, "lecture des angles")
+        checkTmc(rc, "lecture des angles", needDistance = false)
         if (vals.size < 2) throw GeoComError("angles incomplets : $vals")
         val hz = rad2gr(vals[0].toDouble())
         val v = rad2gr(vals[1].toDouble())
         lastHz = hz; lastV = v
-        return JSONObject().put("hz", hz).put("v", v)
+        val obs = JSONObject().put("hz", hz).put("v", v)
+        if (lastWarning.isNotEmpty()) obs.put("warn", lastWarning)
+        return obs
     }
 
     override fun poll() {

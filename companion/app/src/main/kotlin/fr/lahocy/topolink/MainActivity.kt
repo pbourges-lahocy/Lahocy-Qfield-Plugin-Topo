@@ -194,6 +194,7 @@ class MainActivity : AppCompatActivity() {
     private fun report(d: TpsDriver, a: JSONObject) {
         AppLog.d("Instrument : ${d.model}  (latence ${d.latencyMs ?: "?"} ms)")
         AppLog.d(String.format(Locale.FRANCE, "Hz = %.4f gon   V = %.4f gon", a.optDouble("hz"), a.optDouble("v")))
+        if (a.has("warn")) AppLog.d("Avertissement : " + a.optString("warn"))
         AppLog.d("Batterie : ${d.battery?.toString() ?: "?"} %   Verrouillé : ${if (d.locked) "oui" else "non"}")
     }
 

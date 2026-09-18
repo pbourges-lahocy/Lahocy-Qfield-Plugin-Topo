@@ -344,6 +344,7 @@ Item {
     const face = (doubleRetournement && pendingFace1) ? 2 : 1;
     devices.tpsMeasureRequest(modeMesure, face, sim, function (res) {
       if (!res.ok) { toast("Mesure impossible : " + (res.error || "")); return; }
+      if (res.warn) toast("Station : " + res.warn);
       let obs = { "hz": res.hz, "v": res.v, "sd": res.sd, "hr": hr, "face": face, "mode": modeMesure };
       if (doubleRetournement) {
         if (face === 1) { pendingFace1 = obs; message = "Face 1 mesurée – tourner en face 2 et mesurer à nouveau"; changed(); return; }

@@ -2,6 +2,13 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.5.2] - 2026-09-18
+
+### Corrigé
+
+- GeoCOM : les codes retour TMC 1280 à 1284 (mesure sans correction complète, précision non garantie, angles seuls) sont des avertissements et non des erreurs : les angles sont acceptés et l'avertissement est remonté (`warn`) dans l'application compagnon, le pont Python et le plugin. Première liaison réelle validée avec une TS15 (code 1283 : instrument non calé).
+- Libellés lisibles pour les codes GeoCOM courants (licence, pas de signal, aucune cible, moteur…).
+
 ## [0.5.1] - 2026-09-18
 
 ### Ajouté

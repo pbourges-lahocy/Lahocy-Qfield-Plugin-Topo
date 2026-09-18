@@ -1,4 +1,7 @@
-## Lahocy Topo 0.5.1 — application compagnon Android pour la station totale
+## Lahocy Topo 0.5.2 — application compagnon Android, première liaison TS15 validée
+
+Correctif 0.5.2 : les avertissements GeoCOM (codes 1280 à 1284, instrument non calé,
+précision non garantie) ne sont plus traités comme des erreurs ; libellés lisibles des codes courants.
 
 Le plugin QField reproduit le principe d'interface du logiciel de référence : palette
 2 colonnes et sous‑palettes, boîte mesure et dessin (GNSS / station totale), objets actifs
@@ -22,6 +25,7 @@ avant tout levé.
 ### État
 
 Plugin testé sur QField Windows 4.3.3 (GNSS simulé, simulateur de station via le pont),
-30 tests unitaires des calculs. L'application compagnon et le pilote GeoCOM n'ont pas encore
-été essayés avec une vraie station : commencer par **Tester la liaison** dans Lahocy Topo Link.
+30 tests unitaires des calculs. Liaison Bluetooth GeoCOM validée avec une TS15 depuis
+l'application compagnon (nom d'instrument, angles) ; mesure de distance et pilotage restent
+à essayer sur le terrain : commencer par **Tester la liaison** dans Lahocy Topo Link.
 Voir `README.md` (installation), `CHANGELOG.md` et `docs/SPEC_LahocyTopo.md`.

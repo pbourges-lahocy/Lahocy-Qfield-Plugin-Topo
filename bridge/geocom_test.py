@@ -65,7 +65,7 @@ def main():
     try:
         d.connect()
     except Exception as e:
-        sys.exit(f"   ÉCHEC : {e}\n   Vérifier : port COM (sortant), vitesse, mode GeoCOM (bouton COM > 5 s), appairage Bluetooth.")
+        sys.exit(f"   ÉCHEC : {e}\n   Vérifier : port COM (sortant), vitesse, interface GeoCOM affectée au bon port sur la station (Instrument > Connexions), appairage Bluetooth.")
     print(f"   OK, latence {d.latency_ms} ms")
     print(f"2. Instrument : {d.model}")
     try:
@@ -75,7 +75,7 @@ def main():
         print(f"3. Batterie : erreur {e}")
     try:
         a = d.angles()
-        print(f"4. Angles : Hz {a['hz']:.4f} gr   V {a['v']:.4f} gr")
+        print(f"4. Angles : Hz {a['hz']:.4f} gr   V {a['v']:.4f} gr" + (f"   (avertissement : {a['warn']})" if a.get('warn') else ""))
     except Exception as e:
         print(f"4. Angles : erreur {e}")
     try:
