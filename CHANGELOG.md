@@ -2,6 +2,15 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.6.0] - 2026-09-18
+
+### Modifié
+
+- **Nouvelle interface** en trois zones, propre au plugin : barre du haut (source de mesure GNSS / station avec qualité et verrouillage, hauteur de canne ou de prisme, accès station / carnet / implantation / détecteur / paramètres / mode bureau), barre du bas (consigne, confirmation des clics, annuler, continuer, attente, supprimer, relance du plan, où suis-je, zoom, dernier point mesuré), panneau latéral réduit au levé (palette, dessin, mesure, objets actifs) et repliable.
+- Palette sur 4 colonnes avec icônes de famille redessinées ; la sous-palette remplace la palette dans le panneau (retour par flèche) avec le nom de chaque objet ; **recherche d'un objet par son nom** dans tout le catalogue.
+- Jeu d'icônes monochromes de l'interface (`plugin/theme/ui`, généré par `tools/make_ui_icons.py`, variantes sombre et blanche) à la place des pictogrammes emoji.
+- Bouton Mesurer unique coloré par la qualité, STOP, point unique et dernier point ; objets actifs en liste.
+
 ## [0.5.3] - 2026-09-18
 
 ### Corrigé

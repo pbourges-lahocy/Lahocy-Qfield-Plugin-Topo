@@ -1,17 +1,13 @@
-## Lahocy Topo 0.5.3 — application compagnon Android, liaison TS15 validée
+## Lahocy Topo 0.6.0 — nouvelle interface
 
-Correctif 0.5.3 : verrouillage prisme (mode lock ATR activé, état stable) ; mesure ATR
-possible sans verrouillage. 0.5.2 : avertissements GeoCOM 1280 à 1284 acceptés, libellés des codes.
+Interface repensée en trois zones : **barre du haut** (source GNSS / station avec sa
+qualité, hauteur de canne ou de prisme, modules), **barre du bas** (consigne, confirmation
+des clics, actions de contexte, dernier point mesuré) et **panneau latéral** réduit au levé
+(palette 4 colonnes avec recherche par nom, dessin, Mesurer / STOP, objets actifs), repliable.
+Icônes monochromes propres au plugin.
 
-Le plugin QField reproduit le principe d'interface du logiciel de référence : palette
-2 colonnes et sous‑palettes, boîte mesure et dessin (GNSS / station totale), objets actifs
-multiples, excentrements, carnet de terrain et carnet polaire, implantation, menu station
-(mise en station, visées de référence, station libre, pilotage), détection.
-
-Nouveau : **Lahocy Topo Link**, application Android qui ouvre la liaison Bluetooth avec la
-station totale (GeoCOM), le DISTO et le détecteur, et répond au plugin sur `127.0.0.1:8765`.
-Elle permet de **tester la liaison avec la station** (nom d'instrument, angles, batterie)
-avant tout levé.
+Station totale : liaison Bluetooth GeoCOM validée avec une TS15 depuis l'application
+compagnon Android (0.5.x : avertissements GeoCOM acceptés, verrouillage prisme stable).
 
 ### Fichiers de la release
 
@@ -24,8 +20,7 @@ avant tout levé.
 
 ### État
 
-Plugin testé sur QField Windows 4.3.3 (GNSS simulé, simulateur de station via le pont),
-30 tests unitaires des calculs. Liaison Bluetooth GeoCOM validée avec une TS15 depuis
-l'application compagnon (nom d'instrument, angles) ; mesure de distance et pilotage restent
-à essayer sur le terrain : commencer par **Tester la liaison** dans Lahocy Topo Link.
-Voir `README.md` (installation), `CHANGELOG.md` et `docs/SPEC_LahocyTopo.md`.
+Plugin testé sur QField Windows 4.3.3 (GNSS simulé, simulateur de station via le pont) :
+sous-palette, recherche, linéaire à plusieurs sommets, barres haut et bas. Mesure de distance
+et pilotage sur station réelle restent à valider sur le terrain. Voir `README.md`,
+`CHANGELOG.md` et `docs/SPEC_LahocyTopo.md`.

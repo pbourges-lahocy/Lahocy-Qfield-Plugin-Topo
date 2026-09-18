@@ -9,7 +9,12 @@ forme au bureau dans QGIS ; un seul catalogue d'objets générique est utilisé 
 - Structure du code : [ARCHITECTURE.md](ARCHITECTURE.md)
 - Historique : [CHANGELOG.md](CHANGELOG.md)
 
-**État : 0.5.0, testé sur QField Windows ; à tester sur tablette Android et avec de vrais appareils.** Voir [Cycle de test](#cycle-de-test).
+**État : 0.6.0, testé sur QField Windows ; liaison station totale validée avec une TS15 sur Android.** Voir [Cycle de test](#cycle-de-test).
+
+L'interface se compose d'une **barre du haut** (source de mesure GNSS ou station avec sa
+qualité, hauteur de canne ou de prisme, accès aux modules), d'une **barre du bas** (consigne,
+confirmation des clics, actions de contexte, dernier point) et d'un **panneau latéral**
+repliable (palette d'objets avec recherche par nom, dessin, Mesurer, objets actifs).
 
 ## Installation sur la tablette
 
@@ -32,8 +37,8 @@ Le plugin travaille dans un projet QField contenant les couches du modèle
 `implantation`, `topo_param`). Télécharger `LahocyTopo-projet.zip` depuis la
 [dernière release](https://github.com/pbourges-lahocy/Lahocy-Qfield-Plugin-Topo/releases/latest),
 le décompresser dans le dossier des projets de la tablette (ou le publier via QFieldSync /
-QFieldCloud) et ouvrir `LahocyTopo.qgs`. Le bouton **Topo** de la barre d'outils affiche le
-panneau à droite (mode droitier). Un projet client se construit au bureau en gardant ces
+QFieldCloud) et ouvrir `LahocyTopo.qgs`. Le bouton **Topo** de la barre d'outils affiche ou
+masque l'interface (panneau à droite en mode droitier, à gauche en mode gaucher). Un projet client se construit au bureau en gardant ces
 couches (le script `tools/build_project.py` les crée dans le système de projection voulu).
 
 ### 3. GNSS

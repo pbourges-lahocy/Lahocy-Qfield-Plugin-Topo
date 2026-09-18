@@ -56,11 +56,31 @@ Item {
     devices: devices
     mainWindow: plugin.mainWindow
     visible: plugin.loaded && plugin.panelVisible
+  }
+
+  TopoTopBar {
+    id: topBar
+    engine: engine
+    station: station
+    devices: devices
+    mainWindow: plugin.mainWindow
+    reserve: panel.width + 6
+    visible: plugin.loaded && plugin.panelVisible
     onOpenCarnet: carnet.open()
     onOpenImplantation: implantation.open()
     onOpenStationMenu: stationMenu.open()
     onOpenSettings: dialogs.open("settings", {})
     onOpenDetection: dialogs.open("detection", {})
+  }
+
+  TopoBottomBar {
+    id: bottomBar
+    engine: engine
+    station: station
+    devices: devices
+    mainWindow: plugin.mainWindow
+    reserve: panel.width + 6
+    visible: plugin.loaded && plugin.panelVisible
   }
 
   TopoDialogs {

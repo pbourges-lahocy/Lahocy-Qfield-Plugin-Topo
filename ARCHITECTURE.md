@@ -17,7 +17,8 @@ plugin/                    plugin d'application QField (zippé par la release : 
   metadata.txt             nom / version (doit correspondre au tag de release)
   icon.svg
   theme/theme.json         catalogue d'objets et palettes (équivalent du MDB de thème)
-  theme/icons/             icônes des boutons
+  theme/icons/             icônes des objets du catalogue (PNG)
+  theme/ui/                icônes monochromes de l'interface (SVG, générées par tools/make_ui_icons.py)
   topo/
     TopoCore.js             géométrie : arcs, courbes, parallèles, excentrements, WKT
     TopoCalc.js             topographie : réduction polaire, V0, station libre (moindres carrés), GSI
@@ -25,12 +26,14 @@ plugin/                    plugin d'application QField (zippé par la release : 
     TopoEngine.qml          logique métier du levé (objets actifs, mesures, excentrements, carnet, implantation)
     TopoStation.qml         contexte station totale (mise en station, références, station libre, pilotage)
     TopoDevices.qml         client HTTP du pont local (statut, événements)
-    TopoPanel.qml           panneau latéral (Popup non modal) : ruban + zones 3 / 4 / 5
-    TopoPalette.qml         zone 3 : palette principale et sous-palettes
-    TopoMeasureBox.qml      zone 4 haut : excentrements, hauteur, STOP, acquisition, qualité
-    TopoDrawOptions.qml     zone 4 milieu : primitives de dessin selon la famille, confirmation de clic
+    TopoTopBar.qml          barre du haut (Popup non modal) : source et qualité, hauteur, modules
+    TopoBottomBar.qml       barre du bas : consigne, confirmation de clic, actions de contexte, dernier point
+    TopoPanel.qml           panneau latéral repliable : palette, dessin, mesure, objets actifs
+    TopoPalette.qml         palette 4 colonnes : familles, sous-palette en place, recherche par nom
+    TopoMeasureBox.qml      excentrements favoris, Mesurer / STOP, point unique, dernier point
+    TopoDrawOptions.qml     primitives de dessin selon la famille, détection, guidage
     TopoGuidage.qml         guidage d'implantation
-    TopoActiveObjects.qml   zone 5 : objets actifs, relance, attente
+    TopoActiveObjects.qml   liste des objets actifs, relance du dernier objet
     TopoStationMenu.qml     menu Station
     TopoCarnet.qml          carnet de terrain et carnet polaire
     TopoImplantation.qml    gestionnaire d'implantation
