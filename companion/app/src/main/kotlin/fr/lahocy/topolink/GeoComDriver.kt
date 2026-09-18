@@ -91,6 +91,8 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
     private var reflectorless = false
     private var joystickRunning = false
     private var batteryTime = 0L
+    /** Lectures consécutives « non verrouillé » : le verrouillage n'est déclaré perdu qu'après 3 (1,5 s). */
+    private var unlockedReads = 0
     var deviceName: String = ""
         private set
     /** Dernier avertissement TMC (1280…1284), vide si la dernière lecture était propre. */
@@ -227,13 +229,30 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
     // ------------------------------------------------------------------ configuration
     override fun setup(state: JSONObject) {
         val prism = PRISM_TYPES[state.str("prism", "standard")] ?: 0
+        val atr = state.optBoolean("atr", true)
         try {
             request(BAP_SetPrismType, listOf(prism))
-            request(AUS_SetUserAtrState, listOf(if (state.optBoolean("atr", true)) 1 else 0))
+            request(AUS_SetUserAtrState, listOf(if (atr) 1 else 0))
+            // Mode « lock » de l'ATR : sans lui, AUT_LockIn échoue (8714) et la station
+            // ne suit pas le prisme même après une recherche réussie.
+            request(AUS_SetUserLockState, listOf(if (atr) 1 else 0))
             request(TMC_SetInclineSwitch, listOf(1))
         } catch (e: GeoComError) {
             lastError = e.message ?: ""
         }
+    }
+
+    /** Verrouille sur le prisme visé ; active le mode lock si l'instrument le réclame. */
+    private fun lockIn(): Boolean {
+        var (rc, _) = request(AUT_LockIn, emptyList(), 10000)
+        if (rc == 8714) {
+            request(AUS_SetUserLockState, listOf(1))
+            rc = request(AUT_LockIn, emptyList(), 10000).first
+        }
+        if (rc != 0) AppLog.d("GeoCOM : verrouillage refusé, code $rc (${ERRORS[rc] ?: "?"})")
+        locked = rc == 0
+        unlockedReads = 0
+        return locked
     }
 
     // ------------------------------------------------------------------ mesures
@@ -279,7 +298,12 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
         if (!connected || busy) return
         try {
             val (rc, vals) = request(MOT_ReadLockStatus, emptyList(), 2000)
-            if (rc == 0 && vals.isNotEmpty()) locked = vals[0].toIntOrNull() == 1
+            if (rc == 0 && vals.isNotEmpty()) {
+                // 0 = MOT_LOCKED_OUT, 1 = MOT_LOCKED_IN, 2 = MOT_PREDICTION (suivi conservé)
+                val st = vals[0].toIntOrNull() ?: 0
+                if (st == 1 || st == 2) { locked = true; unlockedReads = 0 }
+                else if (++unlockedReads >= 3) locked = false
+            }
             if (tracking) angles(null)
         } catch (e: Exception) {
             lastError = e.message ?: ""
@@ -309,12 +333,10 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
                 rc = request(AUT_Search, listOf(hz, v, 0), 60000).first
             }
             val found = rc == 0
-            if (found) {
-                request(AUT_LockIn, emptyList(), 10000)
-                locked = true
-            }
-            events.push("tps_search_done", JSONObject().put("found", found).put("type", kind).put("rc", rc))
-            return ok("found" to found, "rc" to rc)
+            if (found) lockIn()
+            else AppLog.d("GeoCOM : recherche $kind sans succès, code $rc (${ERRORS[rc] ?: "?"})")
+            events.push("tps_search_done", JSONObject().put("found", found).put("type", kind).put("rc", rc).put("locked", locked))
+            return ok("found" to found, "rc" to rc, "locked" to locked)
         } finally {
             busy = false
         }
@@ -343,10 +365,7 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
         try {
             val (rc, _) = request(AUT_MakePositioning, listOf(gr2rad(hz), gr2rad(v), 0, if (search) 1 else 0, 0), 60000)
             check(rc, "positionnement")
-            if (search) {
-                val (rc2, _) = request(AUT_LockIn, emptyList(), 10000)
-                locked = rc2 == 0
-            }
+            if (search) lockIn()
             return ok("locked" to locked)
         } finally {
             busy = false
@@ -355,10 +374,7 @@ class GeoComDriver(private val ctx: Context, private val target: String, events:
 
     override fun setLock(on: Boolean): JSONObject {
         val (rc, _) = request(AUS_SetUserLockState, listOf(if (on) 1 else 0))
-        if (on) {
-            val (rc2, _) = request(AUT_LockIn, emptyList(), 10000)
-            locked = rc2 == 0
-        }
+        if (on) lockIn() else { locked = false; unlockedReads = 0 }
         return JSONObject().put("ok", rc == 0).put("locked", locked)
     }
 

@@ -97,6 +97,7 @@ class GeoComDriver(TPSDriver):
         self.reflectorless = False
         self._joystick_running = False
         self.last_warning = ""
+        self._unlocked_reads = 0
 
     # ------------------------------------------------------------------ bas niveau
     def connect(self):
@@ -166,12 +167,26 @@ class GeoComDriver(TPSDriver):
     # ------------------------------------------------------------------ configuration
     def setup(self, state):
         prism = PRISM_TYPES.get(str(state.get("prism", "standard")), 0)
+        atr = bool(state.get("atr", True))
         try:
             self.request(BAP_SetPrismType, [prism])
-            self.request(AUS_SetUserAtrState, [1 if state.get("atr", True) else 0])
+            self.request(AUS_SetUserAtrState, [1 if atr else 0])
+            # Mode « lock » de l'ATR : sans lui, AUT_LockIn échoue (8714) et la station
+            # ne suit pas le prisme même après une recherche réussie.
+            self.request(AUS_SetUserLockState, [1 if atr else 0])
             self.request(TMC_SetInclineSwitch, [1])
         except GeoComError as e:
             self.last_error = str(e)
+
+    def lock_in(self):
+        """Verrouille sur le prisme visé ; active le mode lock si l'instrument le réclame."""
+        rc, _ = self.request(AUT_LockIn, [], timeout=10)
+        if rc == 8714:
+            self.request(AUS_SetUserLockState, [1])
+            rc, _ = self.request(AUT_LockIn, [], timeout=10)
+        self.locked = rc == 0
+        self._unlocked_reads = 0
+        return self.locked
 
     # ------------------------------------------------------------------ mesures
     def measure(self, mode="prisme", face=1, sim=None):
@@ -211,7 +226,14 @@ class GeoComDriver(TPSDriver):
         try:
             rc, vals = self.request(MOT_ReadLockStatus, [], timeout=2)
             if rc == 0 and vals:
-                self.locked = int(vals[0]) == 1
+                # 0 = MOT_LOCKED_OUT, 1 = MOT_LOCKED_IN, 2 = MOT_PREDICTION (suivi conservé)
+                if int(vals[0]) in (1, 2):
+                    self.locked = True
+                    self._unlocked_reads = 0
+                else:
+                    self._unlocked_reads = getattr(self, "_unlocked_reads", 0) + 1
+                    if self._unlocked_reads >= 3:  # 1,5 s sans verrouillage
+                        self.locked = False
             if self.tracking:
                 self.angles()
         except Exception as e:
@@ -241,10 +263,9 @@ class GeoComDriver(TPSDriver):
                 rc, _ = self.request(AUT_Search, [hz, v, 0], timeout=60)
             found = rc == 0
             if found:
-                self.request(AUT_LockIn, [], timeout=10)
-                self.locked = True
-            self.events.push("tps_search_done", {"found": found, "type": kind, "rc": rc})
-            return {"ok": True, "found": found, "rc": rc}
+                self.lock_in()
+            self.events.push("tps_search_done", {"found": found, "type": kind, "rc": rc, "locked": self.locked})
+            return {"ok": True, "found": found, "rc": rc, "locked": self.locked}
         finally:
             self.busy = False
 
@@ -272,8 +293,7 @@ class GeoComDriver(TPSDriver):
             rc, _ = self.request(AUT_MakePositioning, [gr2rad(hz), gr2rad(v), 0, 1 if search else 0, 0], timeout=60)
             self.check(rc, "positionnement")
             if search:
-                rc2, _ = self.request(AUT_LockIn, [], timeout=10)
-                self.locked = rc2 == 0
+                self.lock_in()
             return {"ok": True, "locked": self.locked}
         finally:
             self.busy = False
@@ -281,8 +301,10 @@ class GeoComDriver(TPSDriver):
     def set_lock(self, on):
         rc, _ = self.request(AUS_SetUserLockState, [1 if on else 0])
         if on:
-            rc2, _ = self.request(AUT_LockIn, [], timeout=10)
-            self.locked = rc2 == 0
+            self.lock_in()
+        else:
+            self.locked = False
+            self._unlocked_reads = 0
         return {"ok": rc == 0, "locked": self.locked}
 
     def set_laser(self, on):

@@ -339,7 +339,6 @@ Item {
   /** Mesure brute (gère le double retournement et le simulateur). */
   function mesurerBrut(cb, sim) {
     if (!devices.tpsConnected) { toast("Station non connectée"); return; }
-    if (!devices.tpsLocked && modeMesure === "prisme" && driver !== "simulateur") { toast("Prisme perdu : mesure impossible"); return; }
     if (driver === "simulateur" && !sim) { requestDialog("saisie_mesure", { "cb": function (values) { mesurerBrut(cb, values); } }); return; }
     const face = (doubleRetournement && pendingFace1) ? 2 : 1;
     devices.tpsMeasureRequest(modeMesure, face, sim, function (res) {

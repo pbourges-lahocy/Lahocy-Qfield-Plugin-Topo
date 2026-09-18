@@ -2,6 +2,13 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.5.3] - 2026-09-18
+
+### Corrigé
+
+- Verrouillage prisme : le mode « lock » de l'ATR (`AUS_SetUserLockState`) est activé à la connexion et avant `AUT_LockIn` ; sans lui, la station trouvait le prisme (recherche spirale) mais refusait le verrouillage et le plugin repassait « prisme perdu » après une seconde. L'état verrouillé accepte aussi le mode prédiction et n'est déclaré perdu qu'après 1,5 s de lectures consécutives.
+- La mesure sur prisme reste possible sans verrouillage (visée ATR) : le bouton passe orange au lieu de gris.
+
 ## [0.5.2] - 2026-09-18
 
 ### Corrigé

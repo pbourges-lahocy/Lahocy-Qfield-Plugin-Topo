@@ -15,7 +15,7 @@ ColumnLayout {
   spacing: 4
 
   readonly property bool tps: engine.mesureSource === "tps"
-  readonly property string quality: tps ? (!devices.tpsConnected ? "none" : (!devices.tpsLocked && station.modeMesure === "prisme" && station.driver !== "simulateur") ? "bad" : (station.active && station.oriente ? "ok" : "warn")) : engine.qualityState
+  readonly property string quality: tps ? (!devices.tpsConnected ? "none" : (!devices.tpsLocked && station.modeMesure === "prisme" && station.driver !== "simulateur") ? "warn" : (station.active && station.oriente ? "ok" : "warn")) : engine.qualityState
   readonly property color qualityColor: quality === "ok" ? "#8fe08f" : quality === "warn" ? "#ffb347" : quality === "bad" ? "#ff7b7b" : "#cfcfcf"
 
   /* ---------------- excentrements favoris ---------------- */
@@ -129,7 +129,7 @@ ColumnLayout {
         }
         Text {
           visible: box.tps
-          text: !devices.reachable ? "Pont injoignable" : !devices.tpsConnected ? "Station non connectée" : (devices.tpsLocked || station.driver === "simulateur" ? "Prisme verrouillé" : "PRISME PERDU")
+          text: !devices.reachable ? "Pont injoignable" : !devices.tpsConnected ? "Station non connectée" : (devices.tpsLocked || station.driver === "simulateur" ? "Prisme verrouillé" : "Prisme non verrouillé (visée ATR)")
           font.pixelSize: 12; font.bold: true; color: "#202020"
         }
         Text {

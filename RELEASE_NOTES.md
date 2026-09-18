@@ -1,7 +1,7 @@
-## Lahocy Topo 0.5.2 — application compagnon Android, première liaison TS15 validée
+## Lahocy Topo 0.5.3 — application compagnon Android, liaison TS15 validée
 
-Correctif 0.5.2 : les avertissements GeoCOM (codes 1280 à 1284, instrument non calé,
-précision non garantie) ne sont plus traités comme des erreurs ; libellés lisibles des codes courants.
+Correctif 0.5.3 : verrouillage prisme (mode lock ATR activé, état stable) ; mesure ATR
+possible sans verrouillage. 0.5.2 : avertissements GeoCOM 1280 à 1284 acceptés, libellés des codes.
 
 Le plugin QField reproduit le principe d'interface du logiciel de référence : palette
 2 colonnes et sous‑palettes, boîte mesure et dessin (GNSS / station totale), objets actifs
