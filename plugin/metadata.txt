@@ -1,0 +1,7 @@
+[general]
+name=Lahocy Topo
+description=Plugin de levé topographique Lahocy pour QField : palette d'objets, mesure et dessin, excentrements, carnet, implantation, station totale (pont local)
+author=Lahocy
+icon=icon.svg
+version=0.5.0
+homepage=https://github.com/pbourges-lahocy/Lahocy-Qfield-Plugin-Topo

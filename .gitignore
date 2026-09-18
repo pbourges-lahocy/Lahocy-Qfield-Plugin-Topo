@@ -1,0 +1,27 @@
+## Système / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+## Python
+__pycache__/
+*.pyc
+
+## Artefacts de build (produits par le workflow de release, jamais commités)
+*.zip
+
+## QGIS
+*.qgs~
+*_attachments.zip
+
+## Exports terrain
+project/LahocyTopo/export/
+project/LahocyTopo/import/
+
+## Secrets - jamais de credentials (NTRIP, QFieldCloud, tokens...)
+*.secrets.json
+.env
+.env.*

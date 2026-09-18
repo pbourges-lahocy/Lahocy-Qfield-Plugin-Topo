@@ -1,0 +1,8371 @@
+.pragma library
+// Généré par tools/theme_to_json.py à partir de theme.json - ne pas éditer à la main.
+var THEME = {
+ "nom": "Sbaa",
+ "version": 1,
+ "source": "Sbaa.mdb",
+ "colonnes": 2,
+ "palette": [
+  {
+   "pos": 0,
+   "code": "Voirie",
+   "nom": "CatVoirie",
+   "icone": "CatVoirie.png",
+   "objet": "Voirie",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Trottoir",
+     "icone": "1.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Trottoir bas",
+     "icone": "2.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Bordure béton",
+     "icone": "3.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Bordure coulée",
+     "icone": "4.png"
+    },
+    {
+     "pos": 4,
+     "objet": "Caniveau double pente",
+     "icone": "5.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Limite de chaussée",
+     "icone": "6.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Limite de revêtement",
+     "icone": "7.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Ligne continue",
+     "icone": "9.png"
+    },
+    {
+     "pos": 8,
+     "objet": "Ligne discontinue",
+     "icone": "10.png"
+    },
+    {
+     "pos": 9,
+     "objet": "Ligne de stationnement",
+     "icone": "11.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Ligne stat.nt SERAM",
+     "icone": "12.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Ligne de bande cyclable",
+     "icone": "13.png"
+    },
+    {
+     "pos": 12,
+     "objet": "Arrêt de bus",
+     "icone": "14.png"
+    },
+    {
+     "pos": 13,
+     "objet": "Contour ligne Cédez le passage",
+     "icone": "15.png"
+    },
+    {
+     "pos": 14,
+     "objet": "Contour ligne Stop",
+     "icone": "16.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Contour damier",
+     "icone": "17.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Contour zébra",
+     "icone": "70.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Autres marquages",
+     "icone": "19.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Contour dispositif podotactile",
+     "icone": "22.png"
+    },
+    {
+     "pos": 19,
+     "objet": "Contour passage piéton",
+     "icone": "23.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Dalle béton",
+     "icone": "27.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Texte revêtement",
+     "icone": "CatTexte.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Bas de talus",
+     "icone": "28.png"
+    },
+    {
+     "pos": 26,
+     "objet": "Haut de talus",
+     "icone": "29.png"
+    },
+    {
+     "pos": 27,
+     "objet": "Habillage talus",
+     "icone": "30.png"
+    },
+    {
+     "pos": 30,
+     "objet": "Berge cours d eau",
+     "icone": "40.png"
+    },
+    {
+     "pos": 31,
+     "objet": "Berge plan d eau",
+     "icone": "41.png"
+    },
+    {
+     "pos": 32,
+     "objet": "Flèche écoulement",
+     "icone": "Divers_Hydr_Fle.png"
+    },
+    {
+     "pos": 33,
+     "objet": "Nom cours ou plan d eau",
+     "icone": "CatTexte.png"
+    }
+   ]
+  },
+  {
+   "pos": 1,
+   "code": "CatBati",
+   "nom": "CatBati",
+   "icone": "CatBati.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Clôture",
+     "icone": "34.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Mur plein",
+     "icone": "35.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Mur bahut",
+     "icone": "36.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Mur de souténement",
+     "icone": "37.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Mur plein + limite",
+     "icone": "35_G.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Mur bahut + limite",
+     "icone": "36_G.png"
+    },
+    {
+     "pos": 8,
+     "objet": "Mur de souténement + limite",
+     "icone": "37_G.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Mur plein + lim D",
+     "icone": "35_D.png"
+    },
+    {
+     "pos": 12,
+     "objet": "D Mur bahut + limite",
+     "icone": "36_D.png"
+    },
+    {
+     "pos": 13,
+     "objet": "Mur de sout + lim D",
+     "icone": "37_D.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Bati Facade",
+     "icone": "60.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Contour bati",
+     "icone": "61.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Bâti par 3 pts",
+     "icone": "62.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Bâti léger",
+     "icone": "63.png"
+    },
+    {
+     "pos": 19,
+     "objet": "Bati en surplomb",
+     "icone": "64.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Accès piétons_1",
+     "icone": "65.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Accès véhicules_1",
+     "icone": "66.png"
+    },
+    {
+     "pos": 22,
+     "objet": "Nom batiment",
+     "icone": "CatTexte.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Escalier 3pts",
+     "icone": "24.png"
+    },
+    {
+     "pos": 26,
+     "objet": "Escalier libre",
+     "icone": "25.png"
+    },
+    {
+     "pos": 27,
+     "objet": "Bati",
+     "icone": "Bati_Bati_Esc_Fle.png"
+    },
+    {
+     "pos": 28,
+     "objet": "Bati_1",
+     "icone": "Bati_Bati_Sou.png"
+    }
+   ]
+  },
+  {
+   "pos": 2,
+   "code": "CatMobilier",
+   "nom": "CatMobilier",
+   "icone": "CatMobilier.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Glissière",
+     "icone": "31.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Barrière piétons",
+     "icone": "32.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Bordure anti-parking",
+     "icone": "33.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Mobi",
+     "icone": "MobUrbain_Mobi_Ab_Bus.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Mobi_2",
+     "icone": "MobUrbain_Mobi_Ar_Bus.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Mobi_13",
+     "icone": "MobUrbain_Mobi_Sani.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Mobi_1",
+     "icone": "MobUrbain_Mobi_Ant.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Mobi_3",
+     "icone": "MobUrbain_Mobi_Boi_Let.png"
+    },
+    {
+     "pos": 12,
+     "objet": "Mobi_4",
+     "icone": "MobUrbain_Mobi_Bor_Auto.png"
+    },
+    {
+     "pos": 13,
+     "objet": "Mobi_5",
+     "icone": "MobUrbain_Mobi_Bor_Sta.png"
+    },
+    {
+     "pos": 14,
+     "objet": "Mobi_6",
+     "icone": "MobUrbain_Mobi_Calv.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Mobi_7",
+     "icone": "MobUrbain_Mobi_Cyc.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Mobi_8",
+     "icone": "MobUrbain_Mobi_Drap.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Mobi_9",
+     "icone": "MobUrbain_Mobi_Horo.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Mobi_10",
+     "icone": "MobUrbain_Mobi_Pot.png"
+    },
+    {
+     "pos": 19,
+     "objet": "Mobi_11",
+     "icone": "MobUrbain_Mobi_Poub.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Mobi_12",
+     "icone": "MobUrbain_Mobi_Pub.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Mobi_14",
+     "icone": "MobUrbain_Mobi_VP.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Annotation, remarque",
+     "icone": "CatTexte.png"
+    }
+   ]
+  },
+  {
+   "pos": 3,
+   "code": "CatDivers",
+   "nom": "CatDivers",
+   "icone": "CatDivers.png",
+   "objet": "",
+   "sous_palette": []
+  },
+  {
+   "pos": 4,
+   "code": "CatFleches",
+   "nom": "CatFleches",
+   "icone": "CatFleches.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 15,
+     "objet": "Voie",
+     "icone": "VSigh_Voie_Sigh_Cyc.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Voie_1",
+     "icone": "VSigh_Voie_Sigh_Flecyc.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Voie_7",
+     "icone": "VSigh_Voie_Sigh_Handi.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Voie_8",
+     "icone": "VSigh_Voie_Sigh_Pieton.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Voie_2",
+     "icone": "VSigh_Voie_Sigh_Fled.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Voie_3",
+     "icone": "VSigh_Voie_Sigh_Fledtd.png"
+    },
+    {
+     "pos": 22,
+     "objet": "Voie_4",
+     "icone": "VSigh_Voie_Sigh_Fledtg.png"
+    },
+    {
+     "pos": 23,
+     "objet": "Voie_5",
+     "icone": "VSigh_Voie_Sigh_Fletd.png"
+    },
+    {
+     "pos": 24,
+     "objet": "Voie_6",
+     "icone": "VSigh_Voie_Sigh_Fletg.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Voie_9",
+     "icone": "VSigh_Voie_Sigh_Rab.png"
+    }
+   ]
+  },
+  {
+   "pos": 5,
+   "code": "CatPanneaux",
+   "nom": "CatPanneaux",
+   "icone": "CatPanneaux.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Voie_13",
+     "icone": "VSigv_Voie_Sigv_Rue.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Voie_10",
+     "icone": "VSigv_Voie_Sigv_Jalo.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Voie_12",
+     "icone": "VSigv_Voie_Sigv_Pol.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Mobi_12",
+     "icone": "MobUrbain_Mobi_Pub.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Mobi_14",
+     "icone": "MobUrbain_Mobi_VP.png"
+    }
+   ]
+  },
+  {
+   "pos": 6,
+   "code": "CatPannInterdit",
+   "nom": "CatPannInterdit",
+   "icone": "CatPanneauxInterdiction.png",
+   "objet": "",
+   "sous_palette": []
+  },
+  {
+   "pos": 7,
+   "code": "CatTopo",
+   "nom": "CatTopo",
+   "icone": "CatTopo.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Topo_6",
+     "icone": "Topo_Topo_Sta_Poly.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Topo_Ptco",
+     "icone": "CdcTopo_Blocs_Topo_Ptco.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Topo_7",
+     "icone": "Topo_Topo_Sta_R_NGF.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Topo_4",
+     "icone": "Topo_Topo_Sta_OGE.png"
+    },
+    {
+     "pos": 4,
+     "objet": "Topo_2",
+     "icone": "Topo_Topo_Ptco.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Texte polygo_1",
+     "icone": "50.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Texte polygo",
+     "icone": "CatTexte.png"
+    }
+   ]
+  },
+  {
+   "pos": 8,
+   "code": "CatVegetation",
+   "nom": "CatVegetation",
+   "icone": "CatVegetation.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Contour zébra",
+     "icone": "70.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Bordurette d allée",
+     "icone": "71.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Haie simple",
+     "icone": "72.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Contour haie large",
+     "icone": "73.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Lisiière de bois ou taillis",
+     "icone": "74.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Contour massif arbustif",
+     "icone": "75.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Contour massif floral",
+     "icone": "76.png"
+    },
+    {
+     "pos": 8,
+     "objet": "Contour pelouse d agrément",
+     "icone": "77.png"
+    },
+    {
+     "pos": 9,
+     "objet": "Pelouse de sport",
+     "icone": "77.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Espace jeux",
+     "icone": "77.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Réception jeu",
+     "icone": "77.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Espv_1",
+     "icone": "EspVert_Espv_Arb_Iso.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Espv",
+     "icone": "EspVert_Espv_Arb_Ali.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Espv_14",
+     "icone": "EspVert_Espv_Suspente.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Espv_9",
+     "icone": "EspVert_Espv_Jardi.png"
+    },
+    {
+     "pos": 19,
+     "objet": "Espv_2",
+     "icone": "EspVert_Espv_Arrosage.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Espv_3",
+     "icone": "EspVert_Espv_Banc.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Espv_4",
+     "icone": "EspVert_Espv_Bancs.png"
+    },
+    {
+     "pos": 22,
+     "objet": "Espv_10",
+     "icone": "EspVert_Espv_Picnic.png"
+    },
+    {
+     "pos": 23,
+     "objet": "Espv_5",
+     "icone": "EspVert_Espv_Barriere.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Espv_7",
+     "icone": "EspVert_Espv_Gri_Ron.png"
+    },
+    {
+     "pos": 26,
+     "objet": "Espv_6",
+     "icone": "EspVert_Espv_Gri_Car.png"
+    },
+    {
+     "pos": 27,
+     "objet": "Espv_12",
+     "icone": "EspVert_Espv_Resi_Ron.png"
+    },
+    {
+     "pos": 28,
+     "objet": "Espv_11",
+     "icone": "EspVert_Espv_Resi_Car.png"
+    },
+    {
+     "pos": 30,
+     "objet": "Espv_13",
+     "icone": "EspVert_Espv_Struct_Jeu.png"
+    },
+    {
+     "pos": 31,
+     "objet": "Espv_8",
+     "icone": "EspVert_Espv_Indi_Jeu.png"
+    },
+    {
+     "pos": 34,
+     "objet": "Texte espace vert, vegé",
+     "icone": "CatTexte.png"
+    },
+    {
+     "pos": 35,
+     "objet": "Sport_1",
+     "icone": "EqpSport_Sport_But.png"
+    },
+    {
+     "pos": 36,
+     "objet": "Sport",
+     "icone": "EqpSport_Sport_Basket.png"
+    },
+    {
+     "pos": 37,
+     "objet": "Sport_2",
+     "icone": "EqpSport_Sport_Four.png"
+    },
+    {
+     "pos": 38,
+     "objet": "Marquage terrain sport",
+     "icone": "80.png"
+    },
+    {
+     "pos": 39,
+     "objet": "Texte équipement sport.",
+     "icone": "CatTexte.png"
+    }
+   ]
+  },
+  {
+   "pos": 9,
+   "code": "CatTexte",
+   "nom": "CatTexte",
+   "icone": "CatTexte.png",
+   "objet": "",
+   "sous_palette": []
+  },
+  {
+   "pos": 10,
+   "code": "CatEau",
+   "nom": "CatEau",
+   "icone": "CatEau.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Bouche à clé carrée",
+     "icone": "AEP_Eaux_BAC_Car.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Bouche à clé ronde",
+     "icone": "AEP_Eaux_BAC_Ron.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Bouche à clé Décharge",
+     "icone": "AEP_Eaux_BAC_Hex.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Regard de compteur",
+     "icone": "AEP_Eaux_Cpt_Ab.png"
+    },
+    {
+     "pos": 4,
+     "objet": "Regard de compteur rond",
+     "icone": "AEP_Eaux_Cpt_Ab_Ron.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Coffret AEP",
+     "icone": "AEP_Eaux_Coffret.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Borne fontaine",
+     "icone": "AEP_Eaux_Fontaine.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Plaque rectangulaire AEP",
+     "icone": "AEP_Reg_Rec.png"
+    },
+    {
+     "pos": 8,
+     "objet": "Plaque ronde AEP",
+     "icone": "AEP_Eaux_Reg_Ron.png"
+    },
+    {
+     "pos": 9,
+     "objet": "Bouche de lavage",
+     "icone": "AEP_Eaux_Bou_Lav.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Bouche d incendie",
+     "icone": "AEP_Eaux_Bou_Inc.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Poteau d incendie",
+     "icone": "AEP_Eaux_Pot_Inc.png"
+    },
+    {
+     "pos": 12,
+     "objet": "Borne Res Normal. Ferm.",
+     "icone": "AEP_Eaux_RVNF.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Avaloir",
+     "icone": "Assnt_Assa_Avaloir.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Bran_2",
+     "icone": "RDiv_Bran_Car.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Boite branchement eau pluv",
+     "icone": "RDiv_Bran_Ron.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Descente de goutiè",
+     "icone": "Assnt_Assa_Gout.png"
+    },
+    {
+     "pos": 19,
+     "objet": "Exutoire eau pluviale",
+     "icone": "Assnt_Assa_Exutoire.png"
+    },
+    {
+     "pos": 20,
+     "objet": "gargouille eau pluviale",
+     "icone": "Assnt_Assa_Garg.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Grille eau pluviale ou piège à ea",
+     "icone": "Assnt_Assa_Gril.png"
+    },
+    {
+     "pos": 22,
+     "objet": "Grille ronde eau pluviale",
+     "icone": "Assnt_Assa_Gril_Ron.png"
+    },
+    {
+     "pos": 23,
+     "objet": "Regard carré eau pluviale",
+     "icone": "RDiv_Reg_Car.png"
+    },
+    {
+     "pos": 24,
+     "objet": "Regard rond eau pluviale",
+     "icone": "RDiv_Bran_Ron.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Tête de buse",
+     "icone": "Assnt_Assa_Tete_Buse.png"
+    },
+    {
+     "pos": 30,
+     "objet": "Boite branchement eau usée",
+     "icone": "RDiv_Bran_Car.png"
+    },
+    {
+     "pos": 31,
+     "objet": "Boite branchement eau usée_1",
+     "icone": "RDiv_Bran_Ron.png"
+    },
+    {
+     "pos": 32,
+     "objet": "Regard carré eau usée",
+     "icone": "RDiv_Reg_Car.png"
+    },
+    {
+     "pos": 33,
+     "objet": "Regard rond eau usée",
+     "icone": "RDiv_Reg_Ron.png"
+    },
+    {
+     "pos": 35,
+     "objet": "Regard carré eau Unitaire",
+     "icone": "RDiv_Reg_Car.png"
+    },
+    {
+     "pos": 36,
+     "objet": "Regard rond eau Unitaire",
+     "icone": "RDiv_Reg_Ron.png"
+    },
+    {
+     "pos": 40,
+     "objet": "Robinet vanne",
+     "icone": "AEP_Eaux_Vanne.png"
+    },
+    {
+     "pos": 41,
+     "objet": "Robinet vanne sous regard",
+     "icone": "AEP_Eaux_Vanne_Reg.png"
+    },
+    {
+     "pos": 42,
+     "objet": "Vanne de purge",
+     "icone": "AEP_Eaux_Vanne_Purg.png"
+    },
+    {
+     "pos": 43,
+     "objet": "Ventouse",
+     "icone": "AEP_Eaux_Ventouse.png"
+    },
+    {
+     "pos": 44,
+     "objet": "Compteur général sous regard",
+     "icone": "AEP_Eaux_Cpt_Reg.png"
+    },
+    {
+     "pos": 45,
+     "objet": "Exutoire de purge",
+     "icone": "AEP_Eaux_Exutoire.png"
+    },
+    {
+     "pos": 46,
+     "objet": "Manchon",
+     "icone": "AEP_Eaux_Manchon.png"
+    },
+    {
+     "pos": 47,
+     "objet": "Plaque pleine",
+     "icone": "AEP_Eaux_Plaq_Pl.png"
+    },
+    {
+     "pos": 48,
+     "objet": "Réduction",
+     "icone": "AEP_Eaux_Red.png"
+    },
+    {
+     "pos": 49,
+     "objet": "Réducteur de pression",
+     "icone": "AEP_Eaux_Red_Press.png"
+    },
+    {
+     "pos": 50,
+     "objet": "Station de surpression",
+     "icone": "AEP_Eaux_Sta_Surpres.png"
+    },
+    {
+     "pos": 55,
+     "objet": "Label pose",
+     "icone": "AEP_Eaux_Res_Hab.png"
+    },
+    {
+     "pos": 56,
+     "objet": "Cotes sol/cana AEP",
+     "icone": "AEP_Eaux_Res_Zs.png"
+    },
+    {
+     "pos": 57,
+     "objet": "Caract. fourreau AEP",
+     "icone": "AEP_Eaux_Res_Four.png"
+    },
+    {
+     "pos": 58,
+     "objet": "Caract. chemisage AEP",
+     "icone": "AEP_Eaux_Res_Chem.png"
+    },
+    {
+     "pos": 59,
+     "objet": "Caract. réseau AEP",
+     "icone": "AEP_Eaux_AEP.png"
+    },
+    {
+     "pos": 80,
+     "objet": "Raccord : Manchon",
+     "icone": "Assnt_Assa_Manchon.png"
+    },
+    {
+     "pos": 81,
+     "objet": "Poste de relevage EP",
+     "icone": "Assnt_Assa_Post_Relev.png"
+    },
+    {
+     "pos": 82,
+     "objet": "Raccord : Réduction",
+     "icone": "Assnt_Assa_Red.png"
+    },
+    {
+     "pos": 83,
+     "objet": "Vanne EP",
+     "icone": "Assnt_Assa_Vanne.png"
+    },
+    {
+     "pos": 85,
+     "objet": "Brise charge",
+     "icone": "Assnt_Assa_Brise_Charge.png"
+    },
+    {
+     "pos": 86,
+     "objet": "Chasse",
+     "icone": "Assnt_Assa_Chasse.png"
+    },
+    {
+     "pos": 87,
+     "objet": "Equipement de régulatio",
+     "icone": "Assnt_Assa_Equip_Reg.png"
+    },
+    {
+     "pos": 88,
+     "objet": "Equipement de traitement",
+     "icone": "Assnt_Assa_Equip_Trait.png"
+    },
+    {
+     "pos": 89,
+     "objet": "Exutoire EU",
+     "icone": "Assnt_Assa_Exutoire.png"
+    },
+    {
+     "pos": 90,
+     "objet": "Poste de relevage EU",
+     "icone": "Assnt_Assa_Post_Relev.png"
+    },
+    {
+     "pos": 91,
+     "objet": "Raccord : Manchon_1",
+     "icone": "Assnt_Assa_Manchon.png"
+    },
+    {
+     "pos": 92,
+     "objet": "Raccord : Plaque Pleine",
+     "icone": "Assnt_Assa_Plaq_Pl.png"
+    },
+    {
+     "pos": 93,
+     "objet": "Raccord : Réduction_1",
+     "icone": "Assnt_Assa_Red.png"
+    },
+    {
+     "pos": 94,
+     "objet": "Vanne EU",
+     "icone": "Assnt_Assa_Vanne.png"
+    },
+    {
+     "pos": 95,
+     "objet": "Vanne de purge EU",
+     "icone": "Assnt_Assa_Vanne_Purg.png"
+    },
+    {
+     "pos": 100,
+     "objet": "Brise charge",
+     "icone": "Assnt_Assa_Brise_Charge.png"
+    },
+    {
+     "pos": 101,
+     "objet": "Chasse",
+     "icone": "Assnt_Assa_Chasse.png"
+    },
+    {
+     "pos": 102,
+     "objet": "Equipement de régulatio",
+     "icone": "Assnt_Assa_Equip_Reg.png"
+    },
+    {
+     "pos": 103,
+     "objet": "Equipement de traitement",
+     "icone": "Assnt_Assa_Equip_Trait.png"
+    },
+    {
+     "pos": 104,
+     "objet": "Exutoire EU",
+     "icone": "Assnt_Assa_Exutoire.png"
+    },
+    {
+     "pos": 105,
+     "objet": "Poste de relevage EU",
+     "icone": "Assnt_Assa_Post_Relev.png"
+    },
+    {
+     "pos": 106,
+     "objet": "Raccord : Manchon_1",
+     "icone": "Assnt_Assa_Manchon.png"
+    },
+    {
+     "pos": 107,
+     "objet": "Raccord : Plaque Pleine",
+     "icone": "Assnt_Assa_Plaq_Pl.png"
+    },
+    {
+     "pos": 108,
+     "objet": "Raccord : Réduction_1",
+     "icone": "Assnt_Assa_Red.png"
+    },
+    {
+     "pos": 109,
+     "objet": "Vanne EU",
+     "icone": "Assnt_Assa_Vanne.png"
+    },
+    {
+     "pos": 110,
+     "objet": "Vanne de purge EU",
+     "icone": "Assnt_Assa_Vanne_Purg.png"
+    },
+    {
+     "pos": 111,
+     "objet": "Assa",
+     "icone": "Assnt_Assa_Ventouse.png"
+    },
+    {
+     "pos": 115,
+     "objet": "Assa_1",
+     "icone": "Assnt_Assa_Vanne.png"
+    }
+   ]
+  },
+  {
+   "pos": 11,
+   "code": "CatEclairage",
+   "nom": "CatEclairage",
+   "icone": "CatEclairagePublic.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Epub_1",
+     "icone": "REclPub_Epub_Bor_Lum.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Epub_3",
+     "icone": "REclPub_Epub_Mat_Mult.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Epub_4",
+     "icone": "REclPub_Epub_Mat_Sim.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Epub_5",
+     "icone": "REclPub_Epub_Mur.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Epub_6",
+     "icone": "REclPub_Epub_Reg.png"
+    },
+    {
+     "pos": 6,
+     "objet": "Epub_2",
+     "icone": "REclPub_Epub_Cha.png"
+    },
+    {
+     "pos": 7,
+     "objet": "Epub",
+     "icone": "REclPub_Epub_Arm.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Epub_8",
+     "icone": "REclPub_Epub_Txt.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Epub_7",
+     "icone": "REclPub_Epub_Res_Zs.png"
+    },
+    {
+     "pos": 15,
+     "objet": "Feux_4",
+     "icone": "Feux_Feux_Pie.png"
+    },
+    {
+     "pos": 16,
+     "objet": "Feux_2",
+     "icone": "Feux_Feux_Cyc.png"
+    },
+    {
+     "pos": 17,
+     "objet": "Feux_3",
+     "icone": "Feux_Feux_Mat.png"
+    },
+    {
+     "pos": 18,
+     "objet": "Feux_5",
+     "icone": "Feux_Feux_Pot.png"
+    },
+    {
+     "pos": 20,
+     "objet": "Feux_1",
+     "icone": "Feux_Feux_Cha.png"
+    },
+    {
+     "pos": 21,
+     "objet": "Feux",
+     "icone": "Feux_Feux_Arm.png"
+    },
+    {
+     "pos": 25,
+     "objet": "Feux_7",
+     "icone": "Feux_Feux_Txt.png"
+    },
+    {
+     "pos": 26,
+     "objet": "Feux_6",
+     "icone": "Feux_Feux_Res_Zs.png"
+    }
+   ]
+  },
+  {
+   "pos": 12,
+   "code": "CatElec",
+   "nom": "CatElec",
+   "icone": "CatElec.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Redf_2",
+     "icone": "RElec_Redf_Coffret.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Redf",
+     "icone": "RElec_Redf_Arm.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Borne",
+     "icone": "RDiv_Borne_Res.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Redf_1",
+     "icone": "RElec_Redf_Cha.png"
+    },
+    {
+     "pos": 4,
+     "objet": "Redf_9",
+     "icone": "RElec_Redf_Transfo.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Redf_7",
+     "icone": "RElec_Redf_Pylo.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Redf_3",
+     "icone": "RElec_Redf_Pot.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Redf_4",
+     "icone": "RElec_Redf_Pot_Lamp.png"
+    },
+    {
+     "pos": 12,
+     "objet": "Redf_5",
+     "icone": "RElec_Redf_Pot_LampTel.png"
+    },
+    {
+     "pos": 13,
+     "objet": "Redf_6",
+     "icone": "RElec_Redf_Pot_Tel.png"
+    }
+   ]
+  },
+  {
+   "pos": 13,
+   "code": "CatGaz",
+   "nom": "CatGaz",
+   "icone": "CatGaz.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Rgaz",
+     "icone": "RGaz_Rgaz_Coffret.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Rgaz_4",
+     "icone": "RGaz_Rgaz_Vanne.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Rgaz_2",
+     "icone": "RGaz_Rgaz_Robi.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Borne_1",
+     "icone": "RDiv_Borne_Res.png"
+    }
+   ]
+  },
+  {
+   "pos": 14,
+   "code": "CatPTT",
+   "nom": "CatPTT",
+   "icone": "CatPTT.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Tele",
+     "icone": "RTel_Tele_Arm.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Tele_2",
+     "icone": "RTel_Tele_Cha.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Tele_1",
+     "icone": "RTel_Tele_Cabine.png"
+    },
+    {
+     "pos": 5,
+     "objet": "Tele_3",
+     "icone": "RTel_Tele_Pot.png"
+    },
+    {
+     "pos": 10,
+     "objet": "Fopt",
+     "icone": "RFibOpt_Fopt_Fib_Reg.png"
+    },
+    {
+     "pos": 11,
+     "objet": "Fopt_2",
+     "icone": "RFibOpt_Fopt_Rmt_Reg.png"
+    }
+   ]
+  },
+  {
+   "pos": 15,
+   "code": "CatSNCF",
+   "nom": "CatSNCF",
+   "icone": "CatSNCF.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Sncf",
+     "icone": "Divers_Sncf_Cat.png"
+    }
+   ]
+  },
+  {
+   "pos": 16,
+   "code": "CatTV",
+   "nom": "CatTV",
+   "icone": "CatTV.png",
+   "objet": "",
+   "sous_palette": []
+  },
+  {
+   "pos": 17,
+   "code": "CatReseaux",
+   "nom": "CatReseaux",
+   "icone": "CatReseaux.png",
+   "objet": "",
+   "sous_palette": [
+    {
+     "pos": 0,
+     "objet": "Reg_3",
+     "icone": "RDiv_Reg_Ron.png"
+    },
+    {
+     "pos": 1,
+     "objet": "Reg",
+     "icone": "RDiv_Reg_Car.png"
+    },
+    {
+     "pos": 2,
+     "objet": "Bran_1",
+     "icone": "RDiv_Bran_Ron.png"
+    },
+    {
+     "pos": 3,
+     "objet": "Bran",
+     "icone": "RDiv_Bran_Car.png"
+    },
+    {
+     "pos": 4,
+     "objet": "Reg_2",
+     "icone": "RDiv_Reg_Rec.png"
+    }
+   ]
+  }
+ ],
+ "objets": {
+  "Topo_Ptco": {
+   "code": "Topo_Ptco",
+   "nom": "Point d'altimétrie",
+   "famille": "symbole",
+   "libelle_audio": "Point d'altimétrie",
+   "calque": "Topo_ptco",
+   "code_export": "",
+   "icone": "CdcTopo_Blocs_Topo_Ptco.png",
+   "symbole": {
+    "famille_bloc": "CdcTopo_Blocs",
+    "bloc": "Topo_Ptco"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voirie": {
+   "code": "Voirie",
+   "nom": "CatVoirie",
+   "famille": "lineaire",
+   "libelle_audio": "CatVoirie",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatVoirie.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatBati": {
+   "code": "CatBati",
+   "nom": "CatBati",
+   "famille": "categorie",
+   "libelle_audio": "CatBati",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatBati.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatDivers": {
+   "code": "CatDivers",
+   "nom": "CatDivers",
+   "famille": "categorie",
+   "libelle_audio": "CatDivers",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatDivers.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatEau": {
+   "code": "CatEau",
+   "nom": "CatEau",
+   "famille": "categorie",
+   "libelle_audio": "CatEau",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatEau.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatEclairage": {
+   "code": "CatEclairage",
+   "nom": "CatEclairage",
+   "famille": "categorie",
+   "libelle_audio": "CatEclairage",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatEclairagePublic.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatElec": {
+   "code": "CatElec",
+   "nom": "CatElec",
+   "famille": "categorie",
+   "libelle_audio": "CatElec",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatElec.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatFleches": {
+   "code": "CatFleches",
+   "nom": "CatFleches",
+   "famille": "categorie",
+   "libelle_audio": "CatFleches",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatFleches.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatGaz": {
+   "code": "CatGaz",
+   "nom": "CatGaz",
+   "famille": "categorie",
+   "libelle_audio": "CatGaz",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatGaz.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatMobilier": {
+   "code": "CatMobilier",
+   "nom": "CatMobilier",
+   "famille": "categorie",
+   "libelle_audio": "CatMobilier",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatMobilier.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatPanneaux": {
+   "code": "CatPanneaux",
+   "nom": "CatPanneaux",
+   "famille": "categorie",
+   "libelle_audio": "CatPanneaux",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatPanneaux.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatPannInterdit": {
+   "code": "CatPannInterdit",
+   "nom": "CatPannInterdit",
+   "famille": "categorie",
+   "libelle_audio": "CatPannInterdit",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatPanneauxInterdiction.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatPTT": {
+   "code": "CatPTT",
+   "nom": "CatPTT",
+   "famille": "categorie",
+   "libelle_audio": "CatPTT",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatPTT.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatReseaux": {
+   "code": "CatReseaux",
+   "nom": "CatReseaux",
+   "famille": "categorie",
+   "libelle_audio": "CatReseaux",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatReseaux.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatSNCF": {
+   "code": "CatSNCF",
+   "nom": "CatSNCF",
+   "famille": "categorie",
+   "libelle_audio": "CatSNCF",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatSNCF.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatTexte": {
+   "code": "CatTexte",
+   "nom": "CatTexte",
+   "famille": "categorie",
+   "libelle_audio": "CatTexte",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatTopo": {
+   "code": "CatTopo",
+   "nom": "CatTopo",
+   "famille": "categorie",
+   "libelle_audio": "CatTopo",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatTopo.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatTV": {
+   "code": "CatTV",
+   "nom": "CatTV",
+   "famille": "categorie",
+   "libelle_audio": "CatTV",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatTV.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "CatVegetation": {
+   "code": "CatVegetation",
+   "nom": "CatVegetation",
+   "famille": "categorie",
+   "libelle_audio": "CatVegetation",
+   "calque": "",
+   "code_export": "",
+   "icone": "CatVegetation.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Voie": {
+   "code": "Voie",
+   "nom": "Marquage piste cyclable",
+   "famille": "symbole",
+   "libelle_audio": "Marquage piste cyclable",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Cyc.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Cyc"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_1": {
+   "code": "Voie_1",
+   "nom": "Flèche piste cyclable",
+   "famille": "symbole",
+   "libelle_audio": "Flèche piste cyclable",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Flecyc.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Flecyc"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_2": {
+   "code": "Voie_2",
+   "nom": "Flèche droite",
+   "famille": "symbole",
+   "libelle_audio": "Flèche droite",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Fled.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Fled"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_3": {
+   "code": "Voie_3",
+   "nom": "Flèche droite+à droite ",
+   "famille": "symbole",
+   "libelle_audio": "Flèche droite+à droite ",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Fledtd.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Fledtd"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_4": {
+   "code": "Voie_4",
+   "nom": "Flèche droite+à gauche",
+   "famille": "symbole",
+   "libelle_audio": "Flèche droite+à gauche",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Fledtg.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Fledtg"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_5": {
+   "code": "Voie_5",
+   "nom": "Flèche tourne à droite",
+   "famille": "symbole",
+   "libelle_audio": "Flèche tourne à droite",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Fletd.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Fletd"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_6": {
+   "code": "Voie_6",
+   "nom": "Flèche tourne à gauche",
+   "famille": "symbole",
+   "libelle_audio": "Flèche tourne à gauche",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Fletg.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Fletg"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_7": {
+   "code": "Voie_7",
+   "nom": "Marquage stationnement handicapé",
+   "famille": "symbole",
+   "libelle_audio": "Marquage stationnement handicapé",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Handi.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Handi"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     9,
+     7
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_8": {
+   "code": "Voie_8",
+   "nom": "Marquage piéton",
+   "famille": "symbole",
+   "libelle_audio": "Marquage piéton",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Pieton.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Pieton"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     9,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_9": {
+   "code": "Voie_9",
+   "nom": "Flèche de rabattement",
+   "famille": "symbole",
+   "libelle_audio": "Flèche de rabattement",
+   "calque": "Voie_sigh_sym",
+   "code_export": "",
+   "icone": "VSigh_Voie_Sigh_Rab.png",
+   "symbole": {
+    "famille_bloc": "VSigh",
+    "bloc": "Voie_Sigh_Rab"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     10,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_10": {
+   "code": "Voie_10",
+   "nom": "Panneau direction",
+   "famille": "symbole",
+   "libelle_audio": "Panneau direction",
+   "calque": "Voie_sigv_sym",
+   "code_export": "",
+   "icone": "VSigv_Voie_Sigv_Jalo.png",
+   "symbole": {
+    "famille_bloc": "VSigv",
+    "bloc": "Voie_Sigv_Jalo"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_11": {
+   "code": "Voie_11",
+   "nom": "Miroir",
+   "famille": "symbole",
+   "libelle_audio": "Miroir",
+   "calque": "Voie_sigv_sym",
+   "code_export": "",
+   "icone": "VSigv_Voie_Sigv_Mir.png",
+   "symbole": {
+    "famille_bloc": "VSigv",
+    "bloc": "Voie_Sigv_Mir"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_12": {
+   "code": "Voie_12",
+   "nom": "Panneau signalisation",
+   "famille": "symbole",
+   "libelle_audio": "Panneau signalisation",
+   "calque": "Voie_sigv_sym",
+   "code_export": "",
+   "icone": "VSigv_Voie_Sigv_Pol.png",
+   "symbole": {
+    "famille_bloc": "VSigv",
+    "bloc": "Voie_Sigv_Pol"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_13": {
+   "code": "Voie_13",
+   "nom": "Panneau de nom de rue",
+   "famille": "symbole",
+   "libelle_audio": "Panneau de nom de rue",
+   "calque": "Voie_sigv_sym",
+   "code_export": "",
+   "icone": "VSigv_Voie_Sigv_Rue.png",
+   "symbole": {
+    "famille_bloc": "VSigv",
+    "bloc": "Voie_Sigv_Rue"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo": {
+   "code": "Topo",
+   "nom": "Flèche nor",
+   "famille": "symbole",
+   "libelle_audio": "Flèche nor",
+   "calque": "Topo_mise_en_page_hab",
+   "code_export": "",
+   "icone": "Topo_Topo_Fle_Nord.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Fle_Nord"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_1": {
+   "code": "Topo_1",
+   "nom": "Borne NG",
+   "famille": "symbole",
+   "libelle_audio": "Borne NG",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_B_NGF.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_B_NGF"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_2": {
+   "code": "Topo_2",
+   "nom": "Point coté",
+   "famille": "symbole",
+   "libelle_audio": "Point coté",
+   "calque": "Topo_ptco",
+   "code_export": "",
+   "icone": "Topo_Topo_Ptco.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Ptco"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_3": {
+   "code": "Topo_3",
+   "nom": "Point géodésique",
+   "famille": "symbole",
+   "libelle_audio": "Point géodésiqu",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_Geo.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_Geo"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_4": {
+   "code": "Topo_4",
+   "nom": "Borne géomètre",
+   "famille": "symbole",
+   "libelle_audio": "Borne géomètre",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_OGE.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_OGE"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_5": {
+   "code": "Topo_5",
+   "nom": "Piquet",
+   "famille": "symbole",
+   "libelle_audio": "Piquet",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_Piq.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_Piq"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_6": {
+   "code": "Topo_6",
+   "nom": "Station de polygonatio",
+   "famille": "symbole",
+   "libelle_audio": "Station de polygonatio",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_Poly.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_Poly"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Topo_7": {
+   "code": "Topo_7",
+   "nom": "Repère NGF",
+   "famille": "symbole",
+   "libelle_audio": "Repère NGF",
+   "calque": "Topo_sta",
+   "code_export": "",
+   "icone": "Topo_Topo_Sta_R_NGF.png",
+   "symbole": {
+    "famille_bloc": "Topo",
+    "bloc": "Topo_Sta_R_NGF"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele": {
+   "code": "Tele",
+   "nom": "Armoire technique",
+   "famille": "symbole",
+   "libelle_audio": "Armoire technique",
+   "calque": "Tele_sym",
+   "code_export": "",
+   "icone": "RTel_Tele_Arm.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Arm"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele_1": {
+   "code": "Tele_1",
+   "nom": "Cabine téléphonique",
+   "famille": "symbole",
+   "libelle_audio": "Cabine téléphonique",
+   "calque": "Tele_sym",
+   "code_export": "",
+   "icone": "RTel_Tele_Cabine.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Cabine"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele_2": {
+   "code": "Tele_2",
+   "nom": "Plaque chambre de tirage",
+   "famille": "symbole",
+   "libelle_audio": "Plaque chambre de tirage",
+   "calque": "Tele_sym",
+   "code_export": "",
+   "icone": "RTel_Tele_Cha.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Cha"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele_3": {
+   "code": "Tele_3",
+   "nom": "Poteau Téléphonique",
+   "famille": "symbole",
+   "libelle_audio": "Poteau Téléphonique",
+   "calque": "Tele_sym",
+   "code_export": "",
+   "icone": "RTel_Tele_Pot.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Pot"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele_4": {
+   "code": "Tele_4",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Tele_hab",
+   "code_export": "",
+   "icone": "RTel_Tele_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tele_5": {
+   "code": "Tele_5",
+   "nom": "Caractéristique réseau",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau",
+   "calque": "Tele_hab",
+   "code_export": "",
+   "icone": "RTel_Tele_Txt.png",
+   "symbole": {
+    "famille_bloc": "RTel",
+    "bloc": "Tele_Txt"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Rgaz": {
+   "code": "Rgaz",
+   "nom": "Coffret gaz",
+   "famille": "symbole",
+   "libelle_audio": "Coffret gaz",
+   "calque": "Rgaz_sym",
+   "code_export": "",
+   "icone": "RGaz_Rgaz_Coffret.png",
+   "symbole": {
+    "famille_bloc": "RGaz",
+    "bloc": "Rgaz_Coffret"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     6,
+     8
+    ],
+    "verrou_largeur": true,
+    "verrou_longueur": false,
+    "largeur": 1.0,
+    "longueur": 0.0
+   }
+  },
+  "Rgaz_1": {
+   "code": "Rgaz_1",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Rgaz_hab",
+   "code_export": "",
+   "icone": "RGaz_Rgaz_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "RGaz",
+    "bloc": "Rgaz_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Rgaz_2": {
+   "code": "Rgaz_2",
+   "nom": "Robinet gaz",
+   "famille": "symbole",
+   "libelle_audio": "Robinet gaz",
+   "calque": "Rgaz_sym",
+   "code_export": "",
+   "icone": "RGaz_Rgaz_Robi.png",
+   "symbole": {
+    "famille_bloc": "RGaz",
+    "bloc": "Rgaz_Robi"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Rgaz_3": {
+   "code": "Rgaz_3",
+   "nom": "Caractéristique réseau",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau",
+   "calque": "Rgaz_hab",
+   "code_export": "",
+   "icone": "RGaz_Rgaz_Txt.png",
+   "symbole": {
+    "famille_bloc": "RGaz",
+    "bloc": "Rgaz_Txt"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Rgaz_4": {
+   "code": "Rgaz_4",
+   "nom": "Vanne gaz",
+   "famille": "symbole",
+   "libelle_audio": "Vanne gaz",
+   "calque": "Rgaz_sym",
+   "code_export": "",
+   "icone": "RGaz_Rgaz_Vanne.png",
+   "symbole": {
+    "famille_bloc": "RGaz",
+    "bloc": "Rgaz_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Fopt": {
+   "code": "Fopt",
+   "nom": "Regard de visite RMT",
+   "famille": "symbole",
+   "libelle_audio": "Regard de visite RMT",
+   "calque": "Fopt_rmt_sym",
+   "code_export": "",
+   "icone": "RFibOpt_Fopt_Fib_Reg.png",
+   "symbole": {
+    "famille_bloc": "RFibOpt",
+    "bloc": "Fopt_Fib_Reg"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Fopt_1": {
+   "code": "Fopt_1",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Fopt_hab",
+   "code_export": "",
+   "icone": "RFibOpt_Fopt_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "RFibOpt",
+    "bloc": "Fopt_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Fopt_2": {
+   "code": "Fopt_2",
+   "nom": "Regard de visite fibre",
+   "famille": "symbole",
+   "libelle_audio": "Regard de visite fibre",
+   "calque": "Fopt_fib_sym",
+   "code_export": "",
+   "icone": "RFibOpt_Fopt_Rmt_Reg.png",
+   "symbole": {
+    "famille_bloc": "RFibOpt",
+    "bloc": "Fopt_Rmt_Reg"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf": {
+   "code": "Redf",
+   "nom": "Armoire technique",
+   "famille": "symbole",
+   "libelle_audio": "Armoire technique",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Arm.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Arm"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_1": {
+   "code": "Redf_1",
+   "nom": "Chambre de tirage",
+   "famille": "symbole",
+   "libelle_audio": "Chambre de tirage",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Cha.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Cha"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_2": {
+   "code": "Redf_2",
+   "nom": "Coffret de branchement",
+   "famille": "symbole",
+   "libelle_audio": "Coffret de branchement",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Coffret.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Coffret"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     6,
+     8
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_3": {
+   "code": "Redf_3",
+   "nom": "Poteau EDF",
+   "famille": "symbole",
+   "libelle_audio": "Poteau EDF",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Pot.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Pot"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_4": {
+   "code": "Redf_4",
+   "nom": "Poteau EDF + Lampadaire",
+   "famille": "symbole",
+   "libelle_audio": "Poteau EDF + Lampadaire",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Pot_Lamp.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Pot_Lamp"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_5": {
+   "code": "Redf_5",
+   "nom": "Poteau EDF + Lampadaire + Tél",
+   "famille": "symbole",
+   "libelle_audio": "Poteau EDF + Lampadaire + Tél",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Pot_LampTel.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Pot_LampTel"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_6": {
+   "code": "Redf_6",
+   "nom": "Poteau EDF + Téléphone",
+   "famille": "symbole",
+   "libelle_audio": "Poteau EDF + Téléphone",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Pot_Tel.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Pot_Tel"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_7": {
+   "code": "Redf_7",
+   "nom": "Pylone électrique",
+   "famille": "symbole",
+   "libelle_audio": "Redf_Pylo",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Pylo.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Pylo"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_8": {
+   "code": "Redf_8",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Redf_hab",
+   "code_export": "",
+   "icone": "RElec_Redf_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_9": {
+   "code": "Redf_9",
+   "nom": "Transformateur",
+   "famille": "symbole",
+   "libelle_audio": "Transformateur",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RElec_Redf_Transfo.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Transfo"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Redf_10": {
+   "code": "Redf_10",
+   "nom": "Caractéristique réseau électrique",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau électrique",
+   "calque": "Redf_hab",
+   "code_export": "",
+   "icone": "RElec_Redf_Txt.png",
+   "symbole": {
+    "famille_bloc": "RElec",
+    "bloc": "Redf_Txt"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub": {
+   "code": "Epub",
+   "nom": "Poste de commande",
+   "famille": "symbole",
+   "libelle_audio": "Poste de commande",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Arm.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Arm"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_1": {
+   "code": "Epub_1",
+   "nom": "Borne lumineuse",
+   "famille": "symbole",
+   "libelle_audio": "Borne lumineuse",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Bor_Lum.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Bor_Lum"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_2": {
+   "code": "Epub_2",
+   "nom": "Chambre technique",
+   "famille": "symbole",
+   "libelle_audio": "Chambre technique",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Cha.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Cha"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_3": {
+   "code": "Epub_3",
+   "nom": "Lampadaires sur mat multiple",
+   "famille": "symbole",
+   "libelle_audio": "Lampadaires sur mat multiple",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Mat_Mult.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Mat_Mult"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_4": {
+   "code": "Epub_4",
+   "nom": "Lampadaire sur mat multiple",
+   "famille": "symbole",
+   "libelle_audio": "Lampadaire sur mat multiple",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Mat_Sim.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Mat_Sim"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_5": {
+   "code": "Epub_5",
+   "nom": "Lampadaire en applique",
+   "famille": "symbole",
+   "libelle_audio": "Lampadaire en applique",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Mur.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Mur"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_6": {
+   "code": "Epub_6",
+   "nom": "Regard éclairage public",
+   "famille": "symbole",
+   "libelle_audio": "Regard éclairage public",
+   "calque": "Epub_sym",
+   "code_export": "",
+   "icone": "REclPub_Epub_Reg.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Reg"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     11
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_7": {
+   "code": "Epub_7",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Epub_hab",
+   "code_export": "",
+   "icone": "REclPub_Epub_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Epub_8": {
+   "code": "Epub_8",
+   "nom": "Caractéristiques du réseau",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques du réseau",
+   "calque": "Epub_hab",
+   "code_export": "",
+   "icone": "REclPub_Epub_Txt.png",
+   "symbole": {
+    "famille_bloc": "REclPub",
+    "bloc": "Epub_Txt"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Borne": {
+   "code": "Borne",
+   "nom": "Borne de repère de passage réseau",
+   "famille": "symbole",
+   "libelle_audio": "Borne_Res",
+   "calque": "Redf_sym",
+   "code_export": "",
+   "icone": "RDiv_Borne_Res.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Borne_Res"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     4
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bran": {
+   "code": "Bran",
+   "nom": "Regard branchement carré indéfi",
+   "famille": "symbole",
+   "libelle_audio": "Regard branchement indéterminé",
+   "calque": "Rdiv_sym",
+   "code_export": "",
+   "icone": "RDiv_Bran_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bran_1": {
+   "code": "Bran_1",
+   "nom": "Regard branchement indéterminé",
+   "famille": "symbole",
+   "libelle_audio": "Regard branchement indéterminé",
+   "calque": "Rdiv_sym",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Rdiv": {
+   "code": "Rdiv",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Rdiv_hab",
+   "code_export": "",
+   "icone": "RDiv_Rdiv_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Rdiv_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Reg": {
+   "code": "Reg",
+   "nom": "Regard indéterminé",
+   "famille": "symbole",
+   "libelle_audio": "Regard indéterminé",
+   "calque": "Rdiv_sym",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Reg_1": {
+   "code": "Reg_1",
+   "nom": "Caractéristiques des regards",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards",
+   "calque": "Rdiv_hab",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Reg_2": {
+   "code": "Reg_2",
+   "nom": "Regard rect indéterminé",
+   "famille": "symbole",
+   "libelle_audio": "Regard rect indéterminé",
+   "calque": "Rdiv_sym",
+   "code_export": "",
+   "icone": "RDiv_Reg_Rec.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Rec"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Reg_3": {
+   "code": "Reg_3",
+   "nom": "Regard rond indéterminé",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond indéterminé",
+   "calque": "Rdiv_sym",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi": {
+   "code": "Mobi",
+   "nom": "Abri bus",
+   "famille": "symbole",
+   "libelle_audio": "Abri bus",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Ab_Bus.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Ab_Bus"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_1": {
+   "code": "Mobi_1",
+   "nom": "Antenne de transmission",
+   "famille": "symbole",
+   "libelle_audio": "Antenne de transmission",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Ant.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Ant"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_2": {
+   "code": "Mobi_2",
+   "nom": "Arrêt de bus",
+   "famille": "symbole",
+   "libelle_audio": "Arrêt de bus",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Ar_Bus.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Ar_Bus"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_3": {
+   "code": "Mobi_3",
+   "nom": "Boîte aux lettres",
+   "famille": "symbole",
+   "libelle_audio": "Boîte aux lettres",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Boi_Let.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Boi_Let"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_4": {
+   "code": "Mobi_4",
+   "nom": "Borne automatique",
+   "famille": "symbole",
+   "libelle_audio": "Borne automatique",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Bor_Auto.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Bor_Auto"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_5": {
+   "code": "Mobi_5",
+   "nom": "Borne anti stationnemen",
+   "famille": "symbole",
+   "libelle_audio": "Borne anti stationnemen",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Bor_Sta.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Bor_Sta"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_6": {
+   "code": "Mobi_6",
+   "nom": "Calvaire",
+   "famille": "symbole",
+   "libelle_audio": "Calvaire",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Calv.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Calv"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_7": {
+   "code": "Mobi_7",
+   "nom": "Parc à vélo",
+   "famille": "symbole",
+   "libelle_audio": "Parc à vélo",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Cyc.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Cyc"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_8": {
+   "code": "Mobi_8",
+   "nom": "Drapeau",
+   "famille": "symbole",
+   "libelle_audio": "Drapeau",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Drap.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Drap"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_9": {
+   "code": "Mobi_9",
+   "nom": "Horodateur ou parcmètre",
+   "famille": "symbole",
+   "libelle_audio": "Horodateur ou parcmètre",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Horo.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Horo"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_10": {
+   "code": "Mobi_10",
+   "nom": "Potelet",
+   "famille": "symbole",
+   "libelle_audio": "Potelet",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Pot.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Pot"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_11": {
+   "code": "Mobi_11",
+   "nom": "Poubelle",
+   "famille": "symbole",
+   "libelle_audio": "Poubelle",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Poub.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Poub"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_12": {
+   "code": "Mobi_12",
+   "nom": "Panneau publicitaire",
+   "famille": "symbole",
+   "libelle_audio": "Panneau publicitaire",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Pub.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Pub"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_13": {
+   "code": "Mobi_13",
+   "nom": "Toilette ou sanisett",
+   "famille": "symbole",
+   "libelle_audio": "Toilette ou sanisett",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_Sani.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_Sani"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Mobi_14": {
+   "code": "Mobi_14",
+   "nom": "Panneau Ville Propre",
+   "famille": "symbole",
+   "libelle_audio": "Panneau Ville Propre",
+   "calque": "Mobi_sym",
+   "code_export": "",
+   "icone": "MobUrbain_Mobi_VP.png",
+   "symbole": {
+    "famille_bloc": "MobUrbain",
+    "bloc": "Mobi_VP"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux": {
+   "code": "Feux",
+   "nom": "Armoire de command",
+   "famille": "symbole",
+   "libelle_audio": "Armoire de command",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Arm.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Arm"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_1": {
+   "code": "Feux_1",
+   "nom": "Chambre technique",
+   "famille": "symbole",
+   "libelle_audio": "Chambre technique",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Cha.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Cha"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_2": {
+   "code": "Feux_2",
+   "nom": "Feux vélo",
+   "famille": "symbole",
+   "libelle_audio": "Feux vélo",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Cyc.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Cyc"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_3": {
+   "code": "Feux_3",
+   "nom": "Feux tricolores sur mat",
+   "famille": "symbole",
+   "libelle_audio": "Feux tricolores sur mat",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Mat.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Mat"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_4": {
+   "code": "Feux_4",
+   "nom": "Feux piéton",
+   "famille": "symbole",
+   "libelle_audio": "Feux piéton",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Pie.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Pie"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_5": {
+   "code": "Feux_5",
+   "nom": "Feux tricolores sur potenc",
+   "famille": "symbole",
+   "libelle_audio": "Feux tricolores sur potenc",
+   "calque": "Feux_sym",
+   "code_export": "",
+   "icone": "Feux_Feux_Pot.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Pot"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_6": {
+   "code": "Feux_6",
+   "nom": "Type et côte Z de la GS",
+   "famille": "symbole",
+   "libelle_audio": "Type et côte Z de la GS",
+   "calque": "Feux_hab",
+   "code_export": "",
+   "icone": "Feux_Feux_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Feux_7": {
+   "code": "Feux_7",
+   "nom": "Caractéristique réseau Feux",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau Feux",
+   "calque": "Feux_hab",
+   "code_export": "",
+   "icone": "Feux_Feux_Txt.png",
+   "symbole": {
+    "famille_bloc": "Feux",
+    "bloc": "Feux_Txt"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv": {
+   "code": "Espv",
+   "nom": "Arbre d'alignement",
+   "famille": "symbole",
+   "libelle_audio": "Arbre d'alignement",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Arb_Ali.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Arb_Ali"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_1": {
+   "code": "Espv_1",
+   "nom": "Arbre isolé",
+   "famille": "symbole",
+   "libelle_audio": "Arbre isolé",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Arb_Iso.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Arb_Iso"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_2": {
+   "code": "Espv_2",
+   "nom": "Arrosage automatique",
+   "famille": "symbole",
+   "libelle_audio": "Arrosage automatique",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Arrosage.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Arrosage"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_3": {
+   "code": "Espv_3",
+   "nom": "Banc simple",
+   "famille": "symbole",
+   "libelle_audio": "Banc simple",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Banc.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Banc"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_4": {
+   "code": "Espv_4",
+   "nom": "Banc double",
+   "famille": "symbole",
+   "libelle_audio": "Banc double",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Bancs.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Bancs"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_5": {
+   "code": "Espv_5",
+   "nom": "Barriere",
+   "famille": "symbole",
+   "libelle_audio": "Barriere",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Barriere.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Barriere"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_6": {
+   "code": "Espv_6",
+   "nom": "Grille d'arbre carrée",
+   "famille": "symbole",
+   "libelle_audio": "Grille d'arbre carrée",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Gri_Car.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Gri_Car"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_7": {
+   "code": "Espv_7",
+   "nom": "Grille d'arbre ronde",
+   "famille": "symbole",
+   "libelle_audio": "Grille d'arbre ronde",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Gri_Ron.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Gri_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_8": {
+   "code": "Espv_8",
+   "nom": "Jeu individuel",
+   "famille": "symbole",
+   "libelle_audio": "Jeu individuel",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Indi_Jeu.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Indi_Jeu"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_9": {
+   "code": "Espv_9",
+   "nom": "Jardinière",
+   "famille": "symbole",
+   "libelle_audio": "Jardinière",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Jardi.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Jardi"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_10": {
+   "code": "Espv_10",
+   "nom": "Table de pique-niqu",
+   "famille": "symbole",
+   "libelle_audio": "Table de pique-niqu",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Picnic.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Picnic"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_11": {
+   "code": "Espv_11",
+   "nom": "Entourage Résine Carré",
+   "famille": "symbole",
+   "libelle_audio": "Entourage Résine Carré",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Resi_Car.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Resi_Car"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_12": {
+   "code": "Espv_12",
+   "nom": "Entourage Résine Rond",
+   "famille": "symbole",
+   "libelle_audio": "Entourage Résine Rond",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Resi_Ron.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Resi_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_13": {
+   "code": "Espv_13",
+   "nom": "Structure de jeux d'enfant",
+   "famille": "symbole",
+   "libelle_audio": "Structure de jeux d'enfant",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Struct_Jeu.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Struct_Jeu"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Espv_14": {
+   "code": "Espv_14",
+   "nom": "Suspente florale",
+   "famille": "symbole",
+   "libelle_audio": "Suspente florale",
+   "calque": "Espv_sym",
+   "code_export": "",
+   "icone": "EspVert_Espv_Suspente.png",
+   "symbole": {
+    "famille_bloc": "EspVert",
+    "bloc": "Espv_Suspente"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Sport": {
+   "code": "Sport",
+   "nom": "Panneau de basket",
+   "famille": "symbole",
+   "libelle_audio": "Panneau de basket",
+   "calque": "Sport_sym",
+   "code_export": "",
+   "icone": "EqpSport_Sport_Basket.png",
+   "symbole": {
+    "famille_bloc": "EqpSport",
+    "bloc": "Sport_Basket"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": true,
+    "verrou_longueur": true,
+    "largeur": 1.0,
+    "longueur": 1.577
+   }
+  },
+  "Sport_1": {
+   "code": "Sport_1",
+   "nom": "But",
+   "famille": "symbole",
+   "libelle_audio": "But",
+   "calque": "Sport_sym",
+   "code_export": "",
+   "icone": "EqpSport_Sport_But.png",
+   "symbole": {
+    "famille_bloc": "EqpSport",
+    "bloc": "Sport_But"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     6,
+     8
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Sport_2": {
+   "code": "Sport_2",
+   "nom": "Fourreaux sportif",
+   "famille": "symbole",
+   "libelle_audio": "Fourreaux sportif",
+   "calque": "Sport_sym",
+   "code_export": "",
+   "icone": "EqpSport_Sport_Four.png",
+   "symbole": {
+    "famille_bloc": "EqpSport",
+    "bloc": "Sport_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Hydr": {
+   "code": "Hydr",
+   "nom": "Sens d'écoulement",
+   "famille": "symbole",
+   "libelle_audio": "Sens d'écoulement",
+   "calque": "Hydr_fle_hab",
+   "code_export": "",
+   "icone": "Divers_Hydr_Fle.png",
+   "symbole": {
+    "famille_bloc": "Divers",
+    "bloc": "Hydr_Fle"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Sncf": {
+   "code": "Sncf",
+   "nom": "Caténaire",
+   "famille": "symbole",
+   "libelle_audio": "Caténaire",
+   "calque": "Sncf_cat",
+   "code_export": "",
+   "icone": "Divers_Sncf_Cat.png",
+   "symbole": {
+    "famille_bloc": "Divers",
+    "bloc": "Sncf_Cat"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Voie_14": {
+   "code": "Voie_14",
+   "nom": "Sens de montée des escalier",
+   "famille": "symbole",
+   "libelle_audio": "Sens de montée des escalier",
+   "calque": "Voie_esc_fle_hab",
+   "code_export": "",
+   "icone": "Divers_Voie_Esc_Fle.png",
+   "symbole": {
+    "famille_bloc": "Divers",
+    "bloc": "Voie_Esc_Fle"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bati": {
+   "code": "Bati",
+   "nom": "Sens de montée des escaliers",
+   "famille": "symbole",
+   "libelle_audio": "Sens de montée des escaliers",
+   "calque": "Bati_esc_fle_hab",
+   "code_export": "",
+   "icone": "Bati_Bati_Esc_Fle.png",
+   "symbole": {
+    "famille_bloc": "Bati",
+    "bloc": "Bati_Esc_Fle"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bati_1": {
+   "code": "Bati_1",
+   "nom": "Soupirail",
+   "famille": "symbole",
+   "libelle_audio": "Soupirail",
+   "calque": "Bati_sou",
+   "code_export": "",
+   "icone": "Bati_Bati_Sou.png",
+   "symbole": {
+    "famille_bloc": "Bati",
+    "bloc": "Bati_Sou"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Avaloir": {
+   "code": "Avaloir",
+   "nom": "Avaloir",
+   "famille": "symbole",
+   "libelle_audio": "Avaloir",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Avaloir.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Avaloir"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bran_2": {
+   "code": "Bran_2",
+   "nom": "Boite branchement eau pluv",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau pluv",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "RDiv_Bran_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau pluv": {
+   "code": "Boite branchement eau pluv",
+   "nom": "Boite branchement eau pluv",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau pluv",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Descente de goutiè": {
+   "code": "Descente de goutiè",
+   "nom": "Descente de goutière",
+   "famille": "symbole",
+   "libelle_audio": "Descente de goutière",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gout.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gout"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Exutoire eau pluviale": {
+   "code": "Exutoire eau pluviale",
+   "nom": "Exutoire eau pluviale",
+   "famille": "symbole",
+   "libelle_audio": "Exutoire eau pluviale",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Exutoire.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Exutoire"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "gargouille eau pluviale": {
+   "code": "gargouille eau pluviale",
+   "nom": "gargouille eau pluviale",
+   "famille": "symbole",
+   "libelle_audio": "gargouille eau pluviale",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Garg.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Garg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Grille eau pluviale ou piège à ea": {
+   "code": "Grille eau pluviale ou piège à ea",
+   "nom": "Grille eau pluviale ou piège à ea",
+   "famille": "symbole",
+   "libelle_audio": "Grille eau pluviale ou piège à ea",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gril.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gril"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Grille ronde eau pluviale": {
+   "code": "Grille ronde eau pluviale",
+   "nom": "Grille ronde eau pluviale",
+   "famille": "symbole",
+   "libelle_audio": "Grille ronde eau pluviale",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gril_Ron.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gril_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau pluviale": {
+   "code": "Regard carré eau pluviale",
+   "nom": "Regard carré eau pluviale",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau pluviale",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau pluviale": {
+   "code": "Regard rond eau pluviale",
+   "nom": "Regard rond eau pluviale",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau pluviale",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tête de buse": {
+   "code": "Tête de buse",
+   "nom": "Tête de buse",
+   "famille": "symbole",
+   "libelle_audio": "Tête de buse",
+   "calque": "Assa_sym_ep_A",
+   "code_export": "",
+   "icone": "Assnt_Assa_Tete_Buse.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Tete_Buse"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau usée": {
+   "code": "Boite branchement eau usée",
+   "nom": "Boite branchement eau usée",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau usée",
+   "calque": "Assa_sym_eu_A",
+   "code_export": "",
+   "icone": "RDiv_Bran_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau usée_1": {
+   "code": "Boite branchement eau usée_1",
+   "nom": "Boite branchement eau usée",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau usée",
+   "calque": "Assa_sym_eu_A",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau usée": {
+   "code": "Regard carré eau usée",
+   "nom": "Regard carré eau usée",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau usée",
+   "calque": "Assa_sym_eu_A",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau usée": {
+   "code": "Regard rond eau usée",
+   "nom": "Regard rond eau usée",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau usée",
+   "calque": "Assa_sym_eu_A",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau Unitaire": {
+   "code": "Regard carré eau Unitaire",
+   "nom": "Regard carré eau Unitaire",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau Unitaire",
+   "calque": "Assa_sym_uni_A",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau Unitaire": {
+   "code": "Regard rond eau Unitaire",
+   "nom": "Regard rond eau Unitaire",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau Unitaire",
+   "calque": "Assa_sym_uni_A",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Manchon": {
+   "code": "Raccord : Manchon",
+   "nom": "Raccord : Manchon",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Manchon",
+   "calque": "Assa_sym_ep_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Manchon.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Manchon"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bâti léger": {
+   "code": "Bâti léger",
+   "nom": "Bâti léger",
+   "famille": "lineaire",
+   "libelle_audio": "Bâti léger",
+   "calque": "Bati_leg",
+   "code_export": "",
+   "icone": "63.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Poste de relevage EP": {
+   "code": "Poste de relevage EP",
+   "nom": "Poste de relevage EP",
+   "famille": "symbole",
+   "libelle_audio": "Poste de relevage EP",
+   "calque": "Assa_sym_ep_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Post_Relev.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Post_Relev"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     4
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Réduction": {
+   "code": "Raccord : Réduction",
+   "nom": "Raccord : Réduction",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Réduction",
+   "calque": "Assa_sym_ep_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Red.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Red"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne EP": {
+   "code": "Vanne EP",
+   "nom": "Vanne EP",
+   "famille": "symbole",
+   "libelle_audio": "Vanne EP",
+   "calque": "Assa_sym_ep_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Brise charge": {
+   "code": "Brise charge",
+   "nom": "Brise charge",
+   "famille": "symbole",
+   "libelle_audio": "Brise charge",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Brise_Charge.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Brise_Charge"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     4
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Chasse": {
+   "code": "Chasse",
+   "nom": "Chasse",
+   "famille": "symbole",
+   "libelle_audio": "Chasse",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Chasse.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Chasse"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Equipement de régulatio": {
+   "code": "Equipement de régulatio",
+   "nom": "Equipement de régulatio",
+   "famille": "symbole",
+   "libelle_audio": "Equipement de régulatio",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Equip_Reg.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Equip_Reg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Equipement de traitement": {
+   "code": "Equipement de traitement",
+   "nom": "Equipement de traitement",
+   "famille": "symbole",
+   "libelle_audio": "Equipement de traitement",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Equip_Trait.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Equip_Trait"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Exutoire EU": {
+   "code": "Exutoire EU",
+   "nom": "Exutoire EU",
+   "famille": "symbole",
+   "libelle_audio": "Exutoire EU",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Exutoire.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Exutoire"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Poste de relevage EU": {
+   "code": "Poste de relevage EU",
+   "nom": "Poste de relevage EU",
+   "famille": "symbole",
+   "libelle_audio": "Poste de relevage EU",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Post_Relev.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Post_Relev"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Manchon_1": {
+   "code": "Raccord : Manchon_1",
+   "nom": "Raccord : Manchon",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Manchon",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Manchon.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Manchon"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Plaque Pleine": {
+   "code": "Raccord : Plaque Pleine",
+   "nom": "Raccord : Plaque Pleine",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Plaque Pleine",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Plaq_Pl.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Plaq_Pl"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Réduction_1": {
+   "code": "Raccord : Réduction_1",
+   "nom": "Raccord : Réduction",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Réduction",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Red.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Red"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne EU": {
+   "code": "Vanne EU",
+   "nom": "Vanne EU",
+   "famille": "symbole",
+   "libelle_audio": "Vanne EU",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne de purge EU": {
+   "code": "Vanne de purge EU",
+   "nom": "Vanne de purge EU",
+   "famille": "symbole",
+   "libelle_audio": "Vanne de purge EU",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne_Purg.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne_Purg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Assa": {
+   "code": "Assa",
+   "nom": "Ventouse EU",
+   "famille": "symbole",
+   "libelle_audio": "Ventouse EU",
+   "calque": "Assa_sym_eu_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Ventouse.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Ventouse"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Assa_1": {
+   "code": "Assa_1",
+   "nom": "Vanne Unitaire",
+   "famille": "symbole",
+   "libelle_audio": "Vanne Unitaire",
+   "calque": "Assa_sym_uni_S",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Année de pose": {
+   "code": "Année de pose",
+   "nom": "Année de pose",
+   "famille": "symbole",
+   "libelle_audio": "Année de pose",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Hab.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des chemisage": {
+   "code": "Caractéristique des chemisage",
+   "nom": "Caractéristique des chemisage",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des chemisage",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Chem.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Chem"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreau": {
+   "code": "Caractéristique des fourreau",
+   "nom": "Caractéristique des fourreau",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreau",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau EP": {
+   "code": "Caractéristique réseau EP",
+   "nom": "Caractéristique réseau EP",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau EP",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "Assnt_Assa_EP.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_EP"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards": {
+   "code": "Caractéristiques des regards",
+   "nom": "Caractéristiques des regards",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Texte revêtement": {
+   "code": "Texte revêtement",
+   "nom": "Texte revêtement",
+   "famille": "texte",
+   "libelle_audio": "Texte",
+   "calque": "Voie_rev_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Trottoir": {
+   "code": "Trottoir",
+   "nom": "Trottoir",
+   "famille": "lineaire",
+   "libelle_audio": "Trottoir",
+   "calque": "Voie_bord",
+   "code_export": "",
+   "icone": "1.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Trottoir bas": {
+   "code": "Trottoir bas",
+   "nom": "Trottoir bas",
+   "famille": "lineaire",
+   "libelle_audio": "Trottoir bas",
+   "calque": "Voie_bord",
+   "code_export": "",
+   "icone": "2.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Bordure béton": {
+   "code": "Bordure béton",
+   "nom": "Bordure béton",
+   "famille": "lineaire",
+   "libelle_audio": "Bordure béton",
+   "calque": "Voie_bord",
+   "code_export": "",
+   "icone": "3.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Bordure coulée": {
+   "code": "Bordure coulée",
+   "nom": "Bordure coulée",
+   "famille": "lineaire",
+   "libelle_audio": "Bordure coulée",
+   "calque": "Voie_bord",
+   "code_export": "",
+   "icone": "4.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Caniveau double pente": {
+   "code": "Caniveau double pente",
+   "nom": "Caniveau double pente",
+   "famille": "lineaire",
+   "libelle_audio": "Caniveau double pente",
+   "calque": "Voie_can",
+   "code_export": "",
+   "icone": "5.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Limite de chaussée": {
+   "code": "Limite de chaussée",
+   "nom": "Limite de chaussée",
+   "famille": "lineaire",
+   "libelle_audio": "Limite de chaussée",
+   "calque": "Voie_limite_nu_chaussee",
+   "code_export": "",
+   "icone": "6.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Limite de revêtement": {
+   "code": "Limite de revêtement",
+   "nom": "Limite de revêtement",
+   "famille": "lineaire",
+   "libelle_audio": "Limite de revêtement",
+   "calque": "Voie_rev",
+   "code_export": "",
+   "icone": "7.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Ligne continue": {
+   "code": "Ligne continue",
+   "nom": "Ligne continue",
+   "famille": "lineaire",
+   "libelle_audio": "Ligne continue",
+   "calque": "Voie_sigh",
+   "code_export": "",
+   "icone": "9.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Ligne discontinue": {
+   "code": "Ligne discontinue",
+   "nom": "Ligne discontinue",
+   "famille": "lineaire",
+   "libelle_audio": "Ligne discontinue",
+   "calque": "Voie_sigh",
+   "code_export": "",
+   "icone": "10.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Ligne de stationnement": {
+   "code": "Ligne de stationnement",
+   "nom": "Ligne de stationnement",
+   "famille": "lineaire",
+   "libelle_audio": "Ligne de stationnement",
+   "calque": "Voie_sigh",
+   "code_export": "",
+   "icone": "11.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Ligne stat.nt SERAM": {
+   "code": "Ligne stat.nt SERAM",
+   "nom": "Ligne stat.nt SERAM",
+   "famille": "lineaire",
+   "libelle_audio": "Ligne stat.nt SERAM",
+   "calque": "Voie_sigh",
+   "code_export": "",
+   "icone": "12.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Ligne de bande cyclable": {
+   "code": "Ligne de bande cyclable",
+   "nom": "Ligne de bande cyclable",
+   "famille": "lineaire",
+   "libelle_audio": "Ligne de bande cyclable",
+   "calque": "Voie_sigh",
+   "code_export": "",
+   "icone": "13.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Arrêt de bus": {
+   "code": "Arrêt de bus",
+   "nom": "Arrêt de bus",
+   "famille": "lineaire",
+   "libelle_audio": "Arrêt de bus",
+   "calque": "Voie_bus_hab",
+   "code_export": "",
+   "icone": "14.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour ligne Cédez le passage": {
+   "code": "Contour ligne Cédez le passage",
+   "nom": "Contour ligne Cédez le passage",
+   "famille": "lineaire",
+   "libelle_audio": "Contour ligne Cédez le passage",
+   "calque": "Voie_cedez_hab_cont",
+   "code_export": "",
+   "icone": "15.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour ligne Stop": {
+   "code": "Contour ligne Stop",
+   "nom": "Contour ligne Stop",
+   "famille": "lineaire",
+   "libelle_audio": "Contour ligne Stop",
+   "calque": "Voie_stop_hab_cont",
+   "code_export": "",
+   "icone": "16.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 1.0
+   }
+  },
+  "Contour damier": {
+   "code": "Contour damier",
+   "nom": "Contour damier",
+   "famille": "lineaire",
+   "libelle_audio": "Contour damier",
+   "calque": "Voie_damier_hab_cont",
+   "code_export": "",
+   "icone": "17.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour zébra": {
+   "code": "Contour zébra",
+   "nom": "Espace vert non qualifié",
+   "famille": "lineaire",
+   "libelle_audio": "Espace vert non qualifié",
+   "calque": "Espv_lim",
+   "code_export": "",
+   "icone": "70.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Autres marquages": {
+   "code": "Autres marquages",
+   "nom": "Autres marquages",
+   "famille": "lineaire",
+   "libelle_audio": "Autres marquages",
+   "calque": "Voie_marquage_hab_cont",
+   "code_export": "",
+   "icone": "19.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour dispositif podotactile": {
+   "code": "Contour dispositif podotactile",
+   "nom": "Contour dispositif podotactile",
+   "famille": "lineaire",
+   "libelle_audio": "Contour dispositif podotactile",
+   "calque": "Voie_podo_hab_cont",
+   "code_export": "",
+   "icone": "22.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.05
+   }
+  },
+  "Contour passage piéton": {
+   "code": "Contour passage piéton",
+   "nom": "Contour passage piéton",
+   "famille": "lineaire",
+   "libelle_audio": "Contour passage piéton",
+   "calque": "Voie_pieton_hab_cont",
+   "code_export": "",
+   "icone": "23.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Dalle béton": {
+   "code": "Dalle béton",
+   "nom": "Dalle béton",
+   "famille": "lineaire",
+   "libelle_audio": "Dalle béton",
+   "calque": "Voie_beton",
+   "code_export": "",
+   "icone": "27.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Bas de talus": {
+   "code": "Bas de talus",
+   "nom": "Bas de talus",
+   "famille": "lineaire",
+   "libelle_audio": "Bas de talus",
+   "calque": "Topo_talb",
+   "code_export": "",
+   "icone": "28.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Haut de talus": {
+   "code": "Haut de talus",
+   "nom": "Haut de talus",
+   "famille": "lineaire",
+   "libelle_audio": "Haut de talus",
+   "calque": "Topo_talh",
+   "code_export": "",
+   "icone": "29.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Glissière": {
+   "code": "Glissière",
+   "nom": "Glissière",
+   "famille": "lineaire",
+   "libelle_audio": "Glissière",
+   "calque": "Mobi_gli",
+   "code_export": "",
+   "icone": "31.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Barrière piétons": {
+   "code": "Barrière piétons",
+   "nom": "Barrière piétons",
+   "famille": "lineaire",
+   "libelle_audio": "Barrière piétons",
+   "calque": "Mobi_pro",
+   "code_export": "",
+   "icone": "32.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Bordure anti-parking": {
+   "code": "Bordure anti-parking",
+   "nom": "Bordure anti-parking",
+   "famille": "lineaire",
+   "libelle_audio": "Bordure anti-parking",
+   "calque": "Mobi_park",
+   "code_export": "",
+   "icone": "33.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Clôture": {
+   "code": "Clôture",
+   "nom": "Clôture",
+   "famille": "lineaire",
+   "libelle_audio": "Clôture",
+   "calque": "Limi_clo",
+   "code_export": "",
+   "icone": "34.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Mur plein": {
+   "code": "Mur plein",
+   "nom": "Mur plein",
+   "famille": "lineaire",
+   "libelle_audio": "Mur plein",
+   "calque": "Limi_mplein_hab_cont",
+   "code_export": "",
+   "icone": "Icone__35.png",
+   "methode": {
+    "type": "multiligne_double",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.2,
+    "largeur_12": 0.1,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.1
+   }
+  },
+  "Mur bahut": {
+   "code": "Mur bahut",
+   "nom": "Mur bahut",
+   "famille": "lineaire",
+   "libelle_audio": "Mur bahut",
+   "calque": "Limi_mbah_hab_cont",
+   "code_export": "",
+   "icone": "36.png",
+   "methode": {
+    "type": "multiligne_double",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.2,
+    "largeur_12": 0.1,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Mur de souténement": {
+   "code": "Mur de souténement",
+   "nom": "Mur de souténement",
+   "famille": "lineaire",
+   "libelle_audio": "Mur de souténement",
+   "calque": "Limi_msou_hab_cont",
+   "code_export": "",
+   "icone": "37.png",
+   "methode": {
+    "type": "multiligne_double",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.2,
+    "largeur_12": 0.1,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.1
+   }
+  },
+  "Berge cours d eau": {
+   "code": "Berge cours d eau",
+   "nom": "Berge cours d'eau",
+   "famille": "lineaire",
+   "libelle_audio": "Berge cours d'eau",
+   "calque": "Hydr_riv",
+   "code_export": "",
+   "icone": "40.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Berge plan d eau": {
+   "code": "Berge plan d eau",
+   "nom": "Berge plan d'eau",
+   "famille": "lineaire",
+   "libelle_audio": "Berge plan d'eau",
+   "calque": "Hydr_etan",
+   "code_export": "",
+   "icone": "41.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour bati": {
+   "code": "Contour bati",
+   "nom": "Contour bati",
+   "famille": "lineaire",
+   "libelle_audio": "Contour bati",
+   "calque": "Bati_lim_hab_cont",
+   "code_export": "",
+   "icone": "61.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Bâti par 3 pts": {
+   "code": "Bâti par 3 pts",
+   "nom": "Bâti par 3 pts",
+   "famille": "lineaire",
+   "libelle_audio": "Bâti par 3 pts",
+   "calque": "Bati_dur",
+   "code_export": "",
+   "icone": "62.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Habillage talus": {
+   "code": "Habillage talus",
+   "nom": "Habillage talus",
+   "famille": "talus",
+   "libelle_audio": "Talus",
+   "calque": "Topo_tal_hab",
+   "code_export": "",
+   "icone": "30.png",
+   "methode": {
+    "mode": 0,
+    "espace": 0.4,
+    "nb_lignes": 4,
+    "pct_court": 35.0,
+    "pct_long": 90.0,
+    "pct_inter": 30.0
+   }
+  },
+  "Bati en surplomb": {
+   "code": "Bati en surplomb",
+   "nom": "Bati en surplomb",
+   "famille": "lineaire",
+   "libelle_audio": "Bati en surplomb",
+   "calque": "Bati_surplomb_hab_cont",
+   "code_export": "",
+   "icone": "64.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Escalier 3pts": {
+   "code": "Escalier 3pts",
+   "nom": "Escalier 3pts",
+   "famille": "escalier",
+   "libelle_audio": "Escalier 3pts",
+   "calque": "Bati_esc",
+   "code_export": "",
+   "icone": "24.png",
+   "methode": {
+    "points": 3,
+    "calcul_marches": "nombre",
+    "valeur": 0.0,
+    "fleche": true
+   }
+  },
+  "Escalier libre": {
+   "code": "Escalier libre",
+   "nom": "Escalier libre",
+   "famille": "escalier",
+   "libelle_audio": "Escalier libre",
+   "calque": "Bati_esc",
+   "code_export": "",
+   "icone": "25.png",
+   "methode": {
+    "points": 3,
+    "calcul_marches": "nombre",
+    "valeur": 0.0,
+    "fleche": true
+   }
+  },
+  "Bordurette d allée": {
+   "code": "Bordurette d allée",
+   "nom": "Bordurette d'allée",
+   "famille": "lineaire",
+   "libelle_audio": "Bordurette d'allée",
+   "calque": "Espv_limb",
+   "code_export": "",
+   "icone": "71.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Haie simple": {
+   "code": "Haie simple",
+   "nom": "Haie simple",
+   "famille": "lineaire",
+   "libelle_audio": "Haie simple",
+   "calque": "Espv_hai_sim",
+   "code_export": "",
+   "icone": "72.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Contour haie large": {
+   "code": "Contour haie large",
+   "nom": "Contour haie large",
+   "famille": "lineaire",
+   "libelle_audio": "Contour haie large",
+   "calque": "Espv_hai",
+   "code_export": "",
+   "icone": "73.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Lisiière de bois ou taillis": {
+   "code": "Lisiière de bois ou taillis",
+   "nom": "Lisiière de bois ou taillis",
+   "famille": "lineaire",
+   "libelle_audio": "Lisiière de bois ou taillis",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "74.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Contour massif arbustif": {
+   "code": "Contour massif arbustif",
+   "nom": "Contour massif arbustif",
+   "famille": "lineaire",
+   "libelle_audio": "Contour massif arbustif",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "75.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Contour massif floral": {
+   "code": "Contour massif floral",
+   "nom": "Contour massif floral",
+   "famille": "lineaire",
+   "libelle_audio": "Contour massif floral",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "76.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Contour pelouse d agrément": {
+   "code": "Contour pelouse d agrément",
+   "nom": "Contour pelouse d'agrément",
+   "famille": "lineaire",
+   "libelle_audio": "Contour pelouse d'agrément",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "77.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Pelouse de sport": {
+   "code": "Pelouse de sport",
+   "nom": "Pelouse de sport",
+   "famille": "lineaire",
+   "libelle_audio": "Pelouse de sport",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "77.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Espace jeux": {
+   "code": "Espace jeux",
+   "nom": "Espace jeux",
+   "famille": "lineaire",
+   "libelle_audio": "Espace jeux",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "Icone__77.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Réception jeu": {
+   "code": "Réception jeu",
+   "nom": "Réception jeu",
+   "famille": "lineaire",
+   "libelle_audio": "Réception jeu",
+   "calque": "Espv_lima_hab_cont",
+   "code_export": "",
+   "icone": "77.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Marquage terrain sport": {
+   "code": "Marquage terrain sport",
+   "nom": "Marquage terrain sport",
+   "famille": "lineaire",
+   "libelle_audio": "Marquage terrain sport",
+   "calque": "Espv_spor",
+   "code_export": "",
+   "icone": "80.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Texte polygo": {
+   "code": "Texte polygo",
+   "nom": "Texte polygo",
+   "famille": "texte",
+   "libelle_audio": "Texte",
+   "calque": "Topo_poly_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Texte polygo_1": {
+   "code": "Texte polygo_1",
+   "nom": "Texte polygo",
+   "famille": "lineaire",
+   "libelle_audio": "Texte polygo",
+   "calque": "Topo_poly",
+   "code_export": "",
+   "icone": "50.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Annotation, remarque": {
+   "code": "Annotation, remarque",
+   "nom": "Annotation, remarque",
+   "famille": "texte",
+   "libelle_audio": "Texte",
+   "calque": "Topo_annotation_remarque_hab",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 1.0,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Flèche écoulement": {
+   "code": "Flèche écoulement",
+   "nom": "Flèche écoulement",
+   "famille": "symbole",
+   "libelle_audio": "Flèche écoulement",
+   "calque": "Topo_ptco",
+   "code_export": "",
+   "icone": "Divers_Hydr_Fle.png",
+   "symbole": {
+    "famille_bloc": "Divers",
+    "bloc": "Hydr_Fle"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     3,
+     5
+    ],
+    "verrou_largeur": true,
+    "verrou_longueur": true,
+    "largeur": 0.38,
+    "longueur": 2.0
+   }
+  },
+  "Nom cours ou plan d eau": {
+   "code": "Nom cours ou plan d eau",
+   "nom": "Nom cours ou plan d'eau",
+   "famille": "texte",
+   "libelle_audio": "Nom cours ou plan d'eau",
+   "calque": "Hydr_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Mur plein + limite": {
+   "code": "Mur plein + limite",
+   "nom": "Mur plein + lim G",
+   "famille": "lineaire",
+   "libelle_audio": "Mur plein",
+   "calque": "Limi_mplein_hab_cont",
+   "code_export": "",
+   "icone": "35_G.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 0.2,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Mur bahut + limite": {
+   "code": "Mur bahut + limite",
+   "nom": "Mur bahut + lim G",
+   "famille": "lineaire",
+   "libelle_audio": "Mur bahut",
+   "calque": "Limi_mbah_hab_cont",
+   "code_export": "",
+   "icone": "36_G.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 0.2,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Bati Facade": {
+   "code": "Bati Facade",
+   "nom": "Bati Facade",
+   "famille": "batiment",
+   "libelle_audio": "Bati Facade",
+   "calque": "Bati_lim_hab_cont",
+   "code_export": "",
+   "icone": "60.png",
+   "methode": {
+    "fuyante": "perpendiculaire",
+    "longueur_fuyante": 1.0,
+    "hachure": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Nom batiment": {
+   "code": "Nom batiment",
+   "nom": "Nom batiment",
+   "famille": "texte",
+   "libelle_audio": "Nom batiment",
+   "calque": "Bati_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Texte espace vert, vegé": {
+   "code": "Texte espace vert, vegé",
+   "nom": "Texte espace vert, vegé",
+   "famille": "texte",
+   "libelle_audio": "Texte",
+   "calque": "Espv_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Texte équipement sport.": {
+   "code": "Texte équipement sport.",
+   "nom": "Texte équipement sport.",
+   "famille": "texte",
+   "libelle_audio": "Texte",
+   "calque": "Sport_txt",
+   "code_export": "",
+   "icone": "CatTexte.png",
+   "methode": {
+    "placement": "1pt",
+    "taille": 2.5,
+    "ancrage": 6,
+    "texte_defaut": "",
+    "liste": ""
+   }
+  },
+  "Borne_1": {
+   "code": "Borne_1",
+   "nom": "Borne_Res",
+   "famille": "symbole",
+   "libelle_audio": "Borne_Res",
+   "calque": "Rgaz_sym",
+   "code_export": "",
+   "icone": "RDiv_Borne_Res.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Borne_Res"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bouche à clé carrée": {
+   "code": "Bouche à clé carrée",
+   "nom": "Bouche à clé carrée",
+   "famille": "symbole",
+   "libelle_audio": "Bouche à clé carrée",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_BAC_Car.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_BAC_Car"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bouche à clé ronde": {
+   "code": "Bouche à clé ronde",
+   "nom": "Bouche à clé ronde",
+   "famille": "symbole",
+   "libelle_audio": "Bouche à clé ronde",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_BAC_Ron.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_BAC_Ron"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bouche à clé Décharge": {
+   "code": "Bouche à clé Décharge",
+   "nom": "Bouche à clé Décharge",
+   "famille": "symbole",
+   "libelle_audio": "Bouche à clé Décharge",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_BAC_Hex.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_BAC_Hex"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard de compteur": {
+   "code": "Regard de compteur",
+   "nom": "Regard de compteur",
+   "famille": "symbole",
+   "libelle_audio": "Regard de compteur",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Cpt_Ab.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Cpt_Ab"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard de compteur rond": {
+   "code": "Regard de compteur rond",
+   "nom": "Regard de compteur rond",
+   "famille": "symbole",
+   "libelle_audio": "Regard de compteur rond",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Cpt_Ab_Ron.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Cpt_Ab_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Plaque rectangulaire AEP": {
+   "code": "Plaque rectangulaire AEP",
+   "nom": "Plaque rectangulaire AEP",
+   "famille": "symbole",
+   "libelle_audio": "Plaque rectangulaire AEP",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Reg_Rec.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Reg_Rec"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Plaque ronde AEP": {
+   "code": "Plaque ronde AEP",
+   "nom": "Plaque ronde AEP",
+   "famille": "symbole",
+   "libelle_audio": "Plaque ronde AEP",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bouche de lavage": {
+   "code": "Bouche de lavage",
+   "nom": "Bouche de lavage",
+   "famille": "symbole",
+   "libelle_audio": "Bouche de lavage",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Bou_Lav.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Bou_Lav"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bouche d incendie": {
+   "code": "Bouche d incendie",
+   "nom": "Bouche d'incendie",
+   "famille": "symbole",
+   "libelle_audio": "Bouche d'incendie",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Bou_Inc.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Bou_Inc"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Poteau d incendie": {
+   "code": "Poteau d incendie",
+   "nom": "Poteau d'incendie",
+   "famille": "symbole",
+   "libelle_audio": "Poteau d'incendie",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Pot_Inc.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Pot_Inc"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Coffret AEP": {
+   "code": "Coffret AEP",
+   "nom": "Coffret AEP",
+   "famille": "symbole",
+   "libelle_audio": "Coffret AEP",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Coffret.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Coffret"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Borne fontaine": {
+   "code": "Borne fontaine",
+   "nom": "Borne fontaine",
+   "famille": "symbole",
+   "libelle_audio": "Borne fontaine",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_Fontaine.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Fontaine"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Borne Res Normal. Ferm.": {
+   "code": "Borne Res Normal. Ferm.",
+   "nom": "Borne Res Normal. Ferm.",
+   "famille": "symbole",
+   "libelle_audio": "Borne Res Normal. Ferm.",
+   "calque": "Eaux_sym_A",
+   "code_export": "",
+   "icone": "AEP_Eaux_RVNF.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_RVNF"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Label pose": {
+   "code": "Label pose",
+   "nom": "Label pose",
+   "famille": "symbole",
+   "libelle_audio": "Label pose",
+   "calque": "Eaux_hab_aep",
+   "code_export": "",
+   "icone": "AEP_Eaux_Res_Hab.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Res_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Cotes sol/cana AEP": {
+   "code": "Cotes sol/cana AEP",
+   "nom": "Cotes sol/cana AEP",
+   "famille": "symbole",
+   "libelle_audio": "Cotes sol/cana AEP",
+   "calque": "Eaux_hab_aep",
+   "code_export": "",
+   "icone": "AEP_Eaux_Res_Zs.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Res_Zs"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caract. fourreau AEP": {
+   "code": "Caract. fourreau AEP",
+   "nom": "Caract. fourreau AEP",
+   "famille": "symbole",
+   "libelle_audio": "Caract. fourreau AEP",
+   "calque": "Eaux_hab_aep",
+   "code_export": "",
+   "icone": "AEP_Eaux_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caract. chemisage AEP": {
+   "code": "Caract. chemisage AEP",
+   "nom": "Caract. chemisage AEP",
+   "famille": "symbole",
+   "libelle_audio": "Caract. chemisage AEP",
+   "calque": "Eaux_hab_aep",
+   "code_export": "",
+   "icone": "AEP_Eaux_Res_Chem.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Res_Chem"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caract. réseau AEP": {
+   "code": "Caract. réseau AEP",
+   "nom": "Caract. réseau AEP",
+   "famille": "symbole",
+   "libelle_audio": "Caract. réseau AEP",
+   "calque": "Eaux_hab_aep",
+   "code_export": "",
+   "icone": "AEP_Eaux_AEP.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_AEP"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Robinet vanne": {
+   "code": "Robinet vanne",
+   "nom": "Robinet vanne",
+   "famille": "symbole",
+   "libelle_audio": "Robinet vanne",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Vanne.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Robinet vanne sous regard": {
+   "code": "Robinet vanne sous regard",
+   "nom": "Robinet vanne sous regard",
+   "famille": "symbole",
+   "libelle_audio": "Robinet vanne sous regard",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Vanne_Reg.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Vanne_Reg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne de purge": {
+   "code": "Vanne de purge",
+   "nom": "Vanne de purge",
+   "famille": "symbole",
+   "libelle_audio": "Vanne de purge",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Vanne_Purg.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Vanne_Purg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Ventouse": {
+   "code": "Ventouse",
+   "nom": "Ventouse",
+   "famille": "symbole",
+   "libelle_audio": "Ventouse",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Ventouse.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Ventouse"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Compteur général sous regard": {
+   "code": "Compteur général sous regard",
+   "nom": "Compteur général sous regard",
+   "famille": "symbole",
+   "libelle_audio": "Compteur général sous regard",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Cpt_Reg.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Cpt_Reg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Exutoire de purge": {
+   "code": "Exutoire de purge",
+   "nom": "Exutoire de purge",
+   "famille": "symbole",
+   "libelle_audio": "Exutoire de purge",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Exutoire.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Exutoire"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Manchon": {
+   "code": "Manchon",
+   "nom": "Manchon",
+   "famille": "symbole",
+   "libelle_audio": "Manchon",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Manchon.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Manchon"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Plaque pleine": {
+   "code": "Plaque pleine",
+   "nom": "Plaque pleine",
+   "famille": "symbole",
+   "libelle_audio": "Plaque pleine",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Plaq_Pl.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Plaq_Pl"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Réduction": {
+   "code": "Réduction",
+   "nom": "Réduction",
+   "famille": "symbole",
+   "libelle_audio": "Réduction",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Red.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Red"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Réducteur de pression": {
+   "code": "Réducteur de pression",
+   "nom": "Réducteur de pression",
+   "famille": "symbole",
+   "libelle_audio": "Réducteur de pression",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Red_Press.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Red_Press"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Station de surpression": {
+   "code": "Station de surpression",
+   "nom": "Station de surpression",
+   "famille": "symbole",
+   "libelle_audio": "Station de surpression",
+   "calque": "Eaux_sym_S",
+   "code_export": "",
+   "icone": "AEP_Eaux_Sta_Surpres.png",
+   "symbole": {
+    "famille_bloc": "AEP",
+    "bloc": "Eaux_Sta_Surpres"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes": {
+   "code": "Caractéristiques des chutes",
+   "nom": "Caractéristiques des chutes",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes",
+   "calque": "Assa_hab_ep",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Assa_2": {
+   "code": "Assa_2",
+   "nom": "Année de pose",
+   "famille": "symbole",
+   "libelle_audio": "Année de pose",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Hab.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des chemisages": {
+   "code": "Caractéristique des chemisages",
+   "nom": "Caractéristique des chemisages",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des chemisages",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Chem.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Chem"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreaux": {
+   "code": "Caractéristique des fourreaux",
+   "nom": "Caractéristique des fourreaux",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreaux",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau EU": {
+   "code": "Caractéristique réseau EU",
+   "nom": "Caractéristique réseau EU",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau EU",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "Assnt_Assa_EU.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_EU"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards_1": {
+   "code": "Caractéristiques des regards_1",
+   "nom": "Caractéristiques des regards",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes_1": {
+   "code": "Caractéristiques des chutes_1",
+   "nom": "Caractéristiques des chutes",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes",
+   "calque": "Assa_hab_eu",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Année de pose_1": {
+   "code": "Année de pose_1",
+   "nom": "Année de pose",
+   "famille": "symbole",
+   "libelle_audio": "Année de pose",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Hab.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des chemisages_1": {
+   "code": "Caractéristique des chemisages_1",
+   "nom": "Caractéristique des chemisages",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des chemisages",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Chem.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Chem"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreaux_1": {
+   "code": "Caractéristique des fourreaux_1",
+   "nom": "Caractéristique des fourreaux",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreaux",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau Uni": {
+   "code": "Caractéristique réseau Uni",
+   "nom": "Caractéristique réseau Uni",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau Uni",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "Assnt_Assa_Uni.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Uni"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards_2": {
+   "code": "Caractéristiques des regards_2",
+   "nom": "Caractéristiques des regards",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes_2": {
+   "code": "Caractéristiques des chutes_2",
+   "nom": "Caractéristiques des chutes",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes",
+   "calque": "Assa_hab_uni",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Poste de relevage EP HS": {
+   "code": "Poste de relevage EP HS",
+   "nom": "Poste de relevage EP HS",
+   "famille": "symbole",
+   "libelle_audio": "Poste de relevage EP HS",
+   "calque": "Assa_sym_ep_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Post_Relev.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Post_Relev"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne EP HS": {
+   "code": "Vanne EP HS",
+   "nom": "Vanne EP HS",
+   "famille": "symbole",
+   "libelle_audio": "Vanne EP HS",
+   "calque": "Assa_sym_ep_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Chasse HS": {
+   "code": "Chasse HS",
+   "nom": "Chasse HS",
+   "famille": "symbole",
+   "libelle_audio": "Chasse HS",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Chasse.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Chasse"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Poste de relevage EU HS": {
+   "code": "Poste de relevage EU HS",
+   "nom": "Poste de relevage EU HS",
+   "famille": "symbole",
+   "libelle_audio": "Assa_Post_Relev",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Post_Relev.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Post_Relev"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Manchon HS": {
+   "code": "Raccord : Manchon HS",
+   "nom": "Raccord : Manchon HS",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Manchon HS",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Manchon.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Manchon"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Raccord : Plaque Pleine HS": {
+   "code": "Raccord : Plaque Pleine HS",
+   "nom": "Raccord : Plaque Pleine HS",
+   "famille": "symbole",
+   "libelle_audio": "Raccord : Plaque Pleine HS",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Plaq_Pl.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Plaq_Pl"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne EU HS": {
+   "code": "Vanne EU HS",
+   "nom": "Vanne EU HS",
+   "famille": "symbole",
+   "libelle_audio": "Vanne EU HS",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne de purge EU HS": {
+   "code": "Vanne de purge EU HS",
+   "nom": "Vanne de purge EU HS",
+   "famille": "symbole",
+   "libelle_audio": "Vanne de purge EU HS",
+   "calque": "Assa_sym_eu_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne_Purg.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne_Purg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Vanne Unitaire HS": {
+   "code": "Vanne Unitaire HS",
+   "nom": "Vanne Unitaire HS",
+   "famille": "symbole",
+   "libelle_audio": "Vanne Unitaire HS",
+   "calque": "Assa_sym_uni_S_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Vanne.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Vanne"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreaux HS": {
+   "code": "Caractéristique des fourreaux HS",
+   "nom": "Caractéristique des fourreaux HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreaux HS",
+   "calque": "Assa_hab_ep_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau EP HS": {
+   "code": "Caractéristique réseau EP HS",
+   "nom": "Caractéristique réseau EP HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau EP HS",
+   "calque": "Assa_hab_ep_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_EP.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_EP"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards HS": {
+   "code": "Caractéristiques des regards HS",
+   "nom": "Caractéristiques des regards HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards HS",
+   "calque": "Assa_hab_ep_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Hab.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes HS": {
+   "code": "Caractéristiques des chutes HS",
+   "nom": "Caractéristiques des chutes HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes HS",
+   "calque": "Assa_hab_ep_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreaux HS_1": {
+   "code": "Caractéristique des fourreaux HS_1",
+   "nom": "Caractéristique des fourreaux HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreaux HS",
+   "calque": "Assa_hab_eu_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau EU HS": {
+   "code": "Caractéristique réseau EU HS",
+   "nom": "Caractéristique réseau EU HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau EU HS",
+   "calque": "Assa_hab_eu_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_EU.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_EU"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards HS_1": {
+   "code": "Caractéristiques des regards HS_1",
+   "nom": "Caractéristiques des regards HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards HS",
+   "calque": "Assa_hab_eu_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes HS_1": {
+   "code": "Caractéristiques des chutes HS_1",
+   "nom": "Caractéristiques des chutes HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes HS",
+   "calque": "Assa_hab_eu_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique des fourreaux HS_2": {
+   "code": "Caractéristique des fourreaux HS_2",
+   "nom": "Caractéristique des fourreaux HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique des fourreaux HS",
+   "calque": "Assa_hab_uni_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Res_Four.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Res_Four"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristique réseau Uni HS": {
+   "code": "Caractéristique réseau Uni HS",
+   "nom": "Caractéristique réseau Uni HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristique réseau Uni HS",
+   "calque": "Assa_hab_uni_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Uni.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Uni"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des regards HS_2": {
+   "code": "Caractéristiques des regards HS_2",
+   "nom": "Caractéristiques des regards HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des regards HS",
+   "calque": "Assa_hab_uni_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Hab.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Hab"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Caractéristiques des chutes HS_2": {
+   "code": "Caractéristiques des chutes HS_2",
+   "nom": "Caractéristiques des chutes HS",
+   "famille": "symbole",
+   "libelle_audio": "Caractéristiques des chutes HS",
+   "calque": "Assa_hab_uni_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Fe.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Fe"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Bran_3": {
+   "code": "Bran_3",
+   "nom": "Boite branchement eau pluviale H",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau pluviale H",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Bran_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau pluviale H": {
+   "code": "Boite branchement eau pluviale H",
+   "nom": "Boite branchement eau pluviale H",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau pluviale H",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Descente de goutière HS": {
+   "code": "Descente de goutière HS",
+   "nom": "Descente de goutière HS",
+   "famille": "symbole",
+   "libelle_audio": "Descente de goutière HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gout.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gout"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Exutoire eau pluviale HS": {
+   "code": "Exutoire eau pluviale HS",
+   "nom": "Exutoire eau pluviale HS",
+   "famille": "symbole",
+   "libelle_audio": "Exutoire eau pluviale HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Exutoire.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Exutoire"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "gargouille eau pluviale HS": {
+   "code": "gargouille eau pluviale HS",
+   "nom": "gargouille eau pluviale HS",
+   "famille": "symbole",
+   "libelle_audio": "gargouille eau pluviale HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Garg.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Garg"
+   },
+   "methode": {
+    "points": 1,
+    "ancrages": [
+     9
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Grille eau pluviale ou piège à eau H": {
+   "code": "Grille eau pluviale ou piège à eau H",
+   "nom": "Grille eau pluviale ou piège à eau H",
+   "famille": "symbole",
+   "libelle_audio": "Grille eau pluviale ou piège à eau H",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gril.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gril"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Grille ronde eau pluviale HS": {
+   "code": "Grille ronde eau pluviale HS",
+   "nom": "Grille ronde eau pluviale HS",
+   "famille": "symbole",
+   "libelle_audio": "Grille ronde eau pluviale HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Gril_Ron.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Gril_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau pluviale HS": {
+   "code": "Regard carré eau pluviale HS",
+   "nom": "Regard carré eau pluviale HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau pluviale HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau pluviale HS": {
+   "code": "Regard rond eau pluviale HS",
+   "nom": "Regard rond eau pluviale HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau pluviale HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Tête de buse HS": {
+   "code": "Tête de buse HS",
+   "nom": "Tête de buse HS",
+   "famille": "symbole",
+   "libelle_audio": "Tête de buse HS",
+   "calque": "Assa_sym_ep_A_HS",
+   "code_export": "",
+   "icone": "Assnt_Assa_Tete_Buse.png",
+   "symbole": {
+    "famille_bloc": "Assnt",
+    "bloc": "Assa_Tete_Buse"
+   },
+   "methode": {
+    "points": 3,
+    "ancrages": [
+     6,
+     8,
+     2
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau usée HS": {
+   "code": "Boite branchement eau usée HS",
+   "nom": "Boite branchement eau usée HS",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau usée HS",
+   "calque": "Assa_sym_eu_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Bran_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Boite branchement eau usée HS_1": {
+   "code": "Boite branchement eau usée HS_1",
+   "nom": "Boite branchement eau usée HS",
+   "famille": "symbole",
+   "libelle_audio": "Boite branchement eau usée HS",
+   "calque": "Assa_sym_eu_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Bran_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Bran_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau usée HS": {
+   "code": "Regard carré eau usée HS",
+   "nom": "Regard carré eau usée HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau usée HS",
+   "calque": "Assa_sym_eu_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau usée HS": {
+   "code": "Regard rond eau usée HS",
+   "nom": "Regard rond eau usée HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau usée HS",
+   "calque": "Assa_sym_eu_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard carré eau Unitaire HS": {
+   "code": "Regard carré eau Unitaire HS",
+   "nom": "Regard carré eau Unitaire HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard carré eau Unitaire HS",
+   "calque": "Assa_sym_uni_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Car.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Car"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     7,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Regard rond eau Unitaire HS": {
+   "code": "Regard rond eau Unitaire HS",
+   "nom": "Regard rond eau Unitaire HS",
+   "famille": "symbole",
+   "libelle_audio": "Regard rond eau Unitaire HS",
+   "calque": "Assa_sym_uni_A_HS",
+   "code_export": "",
+   "icone": "RDiv_Reg_Ron.png",
+   "symbole": {
+    "famille_bloc": "RDiv",
+    "bloc": "Reg_Ron"
+   },
+   "methode": {
+    "points": 2,
+    "ancrages": [
+     4,
+     5
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.0
+   }
+  },
+  "Accès piétons_1": {
+   "code": "Accès piétons_1",
+   "nom": "Accès piétons",
+   "famille": "lineaire",
+   "libelle_audio": "Accès piétons",
+   "calque": "Bati_ent",
+   "code_export": "",
+   "icone": "65.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Accès véhicules_1": {
+   "code": "Accès véhicules_1",
+   "nom": "Accès véhicules",
+   "famille": "lineaire",
+   "libelle_audio": "Accès véhicules",
+   "calque": "Bati_gar",
+   "code_export": "",
+   "icone": "66.png",
+   "methode": {
+    "type": "ligne_arc",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false
+   }
+  },
+  "Mur de souténement + limite": {
+   "code": "Mur de souténement + limite",
+   "nom": "Mur de sout + lim G",
+   "famille": "lineaire",
+   "libelle_audio": "Mur de souténement",
+   "calque": "Limi_msou_hab_cont",
+   "code_export": "",
+   "icone": "37_G.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 0.2,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "D Mur bahut + limite": {
+   "code": "D Mur bahut + limite",
+   "nom": "Mur bahut + lim D",
+   "famille": "lineaire",
+   "libelle_audio": "Mur bahut",
+   "calque": "Limi_mbah_hab_cont",
+   "code_export": "",
+   "icone": "36_D.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 1e-05,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Mur plein + lim D": {
+   "code": "Mur plein + lim D",
+   "nom": "Mur plein + lim D",
+   "famille": "lineaire",
+   "libelle_audio": "Mur plein",
+   "calque": "Limi_mplein_hab_cont",
+   "code_export": "",
+   "icone": "35_D.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 1e-05,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  },
+  "Mur de sout + lim D": {
+   "code": "Mur de sout + lim D",
+   "nom": "Mur de sout + lim D",
+   "famille": "lineaire",
+   "libelle_audio": "Mur de souténement",
+   "calque": "Limi_msou_hab_cont",
+   "code_export": "",
+   "icone": "37_D.png",
+   "methode": {
+    "type": "multiligne_triple",
+    "mode": "ligne",
+    "tangent": false,
+    "ajust_debut": false,
+    "ajust_fin": false,
+    "remplissage": false,
+    "largeur": 0.20001,
+    "largeur_12": 1e-05,
+    "ligne_directrice": 4,
+    "fermeture_debut": true,
+    "fermeture_fin": true
+   },
+   "hachure": {
+    "motif": "ANSI31",
+    "echelle": 0.2
+   }
+  }
+ },
+ "listes_textes": {}
+};
