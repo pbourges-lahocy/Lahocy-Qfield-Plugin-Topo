@@ -2,6 +2,18 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.7.1] - 2026-09-19
+
+### Ajouté
+
+- **Blocs SVG du standard sur la carte** : les 397 blocs du DXF de nomenclature sont convertis en SVG (`tools/dxf_blocks.py`, lignes, polylignes à arcs, cercles, arcs, hachures, textes) et rendus par un marqueur SVG QGIS dans la couche `symbole` : taille réelle en mètres, rotation = direction du 1er vers le 2e point, échelle uniforme à 2 points, échelles X et Y indépendantes à 3 points (rectangles), symétrie automatique quand le 3e point est à droite de l'axe. Les SVG sont livrés avec le projet (`blocs/`, référencés par `@project_folder`).
+- Dimensions de référence des blocs (longueur, largeur) déduites du DXF pour l'échelle ; nouveau champ `taille` dans la couche `symbole`.
+
+### Modifié
+
+- Les objets à 3 points « 2 premiers sur grand côté » redeviennent des symboles (le bloc SVG est dessiné à l'échelle) au lieu de rectangles génériques.
+- Symbole à 1 point : orientation CAO (axe X du bloc vers l'est).
+
 ## [0.7.0] - 2026-09-19
 
 ### Modifié

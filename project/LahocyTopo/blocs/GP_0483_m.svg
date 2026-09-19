@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.2594 -0.2594 0.5188 0.5188" width="0.5188" height="0.5188">
+<g fill="none" stroke="param(outline) #000000" stroke-width="param(outline-width) 0.0078" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0.1625 0.1067 L0.1625 -0.1183"/>
+<path d="M0.1625 -0.1183 L-0.1625 -0.1183"/>
+<path d="M-0.1625 -0.1183 L-0.1625 0.1067"/>
+<path d="M-0.1625 0.1067 L0.1625 0.1067"/>
+<path d="M0.1625 -0.0058 L0.2375 -0.0058"/>
+<path d="M0.1625 -0.1183 L0.2375 -0.1933"/>
+<path d="M0 -0.1183 L0 -0.1933"/>
+<path d="M-0.1625 -0.1183 L-0.2375 -0.1933"/>
+<path d="M-0.1625 -0.0058 L-0.2375 -0.0058"/>
+<path d="M-0.2375 0.1817 L-0.1625 0.1067"/>
+<path d="M0 0.1817 L0 0.1067"/>
+<path d="M0.2375 0.1817 L0.1625 0.1067"/>
+</g>
+</svg>

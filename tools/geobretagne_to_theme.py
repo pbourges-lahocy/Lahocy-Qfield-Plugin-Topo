@@ -138,8 +138,16 @@ def main():
 
     nom = os.path.join(args.standard, "nomenclature")
     rows = read_rows(os.path.join(nom, "standard_topographique_nomenclature.csv"))
-    attrs = parse_dxf_attributes(os.path.join(nom, "standard_topographique_nomenclature.dxf"))
+    dxf_path = os.path.join(nom, "standard_topographique_nomenclature.dxf")
+    attrs = parse_dxf_attributes(dxf_path)
     docx_rules = parse_docx_rules(os.path.join(nom, "standard_topographique_nomenclature.docx"))
+    # SVG des blocs pour le rendu QGIS / QField (+ dimensions de référence pour l'échelle)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import dxf_blocks
+    blocs_dir = os.path.join(args.theme_dir, "blocs")
+    if os.path.isdir(blocs_dir):
+        shutil.rmtree(blocs_dir)
+    dims = dxf_blocks.export_blocks(dxf_path, blocs_dir)
     rules = {}
     if os.path.exists(args.rules):
         rules = json.load(open(args.rules, encoding="utf-8"))
@@ -207,16 +215,22 @@ def main():
                 o["famille"] = "escalier"
                 o["methode"] = {"points": 3, "calcul_marches": "nombre", "valeur": 0.0, "fleche": True}
                 stats["escalier"] += 1
-            elif pts == 3 and ("grand c" in lp or "angle" in lp):
-                # rectangle levé par 3 points (2 sur le grand côté, le 3e sur le côté opposé)
-                o["famille"] = "lineaire"
-                o["methode"] = {"type": "rectangle", "points": 3, "mode": "rectangle", "remplissage": False}
-                stats["rectangle_3pt"] += 1
             else:
+                # symbole : le bloc SVG est placé sur le 1er point ; 2 points = rotation + échelle
+                # uniforme (si le bloc part de l'origine vers +X), 3 points = échelle X et Y.
+                dm = dims.get(oid)
+                longueur = largeur = 0.0
+                if dm and pts >= 2:
+                    coin_x = dm["xmin"] > -0.01 and dm["xmax"] > 0.01
+                    coin_y = dm["ymin"] > -0.01 and dm["ymax"] > 0.01
+                    if coin_x and not ("orientation" in lp and "axe" in lp):
+                        longueur = round(dm["xmax"], 4)
+                    if pts >= 3 and coin_y:
+                        largeur = round(dm["ymax"], 4)
                 o["famille"] = "symbole"
-                o["symbole"] = {"famille_bloc": "GeoBretagne", "bloc": oid}
+                o["symbole"] = {"famille_bloc": "GeoBretagne", "bloc": oid, "svg": oid + ".svg", "demi": round(dm["half"], 4) if dm else 0.5}
                 o["methode"] = {"points": pts, "ancrages": [9] if pts == 1 else [10, 11, 12][:pts], "verrou_largeur": False,
-                                "verrou_longueur": False, "largeur": 0.0, "longueur": gb["longueur"] or 0.0}
+                                "verrou_longueur": False, "largeur": largeur, "longueur": longueur}
                 stats["symbole_%dpt" % pts] += 1
 
         # icône
@@ -267,7 +281,7 @@ def main():
         f.write(";\n")
     print("familles :", len(palette), " objets :", len([o for o in objets.values() if o.get("gb")]), " ", dict(stats))
     print("règles de levé (docx) :", len(docx_rules), " attributs (dxf) :", len([a for a in attrs.values() if a]))
-    print("icônes :", len([o for o in objets.values() if o.get("icone")]))
+    print("icônes :", len([o for o in objets.values() if o.get("icone")]), " blocs SVG :", len(dims))
     print("écrit dans", args.theme_dir)
 
 

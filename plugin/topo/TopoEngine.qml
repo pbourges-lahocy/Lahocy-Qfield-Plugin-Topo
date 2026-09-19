@@ -561,15 +561,24 @@ Item {
                    "horodatage": Core.nowIso(), "operateur": db.operateur };
     let fid = -1;
     if (pending.kind === "symbole") {
-      const rot = pts.length >= 2 ? Core.rotationDeg(pts[0], pts[1]) : 0;
+      // rotation = gisement (degrés, sens horaire depuis le nord) de l'axe X du bloc :
+      // 2 points et plus = direction 1 -> 2 ; 1 point = orientation CAO (axe X vers l'est)
+      const rot = pts.length >= 2 ? Core.rotationDeg(pts[0], pts[1]) : 90;
       const d12 = pts.length >= 2 ? Core.dist2d(pts[0], pts[1]) : 0;
-      let d23 = 0;
-      if (pts.length >= 3) { const a = Core.angle(pts[0], pts[1]); d23 = Math.abs(-(pts[2].x - pts[1].x) * Math.sin(a) + (pts[2].y - pts[1].y) * Math.cos(a)); }
+      let d23 = 0, cote = 1;
+      if (pts.length >= 3) {
+        // distance signée du 3e point à l'axe 1-2 : positive à gauche (axe Y du bloc), négative à droite (symétrie)
+        const a = Core.angle(pts[0], pts[1]);
+        const sd = -(pts[2].x - pts[1].x) * Math.sin(a) + (pts[2].y - pts[1].y) * Math.cos(a);
+        d23 = Math.abs(sd); cote = sd < 0 ? -1 : 1;
+      }
       const ex = (m.verrou_longueur || !(m.longueur > 0) || d12 <= 0) ? 1 : d12 / m.longueur;
-      const ey = (m.verrou_largeur || !(m.largeur > 0) || d23 <= 0) ? 1 : d23 / m.largeur;
+      let ey = (m.verrou_largeur || !(m.largeur > 0) || d23 <= 0) ? 1 : d23 / m.largeur;
+      if (pts.length === 2) ey = ex;   // 2 points : rotation + même échelle en X et Y
+      const sy = obj.symbole || {};
       fid = db.createFeature("symbole", Core.pointWkt(pts[0]), Object.assign(base, {
-        "famille_bloc": (obj.symbole || {}).famille_bloc || "", "bloc": (obj.symbole || {}).bloc || "",
-        "rotation": rot, "echelle_x": ex, "echelle_y": ey, "dist_12": d12, "dist_23": d23, "nb_points": pts.length, "symetrie": 0,
+        "famille_bloc": sy.famille_bloc || "", "bloc": sy.bloc || "", "taille": sy.demi ? 2 * sy.demi : 0,
+        "rotation": rot, "echelle_x": ex, "echelle_y": ey, "dist_12": d12, "dist_23": d23, "nb_points": pts.length, "symetrie": cote < 0 ? 1 : 0,
         "params_json": JSON.stringify({ "methode": m, "points": pts })
       }));
       lastPlaced = { "role": "symbole", "fid": fid, "kind": "symbole", "rotation": rot, "points": pts };

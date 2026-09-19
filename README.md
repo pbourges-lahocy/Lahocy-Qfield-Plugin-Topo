@@ -55,10 +55,18 @@ altimétrie) affichée dans la consigne au moment du levé. Il est généré par
 python tools\geobretagne_to_theme.py "<dossier geobretagne_standard_topographique_x_y_z>" plugin\theme
 ```
 
-Les méthodes de levé sont déduites du carnet (1, 2 ou 3 points, rectangle par 3 points,
-escalier, linéaire, hachure, texte) ; `tools/geobretagne_rules.json` permet de surcharger
-n'importe quel objet. Chaque point ou objet levé conserve l'identifiant du standard
-(`code_objet`), ce qui permet l'export DXF / PostGIS conforme au bureau.
+Les méthodes de levé sont déduites du carnet (1, 2 ou 3 points, escalier, linéaire, hachure,
+texte) ; `tools/geobretagne_rules.json` permet de surcharger n'importe quel objet. Chaque
+point ou objet levé conserve l'identifiant du standard (`code_objet`), ce qui permet l'export
+DXF / PostGIS conforme au bureau.
+
+**Blocs sur la carte.** Les 397 blocs du DXF de nomenclature sont convertis en SVG
+(`plugin/theme/blocs`, copiés dans le projet sous `blocs/`) et dessinés par la couche
+`symbole` à leur taille réelle : 1 point = orientation CAO, 2 points = rotation et échelle
+uniforme (longueur du bloc = distance des deux points), 3 points = rotation, échelle X et
+échelle Y (le 3e point donne la largeur ; à droite de l'axe = symétrie). Un projet client
+construit au bureau doit donc contenir le dossier `blocs/` à côté du `.qgs`
+(`tools/build_project.py` le copie).
 
 ### 3. GNSS
 

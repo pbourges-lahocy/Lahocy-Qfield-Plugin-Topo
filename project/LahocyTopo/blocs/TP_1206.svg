@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.3545 -0.3545 0.709 0.709" width="0.709" height="0.709">
+<g fill="param(fill) #000000" fill-opacity="0.25" stroke="none">
+<path d="M-0.125 0 L0.0625 0.1172 L0.0625 -0.1172 L-0.125 0 Z"/>
+</g>
+<g fill="none" stroke="param(outline) #000000" stroke-width="param(outline-width) 0.0106" stroke-linecap="round" stroke-linejoin="round">
+<path d="M-0.125 0 L0.0625 0.1172 L0.0625 -0.1172 Z"/>
+<path d="M-0.0547 0.2812 L-0.1953 -0.2813 L-0.2578 -0.2656"/>
+<path d="M-0.0547 0.2812 L-0.1172 0.2969"/>
+<path d="M-0.1094 0.3281 L-0.125 0.2656"/>
+<path d="M-0.25 -0.2343 L-0.2656 -0.2968"/>
+</g>
+</svg>

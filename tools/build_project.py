@@ -94,6 +94,7 @@ LAYERS = {
         ("rotation", R),   # degrés, sens horaire depuis le nord (convention QGIS)
         ("echelle_x", R), ("echelle_y", R), ("dist_12", R), ("dist_23", R),
         ("nb_points", I), ("symetrie", I),
+        ("taille", R),     # taille du SVG du bloc (m) à l'échelle 1 (2 x demi-vue)
     ]),
     "texte": (QgsWkbTypes.PointZ, COMMUN + [
         ("texte", T), ("rotation", R), ("taille", R), ("ancrage", I),
@@ -158,6 +159,38 @@ def label(layer, expr, size=8, color="#202020", buffer=True):
     layer.setLabeling(QgsVectorLayerSimpleLabeling(s))
 
 
+def _prop(name):
+    """Identifiant de propriété définie par les données, compatible QGIS 3.2x (PropertyX) et 3.3x+ (Property.X)."""
+    from qgis.core import QgsSymbolLayer
+    try:
+        return getattr(QgsSymbolLayer.Property, name)
+    except AttributeError:
+        return getattr(QgsSymbolLayer, "Property" + name)
+
+
+def symbole_marker():
+    """Marqueur SVG du bloc GéoBretagne : fichier <projet>/blocs/<bloc>[_m].svg, taille en mètres,
+    largeur = taille x échelle Y, hauteur = taille x échelle X (l'axe X du bloc est vers le haut du SVG),
+    rotation = gisement du 1er vers le 2e point. Sans bloc (thème sans SVG) : flèche rouge."""
+    from qgis.core import QgsSvgMarkerSymbolLayer, QgsProperty, QgsUnitTypes
+    svg = QgsSvgMarkerSymbolLayer("", 1.0)
+    svg.setSizeUnit(QgsUnitTypes.RenderMapUnits)
+    svg.setFixedAspectRatio(0)
+    svg.setStrokeColor(QColor("#b00020"))
+    svg.setStrokeWidth(0.25)
+    svg.setStrokeWidthUnit(QgsUnitTypes.RenderMillimeters)
+    svg.setFillColor(QColor(176, 0, 32, 70))
+    props = svg.dataDefinedProperties()
+    props.setProperty(_prop("Name"), QgsProperty.fromExpression(
+        "@project_folder || '/blocs/' || \"bloc\" || CASE WHEN \"symetrie\" = 1 THEN '_m' ELSE '' END || '.svg'"))
+    props.setProperty(_prop("Width"), QgsProperty.fromExpression("coalesce(\"taille\", 0.5) * coalesce(\"echelle_y\", 1)"))
+    props.setProperty(_prop("Height"), QgsProperty.fromExpression("coalesce(\"taille\", 0.5) * coalesce(\"echelle_x\", 1)"))
+    props.setProperty(_prop("Angle"), QgsProperty.fromExpression("coalesce(\"rotation\", 0)"))
+    marker = QgsMarkerSymbol()
+    marker.changeSymbolLayer(0, svg)
+    return marker
+
+
 def style_layers(layers):
     # Points topo : couleur selon le type (GPS vert, excentré marron, implanté magenta, importé bleu)
     pt = layers["pt_topo"]
@@ -192,10 +225,7 @@ def style_layers(layers):
     label(surf, "\"nom_objet\"", 7, "#404040")
 
     sym = layers["symbole"]
-    marker = QgsMarkerSymbol.createSimple({"name": "arrowhead", "color": "#b00020", "outline_color": "#b00020", "size": "3.5"})
-    marker.setDataDefinedAngle(sym.renderer().symbol().dataDefinedAngle().fromExpression("\"rotation\""))
-    sym.setRenderer(sym.renderer())
-    sym.renderer().setSymbol(marker)
+    sym.renderer().setSymbol(symbole_marker())
     label(sym, "\"nom_objet\"", 7, "#b00020")
 
     tx = layers["texte"]
@@ -231,8 +261,24 @@ def style_layers(layers):
     label(imp, "\"matricule\"", 7, "#1f5fbf")
 
 
+def copy_blocs():
+    """Copie les SVG des blocs du catalogue (plugin/theme/blocs) dans le projet : le rendu
+    des symboles utilise @project_folder/blocs/<bloc>.svg."""
+    import shutil
+    src = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "plugin", "theme", "blocs")
+    dst = os.path.join(OUT_DIR, "blocs")
+    if not os.path.isdir(src):
+        print("pas de blocs SVG dans", src)
+        return
+    if os.path.isdir(dst):
+        shutil.rmtree(dst)
+    shutil.copytree(src, dst)
+    print(len(os.listdir(dst)), "blocs SVG copiés dans", dst)
+
+
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    copy_blocs()
     crs = QgsCoordinateReferenceSystem(f"EPSG:{EPSG}")
     project = QgsProject.instance()
     project.clear()

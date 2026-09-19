@@ -3742,7 +3742,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0000"
+    "bloc": "AP_0000",
+    "svg": "AP_0000.svg",
+    "demi": 0.9235
    },
    "methode": {
     "points": 2,
@@ -3753,7 +3755,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.87
    }
   },
   "AP_0001": {
@@ -3780,7 +3782,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0001"
+    "bloc": "AP_0001",
+    "svg": "AP_0001.svg",
+    "demi": 0.1281
    },
    "methode": {
     "points": 1,
@@ -3819,7 +3823,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0002"
+    "bloc": "AP_0002",
+    "svg": "AP_0002.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -3858,7 +3864,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0003"
+    "bloc": "AP_0003",
+    "svg": "AP_0003.svg",
+    "demi": 0.6543
    },
    "methode": {
     "points": 2,
@@ -3869,7 +3877,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6131
    }
   },
   "AP_0004": {
@@ -3899,7 +3907,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0004"
+    "bloc": "AP_0004",
+    "svg": "AP_0004.svg",
+    "demi": 0.3666
    },
    "methode": {
     "points": 2,
@@ -3910,7 +3920,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.3396
    }
   },
   "AP_0005": {
@@ -3939,7 +3949,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0005"
+    "bloc": "AP_0005",
+    "svg": "AP_0005.svg",
+    "demi": 0.4713
    },
    "methode": {
     "points": 1,
@@ -3978,7 +3990,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0006"
+    "bloc": "AP_0006",
+    "svg": "AP_0006.svg",
+    "demi": 0.6823
    },
    "methode": {
     "points": 2,
@@ -3989,7 +4003,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.64
    }
   },
   "AP_0007": {
@@ -4015,12 +4029,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "AP_0007",
+    "svg": "AP_0007.svg",
+    "demi": 1.1114
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.4998,
+    "longueur": 1.049
    }
   },
   "AP_0008": {
@@ -4046,12 +4072,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "AP_0008",
+    "svg": "AP_0008.svg",
+    "demi": 0.8918
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6402,
+    "longueur": 0.8399
    }
   },
   "AP_0009": {
@@ -4075,12 +4113,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "AP_0009",
+    "svg": "AP_0009.svg",
+    "demi": 0.7093
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.666
    }
   },
   "AP_0010": {
@@ -4109,7 +4159,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0010"
+    "bloc": "AP_0010",
+    "svg": "AP_0010.svg",
+    "demi": 0.2465
    },
    "methode": {
     "points": 1,
@@ -4146,7 +4198,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0011"
+    "bloc": "AP_0011",
+    "svg": "AP_0011.svg",
+    "demi": 0.745
    },
    "methode": {
     "points": 1,
@@ -4189,7 +4243,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0012"
+    "bloc": "AP_0012",
+    "svg": "AP_0012.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -4231,7 +4287,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0013"
+    "bloc": "AP_0013",
+    "svg": "AP_0013.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -4339,7 +4397,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0041"
+    "bloc": "AP_0041",
+    "svg": "AP_0041.svg",
+    "demi": 0.2097
    },
    "methode": {
     "points": 1,
@@ -4376,7 +4436,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0042"
+    "bloc": "AP_0042",
+    "svg": "AP_0042.svg",
+    "demi": 0.2772
    },
    "methode": {
     "points": 1,
@@ -4415,7 +4477,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0043"
+    "bloc": "AP_0043",
+    "svg": "AP_0043.svg",
+    "demi": 0.1716
    },
    "methode": {
     "points": 2,
@@ -4450,12 +4514,24 @@
     "plani": "3 points: 2 points sur le plus grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "AP_0044",
+    "svg": "AP_0044.svg",
+    "demi": 0.5356
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.4998,
+    "longueur": 0.5006
    }
   },
   "AP_0045": {
@@ -4482,7 +4558,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0045"
+    "bloc": "AP_0045",
+    "svg": "AP_0045.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -4521,7 +4599,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0046"
+    "bloc": "AP_0046",
+    "svg": "AP_0046.svg",
+    "demi": 0.1681
    },
    "methode": {
     "points": 1,
@@ -4558,7 +4638,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_0047"
+    "bloc": "AP_0047",
+    "svg": "AP_0047.svg",
+    "demi": 0.1676
    },
    "methode": {
     "points": 1,
@@ -4597,7 +4679,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2000"
+    "bloc": "AP_2000",
+    "svg": "AP_2000.svg",
+    "demi": 0.2698
    },
    "methode": {
     "points": 1,
@@ -4634,7 +4718,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2001"
+    "bloc": "AP_2001",
+    "svg": "AP_2001.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -4673,7 +4759,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2002"
+    "bloc": "AP_2002",
+    "svg": "AP_2002.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -4710,7 +4798,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2003"
+    "bloc": "AP_2003",
+    "svg": "AP_2003.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -4747,7 +4837,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2004"
+    "bloc": "AP_2004",
+    "svg": "AP_2004.svg",
+    "demi": 0.8959
    },
    "methode": {
     "points": 1,
@@ -4784,7 +4876,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2005"
+    "bloc": "AP_2005",
+    "svg": "AP_2005.svg",
+    "demi": 1.1996
    },
    "methode": {
     "points": 1,
@@ -4821,7 +4915,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2006"
+    "bloc": "AP_2006",
+    "svg": "AP_2006.svg",
+    "demi": 0.4825
    },
    "methode": {
     "points": 1,
@@ -4860,7 +4956,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2026"
+    "bloc": "AP_2026",
+    "svg": "AP_2026.svg",
+    "demi": 0.2428
    },
    "methode": {
     "points": 1,
@@ -4899,7 +4997,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2027"
+    "bloc": "AP_2027",
+    "svg": "AP_2027.svg",
+    "demi": 0.2992
    },
    "methode": {
     "points": 1,
@@ -4938,7 +5038,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2028"
+    "bloc": "AP_2028",
+    "svg": "AP_2028.svg",
+    "demi": 0.1744
    },
    "methode": {
     "points": 1,
@@ -4977,7 +5079,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2029"
+    "bloc": "AP_2029",
+    "svg": "AP_2029.svg",
+    "demi": 0.1744
    },
    "methode": {
     "points": 1,
@@ -5016,7 +5120,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2030"
+    "bloc": "AP_2030",
+    "svg": "AP_2030.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -5053,7 +5159,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2031"
+    "bloc": "AP_2031",
+    "svg": "AP_2031.svg",
+    "demi": 0.2882
    },
    "methode": {
     "points": 1,
@@ -5092,7 +5200,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2032"
+    "bloc": "AP_2032",
+    "svg": "AP_2032.svg",
+    "demi": 0.4365
    },
    "methode": {
     "points": 1,
@@ -5129,7 +5239,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2033"
+    "bloc": "AP_2033",
+    "svg": "AP_2033.svg",
+    "demi": 0.5088
    },
    "methode": {
     "points": 1,
@@ -5166,7 +5278,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2034"
+    "bloc": "AP_2034",
+    "svg": "AP_2034.svg",
+    "demi": 0.6394
    },
    "methode": {
     "points": 1,
@@ -5203,7 +5317,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2035"
+    "bloc": "AP_2035",
+    "svg": "AP_2035.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -5242,7 +5358,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2036"
+    "bloc": "AP_2036",
+    "svg": "AP_2036.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -5279,7 +5397,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2037"
+    "bloc": "AP_2037",
+    "svg": "AP_2037.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -5316,7 +5436,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "AP_2038"
+    "bloc": "AP_2038",
+    "svg": "AP_2038.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -5944,7 +6066,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0081"
+    "bloc": "BP_0081",
+    "svg": "BP_0081.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -5981,7 +6105,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0082"
+    "bloc": "BP_0082",
+    "svg": "BP_0082.svg",
+    "demi": 0.2202
    },
    "methode": {
     "points": 1,
@@ -6018,7 +6144,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0083"
+    "bloc": "BP_0083",
+    "svg": "BP_0083.svg",
+    "demi": 0.2204
    },
    "methode": {
     "points": 1,
@@ -6057,7 +6185,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0084"
+    "bloc": "BP_0084",
+    "svg": "BP_0084.svg",
+    "demi": 0.9025
    },
    "methode": {
     "points": 2,
@@ -6068,7 +6198,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.85
    }
   },
   "BP_0085": {
@@ -6095,7 +6225,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0085"
+    "bloc": "BP_0085",
+    "svg": "BP_0085.svg",
+    "demi": 0.5705
    },
    "methode": {
     "points": 2,
@@ -6106,7 +6238,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5338
    }
   },
   "BP_0086": {
@@ -6133,7 +6265,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0086"
+    "bloc": "BP_0086",
+    "svg": "BP_0086.svg",
+    "demi": 0.612
    },
    "methode": {
     "points": 2,
@@ -6144,7 +6278,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5728
    }
   },
   "BP_0087": {
@@ -6168,12 +6302,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur plaque"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "BP_0087",
+    "svg": "BP_0087.svg",
+    "demi": 0.8215
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5735,
+    "longueur": 0.7728
    }
   },
   "BP_0088": {
@@ -6200,7 +6346,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0088"
+    "bloc": "BP_0088",
+    "svg": "BP_0088.svg",
+    "demi": 0.6447
    },
    "methode": {
     "points": 2,
@@ -6211,7 +6359,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.604
    }
   },
   "BP_0089": {
@@ -6235,12 +6383,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur grille"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "BP_0089",
+    "svg": "BP_0089.svg",
+    "demi": 0.8545
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6048,
+    "longueur": 0.8042
    }
   },
   "BP_0090": {
@@ -6267,7 +6427,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0090"
+    "bloc": "BP_0090",
+    "svg": "BP_0090.svg",
+    "demi": 1.1715
    },
    "methode": {
     "points": 2,
@@ -6305,7 +6467,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0091"
+    "bloc": "BP_0091",
+    "svg": "BP_0091.svg",
+    "demi": 1.0498
    },
    "methode": {
     "points": 2,
@@ -6316,7 +6480,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.9903
    }
   },
   "BP_0092": {
@@ -6343,7 +6507,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0092"
+    "bloc": "BP_0092",
+    "svg": "BP_0092.svg",
+    "demi": 1.1464
    },
    "methode": {
     "points": 2,
@@ -6354,7 +6520,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.0823
    }
   },
   "BP_0093": {
@@ -6381,7 +6547,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0093"
+    "bloc": "BP_0093",
+    "svg": "BP_0093.svg",
+    "demi": 1.0918
    },
    "methode": {
     "points": 2,
@@ -6392,7 +6560,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.0303
    }
   },
   "BP_0094": {
@@ -6416,12 +6584,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "BP_0094",
+    "svg": "BP_0094.svg",
+    "demi": 1.0371
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9782
    }
   },
   "BP_0095": {
@@ -6452,7 +6632,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0095"
+    "bloc": "BP_0095",
+    "svg": "BP_0095.svg",
+    "demi": 0.6689
    },
    "methode": {
     "points": 1,
@@ -6495,7 +6677,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0096"
+    "bloc": "BP_0096",
+    "svg": "BP_0096.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -6537,7 +6721,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0097"
+    "bloc": "BP_0097",
+    "svg": "BP_0097.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -6643,7 +6829,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0121"
+    "bloc": "BP_0121",
+    "svg": "BP_0121.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -6680,7 +6868,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0122"
+    "bloc": "BP_0122",
+    "svg": "BP_0122.svg",
+    "demi": 0.5999
    },
    "methode": {
     "points": 2,
@@ -6691,7 +6881,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5619
    }
   },
   "BP_0123": {
@@ -6718,7 +6908,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0123"
+    "bloc": "BP_0123",
+    "svg": "BP_0123.svg",
+    "demi": 0.6143
    },
    "methode": {
     "points": 2,
@@ -6729,7 +6921,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5755
    }
   },
   "BP_0124": {
@@ -6756,7 +6948,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0124"
+    "bloc": "BP_0124",
+    "svg": "BP_0124.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -6795,7 +6989,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0125"
+    "bloc": "BP_0125",
+    "svg": "BP_0125.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -6834,7 +7030,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0126"
+    "bloc": "BP_0126",
+    "svg": "BP_0126.svg",
+    "demi": 0.1889
    },
    "methode": {
     "points": 2,
@@ -6872,7 +7070,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_0127"
+    "bloc": "BP_0127",
+    "svg": "BP_0127.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -6915,7 +7115,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2051"
+    "bloc": "BP_2051",
+    "svg": "BP_2051.svg",
+    "demi": 0.78
    },
    "methode": {
     "points": 1,
@@ -6952,7 +7154,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2052"
+    "bloc": "BP_2052",
+    "svg": "BP_2052.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -6989,7 +7193,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2053"
+    "bloc": "BP_2053",
+    "svg": "BP_2053.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -7026,7 +7232,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2054"
+    "bloc": "BP_2054",
+    "svg": "BP_2054.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -7063,7 +7271,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2055"
+    "bloc": "BP_2055",
+    "svg": "BP_2055.svg",
+    "demi": 1.3225
    },
    "methode": {
     "points": 2,
@@ -7074,7 +7284,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.25
    }
   },
   "BP_2056": {
@@ -7103,7 +7313,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2056"
+    "bloc": "BP_2056",
+    "svg": "BP_2056.svg",
+    "demi": 0.9075
    },
    "methode": {
     "points": 2,
@@ -7114,7 +7326,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.8
    }
   },
   "BP_2057": {
@@ -7141,7 +7353,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2057"
+    "bloc": "BP_2057",
+    "svg": "BP_2057.svg",
+    "demi": 1.375
    },
    "methode": {
     "points": 2,
@@ -7152,7 +7366,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.3
    }
   },
   "BP_2058": {
@@ -7179,7 +7393,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2058"
+    "bloc": "BP_2058",
+    "svg": "BP_2058.svg",
+    "demi": 0.0887
    },
    "methode": {
     "points": 1,
@@ -7216,7 +7432,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2059"
+    "bloc": "BP_2059",
+    "svg": "BP_2059.svg",
+    "demi": 0.5875
    },
    "methode": {
     "points": 1,
@@ -7255,7 +7473,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2076"
+    "bloc": "BP_2076",
+    "svg": "BP_2076.svg",
+    "demi": 0.1854
    },
    "methode": {
     "points": 1,
@@ -7294,7 +7514,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2077"
+    "bloc": "BP_2077",
+    "svg": "BP_2077.svg",
+    "demi": 0.2992
    },
    "methode": {
     "points": 1,
@@ -7333,7 +7555,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2078"
+    "bloc": "BP_2078",
+    "svg": "BP_2078.svg",
+    "demi": 0.1744
    },
    "methode": {
     "points": 1,
@@ -7370,7 +7594,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2079"
+    "bloc": "BP_2079",
+    "svg": "BP_2079.svg",
+    "demi": 0.2882
    },
    "methode": {
     "points": 1,
@@ -7409,7 +7635,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2080"
+    "bloc": "BP_2080",
+    "svg": "BP_2080.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -7446,7 +7674,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2081"
+    "bloc": "BP_2081",
+    "svg": "BP_2081.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -7483,7 +7713,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2082"
+    "bloc": "BP_2082",
+    "svg": "BP_2082.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -7520,7 +7752,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2083"
+    "bloc": "BP_2083",
+    "svg": "BP_2083.svg",
+    "demi": 0.2095
    },
    "methode": {
     "points": 1,
@@ -7557,7 +7791,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2084"
+    "bloc": "BP_2084",
+    "svg": "BP_2084.svg",
+    "demi": 0.2772
    },
    "methode": {
     "points": 1,
@@ -7594,7 +7830,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "BP_2085"
+    "bloc": "BP_2085",
+    "svg": "BP_2085.svg",
+    "demi": 0.6394
    },
    "methode": {
     "points": 1,
@@ -7850,7 +8088,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0161"
+    "bloc": "CP_0161",
+    "svg": "CP_0161.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -7887,7 +8127,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0162"
+    "bloc": "CP_0162",
+    "svg": "CP_0162.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -7926,7 +8168,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0163"
+    "bloc": "CP_0163",
+    "svg": "CP_0163.svg",
+    "demi": 0.9025
    },
    "methode": {
     "points": 2,
@@ -7937,7 +8181,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.85
    }
   },
   "CP_0164": {
@@ -7964,7 +8208,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0164"
+    "bloc": "CP_0164",
+    "svg": "CP_0164.svg",
+    "demi": 0.5705
    },
    "methode": {
     "points": 2,
@@ -7975,7 +8221,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5338
    }
   },
   "CP_0165": {
@@ -8002,7 +8248,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0165"
+    "bloc": "CP_0165",
+    "svg": "CP_0165.svg",
+    "demi": 0.612
    },
    "methode": {
     "points": 2,
@@ -8013,7 +8261,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5728
    }
   },
   "CP_0166": {
@@ -8037,12 +8285,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur plaque"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "CP_0166",
+    "svg": "CP_0166.svg",
+    "demi": 0.8215
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5735,
+    "longueur": 0.7728
    }
   },
   "CP_0167": {
@@ -8066,12 +8326,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "CP_0167",
+    "svg": "CP_0167.svg",
+    "demi": 1.0371
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9782
    }
   },
   "CP_0168": {
@@ -8104,7 +8376,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0168"
+    "bloc": "CP_0168",
+    "svg": "CP_0168.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -8146,7 +8420,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0169"
+    "bloc": "CP_0169",
+    "svg": "CP_0169.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -8252,7 +8528,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0201"
+    "bloc": "CP_0201",
+    "svg": "CP_0201.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -8289,7 +8567,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0202"
+    "bloc": "CP_0202",
+    "svg": "CP_0202.svg",
+    "demi": 0.5999
    },
    "methode": {
     "points": 2,
@@ -8300,7 +8580,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5619
    }
   },
   "CP_0203": {
@@ -8327,7 +8607,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0203"
+    "bloc": "CP_0203",
+    "svg": "CP_0203.svg",
+    "demi": 0.6143
    },
    "methode": {
     "points": 2,
@@ -8338,7 +8620,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5755
    }
   },
   "CP_0204": {
@@ -8365,7 +8647,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0204"
+    "bloc": "CP_0204",
+    "svg": "CP_0204.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -8404,7 +8688,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0205"
+    "bloc": "CP_0205",
+    "svg": "CP_0205.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -8443,7 +8729,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0206"
+    "bloc": "CP_0206",
+    "svg": "CP_0206.svg",
+    "demi": 0.1889
    },
    "methode": {
     "points": 2,
@@ -8481,7 +8769,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_0207"
+    "bloc": "CP_0207",
+    "svg": "CP_0207.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -8521,7 +8811,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2101"
+    "bloc": "CP_2101",
+    "svg": "CP_2101.svg",
+    "demi": 0.78
    },
    "methode": {
     "points": 1,
@@ -8558,7 +8850,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2102"
+    "bloc": "CP_2102",
+    "svg": "CP_2102.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -8595,7 +8889,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2103"
+    "bloc": "CP_2103",
+    "svg": "CP_2103.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -8632,7 +8928,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2104"
+    "bloc": "CP_2104",
+    "svg": "CP_2104.svg",
+    "demi": 0.291
    },
    "methode": {
     "points": 1,
@@ -8671,7 +8969,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2126"
+    "bloc": "CP_2126",
+    "svg": "CP_2126.svg",
+    "demi": 0.1854
    },
    "methode": {
     "points": 1,
@@ -8710,7 +9010,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2127"
+    "bloc": "CP_2127",
+    "svg": "CP_2127.svg",
+    "demi": 0.2992
    },
    "methode": {
     "points": 1,
@@ -8749,7 +9051,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2128"
+    "bloc": "CP_2128",
+    "svg": "CP_2128.svg",
+    "demi": 0.1744
    },
    "methode": {
     "points": 1,
@@ -8786,7 +9090,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2129"
+    "bloc": "CP_2129",
+    "svg": "CP_2129.svg",
+    "demi": 0.2882
    },
    "methode": {
     "points": 1,
@@ -8823,7 +9129,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2130"
+    "bloc": "CP_2130",
+    "svg": "CP_2130.svg",
+    "demi": 0.2772
    },
    "methode": {
     "points": 1,
@@ -8860,7 +9168,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2131"
+    "bloc": "CP_2131",
+    "svg": "CP_2131.svg",
+    "demi": 0.6394
    },
    "methode": {
     "points": 1,
@@ -8899,7 +9209,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2132"
+    "bloc": "CP_2132",
+    "svg": "CP_2132.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -8936,7 +9248,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2133"
+    "bloc": "CP_2133",
+    "svg": "CP_2133.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -8973,7 +9287,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2134"
+    "bloc": "CP_2134",
+    "svg": "CP_2134.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -9010,7 +9326,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "CP_2135"
+    "bloc": "CP_2135",
+    "svg": "CP_2135.svg",
+    "demi": 0.2095
    },
    "methode": {
     "points": 1,
@@ -9266,7 +9584,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0241"
+    "bloc": "DP_0241",
+    "svg": "DP_0241.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -9303,7 +9623,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0242"
+    "bloc": "DP_0242",
+    "svg": "DP_0242.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -9342,7 +9664,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0243"
+    "bloc": "DP_0243",
+    "svg": "DP_0243.svg",
+    "demi": 0.9025
    },
    "methode": {
     "points": 2,
@@ -9353,7 +9677,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.85
    }
   },
   "DP_0244": {
@@ -9380,7 +9704,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0244"
+    "bloc": "DP_0244",
+    "svg": "DP_0244.svg",
+    "demi": 0.5705
    },
    "methode": {
     "points": 2,
@@ -9391,7 +9717,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5338
    }
   },
   "DP_0245": {
@@ -9418,7 +9744,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0245"
+    "bloc": "DP_0245",
+    "svg": "DP_0245.svg",
+    "demi": 0.612
    },
    "methode": {
     "points": 2,
@@ -9429,7 +9757,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5728
    }
   },
   "DP_0246": {
@@ -9453,12 +9781,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur plaque"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "DP_0246",
+    "svg": "DP_0246.svg",
+    "demi": 0.8215
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5735,
+    "longueur": 0.7728
    }
   },
   "DP_0247": {
@@ -9482,12 +9822,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "DP_0247",
+    "svg": "DP_0247.svg",
+    "demi": 1.0373
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6002,
+    "longueur": 0.9784
    }
   },
   "DP_0248": {
@@ -9520,7 +9872,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0248"
+    "bloc": "DP_0248",
+    "svg": "DP_0248.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -9562,7 +9916,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0249"
+    "bloc": "DP_0249",
+    "svg": "DP_0249.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -9668,7 +10024,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0281"
+    "bloc": "DP_0281",
+    "svg": "DP_0281.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -9705,7 +10063,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0282"
+    "bloc": "DP_0282",
+    "svg": "DP_0282.svg",
+    "demi": 0.5999
    },
    "methode": {
     "points": 2,
@@ -9716,7 +10076,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5619
    }
   },
   "DP_0283": {
@@ -9743,7 +10103,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0283"
+    "bloc": "DP_0283",
+    "svg": "DP_0283.svg",
+    "demi": 0.6143
    },
    "methode": {
     "points": 2,
@@ -9754,7 +10116,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5755
    }
   },
   "DP_0284": {
@@ -9781,7 +10143,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0284"
+    "bloc": "DP_0284",
+    "svg": "DP_0284.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -9818,7 +10182,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0285"
+    "bloc": "DP_0285",
+    "svg": "DP_0285.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -9855,7 +10221,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0286"
+    "bloc": "DP_0286",
+    "svg": "DP_0286.svg",
+    "demi": 0.1887
    },
    "methode": {
     "points": 2,
@@ -9893,7 +10261,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "DP_0287"
+    "bloc": "DP_0287",
+    "svg": "DP_0287.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -10147,7 +10517,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0321"
+    "bloc": "EP_0321",
+    "svg": "EP_0321.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -10186,7 +10558,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0322"
+    "bloc": "EP_0322",
+    "svg": "EP_0322.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -10220,12 +10594,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur plaque"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "EP_0323",
+    "svg": "EP_0323.svg",
+    "demi": 1.0263
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9679
    }
   },
   "EP_0324": {
@@ -10254,7 +10640,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0324"
+    "bloc": "EP_0324",
+    "svg": "EP_0324.svg",
+    "demi": 0.9025
    },
    "methode": {
     "points": 2,
@@ -10265,7 +10653,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.85
    }
   },
   "EP_0325": {
@@ -10298,7 +10686,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0325"
+    "bloc": "EP_0325",
+    "svg": "EP_0325.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -10340,7 +10730,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0326"
+    "bloc": "EP_0326",
+    "svg": "EP_0326.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -10446,7 +10838,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0361"
+    "bloc": "EP_0361",
+    "svg": "EP_0361.svg",
+    "demi": 0.6057
    },
    "methode": {
     "points": 2,
@@ -10457,7 +10851,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5673
    }
   },
   "EP_0362": {
@@ -10481,12 +10875,24 @@
     "plani": "3 points: 2 points sur le plus grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "EP_0362",
+    "svg": "EP_0362.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.4672
    }
   },
   "EP_0363": {
@@ -10510,12 +10916,24 @@
     "plani": "3 points: 2 points sur le plus grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "EP_0363",
+    "svg": "EP_0363.svg",
+    "demi": 0.5356
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5006
    }
   },
   "EP_0364": {
@@ -10542,7 +10960,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0364"
+    "bloc": "EP_0364",
+    "svg": "EP_0364.svg",
+    "demi": 0.2095
    },
    "methode": {
     "points": 1,
@@ -10579,7 +10999,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0365"
+    "bloc": "EP_0365",
+    "svg": "EP_0365.svg",
+    "demi": 0.5358
    },
    "methode": {
     "points": 2,
@@ -10590,7 +11012,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5008
    }
   },
   "EP_0366": {
@@ -10619,7 +11041,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0366"
+    "bloc": "EP_0366",
+    "svg": "EP_0366.svg",
+    "demi": 0.1677
    },
    "methode": {
     "points": 1,
@@ -10658,7 +11082,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0367"
+    "bloc": "EP_0367",
+    "svg": "EP_0367.svg",
+    "demi": 0.1889
    },
    "methode": {
     "points": 2,
@@ -10696,7 +11122,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0368"
+    "bloc": "EP_0368",
+    "svg": "EP_0368.svg",
+    "demi": 0.1676
    },
    "methode": {
     "points": 1,
@@ -10733,7 +11161,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_0369"
+    "bloc": "EP_0369",
+    "svg": "EP_0369.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -10770,7 +11200,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_2201"
+    "bloc": "EP_2201",
+    "svg": "EP_2201.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -10807,7 +11239,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_2202"
+    "bloc": "EP_2202",
+    "svg": "EP_2202.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -10846,7 +11280,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_2226"
+    "bloc": "EP_2226",
+    "svg": "EP_2226.svg",
+    "demi": 0.1854
    },
    "methode": {
     "points": 1,
@@ -10885,7 +11321,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_2227"
+    "bloc": "EP_2227",
+    "svg": "EP_2227.svg",
+    "demi": 0.2992
    },
    "methode": {
     "points": 1,
@@ -10924,7 +11362,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "EP_2228"
+    "bloc": "EP_2228",
+    "svg": "EP_2228.svg",
+    "demi": 0.1744
    },
    "methode": {
     "points": 1,
@@ -11302,7 +11742,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0401"
+    "bloc": "FP_0401",
+    "svg": "FP_0401.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -11339,7 +11781,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0402"
+    "bloc": "FP_0402",
+    "svg": "FP_0402.svg",
+    "demi": 0.3513
    },
    "methode": {
     "points": 1,
@@ -11376,7 +11820,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0403"
+    "bloc": "FP_0403",
+    "svg": "FP_0403.svg",
+    "demi": 0.3939
    },
    "methode": {
     "points": 1,
@@ -11413,7 +11859,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0404"
+    "bloc": "FP_0404",
+    "svg": "FP_0404.svg",
+    "demi": 0.3939
    },
    "methode": {
     "points": 1,
@@ -11447,12 +11895,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "FP_0405",
+    "svg": "FP_0405.svg",
+    "demi": 0.8952
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.843
    }
   },
   "FP_0406": {
@@ -11479,7 +11939,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0406"
+    "bloc": "FP_0406",
+    "svg": "FP_0406.svg",
+    "demi": 0.9279
    },
    "methode": {
     "points": 2,
@@ -11490,7 +11952,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.8742
    }
   },
   "FP_0407": {
@@ -11517,7 +11979,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0407"
+    "bloc": "FP_0407",
+    "svg": "FP_0407.svg",
+    "demi": 0.7017
    },
    "methode": {
     "points": 2,
@@ -11528,7 +11992,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6573
    }
   },
   "FP_0408": {
@@ -11552,12 +12016,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "FP_0408",
+    "svg": "FP_0408.svg",
+    "demi": 1.1683
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.8,
+    "longueur": 1.1031
    }
   },
   "FP_0409": {
@@ -11581,12 +12057,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "FP_0409",
+    "svg": "FP_0409.svg",
+    "demi": 0.9825
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9262
    }
   },
   "FP_0410": {
@@ -11619,7 +12107,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0410"
+    "bloc": "FP_0410",
+    "svg": "FP_0410.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -11661,7 +12151,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0411"
+    "bloc": "FP_0411",
+    "svg": "FP_0411.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -11767,7 +12259,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0414"
+    "bloc": "FP_0414",
+    "svg": "FP_0414.svg",
+    "demi": 0.4825
    },
    "methode": {
     "points": 1,
@@ -11801,12 +12295,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sans"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "FP_0415",
+    "svg": "FP_0415.svg",
+    "demi": 0.9825
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9262
    }
   },
   "FP_0441": {
@@ -11833,7 +12339,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0441"
+    "bloc": "FP_0441",
+    "svg": "FP_0441.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -11867,12 +12375,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "FP_0442",
+    "svg": "FP_0442.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5
    }
   },
   "FP_0443": {
@@ -11899,7 +12419,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0443"
+    "bloc": "FP_0443",
+    "svg": "FP_0443.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -11936,7 +12458,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "FP_0444"
+    "bloc": "FP_0444",
+    "svg": "FP_0444.svg",
+    "demi": 0.1679
    },
    "methode": {
     "points": 1,
@@ -12190,7 +12714,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0481"
+    "bloc": "GP_0481",
+    "svg": "GP_0481.svg",
+    "demi": 0.5217
    },
    "methode": {
     "points": 1,
@@ -12227,7 +12753,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0482"
+    "bloc": "GP_0482",
+    "svg": "GP_0482.svg",
+    "demi": 0.3513
    },
    "methode": {
     "points": 1,
@@ -12264,7 +12792,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0483"
+    "bloc": "GP_0483",
+    "svg": "GP_0483.svg",
+    "demi": 0.2594
    },
    "methode": {
     "points": 1,
@@ -12301,7 +12831,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0484"
+    "bloc": "GP_0484",
+    "svg": "GP_0484.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -12338,7 +12870,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0485"
+    "bloc": "GP_0485",
+    "svg": "GP_0485.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -12372,12 +12906,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "GP_0486",
+    "svg": "GP_0486.svg",
+    "demi": 0.8405
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.791
    }
   },
   "GP_0487": {
@@ -12401,12 +12947,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "GP_0487",
+    "svg": "GP_0487.svg",
+    "demi": 0.9279
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8742
    }
   },
   "GP_0488": {
@@ -12433,7 +12991,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0488"
+    "bloc": "GP_0488",
+    "svg": "GP_0488.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -12470,7 +13030,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0489"
+    "bloc": "GP_0489",
+    "svg": "GP_0489.svg",
+    "demi": 0.6925
    },
    "methode": {
     "points": 1,
@@ -12513,7 +13075,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0490"
+    "bloc": "GP_0490",
+    "svg": "GP_0490.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -12555,7 +13119,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0491"
+    "bloc": "GP_0491",
+    "svg": "GP_0491.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -12661,7 +13227,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0521"
+    "bloc": "GP_0521",
+    "svg": "GP_0521.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -12695,12 +13263,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "GP_0522",
+    "svg": "GP_0522.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5
    }
   },
   "GP_0523": {
@@ -12727,7 +13307,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0523"
+    "bloc": "GP_0523",
+    "svg": "GP_0523.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -12764,7 +13346,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "GP_0524"
+    "bloc": "GP_0524",
+    "svg": "GP_0524.svg",
+    "demi": 0.1682
    },
    "methode": {
     "points": 1,
@@ -13111,7 +13695,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0561"
+    "bloc": "HP_0561",
+    "svg": "HP_0561.svg",
+    "demi": 0.3544
    },
    "methode": {
     "points": 1,
@@ -13148,7 +13734,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0562"
+    "bloc": "HP_0562",
+    "svg": "HP_0562.svg",
+    "demi": 0.2069
    },
    "methode": {
     "points": 1,
@@ -13185,7 +13773,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0563"
+    "bloc": "HP_0563",
+    "svg": "HP_0563.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -13222,7 +13812,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0564"
+    "bloc": "HP_0564",
+    "svg": "HP_0564.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -13259,7 +13851,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0565"
+    "bloc": "HP_0565",
+    "svg": "HP_0565.svg",
+    "demi": 0.4563
    },
    "methode": {
     "points": 1,
@@ -13293,12 +13887,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "HP_0566",
+    "svg": "HP_0566.svg",
+    "demi": 0.8515
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8014
    }
   },
   "HP_0567": {
@@ -13322,12 +13928,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "HP_0567",
+    "svg": "HP_0567.svg",
+    "demi": 0.9497
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.895
    }
   },
   "HP_0568": {
@@ -13354,7 +13972,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0568"
+    "bloc": "HP_0568",
+    "svg": "HP_0568.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -13391,7 +14011,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0569"
+    "bloc": "HP_0569",
+    "svg": "HP_0569.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -13428,7 +14050,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0570"
+    "bloc": "HP_0570",
+    "svg": "HP_0570.svg",
+    "demi": 0.7375
    },
    "methode": {
     "points": 2,
@@ -13439,7 +14063,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6928
    }
   },
   "HP_0571": {
@@ -13472,7 +14096,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0571"
+    "bloc": "HP_0571",
+    "svg": "HP_0571.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -13514,7 +14140,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0572"
+    "bloc": "HP_0572",
+    "svg": "HP_0572.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -13620,7 +14248,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0575"
+    "bloc": "HP_0575",
+    "svg": "HP_0575.svg",
+    "demi": 0.7535
    },
    "methode": {
     "points": 1,
@@ -13657,7 +14287,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0601"
+    "bloc": "HP_0601",
+    "svg": "HP_0601.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -13691,12 +14323,24 @@
     "plani": "3 points (un sur chaque angle)",
     "alti": "Sur le câble"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "HP_0602",
+    "svg": "HP_0602.svg",
+    "demi": 0.9912
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.0,
+    "longueur": 0.9345
    }
   },
   "HP_0603": {
@@ -13720,12 +14364,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "HP_0603",
+    "svg": "HP_0603.svg",
+    "demi": 0.5353
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.4938,
+    "longueur": 0.5003
    }
   },
   "HP_0604": {
@@ -13752,7 +14408,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0604"
+    "bloc": "HP_0604",
+    "svg": "HP_0604.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -13789,7 +14447,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0605"
+    "bloc": "HP_0605",
+    "svg": "HP_0605.svg",
+    "demi": 0.9562
    },
    "methode": {
     "points": 3,
@@ -13800,8 +14460,8 @@
     ],
     "verrou_largeur": false,
     "verrou_longueur": false,
-    "largeur": 0.0,
-    "longueur": 0.0
+    "largeur": 0.3,
+    "longueur": 0.9011
    }
   },
   "HP_0606": {
@@ -13828,7 +14488,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0606"
+    "bloc": "HP_0606",
+    "svg": "HP_0606.svg",
+    "demi": 0.9944
    },
    "methode": {
     "points": 3,
@@ -13840,7 +14502,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.9376
    }
   },
   "HP_0607": {
@@ -13867,7 +14529,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "HP_0607"
+    "bloc": "HP_0607",
+    "svg": "HP_0607.svg",
+    "demi": 0.1682
    },
    "methode": {
     "points": 1,
@@ -14152,7 +14816,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0641"
+    "bloc": "IP_0641",
+    "svg": "IP_0641.svg",
+    "demi": 0.2799
    },
    "methode": {
     "points": 1,
@@ -14189,7 +14855,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0642"
+    "bloc": "IP_0642",
+    "svg": "IP_0642.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -14226,7 +14894,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0643"
+    "bloc": "IP_0643",
+    "svg": "IP_0643.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -14263,7 +14933,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0644"
+    "bloc": "IP_0644",
+    "svg": "IP_0644.svg",
+    "demi": 0.5244
    },
    "methode": {
     "points": 2,
@@ -14274,7 +14946,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.4896
    }
   },
   "IP_0645": {
@@ -14298,12 +14970,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur massif"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "IP_0645",
+    "svg": "IP_0645.svg",
+    "demi": 0.8624
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8118
    }
   },
   "IP_0646": {
@@ -14327,12 +15011,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "IP_0646",
+    "svg": "IP_0646.svg",
+    "demi": 0.9498
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.895
    }
   },
   "IP_0647": {
@@ -14359,7 +15055,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0647"
+    "bloc": "IP_0647",
+    "svg": "IP_0647.svg",
+    "demi": 0.8459
    },
    "methode": {
     "points": 2,
@@ -14370,7 +15068,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.7961
    }
   },
   "IP_0648": {
@@ -14397,7 +15095,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0648"
+    "bloc": "IP_0648",
+    "svg": "IP_0648.svg",
+    "demi": 0.6338
    },
    "methode": {
     "points": 2,
@@ -14408,7 +15108,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5937
    }
   },
   "IP_0649": {
@@ -14432,12 +15132,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur la grille"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "IP_0649",
+    "svg": "IP_0649.svg",
+    "demi": 1.1066
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6452,
+    "longueur": 1.0444
    }
   },
   "IP_0650": {
@@ -14464,7 +15176,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0650"
+    "bloc": "IP_0650",
+    "svg": "IP_0650.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -14507,7 +15221,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0651"
+    "bloc": "IP_0651",
+    "svg": "IP_0651.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -14549,7 +15265,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0652"
+    "bloc": "IP_0652",
+    "svg": "IP_0652.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -14652,12 +15370,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "IP_0681",
+    "svg": "IP_0681.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5
    }
   },
   "IP_0682": {
@@ -14684,7 +15414,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0682"
+    "bloc": "IP_0682",
+    "svg": "IP_0682.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -14721,7 +15453,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "IP_0683"
+    "bloc": "IP_0683",
+    "svg": "IP_0683.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -15037,7 +15771,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0701"
+    "bloc": "JP_0701",
+    "svg": "JP_0701.svg",
+    "demi": 0.2095
    },
    "methode": {
     "points": 1,
@@ -15074,7 +15810,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0702"
+    "bloc": "JP_0702",
+    "svg": "JP_0702.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -15111,7 +15849,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0703"
+    "bloc": "JP_0703",
+    "svg": "JP_0703.svg",
+    "demi": 0.7422
    },
    "methode": {
     "points": 2,
@@ -15122,7 +15862,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6973
    }
   },
   "JP_0704": {
@@ -15149,7 +15889,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0704"
+    "bloc": "JP_0704",
+    "svg": "JP_0704.svg",
+    "demi": 0.8514
    },
    "methode": {
     "points": 2,
@@ -15160,7 +15902,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.8013
    }
   },
   "JP_0705": {
@@ -15184,12 +15926,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "JP_0705",
+    "svg": "JP_0705.svg",
+    "demi": 0.9825
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9262
    }
   },
   "JP_0706": {
@@ -15213,12 +15967,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "JP_0706",
+    "svg": "JP_0706.svg",
+    "demi": 0.8404
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.7909
    }
   },
   "JP_0707": {
@@ -15251,7 +16017,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0707"
+    "bloc": "JP_0707",
+    "svg": "JP_0707.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -15293,7 +16061,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0708"
+    "bloc": "JP_0708",
+    "svg": "JP_0708.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -15399,7 +16169,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0741"
+    "bloc": "JP_0741",
+    "svg": "JP_0741.svg",
+    "demi": 0.2095
    },
    "methode": {
     "points": 1,
@@ -15436,7 +16208,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0742"
+    "bloc": "JP_0742",
+    "svg": "JP_0742.svg",
+    "demi": 0.1887
    },
    "methode": {
     "points": 2,
@@ -15471,12 +16245,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "JP_0743",
+    "svg": "JP_0743.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5
    }
   },
   "JP_0744": {
@@ -15503,7 +16289,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0744"
+    "bloc": "JP_0744",
+    "svg": "JP_0744.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -15540,7 +16328,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0745"
+    "bloc": "JP_0745",
+    "svg": "JP_0745.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 2,
@@ -15551,7 +16341,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.4996
    }
   },
   "JP_0746": {
@@ -15578,7 +16368,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0746"
+    "bloc": "JP_0746",
+    "svg": "JP_0746.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -15615,7 +16407,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_0747"
+    "bloc": "JP_0747",
+    "svg": "JP_0747.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -15652,7 +16446,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_2451"
+    "bloc": "JP_2451",
+    "svg": "JP_2451.svg",
+    "demi": 0.4825
    },
    "methode": {
     "points": 1,
@@ -15689,7 +16485,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "JP_2452"
+    "bloc": "JP_2452",
+    "svg": "JP_2452.svg",
+    "demi": 1.2777
    },
    "methode": {
     "points": 1,
@@ -15881,7 +16679,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "KP_0761"
+    "bloc": "KP_0761",
+    "svg": "KP_0761.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -15918,7 +16718,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "KP_0762"
+    "bloc": "KP_0762",
+    "svg": "KP_0762.svg",
+    "demi": 0.6403
    },
    "methode": {
     "points": 2,
@@ -15929,7 +16731,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5999
    }
   },
   "KP_0763": {
@@ -15956,7 +16758,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "KP_0763"
+    "bloc": "KP_0763",
+    "svg": "KP_0763.svg",
+    "demi": 0.9025
    },
    "methode": {
     "points": 2,
@@ -15967,7 +16771,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.85
    }
   },
   "KP_0764": {
@@ -15991,12 +16795,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "KP_0764",
+    "svg": "KP_0764.svg",
+    "demi": 0.8514
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8013
    }
   },
   "KP_0765": {
@@ -16023,7 +16839,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "KP_0765"
+    "bloc": "KP_0765",
+    "svg": "KP_0765.svg",
+    "demi": 0.8406
    },
    "methode": {
     "points": 2,
@@ -16034,7 +16852,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.791
    }
   },
   "KP_0766": {
@@ -16058,12 +16876,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "KP_0766",
+    "svg": "KP_0766.svg",
+    "demi": 0.8514
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8013
    }
   },
   "KP_0767": {
@@ -16087,12 +16917,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "KP_0767",
+    "svg": "KP_0767.svg",
+    "demi": 0.8186
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.7701
    }
   },
   "KP_0768": {
@@ -16116,12 +16958,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "KP_0768",
+    "svg": "KP_0768.svg",
+    "demi": 0.8514
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.8013
    }
   },
   "KP_0769": {
@@ -16148,7 +17002,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "KP_0769"
+    "bloc": "KP_0769",
+    "svg": "KP_0769.svg",
+    "demi": 0.8842
    },
    "methode": {
     "points": 2,
@@ -16159,7 +17015,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.8326
    }
   },
   "KP_0770": {
@@ -16215,12 +17071,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur dalle enterrée"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "KP_0801",
+    "svg": "KP_0801.svg",
+    "demi": 0.535
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5
    }
   },
   "LL_0821": {
@@ -16681,7 +17549,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "LP_0841"
+    "bloc": "LP_0841",
+    "svg": "LP_0841.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 2,
@@ -16719,7 +17589,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "LP_0842"
+    "bloc": "LP_0842",
+    "svg": "LP_0842.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 2,
@@ -16730,7 +17602,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5
    }
   },
   "LP_0843": {
@@ -16757,7 +17629,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "LP_0843"
+    "bloc": "LP_0843",
+    "svg": "LP_0843.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -16794,7 +17668,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "LP_0844"
+    "bloc": "LP_0844",
+    "svg": "LP_0844.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -17019,7 +17895,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2578"
+    "bloc": "MP_2578",
+    "svg": "MP_2578.svg",
+    "demi": 4.21
    },
    "methode": {
     "points": 2,
@@ -17030,7 +17908,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 4.0
    }
   },
   "MP_2579": {
@@ -17057,7 +17935,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2579"
+    "bloc": "MP_2579",
+    "svg": "MP_2579.svg",
+    "demi": 4.21
    },
    "methode": {
     "points": 2,
@@ -17068,7 +17948,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 4.0
    }
   },
   "MP_2580": {
@@ -17095,7 +17975,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2580"
+    "bloc": "MP_2580",
+    "svg": "MP_2580.svg",
+    "demi": 4.21
    },
    "methode": {
     "points": 2,
@@ -17106,7 +17988,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 4.0
    }
   },
   "MP_2581": {
@@ -17133,7 +18015,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2581"
+    "bloc": "MP_2581",
+    "svg": "MP_2581.svg",
+    "demi": 3.16
    },
    "methode": {
     "points": 2,
@@ -17144,7 +18028,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 3.0
    }
   },
   "MP_2582": {
@@ -17171,7 +18055,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2582"
+    "bloc": "MP_2582",
+    "svg": "MP_2582.svg",
+    "demi": 0.5119
    },
    "methode": {
     "points": 1,
@@ -17208,7 +18094,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2583"
+    "bloc": "MP_2583",
+    "svg": "MP_2583.svg",
+    "demi": 0.5328
    },
    "methode": {
     "points": 1,
@@ -17245,7 +18133,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "MP_2584"
+    "bloc": "MP_2584",
+    "svg": "MP_2584.svg",
+    "demi": 0.7411
    },
    "methode": {
     "points": 1,
@@ -17344,7 +18234,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0921"
+    "bloc": "NP_0921",
+    "svg": "NP_0921.svg",
+    "demi": 1.06
    },
    "methode": {
     "points": 2,
@@ -17355,7 +18247,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.0
    }
   },
   "NP_0922": {
@@ -17382,7 +18274,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0922"
+    "bloc": "NP_0922",
+    "svg": "NP_0922.svg",
+    "demi": 1.06
    },
    "methode": {
     "points": 2,
@@ -17393,7 +18287,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.0
    }
   },
   "NP_0923": {
@@ -17417,12 +18311,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "NP_0923",
+    "svg": "NP_0923.svg",
+    "demi": 0.8629
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.7349,
+    "longueur": 0.8123
    }
   },
   "NP_0924": {
@@ -17449,7 +18355,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0924"
+    "bloc": "NP_0924",
+    "svg": "NP_0924.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -17486,7 +18394,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0925"
+    "bloc": "NP_0925",
+    "svg": "NP_0925.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -17523,7 +18433,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0926"
+    "bloc": "NP_0926",
+    "svg": "NP_0926.svg",
+    "demi": 0.9496
    },
    "methode": {
     "points": 2,
@@ -17534,7 +18446,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.8949
    }
   },
   "NP_0927": {
@@ -17561,7 +18473,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0927"
+    "bloc": "NP_0927",
+    "svg": "NP_0927.svg",
+    "demi": 1.585
    },
    "methode": {
     "points": 2,
@@ -17572,7 +18486,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.4154
    }
   },
   "NP_0928": {
@@ -17596,12 +18510,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "NP_0928",
+    "svg": "NP_0928.svg",
+    "demi": 1.06
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 1.0
    }
   },
   "NP_0929": {
@@ -17628,7 +18554,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0929"
+    "bloc": "NP_0929",
+    "svg": "NP_0929.svg",
+    "demi": 1.073
    },
    "methode": {
     "points": 2,
@@ -17639,7 +18567,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 1.0124
    }
   },
   "NP_0930": {
@@ -17666,7 +18594,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0930"
+    "bloc": "NP_0930",
+    "svg": "NP_0930.svg",
+    "demi": 1.0481
    },
    "methode": {
     "points": 2,
@@ -17677,7 +18607,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.9887
    }
   },
   "NP_0931": {
@@ -17704,7 +18634,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0931"
+    "bloc": "NP_0931",
+    "svg": "NP_0931.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -17741,7 +18673,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0932"
+    "bloc": "NP_0932",
+    "svg": "NP_0932.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -17778,7 +18712,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0933"
+    "bloc": "NP_0933",
+    "svg": "NP_0933.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -17815,7 +18751,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0934"
+    "bloc": "NP_0934",
+    "svg": "NP_0934.svg",
+    "demi": 0.1806
    },
    "methode": {
     "points": 1,
@@ -17852,7 +18790,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_0935"
+    "bloc": "NP_0935",
+    "svg": "NP_0935.svg",
+    "demi": 0.6438
    },
    "methode": {
     "points": 2,
@@ -17863,7 +18803,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6036
    }
   },
   "NP_0936": {
@@ -17887,12 +18827,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "NP_0936",
+    "svg": "NP_0936.svg",
+    "demi": 0.8538
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6036,
+    "longueur": 0.8036
    }
   },
   "NP_0937": {
@@ -17953,7 +18905,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2601"
+    "bloc": "NP_2601",
+    "svg": "NP_2601.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -17990,7 +18944,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2602"
+    "bloc": "NP_2602",
+    "svg": "NP_2602.svg",
+    "demi": 0.43
    },
    "methode": {
     "points": 2,
@@ -18001,7 +18957,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.4
    }
   },
   "NP_2603": {
@@ -18028,7 +18984,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2603"
+    "bloc": "NP_2603",
+    "svg": "NP_2603.svg",
+    "demi": 0.3775
    },
    "methode": {
     "points": 1,
@@ -18065,7 +19023,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2604"
+    "bloc": "NP_2604",
+    "svg": "NP_2604.svg",
+    "demi": 0.64
    },
    "methode": {
     "points": 2,
@@ -18076,7 +19036,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6
    }
   },
   "NP_2605": {
@@ -18103,7 +19063,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2605"
+    "bloc": "NP_2605",
+    "svg": "NP_2605.svg",
+    "demi": 0.64
    },
    "methode": {
     "points": 2,
@@ -18114,7 +19076,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6
    }
   },
   "NP_2606": {
@@ -18138,12 +19100,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "NP_2606",
+    "svg": "NP_2606.svg",
+    "demi": 0.64
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.3,
+    "longueur": 0.6
    }
   },
   "NP_2607": {
@@ -18170,7 +19144,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2607"
+    "bloc": "NP_2607",
+    "svg": "NP_2607.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -18207,7 +19183,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "NP_2608"
+    "bloc": "NP_2608",
+    "svg": "NP_2608.svg",
+    "demi": 0.64
    },
    "methode": {
     "points": 3,
@@ -18219,7 +19197,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6
    }
   },
   "OL_0941": {
@@ -18339,7 +19317,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "OP_0961"
+    "bloc": "OP_0961",
+    "svg": "OP_0961.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -18376,7 +19356,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "OP_0962"
+    "bloc": "OP_0962",
+    "svg": "OP_0962.svg",
+    "demi": 0.2216
    },
    "methode": {
     "points": 1,
@@ -18569,7 +19551,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "PP_1001"
+    "bloc": "PP_1001",
+    "svg": "PP_1001.svg",
+    "demi": 3.2776
    },
    "methode": {
     "points": 2,
@@ -18946,12 +19930,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1041",
+    "svg": "QP_1041.svg",
+    "demi": 0.9893
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 0.9327
    }
   },
   "QP_1042": {
@@ -18975,12 +19971,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1042",
+    "svg": "QP_1042.svg",
+    "demi": 1.06
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 1.0
    }
   },
   "QP_1043": {
@@ -19007,7 +20015,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1043"
+    "bloc": "QP_1043",
+    "svg": "QP_1043.svg",
+    "demi": 0.22
    },
    "methode": {
     "points": 1,
@@ -19044,7 +20054,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1044"
+    "bloc": "QP_1044",
+    "svg": "QP_1044.svg",
+    "demi": 0.59
    },
    "methode": {
     "points": 2,
@@ -19055,7 +20067,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.552
    }
   },
   "QP_1045": {
@@ -19079,12 +20091,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur la grille"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1045",
+    "svg": "QP_1045.svg",
+    "demi": 0.85
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5526,
+    "longueur": 0.8
    }
   },
   "QP_1046": {
@@ -19111,7 +20135,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1046"
+    "bloc": "QP_1046",
+    "svg": "QP_1046.svg",
+    "demi": 0.6556
    },
    "methode": {
     "points": 2,
@@ -19122,7 +20148,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6144
    }
   },
   "QP_1047": {
@@ -19146,12 +20172,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur la trappe"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1047",
+    "svg": "QP_1047.svg",
+    "demi": 0.8652
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.615,
+    "longueur": 0.8144
    }
   },
   "QP_1048": {
@@ -19184,7 +20222,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1048"
+    "bloc": "QP_1048",
+    "svg": "QP_1048.svg",
+    "demi": 1.3466
    },
    "methode": {
     "points": 1,
@@ -19226,7 +20266,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1049"
+    "bloc": "QP_1049",
+    "svg": "QP_1049.svg",
+    "demi": 0.7949
    },
    "methode": {
     "points": 1,
@@ -19332,7 +20374,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1052"
+    "bloc": "QP_1052",
+    "svg": "QP_1052.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -19369,7 +20413,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1053"
+    "bloc": "QP_1053",
+    "svg": "QP_1053.svg",
+    "demi": 0.6556
    },
    "methode": {
     "points": 2,
@@ -19380,7 +20426,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6144
    }
   },
   "QP_1054": {
@@ -19404,12 +20450,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sans"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1054",
+    "svg": "QP_1054.svg",
+    "demi": 1.06
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6,
+    "longueur": 1.0
    }
   },
   "QP_1055": {
@@ -19436,7 +20494,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1055"
+    "bloc": "QP_1055",
+    "svg": "QP_1055.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 2,
@@ -19447,7 +20507,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.5
    }
   },
   "QP_1081": {
@@ -19474,7 +20534,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1081"
+    "bloc": "QP_1081",
+    "svg": "QP_1081.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -19511,7 +20573,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1082"
+    "bloc": "QP_1082",
+    "svg": "QP_1082.svg",
+    "demi": 0.5237
    },
    "methode": {
     "points": 2,
@@ -19522,7 +20586,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.4892
    }
   },
   "QP_1083": {
@@ -19549,7 +20613,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1083"
+    "bloc": "QP_1083",
+    "svg": "QP_1083.svg",
+    "demi": 0.2729
    },
    "methode": {
     "points": 1,
@@ -19583,12 +20649,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Sur la génératrice supérieure"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "QP_1084",
+    "svg": "QP_1084.svg",
+    "demi": 0.5356
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.5,
+    "longueur": 0.5006
    }
   },
   "QP_1085": {
@@ -19615,7 +20693,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "QP_1085"
+    "bloc": "QP_1085",
+    "svg": "QP_1085.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -20001,7 +21081,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1121"
+    "bloc": "RP_1121",
+    "svg": "RP_1121.svg",
+    "demi": 0.9613
    },
    "methode": {
     "points": 2,
@@ -20012,7 +21094,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.9
+    "longueur": 0.906
    }
   },
   "RP_1122": {
@@ -20039,7 +21121,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1122"
+    "bloc": "RP_1122",
+    "svg": "RP_1122.svg",
+    "demi": 1.0003
    },
    "methode": {
     "points": 2,
@@ -20050,7 +21134,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.9
+    "longueur": 0.9431
    }
   },
   "RP_1123": {
@@ -20077,7 +21161,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1123"
+    "bloc": "RP_1123",
+    "svg": "RP_1123.svg",
+    "demi": 0.9525
    },
    "methode": {
     "points": 2,
@@ -20088,7 +21174,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.9
+    "longueur": 0.8976
    }
   },
   "RP_1124": {
@@ -20144,7 +21230,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1125"
+    "bloc": "RP_1125",
+    "svg": "RP_1125.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -20181,7 +21269,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1126"
+    "bloc": "RP_1126",
+    "svg": "RP_1126.svg",
+    "demi": 0.8022
    },
    "methode": {
     "points": 2,
@@ -20192,7 +21282,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.7545
    }
   },
   "RP_1127": {
@@ -20216,12 +21306,24 @@
     "plani": "3 points: les 2 premiers sur grand côté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "RP_1127",
+    "svg": "RP_1127.svg",
+    "demi": 1.2222
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.7545,
+    "longueur": 1.1545
    }
   },
   "RP_1128": {
@@ -20248,7 +21350,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_1128"
+    "bloc": "RP_1128",
+    "svg": "RP_1128.svg",
+    "demi": 0.6871
    },
    "methode": {
     "points": 2,
@@ -20259,7 +21363,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.6444
    }
   },
   "RP_1129": {
@@ -20283,12 +21387,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "RP_1129",
+    "svg": "RP_1129.svg",
+    "demi": 1.1066
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.6452,
+    "longueur": 1.0444
    }
   },
   "RP_1130": {
@@ -20347,7 +21463,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_2726"
+    "bloc": "RP_2726",
+    "svg": "RP_2726.svg",
+    "demi": 0.85
    },
    "methode": {
     "points": 3,
@@ -20358,8 +21476,8 @@
     ],
     "verrou_largeur": false,
     "verrou_longueur": false,
-    "largeur": 0.0,
-    "longueur": 0.0
+    "largeur": 0.8,
+    "longueur": 0.5
    }
   },
   "RP_2727": {
@@ -20386,7 +21504,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "RP_2727"
+    "bloc": "RP_2727",
+    "svg": "RP_2727.svg",
+    "demi": 0.703
    },
    "methode": {
     "points": 1,
@@ -20609,7 +21729,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "SP_1161"
+    "bloc": "SP_1161",
+    "svg": "SP_1161.svg",
+    "demi": 0.9661
    },
    "methode": {
     "points": 2,
@@ -20620,7 +21742,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.9
+    "longueur": 0.9106
    }
   },
   "SP_1162": {
@@ -20647,7 +21769,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "SP_1162"
+    "bloc": "SP_1162",
+    "svg": "SP_1162.svg",
+    "demi": 0.4825
    },
    "methode": {
     "points": 2,
@@ -20658,7 +21782,7 @@
     "verrou_largeur": false,
     "verrou_longueur": false,
     "largeur": 0.0,
-    "longueur": 0.0
+    "longueur": 0.45
    }
   },
   "SP_1163": {
@@ -20682,12 +21806,24 @@
     "plani": "3 points: les 2 premiers sur grand côté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "SP_1163",
+    "svg": "SP_1163.svg",
+    "demi": 0.6925
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.45,
+    "longueur": 0.65
    }
   },
   "SP_1164": {
@@ -20714,7 +21850,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "SP_1164"
+    "bloc": "SP_1164",
+    "svg": "SP_1164.svg",
+    "demi": 0.2725
    },
    "methode": {
     "points": 1,
@@ -21039,7 +22177,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1201"
+    "bloc": "TP_1201",
+    "svg": "TP_1201.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -21076,7 +22216,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1202"
+    "bloc": "TP_1202",
+    "svg": "TP_1202.svg",
+    "demi": 0.4888
    },
    "methode": {
     "points": 1,
@@ -21113,7 +22255,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1203"
+    "bloc": "TP_1203",
+    "svg": "TP_1203.svg",
+    "demi": 0.5018
    },
    "methode": {
     "points": 1,
@@ -21150,7 +22294,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1204"
+    "bloc": "TP_1204",
+    "svg": "TP_1204.svg",
+    "demi": 0.4835
    },
    "methode": {
     "points": 1,
@@ -21187,7 +22333,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1205"
+    "bloc": "TP_1205",
+    "svg": "TP_1205.svg",
+    "demi": 0.4825
    },
    "methode": {
     "points": 1,
@@ -21224,7 +22372,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_1206"
+    "bloc": "TP_1206",
+    "svg": "TP_1206.svg",
+    "demi": 0.3545
    },
    "methode": {
     "points": 1,
@@ -21258,12 +22408,24 @@
     "plani": "3 points: les 2 premiers sur grand côté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "TP_1207",
+    "svg": "TP_1207.svg",
+    "demi": 1.0263
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.7,
+    "longueur": 0.9679
    }
   },
   "TP_1208": {
@@ -21287,12 +22449,24 @@
     "plani": "3 points: les 2 premiers sur grand côté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "TP_1208",
+    "svg": "TP_1208.svg",
+    "demi": 1.0372
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.7,
+    "longueur": 0.9783
    }
   },
   "TP_1209": {
@@ -21316,12 +22490,24 @@
     "plani": "3 points, 2 premiers sur grand coté",
     "alti": "Au sol"
    },
-   "famille": "lineaire",
+   "famille": "symbole",
+   "symbole": {
+    "famille_bloc": "GeoBretagne",
+    "bloc": "TP_1209",
+    "svg": "TP_1209.svg",
+    "demi": 1.0044
+   },
    "methode": {
-    "type": "rectangle",
     "points": 3,
-    "mode": "rectangle",
-    "remplissage": false
+    "ancrages": [
+     10,
+     11,
+     12
+    ],
+    "verrou_largeur": false,
+    "verrou_longueur": false,
+    "largeur": 0.7,
+    "longueur": 0.947
    }
   },
   "TP_1210": {
@@ -21380,7 +22566,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_2778"
+    "bloc": "TP_2778",
+    "svg": "TP_2778.svg",
+    "demi": 0.0572
    },
    "methode": {
     "points": 1,
@@ -21417,7 +22605,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "TP_2779"
+    "bloc": "TP_2779",
+    "svg": "TP_2779.svg",
+    "demi": 0.9134
    },
    "methode": {
     "points": 1,
@@ -21734,7 +22924,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_1281"
+    "bloc": "VP_1281",
+    "svg": "VP_1281.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -21771,7 +22963,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_1282"
+    "bloc": "VP_1282",
+    "svg": "VP_1282.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -21840,7 +23034,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_2829"
+    "bloc": "VP_2829",
+    "svg": "VP_2829.svg",
+    "demi": 0.1675
    },
    "methode": {
     "points": 1,
@@ -21877,7 +23073,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_2830"
+    "bloc": "VP_2830",
+    "svg": "VP_2830.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -21914,7 +23112,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_2831"
+    "bloc": "VP_2831",
+    "svg": "VP_2831.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -21951,7 +23151,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_2832"
+    "bloc": "VP_2832",
+    "svg": "VP_2832.svg",
+    "demi": 0.7452
    },
    "methode": {
     "points": 1,
@@ -21988,7 +23190,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "VP_2833"
+    "bloc": "VP_2833",
+    "svg": "VP_2833.svg",
+    "demi": 0.7452
    },
    "methode": {
     "points": 1,
@@ -22491,7 +23695,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1361"
+    "bloc": "XP_1361",
+    "svg": "XP_1361.svg",
+    "demi": 0.3859
    },
    "methode": {
     "points": 2,
@@ -22529,7 +23735,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1362"
+    "bloc": "XP_1362",
+    "svg": "XP_1362.svg",
+    "demi": 0.4822
    },
    "methode": {
     "points": 1,
@@ -22566,7 +23774,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1363"
+    "bloc": "XP_1363",
+    "svg": "XP_1363.svg",
+    "demi": 0.325
    },
    "methode": {
     "points": 1,
@@ -22603,7 +23813,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1364"
+    "bloc": "XP_1364",
+    "svg": "XP_1364.svg",
+    "demi": 0.535
    },
    "methode": {
     "points": 1,
@@ -22640,7 +23852,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1365"
+    "bloc": "XP_1365",
+    "svg": "XP_1365.svg",
+    "demi": 0.4172
    },
    "methode": {
     "points": 1,
@@ -22677,7 +23891,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1366"
+    "bloc": "XP_1366",
+    "svg": "XP_1366.svg",
+    "demi": 0.4057
    },
    "methode": {
     "points": 1,
@@ -22714,7 +23930,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1367"
+    "bloc": "XP_1367",
+    "svg": "XP_1367.svg",
+    "demi": 0.4057
    },
    "methode": {
     "points": 1,
@@ -22751,7 +23969,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1368"
+    "bloc": "XP_1368",
+    "svg": "XP_1368.svg",
+    "demi": 0.43
    },
    "methode": {
     "points": 1,
@@ -22788,7 +24008,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1369"
+    "bloc": "XP_1369",
+    "svg": "XP_1369.svg",
+    "demi": 0.43
    },
    "methode": {
     "points": 1,
@@ -22825,7 +24047,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1370"
+    "bloc": "XP_1370",
+    "svg": "XP_1370.svg",
+    "demi": 0.43
    },
    "methode": {
     "points": 1,
@@ -22862,7 +24086,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "XP_1371"
+    "bloc": "XP_1371",
+    "svg": "XP_1371.svg",
+    "demi": 0.136
    },
    "methode": {
     "points": 1,
@@ -22998,7 +24224,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_1521"
+    "bloc": "YP_1521",
+    "svg": "YP_1521.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -23038,7 +24266,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2900"
+    "bloc": "YP_2900",
+    "svg": "YP_2900.svg",
+    "demi": 0.5875
    },
    "methode": {
     "points": 1,
@@ -23075,7 +24305,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2903"
+    "bloc": "YP_2903",
+    "svg": "YP_2903.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23112,7 +24344,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2904"
+    "bloc": "YP_2904",
+    "svg": "YP_2904.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23149,7 +24383,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2905"
+    "bloc": "YP_2905",
+    "svg": "YP_2905.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23186,7 +24422,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2907"
+    "bloc": "YP_2907",
+    "svg": "YP_2907.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23223,7 +24461,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2908"
+    "bloc": "YP_2908",
+    "svg": "YP_2908.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23260,7 +24500,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2909"
+    "bloc": "YP_2909",
+    "svg": "YP_2909.svg",
+    "demi": 0.4947
    },
    "methode": {
     "points": 1,
@@ -23297,7 +24539,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2910"
+    "bloc": "YP_2910",
+    "svg": "YP_2910.svg",
+    "demi": 0.5698
    },
    "methode": {
     "points": 1,
@@ -23334,7 +24578,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2911"
+    "bloc": "YP_2911",
+    "svg": "YP_2911.svg",
+    "demi": 0.339
    },
    "methode": {
     "points": 1,
@@ -23373,7 +24619,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2912"
+    "bloc": "YP_2912",
+    "svg": "YP_2912.svg",
+    "demi": 0.5623
    },
    "methode": {
     "points": 1,
@@ -23412,7 +24660,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "YP_2913"
+    "bloc": "YP_2913",
+    "svg": "YP_2913.svg",
+    "demi": 0.5625
    },
    "methode": {
     "points": 1,
@@ -23543,7 +24793,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "ZP_1561"
+    "bloc": "ZP_1561",
+    "svg": "ZP_1561.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -23580,7 +24832,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "ZP_1562"
+    "bloc": "ZP_1562",
+    "svg": "ZP_1562.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,
@@ -23617,7 +24871,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "ZP_1563"
+    "bloc": "ZP_1563",
+    "svg": "ZP_1563.svg",
+    "demi": 0.7342
    },
    "methode": {
     "points": 1,
@@ -23688,7 +24944,9 @@
    "famille": "symbole",
    "symbole": {
     "famille_bloc": "GeoBretagne",
-    "bloc": "ZP_1565"
+    "bloc": "ZP_1565",
+    "svg": "ZP_1565.svg",
+    "demi": 0.115
    },
    "methode": {
     "points": 1,

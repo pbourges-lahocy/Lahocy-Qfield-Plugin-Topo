@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.1854 -0.1854 0.3708 0.3708" width="0.3708" height="0.3708">
+<g fill="none" stroke="param(outline) #000000" stroke-width="param(outline-width) 0.0056" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0.167 0 L0 0"/>
+<path d="M0 0.1546 L0 0"/>
+<path d="M0.0627 0.1546 L-0.0627 0.1546"/>
+<path d="M0.167 0.0627 L0.167 -0.0627"/>
+<path d="M-0.122 -0.0948 L0 0"/>
+<path d="M-0.1605 -0.0453 L-0.0836 -0.1444"/>
+</g>
+</svg>

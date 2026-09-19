@@ -19,6 +19,8 @@ plugin/                    plugin d'application QField (zippé par la release : 
   theme/theme.json         catalogue d'objets et palettes : standard GéoBretagne 2.0.6 (généré, ne pas éditer)
   theme/theme.js           même contenu en module JS importé par main.qml (XHR fichier interdit dans QField)
   theme/icons/             icônes des objets (PNG recadrés des vignettes du standard)
+  theme/blocs/             SVG des blocs (générés du DXF par tools/dxf_blocks.py, + variante _m symétrique),
+                           copiés dans le projet pour le marqueur SVG de la couche symbole
   theme/ui/                icônes monochromes de l'interface (SVG, générées par tools/make_ui_icons.py)
   topo/
     TopoCore.js             géométrie : arcs, courbes, parallèles, excentrements, WKT
@@ -57,7 +59,14 @@ Chaque objet de `theme.json` a un `code` (identifiant du standard), une `famille
 `gb` (calque, classe PCRS, placement, attributs des blocs DXF, règle de levé planimétrie /
 altimétrie). La palette liste les familles ; chaque `sous_palette` porte un `groupe`
 (Surface / Sous-sol / Information) utilisé comme filtre. `tools/geobretagne_to_theme.py`
-lit le CSV de nomenclature, le DXF (attributs des blocs) et le carnet DOCX (règles de levé).
+lit le CSV de nomenclature, le DXF (attributs et géométrie des blocs) et le carnet DOCX
+(règles de levé).
+
+Rendu des symboles : le SVG d'un bloc est centré sur son point d'insertion, l'axe X du bloc
+vers le haut du SVG. La couche `symbole` porte `rotation` (gisement de l'axe X), `taille`
+(côté du SVG en m), `echelle_x` / `echelle_y` et `symetrie` ; le marqueur SVG de QGIS
+(`tools/build_project.py`, `symbole_marker`) a pour largeur `taille × echelle_y`, hauteur
+`taille × echelle_x`, chemin `@project_folder/blocs/<bloc>[_m].svg`.
 
 ## Flux de données
 

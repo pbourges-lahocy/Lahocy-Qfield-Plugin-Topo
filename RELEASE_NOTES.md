@@ -1,4 +1,9 @@
-## Lahocy Topo 0.7.0 — catalogue GéoBretagne
+## Lahocy Topo 0.7.1 — catalogue GéoBretagne et blocs SVG sur la carte
+
+0.7.1 : les 397 blocs du standard sont dessinés sur la carte à leur taille réelle (SVG générés
+du DXF), orientés et mis à l'échelle par les points levés (1 point : orientation CAO ; 2 points :
+rotation + échelle ; 3 points : rotation + échelles X et Y, symétrie automatique). Le projet doit
+contenir le dossier `blocs/` (livré dans `LahocyTopo-projet.zip`).
 
 Le catalogue d'objets est désormais le **standard topographique régional GéoBretagne 2.0.6** :
 26 familles, 575 objets avec leur identifiant, leur calque, leur classe PCRS et la règle de

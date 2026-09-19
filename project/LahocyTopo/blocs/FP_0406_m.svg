@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.9279 -0.9279 1.8558 1.8558" width="1.8558" height="1.8558">
+<g fill="param(fill) #000000" fill-opacity="0.25" stroke="none">
+<path d="M0 0 L0.25 0 L0.25 0 L0.25 -0.8742 L0.25 -0.8742 L0.2003 -0.0872 L0.2003 -0.0872 L0 0 Z"/>
+</g>
+<g fill="none" stroke="param(outline) #000000" stroke-width="param(outline-width) 0.0278" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0.25 0 L0 0 L0 -0.8742 L0.25 -0.8742 Z"/>
+<path d="M0.1411 -0.6019 L0.0647 -0.4073 L0.1193 -0.4137 L0.1053 -0.2744 L0.1883 -0.4718 L0.1282 -0.4602 Z"/>
+<path d="M0 0 L0.25 0 L0.25 -0.8742 L0.2003 -0.0872 Z"/>
+</g>
+</svg>
