@@ -242,7 +242,7 @@ Item {
       o.label = (obj.nom || code) + " " + o.indice;
       if (actifsOrdre.length >= 10) { toast("10 linéaires actifs maximum"); return; }
       actifs[key] = o; actifsOrdre.push(key); courant = key; pending = null;
-      setMessage((obj.libelle_audio || obj.nom) + " – " + modeLabel(o.mode) + " : mesurer le 1er sommet");
+      setMessage((obj.libelle_audio || obj.nom) + " – " + modeLabel(o.mode) + " : mesurer le 1er sommet" + regleLeve(obj));
       refreshUi();
       return;
     }
@@ -517,7 +517,7 @@ Item {
     else if (kind === "texte") { needed = (m.placement === "1pt") ? 1 : 2; }
     else if (kind === "entree") needed = 2;
     else if (kind === "escalier") needed = m.points || 3;
-    else if (kind === "rectangle") { needed = rectanglePoints; mode = "rectangle"; }
+    else if (kind === "rectangle") { if (m.points === 2 || m.points === 3) rectanglePoints = m.points; needed = rectanglePoints; mode = "rectangle"; }
     else if (kind === "cercle") { needed = rayonVerrouille && rayonCercle > 0 ? 1 : 2; mode = "cercle"; }
     pending = { "kind": kind, "obj": obj, "code": obj.code, "points": [], "needed": needed, "mode": mode, "text": "" };
     courant = "";
@@ -525,9 +525,19 @@ Item {
       requestDialog("texte", { "obj": obj, "liste": (m.liste && theme.listes_textes) ? (theme.listes_textes[m.liste] || []) : [], "defaut": m.texte_defaut || "" });
       setMessage((obj.libelle_audio || obj.nom) + " – saisir le texte");
     } else {
-      setMessage((obj.libelle_audio || obj.nom) + " – méthode " + needed + " point" + (needed > 1 ? "s" : ""));
+      setMessage((obj.libelle_audio || obj.nom) + " – méthode " + needed + " point" + (needed > 1 ? "s" : "") + regleLeve(obj));
     }
     refreshUi();
+  }
+
+  /** Règle de levé du catalogue (GéoBretagne : planimétrie / altimétrie), ajoutée à la consigne. */
+  function regleLeve(obj) {
+    const gb = obj && obj.gb;
+    if (!gb) return "";
+    let s = "";
+    if (gb.plani && !/^non concern/i.test(gb.plani)) s += " · " + gb.plani;
+    if (gb.alti && !/^(suivant vos prescriptions|non concern)/i.test(gb.alti)) s += " · Z : " + gb.alti;
+    return s;
   }
 
   function setPendingText(t) {

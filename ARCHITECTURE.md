@@ -16,8 +16,9 @@ plugin/                    plugin d'application QField (zippé par la release : 
   main.qml                 point d'entrée : bouton de barre d'outils, chargement, événements appareils
   metadata.txt             nom / version (doit correspondre au tag de release)
   icon.svg
-  theme/theme.json         catalogue d'objets et palettes (équivalent du MDB de thème)
-  theme/icons/             icônes des objets du catalogue (PNG)
+  theme/theme.json         catalogue d'objets et palettes : standard GéoBretagne 2.0.6 (généré, ne pas éditer)
+  theme/theme.js           même contenu en module JS importé par main.qml (XHR fichier interdit dans QField)
+  theme/icons/             icônes des objets (PNG recadrés des vignettes du standard)
   theme/ui/                icônes monochromes de l'interface (SVG, générées par tools/make_ui_icons.py)
   topo/
     TopoCore.js             géométrie : arcs, courbes, parallèles, excentrements, WKT
@@ -43,9 +44,20 @@ project/LahocyTopo/        projet QField générique (GeoPackage + .qgs), zippé
 bridge/                    pont local Python (Windows) : serveur HTTP + pilotes (simulateur, GeoCOM, disto BLE, détecteur)
 companion/                 application compagnon Android « Lahocy Topo Link » (Kotlin) : même contrat HTTP,
                            Bluetooth SPP (GeoCOM, détecteur) et BLE (DISTO), service de premier plan, test de liaison
-tools/                     scripts bureau : conversion d'un thème, génération du projet
+tools/                     scripts bureau : geobretagne_to_theme.py (catalogue), make_ui_icons.py (icônes de
+                           l'interface), build_project.py (projet), theme_to_json.py (ancien thème MDB)
 docs/                      spécification
 ```
+
+## Catalogue
+
+Chaque objet de `theme.json` a un `code` (identifiant du standard), une `famille` du plugin
+(`symbole`, `lineaire`, `texte`, `escalier`, `talus`, `batiment`, `categorie`), une `methode`
+(points, ancrages, type de tracé, remplissage…) et, pour le catalogue GéoBretagne, un bloc
+`gb` (calque, classe PCRS, placement, attributs des blocs DXF, règle de levé planimétrie /
+altimétrie). La palette liste les familles ; chaque `sous_palette` porte un `groupe`
+(Surface / Sous-sol / Information) utilisé comme filtre. `tools/geobretagne_to_theme.py`
+lit le CSV de nomenclature, le DXF (attributs des blocs) et le carnet DOCX (règles de levé).
 
 ## Flux de données
 

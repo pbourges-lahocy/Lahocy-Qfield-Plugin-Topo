@@ -2,6 +2,15 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.7.0] - 2026-09-19
+
+### Modifié
+
+- **Catalogue GéoBretagne** : le catalogue générique est désormais le standard topographique régional GéoBretagne 2.0.6 (26 familles, 575 objets, identifiants `AP_0001`…, calque, classe PCRS, placement Surface / Sous-sol / Information) à la place du thème Sbaa. Généré par `tools/geobretagne_to_theme.py` (CSV + DXF + carnet DOCX) ; licence GPL-3.0 (`plugin/theme/LICENCE_CATALOGUE.md`).
+- Méthodes de levé déduites du carnet : 1, 2 ou 3 points, rectangle par 3 points (armoires, chambres, trappes…), escalier, linéaire, hachure, texte ; la règle de levé (planimétrie, altimétrie) s'affiche dans la consigne à l'activation de l'objet.
+- Sous-palette filtrée par groupe Surface / Sous-sol / Info ; icônes de famille pour les 26 familles.
+- Le nombre de points d'un rectangle est fixé par l'objet (`methode.points`).
+
 ## [0.6.1] - 2026-09-18
 
 ### Modifié

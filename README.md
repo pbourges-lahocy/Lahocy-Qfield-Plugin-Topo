@@ -41,6 +41,25 @@ QFieldCloud) et ouvrir `LahocyTopo.qgs`. Le bouton **Topo** de la barre d'outils
 masque l'interface (panneau à droite en mode droitier, à gauche en mode gaucher). Un projet client se construit au bureau en gardant ces
 couches (le script `tools/build_project.py` les crée dans le système de projection voulu).
 
+### Catalogue d'objets
+
+Le catalogue embarqué est le **standard topographique régional GéoBretagne** (version 2.0.6) :
+26 familles, 575 objets identifiés (`AP_0001`…), calque, classe PCRS, placement Surface /
+Sous-sol / Information, et pour chaque objet la règle de levé du carnet (planimétrie,
+altimétrie) affichée dans la consigne au moment du levé. Il est généré par
+`tools/geobretagne_to_theme.py` à partir de l'archive du standard
+(https://github.com/geobretagne/standard-topographique, licence GPL-3.0, voir
+[`plugin/theme/LICENCE_CATALOGUE.md`](plugin/theme/LICENCE_CATALOGUE.md)) :
+
+```bash
+python tools\geobretagne_to_theme.py "<dossier geobretagne_standard_topographique_x_y_z>" plugin\theme
+```
+
+Les méthodes de levé sont déduites du carnet (1, 2 ou 3 points, rectangle par 3 points,
+escalier, linéaire, hachure, texte) ; `tools/geobretagne_rules.json` permet de surcharger
+n'importe quel objet. Chaque point ou objet levé conserve l'identifiant du standard
+(`code_objet`), ce qui permet l'export DXF / PostGIS conforme au bureau.
+
 ### 3. GNSS
 
 Le récepteur est configuré dans QField (interne, Bluetooth NMEA, NTRIP, hauteur d'antenne).
@@ -129,7 +148,10 @@ messages) : les recopier telles quelles pour correction.
 # régénérer le projet générique dans un autre système de projection
 C:\OSGeo4W\bin\python-qgis-ltr.bat tools\build_project.py 3948 project\LahocyTopo
 
-# convertir un thème du logiciel de référence (MDB) en catalogue theme.json + icônes
+# régénérer le catalogue GéoBretagne (theme.json, theme.js, icônes)
+python tools\geobretagne_to_theme.py "<dossier du standard>" plugin\theme
+
+# (ancien) convertir un thème MDB du logiciel de référence en catalogue
 python tools\theme_to_json.py "<dossier du thème>" plugin\theme
 ```
 

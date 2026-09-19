@@ -17,10 +17,19 @@ Item {
   property int columns: 4
 
   property var sub: null                 // bouton de famille ouvert (sous-palette)
+  property string subGroup: ""           // filtre Surface / Sous-sol / Information (catalogue GéoBretagne)
   property bool searching: false
   property string query: ""
   readonly property bool inSub: sub !== null
   readonly property string title: searching ? "Recherche" : (sub ? famLabel(sub) : "Palette")
+  function groupesOf(b) {
+    let g = [];
+    if (b) for (const it of (b.sous_palette || [])) if (it && it.groupe && g.indexOf(it.groupe) < 0) g.push(it.groupe);
+    return g;
+  }
+  readonly property var groupes: groupesOf(sub)
+  readonly property var groupLabels: ({ "Surface": "Surface", "Sous-sol": "Sous-sol", "Information": "Info" })
+  onSubChanged: { const g = groupesOf(sub); subGroup = g.length > 0 ? g[0] : ""; }
 
   readonly property var famIcons: ({
     "Voirie": "fam_voirie", "CatBati": "fam_bati", "CatMobilier": "fam_mobilier", "CatDivers": "fam_divers",
@@ -47,7 +56,7 @@ Item {
   // familles (les emplacements vides du thème ne sont pas conservés)
   readonly property var familles: (engine.theme.palette || []).filter(b => b !== null).sort((a, b) => a.pos - b.pos)
   // objets de la sous-palette ouverte
-  readonly property var subItems: sub ? (sub.sous_palette || []).filter(b => b !== null).sort((a, b) => a.pos - b.pos) : []
+  readonly property var subItems: sub ? (sub.sous_palette || []).filter(b => b !== null && (!subGroup || !b.groupe || b.groupe === subGroup)).sort((a, b) => a.pos - b.pos) : []
   // résultats de recherche
   readonly property var results: {
     if (!searching || query.trim().length < 2) return [];
@@ -85,11 +94,33 @@ Item {
     onTextChanged: pal.query = text
   }
 
+  /* ---------------- groupes de la sous-palette ---------------- */
+  Row {
+    id: groupRow
+    visible: pal.inSub && !pal.searching && pal.groupes.length > 1
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.margins: 4
+    spacing: 4
+    Repeater {
+      model: pal.groupes
+      delegate: TopoBtn {
+        required property var modelData
+        width: 66; height: 26
+        text: pal.groupLabels[modelData] || modelData
+        fontSize: 9
+        small: true
+        checked: pal.subGroup === modelData
+        onClicked: pal.subGroup = modelData
+      }
+    }
+  }
+
   Flickable {
     id: flick
     anchors.fill: parent
     anchors.margins: 4
-    anchors.topMargin: pal.searching ? 40 : 4
+    anchors.topMargin: pal.searching ? 40 : (groupRow.visible ? 34 : 4)
     contentHeight: pal.searching ? resultCol.height + 4 : grid.height + 4
     clip: true
     boundsBehavior: Flickable.StopAtBounds
@@ -107,7 +138,7 @@ Item {
           required property var modelData
           width: pal.cell
           height: pal.inSub ? pal.cell + 10 : pal.cell
-          ui: pal.inSub ? "" : (pal.famIcons[modelData.code] || "fam_objet")
+          ui: pal.inSub ? "" : (modelData.ui || pal.famIcons[modelData.code] || "fam_objet")
           icon: pal.inSub ? engine.iconUrl(modelData.icone) : ""
           text: pal.inSub ? pal.objLabel(modelData.objet) : pal.famLabel(modelData)
           fontSize: 8

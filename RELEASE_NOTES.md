@@ -1,15 +1,14 @@
-## Lahocy Topo 0.6.1 — nouvelle interface
+## Lahocy Topo 0.7.0 — catalogue GéoBretagne
 
-0.6.1 : panneaux collés aux bords, correction de l'affichage du V0 et des références dans le menu Station.
+Le catalogue d'objets est désormais le **standard topographique régional GéoBretagne 2.0.6** :
+26 familles, 575 objets avec leur identifiant, leur calque, leur classe PCRS et la règle de
+levé du carnet (planimétrie, altimétrie) affichée dans la consigne. Sous-palettes filtrées
+Surface / Sous-sol / Info, recherche par nom ou identifiant. Licence GPL-3.0 pour le catalogue
+(voir `plugin/theme/LICENCE_CATALOGUE.md`).
 
-Interface repensée en trois zones : **barre du haut** (source GNSS / station avec sa
-qualité, hauteur de canne ou de prisme, modules), **barre du bas** (consigne, confirmation
-des clics, actions de contexte, dernier point mesuré) et **panneau latéral** réduit au levé
-(palette 4 colonnes avec recherche par nom, dessin, Mesurer / STOP, objets actifs), repliable.
-Icônes monochromes propres au plugin.
-
-Station totale : liaison Bluetooth GeoCOM validée avec une TS15 depuis l'application
-compagnon Android (0.5.x : avertissements GeoCOM acceptés, verrouillage prisme stable).
+Interface en trois zones (0.6) : barre du haut (source GNSS / station, hauteur, modules), barre
+du bas (consigne, contexte, dernier point), panneau de levé. Station totale : liaison Bluetooth
+GeoCOM validée avec une TS15 via l'application compagnon Android.
 
 ### Fichiers de la release
 
@@ -22,7 +21,6 @@ compagnon Android (0.5.x : avertissements GeoCOM acceptés, verrouillage prisme 
 
 ### État
 
-Plugin testé sur QField Windows 4.3.3 (GNSS simulé, simulateur de station via le pont) :
-sous-palette, recherche, linéaire à plusieurs sommets, barres haut et bas. Mesure de distance
-et pilotage sur station réelle restent à valider sur le terrain. Voir `README.md`,
-`CHANGELOG.md` et `docs/SPEC_LahocyTopo.md`.
+Testé sur QField Windows 4.3.3 : palette GéoBretagne, mise en station et visée de référence au
+simulateur (point mesuré à la position attendue), levé linéaire. Les méthodes déduites du carnet
+sont à valider objet par objet sur le terrain (`tools/geobretagne_rules.json` pour corriger).
