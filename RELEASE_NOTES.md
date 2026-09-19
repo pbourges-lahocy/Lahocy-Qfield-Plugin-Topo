@@ -1,4 +1,7 @@
-## Lahocy Topo 0.7.1 — catalogue GéoBretagne et blocs SVG sur la carte
+## Lahocy Topo 0.7.2 — catalogue GéoBretagne, blocs SVG, colonne d'objets
+
+0.7.2 : la palette d'objets (3 colonnes) est une colonne à part, et le panneau de droite est
+réservé à la mesure (source et appareils, hauteur, voyants, pose de l'objet, Mesurer, objets actifs).
 
 0.7.1 : les 397 blocs du standard sont dessinés sur la carte à leur taille réelle (SVG générés
 du DXF), orientés et mis à l'échelle par les points levés (1 point : orientation CAO ; 2 points :

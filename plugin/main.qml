@@ -56,6 +56,7 @@ Item {
     devices: devices
     mainWindow: plugin.mainWindow
     visible: plugin.loaded && plugin.panelVisible
+    onOpenStationMenu: stationMenu.open()
   }
 
   TopoTopBar {

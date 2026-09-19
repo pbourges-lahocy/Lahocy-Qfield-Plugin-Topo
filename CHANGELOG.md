@@ -2,6 +2,12 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.7.2] - 2026-09-19
+
+### Modifié
+
+- Interface en deux colonnes à droite : une **colonne d'objets** (palette sur 3 colonnes, comme la zone 3 du logiciel de référence) et, à sa droite, le **panneau de mesure** réservé à la mesure et à la pose : source GNSS / station avec voyant, hauteur, état des appareils et de la mise en station (nouveau `TopoSourceBox`), réglages de pose de l'objet, excentrements, Mesurer / STOP, objets actifs. Les pastilles de la barre du haut deviennent un simple rappel d'état.
+
 ## [0.7.1] - 2026-09-19
 
 ### Ajouté

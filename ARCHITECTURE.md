@@ -31,8 +31,9 @@ plugin/                    plugin d'application QField (zippé par la release : 
     TopoDevices.qml         client HTTP du pont local (statut, événements)
     TopoTopBar.qml          barre du haut (Popup non modal) : source et qualité, hauteur, modules
     TopoBottomBar.qml       barre du bas : consigne, confirmation de clic, actions de contexte, dernier point
-    TopoPanel.qml           panneau latéral repliable : palette, dessin, mesure, objets actifs
-    TopoPalette.qml         palette 4 colonnes : familles, sous-palette en place, recherche par nom
+    TopoPanel.qml           deux colonnes : « objets » (palette 3 colonnes) et « mesure » (source, pose, Mesurer, objets actifs)
+    TopoPalette.qml         palette 3 colonnes : familles, sous-palette en place filtrée par groupe, recherche par nom
+    TopoSourceBox.qml       source GNSS / station avec voyant, hauteur, état des appareils et de la mise en station
     TopoMeasureBox.qml      excentrements favoris, Mesurer / STOP, point unique, dernier point
     TopoDrawOptions.qml     primitives de dessin selon la famille, détection, guidage
     TopoGuidage.qml         guidage d'implantation

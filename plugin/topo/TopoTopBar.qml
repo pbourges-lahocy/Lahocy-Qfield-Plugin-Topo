@@ -90,26 +90,22 @@ Popup {
   contentItem: RowLayout {
     spacing: 6
 
-    Pill {
-      ui: "gnss"
-      active: !bar.tps
-      color: bar.stateColor(bar.gnssState)
-      label: bar.gnssState === "none" ? engine.qualityText : engine.qualityDetail.split(/[,\n]/)[0].replace(/^Qualité = /, "")
-      detail: bar.gnssState === "none" ? "" : engine.qualityText
-      onClicked: engine.setMesureSource("gnss")
-    }
-    Pill {
-      ui: "station"
-      active: bar.tps
-      color: bar.stateColor(bar.tpsState)
-      label: devices.tpsConnected ? (devices.tpsModel.split(" ")[0] || "Station") : "Station"
-      detail: !devices.reachable ? "pont injoignable" : !devices.tpsConnected ? "non connectée" : ((devices.tpsLocked || station.driver === "simulateur") ? "verrouillé" : "ATR") + (devices.tpsBattery !== null ? "  " + devices.tpsBattery + " %" : "")
-      onClicked: { if (bar.tps) bar.openStationMenu(); else engine.setMesureSource("tps"); }
-    }
-    Pill {
-      ui: "hauteur"
-      label: bar.tps ? ("prisme " + station.hr.toFixed(3)) : ("canne " + engine.hauteurCanne.toFixed(3))
-      onClicked: engine.requestDialog("hauteur", { "tps": bar.tps })
+    // rappel d'état (les commandes sont dans le panneau de mesure)
+    Rectangle {
+      Layout.preferredHeight: 38
+      implicitWidth: stateTxt.implicitWidth + 16
+      radius: 8
+      color: bar.stateColor(bar.tps ? bar.tpsState : bar.gnssState)
+      Text {
+        id: stateTxt
+        anchors.centerIn: parent
+        font.pixelSize: 11
+        color: "#202020"
+        text: bar.tps
+          ? "Station · " + (!devices.reachable ? "pont injoignable" : !devices.tpsConnected ? "non connectée" : (devices.tpsModel.split(" ")[0] || "connectée") + " · " + ((devices.tpsLocked || station.driver === "simulateur") ? "verrouillé" : "ATR")) + " · prisme " + station.hr.toFixed(3)
+          : "GNSS · " + (bar.gnssState === "none" ? engine.qualityText : engine.qualityDetail.split(/[,\n]/)[0].replace(/^Qualité = /, "") + " · " + engine.qualityText) + " · canne " + engine.hauteurCanne.toFixed(3)
+      }
+      MouseArea { anchors.fill: parent; onClicked: engine.requestDialog("hauteur", { "tps": bar.tps }) }
     }
 
     Item { Layout.fillWidth: true }

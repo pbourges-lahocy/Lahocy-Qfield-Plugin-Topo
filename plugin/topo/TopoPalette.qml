@@ -95,18 +95,19 @@ Item {
   }
 
   /* ---------------- groupes de la sous-palette ---------------- */
-  Row {
+  Flow {
     id: groupRow
     visible: pal.inSub && !pal.searching && pal.groupes.length > 1
     anchors.top: parent.top
     anchors.left: parent.left
+    anchors.right: parent.right
     anchors.margins: 4
     spacing: 4
     Repeater {
       model: pal.groupes
       delegate: TopoBtn {
         required property var modelData
-        width: 66; height: 26
+        width: 52; height: 26
         text: pal.groupLabels[modelData] || modelData
         fontSize: 9
         small: true
@@ -120,7 +121,7 @@ Item {
     id: flick
     anchors.fill: parent
     anchors.margins: 4
-    anchors.topMargin: pal.searching ? 40 : (groupRow.visible ? 34 : 4)
+    anchors.topMargin: pal.searching ? 40 : (groupRow.visible ? groupRow.height + 10 : 4)
     contentHeight: pal.searching ? resultCol.height + 4 : grid.height + 4
     clip: true
     boundsBehavior: Flickable.StopAtBounds

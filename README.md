@@ -11,10 +11,13 @@ forme au bureau dans QGIS ; un seul catalogue d'objets générique est utilisé 
 
 **État : 0.6.0, testé sur QField Windows ; liaison station totale validée avec une TS15 sur Android.** Voir [Cycle de test](#cycle-de-test).
 
-L'interface se compose d'une **barre du haut** (source de mesure GNSS ou station avec sa
-qualité, hauteur de canne ou de prisme, accès aux modules), d'une **barre du bas** (consigne,
-confirmation des clics, actions de contexte, dernier point) et d'un **panneau latéral**
-repliable (palette d'objets avec recherche par nom, dessin, Mesurer, objets actifs).
+L'interface se compose d'une **barre du haut** (rappel d'état GNSS ou station, accès aux
+modules), d'une **barre du bas** (consigne, confirmation des clics, actions de contexte,
+dernier point), d'une **colonne d'objets** (palette sur 3 colonnes, sous-palettes filtrées
+Surface / Sous-sol / Info, recherche par nom) et, à côté, du **panneau de mesure** : source
+GNSS ou station avec son voyant, hauteur de canne ou de prisme, état des appareils et de la
+mise en station, réglages de pose de l'objet en cours, excentrements, Mesurer / STOP, objets
+actifs (et plus tard les attributs à saisir).
 
 ## Installation sur la tablette
 
