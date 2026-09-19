@@ -14,6 +14,7 @@ import os
 import sys
 
 from qgis.core import (
+    QgsFillSymbol,
     Qgis,
     QgsApplication,
     QgsCategorizedSymbolRenderer,
@@ -53,6 +54,7 @@ COMMUN = [
     ("indice", I),      # "Bordure 1", "Bordure 2"...
     ("params_json", T), # paramètres de placement (méthode, arcs, largeurs, ...)
     ("horodatage", D), ("operateur", T),
+    ("couleur", T),     # couleur du catalogue (#rrggbb) au moment du levé
 ]
 
 LAYERS = {
@@ -168,6 +170,121 @@ def _prop(name):
         return getattr(QgsSymbolLayer, "Property" + name)
 
 
+def load_theme():
+    """Catalogue du plugin (theme.json) : styles par objet pour la symbologie."""
+    import json
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "plugin", "theme", "theme.json")
+    if not os.path.exists(p):
+        return {"objets": {}}
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _map_units(layer_obj, setter_name):
+    from qgis.core import QgsUnitTypes
+    getattr(layer_obj, setter_name)(QgsUnitTypes.RenderMapUnits)
+
+
+def line_symbol_for(o):
+    """Symbole de ligne QGIS d'un linéaire du standard : couleur et épaisseur du calque,
+    tirets du type de ligne (unités carte) et textes intégrés (« aep ») en ligne de marqueurs."""
+    from qgis.core import QgsMarkerLineSymbolLayer, QgsFontMarkerSymbolLayer, QgsUnitTypes, Qgis
+    st = o.get("style") or {}
+    color = st.get("couleur", "#202020")
+    width = max(float(st.get("epaisseur_mm", 0.25)), 0.2)
+    sym = QgsLineSymbol.createSimple({"color": color, "width": str(width)})
+    lt = st.get("ltype")
+    if not lt or not lt.get("elements"):
+        return sym
+    line = sym.symbolLayer(0)
+    vec = []           # tirets / espaces alternés (m)
+    texts = []         # (position le long du motif, texte, hauteur)
+    pos = 0.0
+    for e in lt["elements"]:
+        length = float(e.get("len", 0))
+        if e.get("type") == "text":
+            texts.append((pos + abs(length) / 2.0, e.get("text", ""), float(e.get("echelle", 0.254)) or 0.254))
+            kind, l = "gap", abs(length)
+        elif length > 0:
+            kind, l = "dash", length
+        elif length < 0:
+            kind, l = "gap", -length
+        else:
+            kind, l = "dash", 0.02   # point
+        want_dash = (len(vec) % 2 == 0)
+        if (kind == "dash") == want_dash:
+            vec.append(l)
+        elif vec:
+            vec[-1] += l
+        else:
+            vec.extend([0.0, l])
+        pos += abs(length)
+    if len(vec) % 2 == 1:
+        vec.append(0.0)
+    if any(v > 0 for v in vec[1::2]):
+        line.setUseCustomDashPattern(True)
+        line.setCustomDashVector(vec)
+        line.setCustomDashPatternUnit(QgsUnitTypes.RenderMapUnits)
+    total = float(lt.get("longueur") or sum(vec)) or sum(vec)
+    for offset, text, h in texts:
+        if not text.strip():
+            continue
+        fm = QgsFontMarkerSymbolLayer("Arial", text, h)
+        fm.setSizeUnit(QgsUnitTypes.RenderMapUnits)
+        fm.setColor(QColor(color))
+        marker = QgsMarkerSymbol()
+        marker.changeSymbolLayer(0, fm)
+        ml = QgsMarkerLineSymbolLayer()
+        try:
+            ml.setPlacements(Qgis.MarkerLinePlacements(Qgis.MarkerLinePlacement.Interval))
+        except Exception:
+            ml.setPlacement(QgsMarkerLineSymbolLayer.Interval)
+        ml.setInterval(total)
+        ml.setIntervalUnit(QgsUnitTypes.RenderMapUnits)
+        ml.setOffsetAlongLine(offset)
+        ml.setOffsetAlongLineUnit(QgsUnitTypes.RenderMapUnits)
+        ml.setRotateMarker(True)
+        ml.setSubSymbol(marker)
+        sym.appendSymbolLayer(ml)
+    return sym
+
+
+def fill_symbol_for(o):
+    """Symbole de surface : contour de la couleur de l'objet et hachure du standard (.pat)."""
+    from qgis.core import QgsLinePatternFillSymbolLayer, QgsUnitTypes
+    st = o.get("style") or {}
+    color = st.get("couleur", "#202020")
+    width = max(float(st.get("epaisseur_mm", 0.25)), 0.2)
+    sym = QgsFillSymbol.createSimple({"color": "0,0,0,0", "outline_color": color, "outline_width": str(width)})
+    h = st.get("hachure")
+    if not h:
+        return sym
+    sc = float(h.get("echelle") or 1.0)
+    for ln in h.get("lignes", []):
+        angle, x0, y0, dx, dy = ln[:5]
+        dashes = ln[5:]
+        lp = QgsLinePatternFillSymbolLayer()
+        lp.setLineAngle(float(angle) + float(h.get("angle", 0)))
+        lp.setDistance(max(abs(float(dy)) * sc, 0.005))
+        lp.setDistanceUnit(QgsUnitTypes.RenderMapUnits)
+        lp.setOffset(float(y0) * sc)
+        lp.setOffsetUnit(QgsUnitTypes.RenderMapUnits)
+        lp.setLineWidth(width)
+        lp.setColor(QColor(color))
+        sub = QgsLineSymbol.createSimple({"color": color, "width": str(width)})
+        if dashes:
+            sl = sub.symbolLayer(0)
+            vec = [abs(float(v)) * sc for v in dashes]
+            if len(vec) % 2 == 1:
+                vec.append(0.0)
+            sl.setUseCustomDashPattern(True)
+            sl.setCustomDashVector(vec)
+            sl.setCustomDashPatternUnit(QgsUnitTypes.RenderMapUnits)
+        lp.setSubSymbol(sub)
+        sym.appendSymbolLayer(lp)
+    return sym
+
+
 def symbole_marker():
     """Marqueur SVG du bloc GéoBretagne : fichier <projet>/blocs/<bloc>[_m].svg, taille en mètres,
     largeur = taille x échelle Y, hauteur = taille x échelle X (l'axe X du bloc est vers le haut du SVG),
@@ -186,6 +303,9 @@ def symbole_marker():
     props.setProperty(_prop("Width"), QgsProperty.fromExpression("coalesce(\"taille\", 0.5) * coalesce(\"echelle_y\", 1)"))
     props.setProperty(_prop("Height"), QgsProperty.fromExpression("coalesce(\"taille\", 0.5) * coalesce(\"echelle_x\", 1)"))
     props.setProperty(_prop("Angle"), QgsProperty.fromExpression("coalesce(\"rotation\", 0)"))
+    # couleur du catalogue enregistrée sur l'objet au levé (trait ; le remplissage du SVG garde sa transparence)
+    props.setProperty(_prop("StrokeColor"), QgsProperty.fromExpression("coalesce(\"couleur\", '#b00020')"))
+    props.setProperty(_prop("FillColor"), QgsProperty.fromExpression("coalesce(\"couleur\", '#b00020')"))
     marker = QgsMarkerSymbol()
     marker.changeSymbolLayer(0, svg)
     return marker
@@ -208,20 +328,28 @@ def style_layers(layers):
     pt.setRenderer(QgsCategorizedSymbolRenderer("type", cats))
     label(pt, "concat(\"matricule\", if(\"z_signif\"=1 and \"z\" is not null, '\\n' || format_number(\"z\", 2), ''))", 7, "#00808a")
 
+    theme = load_theme()
+    objets = theme.get("objets", {})
+
+    # linéaires : une catégorie par objet du catalogue (couleur, épaisseur, type de ligne, textes intégrés)
     lin = layers["lineaire"]
     cats = []
-    for value, color, lbl in [
-        ("en_cours", "#ff8c00", "Linéaire en cours"),
-        ("attente", "#e6b800", "Linéaire en attente"),
-        ("termine", "#202020", "Linéaire terminé"),
-    ]:
-        cats.append(QgsRendererCategory(value, QgsLineSymbol.createSimple({"color": color, "width": "0.5"}), lbl))
-    lin.setRenderer(QgsCategorizedSymbolRenderer("statut", cats))
+    for code, o in sorted(objets.items()):
+        if o.get("famille") == "lineaire" and o.get("style"):
+            cats.append(QgsRendererCategory(code, line_symbol_for(o), o.get("nom", code)))
+    cats.append(QgsRendererCategory("", QgsLineSymbol.createSimple({"color": "#202020", "width": "0.4"}), "Autre linéaire"))
+    lin.setRenderer(QgsCategorizedSymbolRenderer("code_objet", cats))
     label(lin, "\"nom_objet\"", 7, "#404040")
 
+    # surfaces : hachures du standard par objet, sinon remplissage neutre
     surf = layers["surface"]
-    surf.renderer().symbol().setColor(QColor(60, 60, 60, 40))
-    surf.renderer().symbol().symbolLayer(0).setStrokeColor(QColor("#202020"))
+    cats = []
+    for code, o in sorted(objets.items()):
+        st = o.get("style") or {}
+        if o.get("famille") == "lineaire" and st.get("hachure"):
+            cats.append(QgsRendererCategory(code, fill_symbol_for(o), o.get("nom", code)))
+    cats.append(QgsRendererCategory("", QgsFillSymbol.createSimple({"color": "60,60,60,40", "outline_color": "#202020", "outline_width": "0.3"}), "Autre surface"))
+    surf.setRenderer(QgsCategorizedSymbolRenderer("code_objet", cats))
     label(surf, "\"nom_objet\"", 7, "#404040")
 
     sym = layers["symbole"]
@@ -232,7 +360,8 @@ def style_layers(layers):
     tx.renderer().symbol().setSize(1.0)
     label(tx, "\"texte\"", 9, "#000000")
     lab = tx.labeling().settings()
-    lab.dataDefinedProperties().setProperty(QgsPalLayerSettings.Property.LabelRotation, "\"rotation\"" if False else "-\"rotation\"")
+    lab.dataDefinedProperties().setProperty(QgsPalLayerSettings.Property.LabelRotation, "-\"rotation\"")
+    lab.dataDefinedProperties().setProperty(QgsPalLayerSettings.Property.Color, "coalesce(\"couleur\", '#000000')")
     tx.setLabeling(QgsVectorLayerSimpleLabeling(lab))
 
     ent = layers["entree"]

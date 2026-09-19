@@ -2,6 +2,18 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.8.0] - 2026-09-19
+
+### Ajouté
+
+- **Symbologie du standard** dans le projet : couleur et épaisseur de chaque calque (table LAYER du DXF, nuancier `.acb`), types de ligne par objet (tirets en unités carte et textes intégrés « aep », « ep », « » » en ligne de marqueurs), motifs de hachures (`.pat`, échelle du dessin d'exemple) ; nouveau module `tools/dxf_style.py`, styles rangés dans `theme.json` (`style`) et symbologie générée par `tools/build_project.py` (linéaires et surfaces catégorisés par objet, blocs et textes colorés par la couleur enregistrée sur l'objet).
+- Champ `couleur` sur toutes les primitives, rempli au levé avec la couleur du catalogue.
+- **Icônes de palette dessinées à partir du catalogue** (`tools/make_object_icons.py`, Qt) : blocs SVG dans la couleur de l'objet avec le nombre de points en badge, linéaires avec leurs tirets et textes, hachures avec leur motif, textes ; familles teintées de la couleur du standard.
+
+### Corrigé
+
+- Textes accentués des types de ligne et des blocs (encodage du DXF).
+
 ## [0.7.2] - 2026-09-19
 
 ### Modifié

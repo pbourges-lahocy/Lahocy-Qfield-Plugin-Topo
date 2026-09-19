@@ -257,6 +257,10 @@ def block_shapes(entities):
         elif typ in ("TEXT", "MTEXT"):
             txt = "".join(v for c, v in pairs if c == "3") + next((v for c, v in pairs if c == "1"), "")
             txt = re.sub(r"\\[A-Za-z][^;]*;|[{}]", "", txt).replace("\\P", " ")
+            try:
+                txt = txt.encode("latin-1").decode("utf-8")   # textes UTF-8 dans un DXF lu en latin-1
+            except (UnicodeEncodeError, UnicodeDecodeError):
+                pass
             if txt.strip():
                 rot = _first(pairs, "50")
                 if typ == "MTEXT" and any(c == "11" for c, v in pairs):

@@ -144,6 +144,8 @@ def main():
     # SVG des blocs pour le rendu QGIS / QField (+ dimensions de référence pour l'échelle)
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import dxf_blocks
+    import dxf_style
+    styles = dxf_style.load_all(dxf_path, os.path.join(nom, "style"))
     blocs_dir = os.path.join(args.theme_dir, "blocs")
     if os.path.isdir(blocs_dir):
         shutil.rmtree(blocs_dir)
@@ -245,6 +247,24 @@ def main():
         elif args.no_icons:
             o["icone"] = oid + ".png"
 
+        # style : couleur et épaisseur du calque, type de ligne (nommé par l'ID), motif de hachure
+        lay = styles["layers"].get(gb["calque"], {})
+        st = {"couleur": lay.get("couleur", "#000000"), "epaisseur_mm": lay.get("epaisseur_mm", 0.25)}
+        if o["famille"] == "lineaire":
+            lt = styles["ltypes"].get(oid) or styles["ltypes"].get(lay.get("ltype", ""), None)
+            if lt and not lt["continu"]:
+                st["ltype"] = lt
+            if typ == "Hachures":
+                pat = styles["patterns"].get(oid)
+                motif = oid
+                if not pat:
+                    # pas de .pat dédié : croisillon standard (ANSI37) à petite échelle
+                    pat, motif = styles["patterns"].get("ANSI37"), "ANSI37"
+                if pat:
+                    sc = styles["hatch_scales"].get(oid, (1.0, 0.0) if motif == oid else (0.05, 0.0))
+                    st["hachure"] = {"motif": motif, "lignes": pat, "echelle": sc[0], "angle": sc[1]}
+        o["style"] = st
+
         # surcharges
         for k, v in rules.get(oid, {}).items():
             if isinstance(v, dict) and isinstance(o.get(k), dict):
@@ -261,7 +281,8 @@ def main():
         items = [o for o in objets.values() if o.get("gb") and o["gb"]["id"][0] == lettre]
         items.sort(key=lambda o: (GROUPES.index(o["gb"]["placement"]) if o["gb"]["placement"] in GROUPES else 9, o["gb"]["id"]))
         sous = [{"pos": i, "objet": o["code"], "icone": o["icone"], "groupe": o["gb"]["placement"]} for i, o in enumerate(items)]
-        palette.append({"pos": pos, "code": code, "nom": nom_fam, "icone": "", "ui": FAM_UI.get(lettre, "fam_objet"), "objet": "", "sous_palette": sous})
+        palette.append({"pos": pos, "code": code, "nom": nom_fam, "icone": "", "ui": FAM_UI.get(lettre, "fam_objet"), "objet": "",
+                        "couleur": styles["families"].get(lettre, ""), "sous_palette": sous})
 
     theme = {
         "nom": "GéoBretagne – standard topographique " + version_txt,

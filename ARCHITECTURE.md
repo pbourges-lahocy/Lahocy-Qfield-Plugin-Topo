@@ -47,8 +47,10 @@ project/LahocyTopo/        projet QField générique (GeoPackage + .qgs), zippé
 bridge/                    pont local Python (Windows) : serveur HTTP + pilotes (simulateur, GeoCOM, disto BLE, détecteur)
 companion/                 application compagnon Android « Lahocy Topo Link » (Kotlin) : même contrat HTTP,
                            Bluetooth SPP (GeoCOM, détecteur) et BLE (DISTO), service de premier plan, test de liaison
-tools/                     scripts bureau : geobretagne_to_theme.py (catalogue), make_ui_icons.py (icônes de
-                           l'interface), build_project.py (projet), theme_to_json.py (ancien thème MDB)
+tools/                     scripts bureau : geobretagne_to_theme.py (catalogue), dxf_blocks.py (blocs -> SVG),
+                           dxf_style.py (calques, types de ligne, hachures, nuancier), make_object_icons.py
+                           (icônes de palette, Python QGIS), make_ui_icons.py (icônes de l'interface),
+                           build_project.py (projet et symbologie), theme_to_json.py (ancien thème MDB)
 docs/                      spécification
 ```
 

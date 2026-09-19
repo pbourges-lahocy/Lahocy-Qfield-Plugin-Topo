@@ -145,6 +145,8 @@ Item {
           fontSize: 8
           iconSize: pal.inSub ? 26 : 22
           marker: !pal.inSub && !!(modelData.objet && modelData.sous_palette && modelData.sous_palette.length > 0)
+          // famille : fond teinté de la couleur du standard
+          baseColor: (!pal.inSub && modelData.couleur) ? Qt.tint(QfTheme.darkTheme ? "#3a3a3a" : "#f2f2f2", Qt.rgba(Qt.color(modelData.couleur).r, Qt.color(modelData.couleur).g, Qt.color(modelData.couleur).b, 0.18)) : (QfTheme.darkTheme ? "#3a3a3a" : "#f2f2f2")
           checked: engine.currentObj !== null && engine.currentObj !== undefined && modelData.objet === engine.currentObj.code
           onClicked: {
             if (pal.inSub) { if (modelData.objet) engine.activate(modelData.objet); return; }

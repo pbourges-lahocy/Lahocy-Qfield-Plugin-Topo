@@ -63,6 +63,15 @@ texte) ; `tools/geobretagne_rules.json` permet de surcharger n'importe quel obje
 point ou objet levé conserve l'identifiant du standard (`code_objet`), ce qui permet l'export
 DXF / PostGIS conforme au bureau.
 
+**Symbologie.** Le projet générique reprend la charte du standard : couleur et épaisseur
+de chaque calque, types de ligne (tirets en mètres et textes intégrés « aep », « ep »…),
+motifs de hachures, blocs colorés. Elle est générée par `tools/build_project.py` à partir
+des styles rangés dans `theme.json` (`tools/dxf_style.py` lit la table des calques et des
+types de ligne du DXF, les `.pat` et le nuancier `.acb`). Chaque objet levé enregistre sa
+couleur (`couleur`), ce qui permet d'ajuster la charte au bureau sans toucher aux données.
+Les icônes de la palette sont dessinées à partir du catalogue (`tools/make_object_icons.py`,
+à lancer avec le Python de QGIS).
+
 **Blocs sur la carte.** Les 397 blocs du DXF de nomenclature sont convertis en SVG
 (`plugin/theme/blocs`, copiés dans le projet sous `blocs/`) et dessinés par la couche
 `symbole` à leur taille réelle : 1 point = orientation CAO, 2 points = rotation et échelle

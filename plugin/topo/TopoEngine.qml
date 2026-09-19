@@ -336,7 +336,7 @@ Item {
   function saveActive(o, statut) {
     const points = Core.buildPolyline(o.vertices, o.closed);
     const attrs = {
-      "code_objet": o.code, "nom_objet": o.obj.nom, "famille": o.obj.famille, "calque": o.obj.calque || "",
+      "code_objet": o.code, "nom_objet": o.obj.nom, "famille": o.obj.famille, "calque": o.obj.calque || "", "couleur": (o.obj.style || {}).couleur || "",
       "matricules": o.vertices.map(v => v.m).join(";"), "statut": statut || "en_cours", "indice": o.indice,
       "params_json": JSON.stringify(activeParams(o)), "type_lineaire": o.type, "largeur": o.largeur,
       "ferme": o.closed ? 1 : 0, "hachure": o.hachure ? 1 : 0, "horodatage": Core.nowIso(), "operateur": db.operateur
@@ -383,7 +383,7 @@ Item {
   /** Parallèles de multiligne et surface hachurée après finalisation. */
   function finalizeLinear(o) {
     const points = Core.buildPolyline(o.vertices, o.closed);
-    const base = { "code_objet": o.code, "nom_objet": o.obj.nom, "famille": o.obj.famille, "calque": o.obj.calque || "",
+    const base = { "code_objet": o.code, "nom_objet": o.obj.nom, "famille": o.obj.famille, "calque": o.obj.calque || "", "couleur": (o.obj.style || {}).couleur || "",
                    "matricules": o.vertices.map(v => v.m).join(";"), "statut": "termine", "indice": o.indice,
                    "horodatage": Core.nowIso(), "operateur": db.operateur };
     if ((o.type === "multiligne_double" || o.type === "multiligne_triple") && o.largeur > 0) {
@@ -556,7 +556,7 @@ Item {
     const n = pending.points.length;
     if (n < pending.needed) { setMessage(pending.obj.nom + " – point " + (n + 1) + " / " + pending.needed); refreshUi(); return; }
     const pts = pending.points, obj = pending.obj, m = obj.methode || {};
-    const base = { "code_objet": obj.code, "nom_objet": obj.nom, "famille": obj.famille, "calque": obj.calque || "",
+    const base = { "code_objet": obj.code, "nom_objet": obj.nom, "famille": obj.famille, "calque": obj.calque || "", "couleur": (obj.style || {}).couleur || "",
                    "matricules": pts.map(q => q.matricule).join(";"), "statut": "termine", "indice": nextIndice(obj.code),
                    "horodatage": Core.nowIso(), "operateur": db.operateur };
     let fid = -1;
@@ -698,7 +698,7 @@ Item {
     const pts = Core.buildPolyline(params.vertices || [], false);
     if (pts.length < 2) { toast("Linéaire sans sommets exploitables"); setClickMode(""); return; }
     db.createFeature("talus", Core.lineWkt(pts), {
-      "code_objet": talusObj.code, "nom_objet": talusObj.nom, "famille": "talus", "calque": talusObj.calque || "",
+      "code_objet": talusObj.code, "nom_objet": talusObj.nom, "famille": "talus", "calque": talusObj.calque || "", "couleur": (talusObj.style || {}).couleur || "",
       "statut": "termine", "indice": nextIndice(talusObj.code), "fid_haut": haut ? haut.id : -1, "fid_bas": bas ? bas.id : -1,
       "mode": m.mode || 0, "espace": m.espace || 0.4, "nb_lignes": m.nb_lignes || 4, "pct_court": m.pct_court || 35,
       "pct_long": m.pct_long || 90, "pct_inter": m.pct_inter || 30, "horodatage": Core.nowIso(), "operateur": db.operateur,
