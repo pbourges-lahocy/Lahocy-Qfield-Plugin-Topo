@@ -339,7 +339,6 @@ def style_layers(layers):
             cats.append(QgsRendererCategory(code, line_symbol_for(o), o.get("nom", code)))
     cats.append(QgsRendererCategory("", QgsLineSymbol.createSimple({"color": "#202020", "width": "0.4"}), "Autre linéaire"))
     lin.setRenderer(QgsCategorizedSymbolRenderer("code_objet", cats))
-    label(lin, "\"nom_objet\"", 7, "#404040")
 
     # surfaces : hachures du standard par objet, sinon remplissage neutre
     surf = layers["surface"]
@@ -350,11 +349,9 @@ def style_layers(layers):
             cats.append(QgsRendererCategory(code, fill_symbol_for(o), o.get("nom", code)))
     cats.append(QgsRendererCategory("", QgsFillSymbol.createSimple({"color": "60,60,60,40", "outline_color": "#202020", "outline_width": "0.3"}), "Autre surface"))
     surf.setRenderer(QgsCategorizedSymbolRenderer("code_objet", cats))
-    label(surf, "\"nom_objet\"", 7, "#404040")
 
     sym = layers["symbole"]
     sym.renderer().setSymbol(symbole_marker())
-    label(sym, "\"nom_objet\"", 7, "#b00020")
 
     tx = layers["texte"]
     tx.renderer().symbol().setSize(1.0)
@@ -367,7 +364,6 @@ def style_layers(layers):
     ent = layers["entree"]
     ent.renderer().symbol().setColor(QColor("#6a1b9a"))
     ent.renderer().symbol().setWidth(0.8)
-    label(ent, "\"texte\"", 7, "#6a1b9a")
 
     tal = layers["talus"]
     tal.renderer().symbol().setColor(QColor("#2e7d32"))

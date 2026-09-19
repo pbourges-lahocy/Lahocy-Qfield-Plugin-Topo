@@ -2,6 +2,16 @@
 
 Format inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
+## [0.8.1] - 2026-09-19
+
+### Ajouté
+
+- Choix du nombre de points de pose d'un symbole (1, 2 ou 3) dans le panneau de mesure, valeur du carnet par défaut, mémorisé par objet pendant la session ; au-delà du carnet, l'échelle se déduit des dimensions du bloc (`ref_x` / `ref_y`).
+
+### Modifié
+
+- Plus d'étiquettes de nom sur les symboles, linéaires, surfaces et entrées (les objets sont dessinés) ; le texte des objets « texte » et les matricules des points restent affichés.
+
 ## [0.8.0] - 2026-09-19
 
 ### Ajouté

@@ -230,7 +230,10 @@ def main():
                     if pts >= 3 and coin_y:
                         largeur = round(dm["ymax"], 4)
                 o["famille"] = "symbole"
-                o["symbole"] = {"famille_bloc": "GeoBretagne", "bloc": oid, "svg": oid + ".svg", "demi": round(dm["half"], 4) if dm else 0.5}
+                # ref_x / ref_y : dimensions de référence du bloc si l'opérateur choisit plus de points que le carnet
+                o["symbole"] = {"famille_bloc": "GeoBretagne", "bloc": oid, "svg": oid + ".svg", "demi": round(dm["half"], 4) if dm else 0.5,
+                                "ref_x": round(dm["xmax"] if dm and dm["xmin"] > -0.01 else (dm["xmax"] - dm["xmin"] if dm else 0.0), 4),
+                                "ref_y": round(dm["ymax"] if dm and dm["ymin"] > -0.01 else (dm["ymax"] - dm["ymin"] if dm else 0.0), 4)}
                 o["methode"] = {"points": pts, "ancrages": [9] if pts == 1 else [10, 11, 12][:pts], "verrou_largeur": False,
                                 "verrou_longueur": False, "largeur": largeur, "longueur": longueur}
                 stats["symbole_%dpt" % pts] += 1

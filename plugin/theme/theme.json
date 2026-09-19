@@ -3770,7 +3770,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0000",
     "svg": "AP_0000.svg",
-    "demi": 0.9235
+    "demi": 0.9235,
+    "ref_x": 0.87,
+    "ref_y": 0.2498
    },
    "methode": {
     "points": 2,
@@ -3814,7 +3816,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0001",
     "svg": "AP_0001.svg",
-    "demi": 0.1281
+    "demi": 0.1281,
+    "ref_x": 0.225,
+    "ref_y": 0.225
    },
    "methode": {
     "points": 1,
@@ -3859,7 +3863,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0002",
     "svg": "AP_0002.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -3904,7 +3910,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0003",
     "svg": "AP_0003.svg",
-    "demi": 0.6543
+    "demi": 0.6543,
+    "ref_x": 0.6131,
+    "ref_y": 0.6136
    },
    "methode": {
     "points": 2,
@@ -3951,7 +3959,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0004",
     "svg": "AP_0004.svg",
-    "demi": 0.3666
+    "demi": 0.3666,
+    "ref_x": 0.3396,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -3997,7 +4007,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0005",
     "svg": "AP_0005.svg",
-    "demi": 0.4713
+    "demi": 0.4713,
+    "ref_x": 0.3993,
+    "ref_y": 0.6392
    },
    "methode": {
     "points": 1,
@@ -4042,7 +4054,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0006",
     "svg": "AP_0006.svg",
-    "demi": 0.6823
+    "demi": 0.6823,
+    "ref_x": 0.64,
+    "ref_y": 0.6403
    },
    "methode": {
     "points": 2,
@@ -4088,7 +4102,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0007",
     "svg": "AP_0007.svg",
-    "demi": 1.1114
+    "demi": 1.1114,
+    "ref_x": 1.049,
+    "ref_y": 0.4998
    },
    "methode": {
     "points": 3,
@@ -4135,7 +4151,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0008",
     "svg": "AP_0008.svg",
-    "demi": 0.8918
+    "demi": 0.8918,
+    "ref_x": 0.8399,
+    "ref_y": 0.6402
    },
    "methode": {
     "points": 3,
@@ -4180,7 +4198,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0009",
     "svg": "AP_0009.svg",
-    "demi": 0.7093
+    "demi": 0.7093,
+    "ref_x": 0.666,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -4227,7 +4247,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0010",
     "svg": "AP_0010.svg",
-    "demi": 0.2465
+    "demi": 0.2465,
+    "ref_x": 0.4492,
+    "ref_y": 0.4496
    },
    "methode": {
     "points": 1,
@@ -4270,7 +4292,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0011",
     "svg": "AP_0011.svg",
-    "demi": 0.745
+    "demi": 0.745,
+    "ref_x": 1.225,
+    "ref_y": 0.6994
    },
    "methode": {
     "points": 1,
@@ -4319,7 +4343,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0012",
     "svg": "AP_0012.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -4367,7 +4393,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0013",
     "svg": "AP_0013.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -4489,7 +4517,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0041",
     "svg": "AP_0041.svg",
-    "demi": 0.2097
+    "demi": 0.2097,
+    "ref_x": 0.38,
+    "ref_y": 0.38
    },
    "methode": {
     "points": 1,
@@ -4532,7 +4562,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0042",
     "svg": "AP_0042.svg",
-    "demi": 0.2772
+    "demi": 0.2772,
+    "ref_x": 0.3,
+    "ref_y": 0.2545
    },
    "methode": {
     "points": 1,
@@ -4577,7 +4609,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0043",
     "svg": "AP_0043.svg",
-    "demi": 0.1716
+    "demi": 0.1716,
+    "ref_x": 0.3064,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 2,
@@ -4621,7 +4655,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0044",
     "svg": "AP_0044.svg",
-    "demi": 0.5356
+    "demi": 0.5356,
+    "ref_x": 0.5006,
+    "ref_y": 0.4998
    },
    "methode": {
     "points": 3,
@@ -4666,7 +4702,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0045",
     "svg": "AP_0045.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -4711,7 +4749,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0046",
     "svg": "AP_0046.svg",
-    "demi": 0.1681
+    "demi": 0.1681,
+    "ref_x": 0.1006,
+    "ref_y": 0.3004
    },
    "methode": {
     "points": 1,
@@ -4754,7 +4794,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_0047",
     "svg": "AP_0047.svg",
-    "demi": 0.1676
+    "demi": 0.1676,
+    "ref_x": 0.1006,
+    "ref_y": 0.3002
    },
    "methode": {
     "points": 1,
@@ -4799,7 +4841,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2000",
     "svg": "AP_2000.svg",
-    "demi": 0.2698
+    "demi": 0.2698,
+    "ref_x": 0.4941,
+    "ref_y": 0.4945
    },
    "methode": {
     "points": 1,
@@ -4842,7 +4886,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2001",
     "svg": "AP_2001.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -4887,7 +4933,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2002",
     "svg": "AP_2002.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -4930,7 +4978,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2003",
     "svg": "AP_2003.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -4973,7 +5023,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2004",
     "svg": "AP_2004.svg",
-    "demi": 0.8959
+    "demi": 0.8959,
+    "ref_x": 0.6,
+    "ref_y": 0.8437
    },
    "methode": {
     "points": 1,
@@ -5016,7 +5068,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2005",
     "svg": "AP_2005.svg",
-    "demi": 1.1996
+    "demi": 1.1996,
+    "ref_x": 0.6,
+    "ref_y": 1.133
    },
    "methode": {
     "points": 1,
@@ -5059,7 +5113,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2006",
     "svg": "AP_2006.svg",
-    "demi": 0.4825
+    "demi": 0.4825,
+    "ref_x": 0.5196,
+    "ref_y": 0.45
    },
    "methode": {
     "points": 1,
@@ -5104,7 +5160,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2026",
     "svg": "AP_2026.svg",
-    "demi": 0.2428
+    "demi": 0.2428,
+    "ref_x": 0.3091,
+    "ref_y": 0.2844
    },
    "methode": {
     "points": 1,
@@ -5149,7 +5207,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2027",
     "svg": "AP_2027.svg",
-    "demi": 0.2992
+    "demi": 0.2992,
+    "ref_x": 0.3381,
+    "ref_y": 0.3381
    },
    "methode": {
     "points": 1,
@@ -5194,7 +5254,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2028",
     "svg": "AP_2028.svg",
-    "demi": 0.1744
+    "demi": 0.1744,
+    "ref_x": 0.3131,
+    "ref_y": 0.1254
    },
    "methode": {
     "points": 1,
@@ -5239,7 +5301,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2029",
     "svg": "AP_2029.svg",
-    "demi": 0.1744
+    "demi": 0.1744,
+    "ref_x": 0.1254,
+    "ref_y": 0.3131
    },
    "methode": {
     "points": 1,
@@ -5284,7 +5348,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2030",
     "svg": "AP_2030.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -5327,7 +5393,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2031",
     "svg": "AP_2031.svg",
-    "demi": 0.2882
+    "demi": 0.2882,
+    "ref_x": 0.2649,
+    "ref_y": 0.321
    },
    "methode": {
     "points": 1,
@@ -5372,7 +5440,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2032",
     "svg": "AP_2032.svg",
-    "demi": 0.4365
+    "demi": 0.4365,
+    "ref_x": 0.5637,
+    "ref_y": 0.6928
    },
    "methode": {
     "points": 1,
@@ -5415,7 +5485,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2033",
     "svg": "AP_2033.svg",
-    "demi": 0.5088
+    "demi": 0.5088,
+    "ref_x": 0.675,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -5458,7 +5530,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2034",
     "svg": "AP_2034.svg",
-    "demi": 0.6394
+    "demi": 0.6394,
+    "ref_x": 0.7489,
+    "ref_y": 0.4571
    },
    "methode": {
     "points": 1,
@@ -5501,7 +5575,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2035",
     "svg": "AP_2035.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -5546,7 +5622,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2036",
     "svg": "AP_2036.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -5589,7 +5667,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2037",
     "svg": "AP_2037.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -5632,7 +5712,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "AP_2038",
     "svg": "AP_2038.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -7152,7 +7234,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0081",
     "svg": "BP_0081.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -7195,7 +7279,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0082",
     "svg": "BP_0082.svg",
-    "demi": 0.2202
+    "demi": 0.2202,
+    "ref_x": 0.3993,
+    "ref_y": 0.3996
    },
    "methode": {
     "points": 1,
@@ -7238,7 +7324,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0083",
     "svg": "BP_0083.svg",
-    "demi": 0.2204
+    "demi": 0.2204,
+    "ref_x": 0.3993,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -7283,7 +7371,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0084",
     "svg": "BP_0084.svg",
-    "demi": 0.9025
+    "demi": 0.9025,
+    "ref_x": 0.85,
+    "ref_y": 0.85
    },
    "methode": {
     "points": 2,
@@ -7327,7 +7417,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0085",
     "svg": "BP_0085.svg",
-    "demi": 0.5705
+    "demi": 0.5705,
+    "ref_x": 0.5338,
+    "ref_y": 0.5323
    },
    "methode": {
     "points": 2,
@@ -7371,7 +7463,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0086",
     "svg": "BP_0086.svg",
-    "demi": 0.612
+    "demi": 0.612,
+    "ref_x": 0.5728,
+    "ref_y": 0.5733
    },
    "methode": {
     "points": 2,
@@ -7415,7 +7509,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0087",
     "svg": "BP_0087.svg",
-    "demi": 0.8215
+    "demi": 0.8215,
+    "ref_x": 0.7728,
+    "ref_y": 0.5735
    },
    "methode": {
     "points": 3,
@@ -7460,7 +7556,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0088",
     "svg": "BP_0088.svg",
-    "demi": 0.6447
+    "demi": 0.6447,
+    "ref_x": 0.604,
+    "ref_y": 0.6045
    },
    "methode": {
     "points": 2,
@@ -7504,7 +7602,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0089",
     "svg": "BP_0089.svg",
-    "demi": 0.8545
+    "demi": 0.8545,
+    "ref_x": 0.8042,
+    "ref_y": 0.6048
    },
    "methode": {
     "points": 3,
@@ -7549,7 +7649,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0090",
     "svg": "BP_0090.svg",
-    "demi": 1.1715
+    "demi": 1.1715,
+    "ref_x": 1.3269,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 2,
@@ -7593,7 +7695,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0091",
     "svg": "BP_0091.svg",
-    "demi": 1.0498
+    "demi": 1.0498,
+    "ref_x": 0.9903,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 2,
@@ -7637,7 +7741,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0092",
     "svg": "BP_0092.svg",
-    "demi": 1.1464
+    "demi": 1.1464,
+    "ref_x": 1.0823,
+    "ref_y": 0.8
    },
    "methode": {
     "points": 2,
@@ -7681,7 +7787,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0093",
     "svg": "BP_0093.svg",
-    "demi": 1.0918
+    "demi": 1.0918,
+    "ref_x": 1.0303,
+    "ref_y": 0.75
    },
    "methode": {
     "points": 2,
@@ -7725,7 +7833,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0094",
     "svg": "BP_0094.svg",
-    "demi": 1.0371
+    "demi": 1.0371,
+    "ref_x": 0.9782,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -7774,7 +7884,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0095",
     "svg": "BP_0095.svg",
-    "demi": 0.6689
+    "demi": 0.6689,
+    "ref_x": 0.6275,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -7823,7 +7935,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0096",
     "svg": "BP_0096.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -7871,7 +7985,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0097",
     "svg": "BP_0097.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -7991,7 +8107,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0121",
     "svg": "BP_0121.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -8034,7 +8152,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0122",
     "svg": "BP_0122.svg",
-    "demi": 0.5999
+    "demi": 0.5999,
+    "ref_x": 0.5619,
+    "ref_y": 0.5619
    },
    "methode": {
     "points": 2,
@@ -8078,7 +8198,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0123",
     "svg": "BP_0123.svg",
-    "demi": 0.6143
+    "demi": 0.6143,
+    "ref_x": 0.5755,
+    "ref_y": 0.5755
    },
    "methode": {
     "points": 2,
@@ -8122,7 +8244,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0124",
     "svg": "BP_0124.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -8167,7 +8291,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0125",
     "svg": "BP_0125.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -8212,7 +8338,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0126",
     "svg": "BP_0126.svg",
-    "demi": 0.1889
+    "demi": 0.1889,
+    "ref_x": 0.3064,
+    "ref_y": 0.3009
    },
    "methode": {
     "points": 2,
@@ -8256,7 +8384,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_0127",
     "svg": "BP_0127.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1002,
+    "ref_y": 0.3001
    },
    "methode": {
     "points": 1,
@@ -8305,7 +8435,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2051",
     "svg": "BP_2051.svg",
-    "demi": 0.78
+    "demi": 0.78,
+    "ref_x": 0.7333,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 1,
@@ -8348,7 +8480,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2052",
     "svg": "BP_2052.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4991,
+    "ref_y": 0.4995
    },
    "methode": {
     "points": 1,
@@ -8391,7 +8525,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2053",
     "svg": "BP_2053.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -8434,7 +8570,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2054",
     "svg": "BP_2054.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -8477,7 +8615,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2055",
     "svg": "BP_2055.svg",
-    "demi": 1.3225
+    "demi": 1.3225,
+    "ref_x": 1.25,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 2,
@@ -8523,7 +8663,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2056",
     "svg": "BP_2056.svg",
-    "demi": 0.9075
+    "demi": 0.9075,
+    "ref_x": 0.8,
+    "ref_y": 0.8548
    },
    "methode": {
     "points": 2,
@@ -8567,7 +8709,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2057",
     "svg": "BP_2057.svg",
-    "demi": 1.375
+    "demi": 1.375,
+    "ref_x": 1.3,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 2,
@@ -8611,7 +8755,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2058",
     "svg": "BP_2058.svg",
-    "demi": 0.0887
+    "demi": 0.0887,
+    "ref_x": 0.1497,
+    "ref_y": 0.1499
    },
    "methode": {
     "points": 1,
@@ -8654,7 +8800,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2059",
     "svg": "BP_2059.svg",
-    "demi": 0.5875
+    "demi": 0.5875,
+    "ref_x": 0.275,
+    "ref_y": 0.55
    },
    "methode": {
     "points": 1,
@@ -8699,7 +8847,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2076",
     "svg": "BP_2076.svg",
-    "demi": 0.1854
+    "demi": 0.1854,
+    "ref_x": 0.2989,
+    "ref_y": 0.3276
    },
    "methode": {
     "points": 1,
@@ -8744,7 +8894,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2077",
     "svg": "BP_2077.svg",
-    "demi": 0.2992
+    "demi": 0.2992,
+    "ref_x": 0.3381,
+    "ref_y": 0.3381
    },
    "methode": {
     "points": 1,
@@ -8789,7 +8941,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2078",
     "svg": "BP_2078.svg",
-    "demi": 0.1744
+    "demi": 0.1744,
+    "ref_x": 0.3131,
+    "ref_y": 0.1254
    },
    "methode": {
     "points": 1,
@@ -8832,7 +8986,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2079",
     "svg": "BP_2079.svg",
-    "demi": 0.2882
+    "demi": 0.2882,
+    "ref_x": 0.2649,
+    "ref_y": 0.321
    },
    "methode": {
     "points": 1,
@@ -8877,7 +9033,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2080",
     "svg": "BP_2080.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -8920,7 +9078,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2081",
     "svg": "BP_2081.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -8963,7 +9123,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2082",
     "svg": "BP_2082.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -9006,7 +9168,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2083",
     "svg": "BP_2083.svg",
-    "demi": 0.2095
+    "demi": 0.2095,
+    "ref_x": 0.38,
+    "ref_y": 0.38
    },
    "methode": {
     "points": 1,
@@ -9049,7 +9213,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2084",
     "svg": "BP_2084.svg",
-    "demi": 0.2772
+    "demi": 0.2772,
+    "ref_x": 0.3,
+    "ref_y": 0.2545
    },
    "methode": {
     "points": 1,
@@ -9092,7 +9258,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "BP_2085",
     "svg": "BP_2085.svg",
-    "demi": 0.6394
+    "demi": 0.6394,
+    "ref_x": 0.7489,
+    "ref_y": 0.4571
    },
    "methode": {
     "points": 1,
@@ -9670,7 +9838,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0161",
     "svg": "CP_0161.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -9713,7 +9883,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0162",
     "svg": "CP_0162.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.3993,
+    "ref_y": 0.3996
    },
    "methode": {
     "points": 1,
@@ -9758,7 +9930,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0163",
     "svg": "CP_0163.svg",
-    "demi": 0.9025
+    "demi": 0.9025,
+    "ref_x": 0.85,
+    "ref_y": 0.85
    },
    "methode": {
     "points": 2,
@@ -9802,7 +9976,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0164",
     "svg": "CP_0164.svg",
-    "demi": 0.5705
+    "demi": 0.5705,
+    "ref_x": 0.5338,
+    "ref_y": 0.5323
    },
    "methode": {
     "points": 2,
@@ -9846,7 +10022,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0165",
     "svg": "CP_0165.svg",
-    "demi": 0.612
+    "demi": 0.612,
+    "ref_x": 0.5728,
+    "ref_y": 0.5733
    },
    "methode": {
     "points": 2,
@@ -9890,7 +10068,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0166",
     "svg": "CP_0166.svg",
-    "demi": 0.8215
+    "demi": 0.8215,
+    "ref_x": 0.7728,
+    "ref_y": 0.5735
    },
    "methode": {
     "points": 3,
@@ -9935,7 +10115,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0167",
     "svg": "CP_0167.svg",
-    "demi": 1.0371
+    "demi": 1.0371,
+    "ref_x": 0.9782,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -9986,7 +10168,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0168",
     "svg": "CP_0168.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -10034,7 +10218,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0169",
     "svg": "CP_0169.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -10154,7 +10340,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0201",
     "svg": "CP_0201.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -10197,7 +10385,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0202",
     "svg": "CP_0202.svg",
-    "demi": 0.5999
+    "demi": 0.5999,
+    "ref_x": 0.5619,
+    "ref_y": 0.5619
    },
    "methode": {
     "points": 2,
@@ -10241,7 +10431,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0203",
     "svg": "CP_0203.svg",
-    "demi": 0.6143
+    "demi": 0.6143,
+    "ref_x": 0.5755,
+    "ref_y": 0.5755
    },
    "methode": {
     "points": 2,
@@ -10285,7 +10477,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0204",
     "svg": "CP_0204.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -10330,7 +10524,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0205",
     "svg": "CP_0205.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -10375,7 +10571,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0206",
     "svg": "CP_0206.svg",
-    "demi": 0.1889
+    "demi": 0.1889,
+    "ref_x": 0.3064,
+    "ref_y": 0.3009
    },
    "methode": {
     "points": 2,
@@ -10419,7 +10617,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_0207",
     "svg": "CP_0207.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1002,
+    "ref_y": 0.3001
    },
    "methode": {
     "points": 1,
@@ -10465,7 +10665,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2101",
     "svg": "CP_2101.svg",
-    "demi": 0.78
+    "demi": 0.78,
+    "ref_x": 0.7333,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 1,
@@ -10508,7 +10710,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2102",
     "svg": "CP_2102.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -10551,7 +10755,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2103",
     "svg": "CP_2103.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -10594,7 +10800,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2104",
     "svg": "CP_2104.svg",
-    "demi": 0.291
+    "demi": 0.291,
+    "ref_x": 0.5338,
+    "ref_y": 0.5338
    },
    "methode": {
     "points": 1,
@@ -10639,7 +10847,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2126",
     "svg": "CP_2126.svg",
-    "demi": 0.1854
+    "demi": 0.1854,
+    "ref_x": 0.2989,
+    "ref_y": 0.3276
    },
    "methode": {
     "points": 1,
@@ -10684,7 +10894,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2127",
     "svg": "CP_2127.svg",
-    "demi": 0.2992
+    "demi": 0.2992,
+    "ref_x": 0.3381,
+    "ref_y": 0.3381
    },
    "methode": {
     "points": 1,
@@ -10729,7 +10941,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2128",
     "svg": "CP_2128.svg",
-    "demi": 0.1744
+    "demi": 0.1744,
+    "ref_x": 0.3131,
+    "ref_y": 0.1254
    },
    "methode": {
     "points": 1,
@@ -10772,7 +10986,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2129",
     "svg": "CP_2129.svg",
-    "demi": 0.2882
+    "demi": 0.2882,
+    "ref_x": 0.2649,
+    "ref_y": 0.321
    },
    "methode": {
     "points": 1,
@@ -10815,7 +11031,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2130",
     "svg": "CP_2130.svg",
-    "demi": 0.2772
+    "demi": 0.2772,
+    "ref_x": 0.3,
+    "ref_y": 0.2545
    },
    "methode": {
     "points": 1,
@@ -10858,7 +11076,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2131",
     "svg": "CP_2131.svg",
-    "demi": 0.6394
+    "demi": 0.6394,
+    "ref_x": 0.7489,
+    "ref_y": 0.4571
    },
    "methode": {
     "points": 1,
@@ -10903,7 +11123,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2132",
     "svg": "CP_2132.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -10946,7 +11168,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2133",
     "svg": "CP_2133.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -10989,7 +11213,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2134",
     "svg": "CP_2134.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -11032,7 +11258,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "CP_2135",
     "svg": "CP_2135.svg",
-    "demi": 0.2095
+    "demi": 0.2095,
+    "ref_x": 0.38,
+    "ref_y": 0.38
    },
    "methode": {
     "points": 1,
@@ -11646,7 +11874,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0241",
     "svg": "DP_0241.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -11689,7 +11919,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0242",
     "svg": "DP_0242.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.3993,
+    "ref_y": 0.3996
    },
    "methode": {
     "points": 1,
@@ -11734,7 +11966,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0243",
     "svg": "DP_0243.svg",
-    "demi": 0.9025
+    "demi": 0.9025,
+    "ref_x": 0.85,
+    "ref_y": 0.85
    },
    "methode": {
     "points": 2,
@@ -11778,7 +12012,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0244",
     "svg": "DP_0244.svg",
-    "demi": 0.5705
+    "demi": 0.5705,
+    "ref_x": 0.5338,
+    "ref_y": 0.5323
    },
    "methode": {
     "points": 2,
@@ -11822,7 +12058,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0245",
     "svg": "DP_0245.svg",
-    "demi": 0.612
+    "demi": 0.612,
+    "ref_x": 0.5728,
+    "ref_y": 0.5733
    },
    "methode": {
     "points": 2,
@@ -11866,7 +12104,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0246",
     "svg": "DP_0246.svg",
-    "demi": 0.8215
+    "demi": 0.8215,
+    "ref_x": 0.7728,
+    "ref_y": 0.5735
    },
    "methode": {
     "points": 3,
@@ -11911,7 +12151,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0247",
     "svg": "DP_0247.svg",
-    "demi": 1.0373
+    "demi": 1.0373,
+    "ref_x": 0.9784,
+    "ref_y": 0.6002
    },
    "methode": {
     "points": 3,
@@ -11962,7 +12204,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0248",
     "svg": "DP_0248.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -12010,7 +12254,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0249",
     "svg": "DP_0249.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -12130,7 +12376,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0281",
     "svg": "DP_0281.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -12173,7 +12421,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0282",
     "svg": "DP_0282.svg",
-    "demi": 0.5999
+    "demi": 0.5999,
+    "ref_x": 0.5619,
+    "ref_y": 0.5619
    },
    "methode": {
     "points": 2,
@@ -12217,7 +12467,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0283",
     "svg": "DP_0283.svg",
-    "demi": 0.6143
+    "demi": 0.6143,
+    "ref_x": 0.5755,
+    "ref_y": 0.5755
    },
    "methode": {
     "points": 2,
@@ -12261,7 +12513,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0284",
     "svg": "DP_0284.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -12304,7 +12558,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0285",
     "svg": "DP_0285.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -12347,7 +12603,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0286",
     "svg": "DP_0286.svg",
-    "demi": 0.1887
+    "demi": 0.1887,
+    "ref_x": 0.3064,
+    "ref_y": 0.3009
    },
    "methode": {
     "points": 2,
@@ -12391,7 +12649,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "DP_0287",
     "svg": "DP_0287.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1002,
+    "ref_y": 0.3001
    },
    "methode": {
     "points": 1,
@@ -12985,7 +13245,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0321",
     "svg": "EP_0321.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.2995,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -13030,7 +13292,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0322",
     "svg": "EP_0322.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -13073,7 +13337,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0323",
     "svg": "EP_0323.svg",
-    "demi": 1.0263
+    "demi": 1.0263,
+    "ref_x": 0.9679,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -13120,7 +13386,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0324",
     "svg": "EP_0324.svg",
-    "demi": 0.9025
+    "demi": 0.9025,
+    "ref_x": 0.85,
+    "ref_y": 0.85
    },
    "methode": {
     "points": 2,
@@ -13170,7 +13438,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0325",
     "svg": "EP_0325.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -13218,7 +13488,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0326",
     "svg": "EP_0326.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -13338,7 +13610,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0361",
     "svg": "EP_0361.svg",
-    "demi": 0.6057
+    "demi": 0.6057,
+    "ref_x": 0.5673,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 2,
@@ -13382,7 +13656,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0362",
     "svg": "EP_0362.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.4672,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -13427,7 +13703,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0363",
     "svg": "EP_0363.svg",
-    "demi": 0.5356
+    "demi": 0.5356,
+    "ref_x": 0.5006,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -13472,7 +13750,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0364",
     "svg": "EP_0364.svg",
-    "demi": 0.2095
+    "demi": 0.2095,
+    "ref_x": 0.38,
+    "ref_y": 0.38
    },
    "methode": {
     "points": 1,
@@ -13515,7 +13795,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0365",
     "svg": "EP_0365.svg",
-    "demi": 0.5358
+    "demi": 0.5358,
+    "ref_x": 0.5008,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 2,
@@ -13561,7 +13843,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0366",
     "svg": "EP_0366.svg",
-    "demi": 0.1677
+    "demi": 0.1677,
+    "ref_x": 0.1003,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -13606,7 +13890,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0367",
     "svg": "EP_0367.svg",
-    "demi": 0.1889
+    "demi": 0.1889,
+    "ref_x": 0.3064,
+    "ref_y": 0.3009
    },
    "methode": {
     "points": 2,
@@ -13650,7 +13936,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0368",
     "svg": "EP_0368.svg",
-    "demi": 0.1676
+    "demi": 0.1676,
+    "ref_x": 0.1006,
+    "ref_y": 0.3002
    },
    "methode": {
     "points": 1,
@@ -13693,7 +13981,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_0369",
     "svg": "EP_0369.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.3993,
+    "ref_y": 0.3996
    },
    "methode": {
     "points": 1,
@@ -13736,7 +14026,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_2201",
     "svg": "EP_2201.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -13779,7 +14071,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_2202",
     "svg": "EP_2202.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.9982,
+    "ref_y": 0.9991
    },
    "methode": {
     "points": 1,
@@ -13824,7 +14118,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_2226",
     "svg": "EP_2226.svg",
-    "demi": 0.1854
+    "demi": 0.1854,
+    "ref_x": 0.2989,
+    "ref_y": 0.3276
    },
    "methode": {
     "points": 1,
@@ -13869,7 +14165,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_2227",
     "svg": "EP_2227.svg",
-    "demi": 0.2992
+    "demi": 0.2992,
+    "ref_x": 0.3381,
+    "ref_y": 0.3381
    },
    "methode": {
     "points": 1,
@@ -13914,7 +14212,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "EP_2228",
     "svg": "EP_2228.svg",
-    "demi": 0.1744
+    "demi": 0.1744,
+    "ref_x": 0.3131,
+    "ref_y": 0.1254
    },
    "methode": {
     "points": 1,
@@ -15230,7 +15530,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0401",
     "svg": "FP_0401.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -15273,7 +15575,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0402",
     "svg": "FP_0402.svg",
-    "demi": 0.3513
+    "demi": 0.3513,
+    "ref_x": 0.65,
+    "ref_y": 0.65
    },
    "methode": {
     "points": 1,
@@ -15316,7 +15620,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0403",
     "svg": "FP_0403.svg",
-    "demi": 0.3939
+    "demi": 0.3939,
+    "ref_x": 0.5687,
+    "ref_y": 0.4062
    },
    "methode": {
     "points": 1,
@@ -15359,7 +15665,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0404",
     "svg": "FP_0404.svg",
-    "demi": 0.3939
+    "demi": 0.3939,
+    "ref_x": 0.6906,
+    "ref_y": 0.65
    },
    "methode": {
     "points": 1,
@@ -15402,7 +15710,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0405",
     "svg": "FP_0405.svg",
-    "demi": 0.8952
+    "demi": 0.8952,
+    "ref_x": 0.843,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -15447,7 +15757,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0406",
     "svg": "FP_0406.svg",
-    "demi": 0.9279
+    "demi": 0.9279,
+    "ref_x": 0.8742,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -15491,7 +15803,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0407",
     "svg": "FP_0407.svg",
-    "demi": 0.7017
+    "demi": 0.7017,
+    "ref_x": 0.6573,
+    "ref_y": 0.6588
    },
    "methode": {
     "points": 2,
@@ -15535,7 +15849,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0408",
     "svg": "FP_0408.svg",
-    "demi": 1.1683
+    "demi": 1.1683,
+    "ref_x": 1.1031,
+    "ref_y": 0.8
    },
    "methode": {
     "points": 3,
@@ -15580,7 +15896,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0409",
     "svg": "FP_0409.svg",
-    "demi": 0.9825
+    "demi": 0.9825,
+    "ref_x": 0.9262,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -15631,7 +15949,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0410",
     "svg": "FP_0410.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -15679,7 +15999,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0411",
     "svg": "FP_0411.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -15799,7 +16121,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0414",
     "svg": "FP_0414.svg",
-    "demi": 0.4825
+    "demi": 0.4825,
+    "ref_x": 0.5196,
+    "ref_y": 0.45
    },
    "methode": {
     "points": 1,
@@ -15842,7 +16166,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0415",
     "svg": "FP_0415.svg",
-    "demi": 0.9825
+    "demi": 0.9825,
+    "ref_x": 0.9262,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -15887,7 +16213,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0441",
     "svg": "FP_0441.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -15930,7 +16258,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0442",
     "svg": "FP_0442.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -15975,7 +16305,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0443",
     "svg": "FP_0443.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -16018,7 +16350,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "FP_0444",
     "svg": "FP_0444.svg",
-    "demi": 0.1679
+    "demi": 0.1679,
+    "ref_x": 0.1006,
+    "ref_y": 0.3004
    },
    "methode": {
     "points": 1,
@@ -16792,7 +17126,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0481",
     "svg": "GP_0481.svg",
-    "demi": 0.5217
+    "demi": 0.5217,
+    "ref_x": 0.65,
+    "ref_y": 0.8124
    },
    "methode": {
     "points": 1,
@@ -16835,7 +17171,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0482",
     "svg": "GP_0482.svg",
-    "demi": 0.3513
+    "demi": 0.3513,
+    "ref_x": 0.65,
+    "ref_y": 0.65
    },
    "methode": {
     "points": 1,
@@ -16878,7 +17216,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0483",
     "svg": "GP_0483.svg",
-    "demi": 0.2594
+    "demi": 0.2594,
+    "ref_x": 0.375,
+    "ref_y": 0.475
    },
    "methode": {
     "points": 1,
@@ -16921,7 +17261,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0484",
     "svg": "GP_0484.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -16964,7 +17306,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0485",
     "svg": "GP_0485.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -17007,7 +17351,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0486",
     "svg": "GP_0486.svg",
-    "demi": 0.8405
+    "demi": 0.8405,
+    "ref_x": 0.791,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -17052,7 +17398,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0487",
     "svg": "GP_0487.svg",
-    "demi": 0.9279
+    "demi": 0.9279,
+    "ref_x": 0.8742,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -17097,7 +17445,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0488",
     "svg": "GP_0488.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -17140,7 +17490,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0489",
     "svg": "GP_0489.svg",
-    "demi": 0.6925
+    "demi": 0.6925,
+    "ref_x": 1.3,
+    "ref_y": 1.3
    },
    "methode": {
     "points": 1,
@@ -17189,7 +17541,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0490",
     "svg": "GP_0490.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -17237,7 +17591,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0491",
     "svg": "GP_0491.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -17357,7 +17713,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0521",
     "svg": "GP_0521.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -17400,7 +17758,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0522",
     "svg": "GP_0522.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -17445,7 +17805,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0523",
     "svg": "GP_0523.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -17488,7 +17850,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "GP_0524",
     "svg": "GP_0524.svg",
-    "demi": 0.1682
+    "demi": 0.1682,
+    "ref_x": 0.1011,
+    "ref_y": 0.3007
    },
    "methode": {
     "points": 1,
@@ -18682,7 +19046,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0561",
     "svg": "HP_0561.svg",
-    "demi": 0.3544
+    "demi": 0.3544,
+    "ref_x": 0.2184,
+    "ref_y": 0.6561
    },
    "methode": {
     "points": 1,
@@ -18725,7 +19091,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0562",
     "svg": "HP_0562.svg",
-    "demi": 0.2069
+    "demi": 0.2069,
+    "ref_x": 0.3438,
+    "ref_y": 0.2812
    },
    "methode": {
     "points": 1,
@@ -18768,7 +19136,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0563",
     "svg": "HP_0563.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.4218
    },
    "methode": {
     "points": 1,
@@ -18811,7 +19181,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0564",
     "svg": "HP_0564.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4991,
+    "ref_y": 0.4995
    },
    "methode": {
     "points": 1,
@@ -18854,7 +19226,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0565",
     "svg": "HP_0565.svg",
-    "demi": 0.4563
+    "demi": 0.4563,
+    "ref_x": 0.8485,
+    "ref_y": 0.8492
    },
    "methode": {
     "points": 1,
@@ -18897,7 +19271,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0566",
     "svg": "HP_0566.svg",
-    "demi": 0.8515
+    "demi": 0.8515,
+    "ref_x": 0.8014,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -18942,7 +19318,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0567",
     "svg": "HP_0567.svg",
-    "demi": 0.9497
+    "demi": 0.9497,
+    "ref_x": 0.895,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -18987,7 +19365,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0568",
     "svg": "HP_0568.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.2456
    },
    "methode": {
     "points": 1,
@@ -19030,7 +19410,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0569",
     "svg": "HP_0569.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.3998
    },
    "methode": {
     "points": 1,
@@ -19073,7 +19455,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0570",
     "svg": "HP_0570.svg",
-    "demi": 0.7375
+    "demi": 0.7375,
+    "ref_x": 0.6928,
+    "ref_y": 0.125
    },
    "methode": {
     "points": 2,
@@ -19123,7 +19507,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0571",
     "svg": "HP_0571.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -19171,7 +19557,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0572",
     "svg": "HP_0572.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -19291,7 +19679,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0575",
     "svg": "HP_0575.svg",
-    "demi": 0.7535
+    "demi": 0.7535,
+    "ref_x": 0.6588,
+    "ref_y": 0.758
    },
    "methode": {
     "points": 1,
@@ -19334,7 +19724,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0601",
     "svg": "HP_0601.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.5,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -19377,7 +19769,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0602",
     "svg": "HP_0602.svg",
-    "demi": 0.9912
+    "demi": 0.9912,
+    "ref_x": 0.9345,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 3,
@@ -19422,7 +19816,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0603",
     "svg": "HP_0603.svg",
-    "demi": 0.5353
+    "demi": 0.5353,
+    "ref_x": 0.5003,
+    "ref_y": 0.4938
    },
    "methode": {
     "points": 3,
@@ -19467,7 +19863,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0604",
     "svg": "HP_0604.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -19510,7 +19908,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0605",
     "svg": "HP_0605.svg",
-    "demi": 0.9562
+    "demi": 0.9562,
+    "ref_x": 0.9011,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 3,
@@ -19555,7 +19955,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0606",
     "svg": "HP_0606.svg",
-    "demi": 0.9944
+    "demi": 0.9944,
+    "ref_x": 0.9376,
+    "ref_y": 0.5105
    },
    "methode": {
     "points": 3,
@@ -19600,7 +20002,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "HP_0607",
     "svg": "HP_0607.svg",
-    "demi": 0.1682
+    "demi": 0.1682,
+    "ref_x": 0.1011,
+    "ref_y": 0.3007
    },
    "methode": {
     "points": 1,
@@ -20370,7 +20774,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0641",
     "svg": "IP_0641.svg",
-    "demi": 0.2799
+    "demi": 0.2799,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -20413,7 +20819,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0642",
     "svg": "IP_0642.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -20456,7 +20864,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0643",
     "svg": "IP_0643.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -20499,7 +20909,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0644",
     "svg": "IP_0644.svg",
-    "demi": 0.5244
+    "demi": 0.5244,
+    "ref_x": 0.4896,
+    "ref_y": 0.4899
    },
    "methode": {
     "points": 2,
@@ -20543,7 +20955,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0645",
     "svg": "IP_0645.svg",
-    "demi": 0.8624
+    "demi": 0.8624,
+    "ref_x": 0.8118,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -20588,7 +21002,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0646",
     "svg": "IP_0646.svg",
-    "demi": 0.9498
+    "demi": 0.9498,
+    "ref_x": 0.895,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -20633,7 +21049,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0647",
     "svg": "IP_0647.svg",
-    "demi": 0.8459
+    "demi": 0.8459,
+    "ref_x": 0.7961,
+    "ref_y": 0.7961
    },
    "methode": {
     "points": 2,
@@ -20677,7 +21095,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0648",
     "svg": "IP_0648.svg",
-    "demi": 0.6338
+    "demi": 0.6338,
+    "ref_x": 0.5937,
+    "ref_y": 0.5941
    },
    "methode": {
     "points": 2,
@@ -20721,7 +21141,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0649",
     "svg": "IP_0649.svg",
-    "demi": 1.1066
+    "demi": 1.1066,
+    "ref_x": 1.0444,
+    "ref_y": 0.6452
    },
    "methode": {
     "points": 3,
@@ -20766,7 +21188,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0650",
     "svg": "IP_0650.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -20815,7 +21239,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0651",
     "svg": "IP_0651.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -20863,7 +21289,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0652",
     "svg": "IP_0652.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -20983,7 +21411,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0681",
     "svg": "IP_0681.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -21028,7 +21458,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0682",
     "svg": "IP_0682.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -21071,7 +21503,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "IP_0683",
     "svg": "IP_0683.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -22014,7 +22448,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0701",
     "svg": "JP_0701.svg",
-    "demi": 0.2095
+    "demi": 0.2095,
+    "ref_x": 0.3793,
+    "ref_y": 0.3797
    },
    "methode": {
     "points": 1,
@@ -22057,7 +22493,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0702",
     "svg": "JP_0702.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -22100,7 +22538,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0703",
     "svg": "JP_0703.svg",
-    "demi": 0.7422
+    "demi": 0.7422,
+    "ref_x": 0.6973,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -22144,7 +22584,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0704",
     "svg": "JP_0704.svg",
-    "demi": 0.8514
+    "demi": 0.8514,
+    "ref_x": 0.8013,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -22188,7 +22630,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0705",
     "svg": "JP_0705.svg",
-    "demi": 0.9825
+    "demi": 0.9825,
+    "ref_x": 0.9262,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -22233,7 +22677,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0706",
     "svg": "JP_0706.svg",
-    "demi": 0.8404
+    "demi": 0.8404,
+    "ref_x": 0.7909,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -22284,7 +22730,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0707",
     "svg": "JP_0707.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -22332,7 +22780,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0708",
     "svg": "JP_0708.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -22452,7 +22902,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0741",
     "svg": "JP_0741.svg",
-    "demi": 0.2095
+    "demi": 0.2095,
+    "ref_x": 0.38,
+    "ref_y": 0.38
    },
    "methode": {
     "points": 1,
@@ -22495,7 +22947,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0742",
     "svg": "JP_0742.svg",
-    "demi": 0.1887
+    "demi": 0.1887,
+    "ref_x": 0.3064,
+    "ref_y": 0.3009
    },
    "methode": {
     "points": 2,
@@ -22539,7 +22993,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0743",
     "svg": "JP_0743.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -22584,7 +23040,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0744",
     "svg": "JP_0744.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -22627,7 +23085,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0745",
     "svg": "JP_0745.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.4996,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 2,
@@ -22671,7 +23131,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0746",
     "svg": "JP_0746.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -22714,7 +23176,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_0747",
     "svg": "JP_0747.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1002,
+    "ref_y": 0.3001
    },
    "methode": {
     "points": 1,
@@ -22757,7 +23221,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_2451",
     "svg": "JP_2451.svg",
-    "demi": 0.4825
+    "demi": 0.4825,
+    "ref_x": 0.5196,
+    "ref_y": 0.45
    },
    "methode": {
     "points": 1,
@@ -22800,7 +23266,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "JP_2452",
     "svg": "JP_2452.svg",
-    "demi": 1.2777
+    "demi": 1.2777,
+    "ref_x": 0.9498,
+    "ref_y": 1.2073
    },
    "methode": {
     "points": 1,
@@ -23435,7 +23903,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0761",
     "svg": "KP_0761.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -23478,7 +23948,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0762",
     "svg": "KP_0762.svg",
-    "demi": 0.6403
+    "demi": 0.6403,
+    "ref_x": 0.5999,
+    "ref_y": 0.6003
    },
    "methode": {
     "points": 2,
@@ -23522,7 +23994,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0763",
     "svg": "KP_0763.svg",
-    "demi": 0.9025
+    "demi": 0.9025,
+    "ref_x": 0.85,
+    "ref_y": 0.85
    },
    "methode": {
     "points": 2,
@@ -23566,7 +24040,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0764",
     "svg": "KP_0764.svg",
-    "demi": 0.8514
+    "demi": 0.8514,
+    "ref_x": 0.8013,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -23611,7 +24087,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0765",
     "svg": "KP_0765.svg",
-    "demi": 0.8406
+    "demi": 0.8406,
+    "ref_x": 0.791,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -23655,7 +24133,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0766",
     "svg": "KP_0766.svg",
-    "demi": 0.8514
+    "demi": 0.8514,
+    "ref_x": 0.8013,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -23700,7 +24180,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0767",
     "svg": "KP_0767.svg",
-    "demi": 0.8186
+    "demi": 0.8186,
+    "ref_x": 0.7701,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -23745,7 +24227,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0768",
     "svg": "KP_0768.svg",
-    "demi": 0.8514
+    "demi": 0.8514,
+    "ref_x": 0.8013,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -23790,7 +24274,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0769",
     "svg": "KP_0769.svg",
-    "demi": 0.8842
+    "demi": 0.8842,
+    "ref_x": 0.8326,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -23870,7 +24356,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "KP_0801",
     "svg": "KP_0801.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -24687,7 +25175,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "LP_0841",
     "svg": "LP_0841.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -24731,7 +25221,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "LP_0842",
     "svg": "LP_0842.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -24775,7 +25267,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "LP_0843",
     "svg": "LP_0843.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.1996,
+    "ref_y": 0.1998
    },
    "methode": {
     "points": 1,
@@ -24818,7 +25312,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "LP_0844",
     "svg": "LP_0844.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.2995,
+    "ref_y": 0.2997
    },
    "methode": {
     "points": 1,
@@ -25121,7 +25617,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2578",
     "svg": "MP_2578.svg",
-    "demi": 4.21
+    "demi": 4.21,
+    "ref_x": 4.0,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 2,
@@ -25165,7 +25663,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2579",
     "svg": "MP_2579.svg",
-    "demi": 4.21
+    "demi": 4.21,
+    "ref_x": 4.0,
+    "ref_y": 1.275
    },
    "methode": {
     "points": 2,
@@ -25209,7 +25709,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2580",
     "svg": "MP_2580.svg",
-    "demi": 4.21
+    "demi": 4.21,
+    "ref_x": 4.0,
+    "ref_y": 1.0
    },
    "methode": {
     "points": 2,
@@ -25253,7 +25755,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2581",
     "svg": "MP_2581.svg",
-    "demi": 3.16
+    "demi": 3.16,
+    "ref_x": 3.0,
+    "ref_y": 0.43
    },
    "methode": {
     "points": 2,
@@ -25297,7 +25801,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2582",
     "svg": "MP_2582.svg",
-    "demi": 0.5119
+    "demi": 0.5119,
+    "ref_x": 0.6023,
+    "ref_y": 0.5803
    },
    "methode": {
     "points": 1,
@@ -25340,7 +25846,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2583",
     "svg": "MP_2583.svg",
-    "demi": 0.5328
+    "demi": 0.5328,
+    "ref_x": 0.7164,
+    "ref_y": 0.9861
    },
    "methode": {
     "points": 1,
@@ -25383,7 +25891,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "MP_2584",
     "svg": "MP_2584.svg",
-    "demi": 0.7411
+    "demi": 0.7411,
+    "ref_x": 0.7567,
+    "ref_y": 0.9922
    },
    "methode": {
     "points": 1,
@@ -25520,7 +26030,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0921",
     "svg": "NP_0921.svg",
-    "demi": 1.06
+    "demi": 1.06,
+    "ref_x": 1.0,
+    "ref_y": 0.875
    },
    "methode": {
     "points": 2,
@@ -25564,7 +26076,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0922",
     "svg": "NP_0922.svg",
-    "demi": 1.06
+    "demi": 1.06,
+    "ref_x": 1.0,
+    "ref_y": 1.5
    },
    "methode": {
     "points": 2,
@@ -25608,7 +26122,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0923",
     "svg": "NP_0923.svg",
-    "demi": 0.8629
+    "demi": 0.8629,
+    "ref_x": 0.8123,
+    "ref_y": 0.7349
    },
    "methode": {
     "points": 3,
@@ -25653,7 +26169,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0924",
     "svg": "NP_0924.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.6,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 1,
@@ -25696,7 +26214,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0925",
     "svg": "NP_0925.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -25739,7 +26259,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0926",
     "svg": "NP_0926.svg",
-    "demi": 0.9496
+    "demi": 0.9496,
+    "ref_x": 0.8949,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -25783,7 +26305,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0927",
     "svg": "NP_0927.svg",
-    "demi": 1.585
+    "demi": 1.585,
+    "ref_x": 1.4154,
+    "ref_y": 1.5
    },
    "methode": {
     "points": 2,
@@ -25827,7 +26351,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0928",
     "svg": "NP_0928.svg",
-    "demi": 1.06
+    "demi": 1.06,
+    "ref_x": 1.0,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -25872,7 +26398,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0929",
     "svg": "NP_0929.svg",
-    "demi": 1.073
+    "demi": 1.073,
+    "ref_x": 1.0124,
+    "ref_y": 0.12
    },
    "methode": {
     "points": 2,
@@ -25916,7 +26444,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0930",
     "svg": "NP_0930.svg",
-    "demi": 1.0481
+    "demi": 1.0481,
+    "ref_x": 0.9887,
+    "ref_y": 0.375
    },
    "methode": {
     "points": 2,
@@ -25960,7 +26490,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0931",
     "svg": "NP_0931.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.2995,
+    "ref_y": 0.2997
    },
    "methode": {
     "points": 1,
@@ -26003,7 +26535,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0932",
     "svg": "NP_0932.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.1996,
+    "ref_y": 0.1998
    },
    "methode": {
     "points": 1,
@@ -26046,7 +26580,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0933",
     "svg": "NP_0933.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.1996,
+    "ref_y": 0.1998
    },
    "methode": {
     "points": 1,
@@ -26089,7 +26625,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0934",
     "svg": "NP_0934.svg",
-    "demi": 0.1806
+    "demi": 0.1806,
+    "ref_x": 0.2621,
+    "ref_y": 0.1998
    },
    "methode": {
     "points": 1,
@@ -26132,7 +26670,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0935",
     "svg": "NP_0935.svg",
-    "demi": 0.6438
+    "demi": 0.6438,
+    "ref_x": 0.6036,
+    "ref_y": 0.6036
    },
    "methode": {
     "points": 2,
@@ -26176,7 +26716,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_0936",
     "svg": "NP_0936.svg",
-    "demi": 0.8538
+    "demi": 0.8538,
+    "ref_x": 0.8036,
+    "ref_y": 0.6036
    },
    "methode": {
     "points": 3,
@@ -26259,7 +26801,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2601",
     "svg": "NP_2601.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -26302,7 +26846,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2602",
     "svg": "NP_2602.svg",
-    "demi": 0.43
+    "demi": 0.43,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 2,
@@ -26346,7 +26892,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2603",
     "svg": "NP_2603.svg",
-    "demi": 0.3775
+    "demi": 0.3775,
+    "ref_x": 0.5,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -26389,7 +26937,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2604",
     "svg": "NP_2604.svg",
-    "demi": 0.64
+    "demi": 0.64,
+    "ref_x": 0.6,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 2,
@@ -26433,7 +26983,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2605",
     "svg": "NP_2605.svg",
-    "demi": 0.64
+    "demi": 0.64,
+    "ref_x": 0.6,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 2,
@@ -26477,7 +27029,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2606",
     "svg": "NP_2606.svg",
-    "demi": 0.64
+    "demi": 0.64,
+    "ref_x": 0.6,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 3,
@@ -26522,7 +27076,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2607",
     "svg": "NP_2607.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.5989,
+    "ref_y": 0.5995
    },
    "methode": {
     "points": 1,
@@ -26565,7 +27121,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "NP_2608",
     "svg": "NP_2608.svg",
-    "demi": 0.64
+    "demi": 0.64,
+    "ref_x": 0.6,
+    "ref_y": 0.6928
    },
    "methode": {
     "points": 3,
@@ -26763,7 +27321,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "OP_0961",
     "svg": "OP_0961.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.3996
    },
    "methode": {
     "points": 1,
@@ -26806,7 +27366,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "OP_0962",
     "svg": "OP_0962.svg",
-    "demi": 0.2216
+    "demi": 0.2216,
+    "ref_x": 0.4024,
+    "ref_y": 0.4027
    },
    "methode": {
     "points": 1,
@@ -27091,7 +27653,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "PP_1001",
     "svg": "PP_1001.svg",
-    "demi": 3.2776
+    "demi": 3.2776,
+    "ref_x": 3.112,
+    "ref_y": 0.296
    },
    "methode": {
     "points": 2,
@@ -27755,7 +28319,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1041",
     "svg": "QP_1041.svg",
-    "demi": 0.9893
+    "demi": 0.9893,
+    "ref_x": 0.9327,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -27800,7 +28366,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1042",
     "svg": "QP_1042.svg",
-    "demi": 1.06
+    "demi": 1.06,
+    "ref_x": 1.0,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -27845,7 +28413,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1043",
     "svg": "QP_1043.svg",
-    "demi": 0.22
+    "demi": 0.22,
+    "ref_x": 0.4,
+    "ref_y": 0.3998
    },
    "methode": {
     "points": 1,
@@ -27888,7 +28458,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1044",
     "svg": "QP_1044.svg",
-    "demi": 0.59
+    "demi": 0.59,
+    "ref_x": 0.552,
+    "ref_y": 0.5524
    },
    "methode": {
     "points": 2,
@@ -27932,7 +28504,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1045",
     "svg": "QP_1045.svg",
-    "demi": 0.85
+    "demi": 0.85,
+    "ref_x": 0.8,
+    "ref_y": 0.5526
    },
    "methode": {
     "points": 3,
@@ -27977,7 +28551,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1046",
     "svg": "QP_1046.svg",
-    "demi": 0.6556
+    "demi": 0.6556,
+    "ref_x": 0.6144,
+    "ref_y": 0.6149
    },
    "methode": {
     "points": 2,
@@ -28021,7 +28597,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1047",
     "svg": "QP_1047.svg",
-    "demi": 0.8652
+    "demi": 0.8652,
+    "ref_x": 0.8144,
+    "ref_y": 0.615
    },
    "methode": {
     "points": 3,
@@ -28072,7 +28650,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1048",
     "svg": "QP_1048.svg",
-    "demi": 1.3466
+    "demi": 1.3466,
+    "ref_x": 1.273,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 1,
@@ -28120,7 +28700,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1049",
     "svg": "QP_1049.svg",
-    "demi": 0.7949
+    "demi": 0.7949,
+    "ref_x": 0.7475,
+    "ref_y": 0.2095
    },
    "methode": {
     "points": 1,
@@ -28240,7 +28822,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1052",
     "svg": "QP_1052.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -28283,7 +28867,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1053",
     "svg": "QP_1053.svg",
-    "demi": 0.6556
+    "demi": 0.6556,
+    "ref_x": 0.6144,
+    "ref_y": 0.6149
    },
    "methode": {
     "points": 2,
@@ -28327,7 +28913,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1054",
     "svg": "QP_1054.svg",
-    "demi": 1.06
+    "demi": 1.06,
+    "ref_x": 1.0,
+    "ref_y": 0.6
    },
    "methode": {
     "points": 3,
@@ -28372,7 +28960,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1055",
     "svg": "QP_1055.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 2,
@@ -28416,7 +29006,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1081",
     "svg": "QP_1081.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4991,
+    "ref_y": 0.4995
    },
    "methode": {
     "points": 1,
@@ -28459,7 +29051,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1082",
     "svg": "QP_1082.svg",
-    "demi": 0.5237
+    "demi": 0.5237,
+    "ref_x": 0.4892,
+    "ref_y": 0.4892
    },
    "methode": {
     "points": 2,
@@ -28503,7 +29097,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1083",
     "svg": "QP_1083.svg",
-    "demi": 0.2729
+    "demi": 0.2729,
+    "ref_x": 0.4998,
+    "ref_y": 0.5002
    },
    "methode": {
     "points": 1,
@@ -28546,7 +29142,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1084",
     "svg": "QP_1084.svg",
-    "demi": 0.5356
+    "demi": 0.5356,
+    "ref_x": 0.5006,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 3,
@@ -28591,7 +29189,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "QP_1085",
     "svg": "QP_1085.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.1001,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -29143,7 +29743,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1121",
     "svg": "RP_1121.svg",
-    "demi": 0.9613
+    "demi": 0.9613,
+    "ref_x": 0.906,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -29187,7 +29789,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1122",
     "svg": "RP_1122.svg",
-    "demi": 1.0003
+    "demi": 1.0003,
+    "ref_x": 0.9431,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -29231,7 +29835,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1123",
     "svg": "RP_1123.svg",
-    "demi": 0.9525
+    "demi": 0.9525,
+    "ref_x": 0.8976,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -29308,7 +29914,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1125",
     "svg": "RP_1125.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4991,
+    "ref_y": 0.4995
    },
    "methode": {
     "points": 1,
@@ -29351,7 +29959,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1126",
     "svg": "RP_1126.svg",
-    "demi": 0.8022
+    "demi": 0.8022,
+    "ref_x": 0.7545,
+    "ref_y": 0.7545
    },
    "methode": {
     "points": 2,
@@ -29395,7 +30005,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1127",
     "svg": "RP_1127.svg",
-    "demi": 1.2222
+    "demi": 1.2222,
+    "ref_x": 1.1545,
+    "ref_y": 0.7545
    },
    "methode": {
     "points": 3,
@@ -29440,7 +30052,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1128",
     "svg": "RP_1128.svg",
-    "demi": 0.6871
+    "demi": 0.6871,
+    "ref_x": 0.6444,
+    "ref_y": 0.6449
    },
    "methode": {
     "points": 2,
@@ -29484,7 +30098,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_1129",
     "svg": "RP_1129.svg",
-    "demi": 1.1066
+    "demi": 1.1066,
+    "ref_x": 1.0444,
+    "ref_y": 0.6452
    },
    "methode": {
     "points": 3,
@@ -29565,7 +30181,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_2726",
     "svg": "RP_2726.svg",
-    "demi": 0.85
+    "demi": 0.85,
+    "ref_x": 0.5,
+    "ref_y": 0.8
    },
    "methode": {
     "points": 3,
@@ -29610,7 +30228,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "RP_2727",
     "svg": "RP_2727.svg",
-    "demi": 0.703
+    "demi": 0.703,
+    "ref_x": 0.5082,
+    "ref_y": 0.66
    },
    "methode": {
     "points": 1,
@@ -29929,7 +30549,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "SP_1161",
     "svg": "SP_1161.svg",
-    "demi": 0.9661
+    "demi": 0.9661,
+    "ref_x": 0.9106,
+    "ref_y": 0.25
    },
    "methode": {
     "points": 2,
@@ -29973,7 +30595,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "SP_1162",
     "svg": "SP_1162.svg",
-    "demi": 0.4825
+    "demi": 0.4825,
+    "ref_x": 0.45,
+    "ref_y": 0.45
    },
    "methode": {
     "points": 2,
@@ -30017,7 +30641,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "SP_1163",
     "svg": "SP_1163.svg",
-    "demi": 0.6925
+    "demi": 0.6925,
+    "ref_x": 0.65,
+    "ref_y": 0.45
    },
    "methode": {
     "points": 3,
@@ -30062,7 +30688,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "SP_1164",
     "svg": "SP_1164.svg",
-    "demi": 0.2725
+    "demi": 0.2725,
+    "ref_x": 0.4991,
+    "ref_y": 0.4995
    },
    "methode": {
     "points": 1,
@@ -30644,7 +31272,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1201",
     "svg": "TP_1201.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.1996,
+    "ref_y": 0.1998
    },
    "methode": {
     "points": 1,
@@ -30687,7 +31317,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1202",
     "svg": "TP_1202.svg",
-    "demi": 0.4888
+    "demi": 0.4888,
+    "ref_x": 0.8998,
+    "ref_y": 0.899
    },
    "methode": {
     "points": 1,
@@ -30730,7 +31362,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1203",
     "svg": "TP_1203.svg",
-    "demi": 0.5018
+    "demi": 0.5018,
+    "ref_x": 0.9027,
+    "ref_y": 0.8946
    },
    "methode": {
     "points": 1,
@@ -30773,7 +31407,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1204",
     "svg": "TP_1204.svg",
-    "demi": 0.4835
+    "demi": 0.4835,
+    "ref_x": 0.7842,
+    "ref_y": 0.8622
    },
    "methode": {
     "points": 1,
@@ -30816,7 +31452,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1205",
     "svg": "TP_1205.svg",
-    "demi": 0.4825
+    "demi": 0.4825,
+    "ref_x": 0.9,
+    "ref_y": 0.9
    },
    "methode": {
     "points": 1,
@@ -30859,7 +31497,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1206",
     "svg": "TP_1206.svg",
-    "demi": 0.3545
+    "demi": 0.3545,
+    "ref_x": 0.6249,
+    "ref_y": 0.3281
    },
    "methode": {
     "points": 1,
@@ -30902,7 +31542,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1207",
     "svg": "TP_1207.svg",
-    "demi": 1.0263
+    "demi": 1.0263,
+    "ref_x": 0.9679,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 3,
@@ -30947,7 +31589,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1208",
     "svg": "TP_1208.svg",
-    "demi": 1.0372
+    "demi": 1.0372,
+    "ref_x": 0.9783,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 3,
@@ -30992,7 +31636,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_1209",
     "svg": "TP_1209.svg",
-    "demi": 1.0044
+    "demi": 1.0044,
+    "ref_x": 0.947,
+    "ref_y": 0.7
    },
    "methode": {
     "points": 3,
@@ -31073,7 +31719,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_2778",
     "svg": "TP_2778.svg",
-    "demi": 0.0572
+    "demi": 0.0572,
+    "ref_x": 0.0897,
+    "ref_y": 0.0898
    },
    "methode": {
     "points": 1,
@@ -31116,7 +31764,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "TP_2779",
     "svg": "TP_2779.svg",
-    "demi": 0.9134
+    "demi": 0.9134,
+    "ref_x": 1.7114,
+    "ref_y": 1.5163
    },
    "methode": {
     "points": 1,
@@ -31628,7 +32278,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_1281",
     "svg": "VP_1281.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.2995,
+    "ref_y": 0.2997
    },
    "methode": {
     "points": 1,
@@ -31671,7 +32323,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_1282",
     "svg": "VP_1282.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.3,
+    "ref_y": 0.3
    },
    "methode": {
     "points": 1,
@@ -31750,7 +32404,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_2829",
     "svg": "VP_2829.svg",
-    "demi": 0.1675
+    "demi": 0.1675,
+    "ref_x": 0.2995,
+    "ref_y": 0.2997
    },
    "methode": {
     "points": 1,
@@ -31793,7 +32449,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_2830",
     "svg": "VP_2830.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.0618,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -31836,7 +32494,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_2831",
     "svg": "VP_2831.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.1236,
+    "ref_y": 1.0
    },
    "methode": {
     "points": 1,
@@ -31879,7 +32539,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_2832",
     "svg": "VP_2832.svg",
-    "demi": 0.7452
+    "demi": 0.7452,
+    "ref_x": 0.7002,
+    "ref_y": 0.201
    },
    "methode": {
     "points": 1,
@@ -31922,7 +32584,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "VP_2833",
     "svg": "VP_2833.svg",
-    "demi": 0.7452
+    "demi": 0.7452,
+    "ref_x": 0.7002,
+    "ref_y": 0.2622
    },
    "methode": {
     "points": 1,
@@ -32719,7 +33383,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1361",
     "svg": "XP_1361.svg",
-    "demi": 0.3859
+    "demi": 0.3859,
+    "ref_x": 0.4,
+    "ref_y": 0.0961
    },
    "methode": {
     "points": 2,
@@ -32763,7 +33429,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1362",
     "svg": "XP_1362.svg",
-    "demi": 0.4822
+    "demi": 0.4822,
+    "ref_x": 0.8995,
+    "ref_y": 0.192
    },
    "methode": {
     "points": 1,
@@ -32806,7 +33474,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1363",
     "svg": "XP_1363.svg",
-    "demi": 0.325
+    "demi": 0.325,
+    "ref_x": 0.3998,
+    "ref_y": 0.4993
    },
    "methode": {
     "points": 1,
@@ -32849,7 +33519,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1364",
     "svg": "XP_1364.svg",
-    "demi": 0.535
+    "demi": 0.535,
+    "ref_x": 0.5,
+    "ref_y": 0.5
    },
    "methode": {
     "points": 1,
@@ -32892,7 +33564,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1365",
     "svg": "XP_1365.svg",
-    "demi": 0.4172
+    "demi": 0.4172,
+    "ref_x": 0.3994,
+    "ref_y": 0.4378
    },
    "methode": {
     "points": 1,
@@ -32935,7 +33609,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1366",
     "svg": "XP_1366.svg",
-    "demi": 0.4057
+    "demi": 0.4057,
+    "ref_x": 0.3769,
+    "ref_y": 0.15
    },
    "methode": {
     "points": 1,
@@ -32978,7 +33654,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1367",
     "svg": "XP_1367.svg",
-    "demi": 0.4057
+    "demi": 0.4057,
+    "ref_x": 0.3769,
+    "ref_y": 0.15
    },
    "methode": {
     "points": 1,
@@ -33021,7 +33699,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1368",
     "svg": "XP_1368.svg",
-    "demi": 0.43
+    "demi": 0.43,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -33064,7 +33744,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1369",
     "svg": "XP_1369.svg",
-    "demi": 0.43
+    "demi": 0.43,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -33107,7 +33789,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1370",
     "svg": "XP_1370.svg",
-    "demi": 0.43
+    "demi": 0.43,
+    "ref_x": 0.4,
+    "ref_y": 0.4
    },
    "methode": {
     "points": 1,
@@ -33150,7 +33834,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "XP_1371",
     "svg": "XP_1371.svg",
-    "demi": 0.136
+    "demi": 0.136,
+    "ref_x": 0.24,
+    "ref_y": 0.1196
    },
    "methode": {
     "points": 1,
@@ -33304,7 +33990,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_1521",
     "svg": "YP_1521.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -33350,7 +34038,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2900",
     "svg": "YP_2900.svg",
-    "demi": 0.5875
+    "demi": 0.5875,
+    "ref_x": 0.5,
+    "ref_y": 1.1
    },
    "methode": {
     "points": 1,
@@ -33393,7 +34083,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2903",
     "svg": "YP_2903.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33436,7 +34128,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2904",
     "svg": "YP_2904.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33479,7 +34173,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2905",
     "svg": "YP_2905.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33522,7 +34218,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2907",
     "svg": "YP_2907.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33565,7 +34263,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2908",
     "svg": "YP_2908.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33608,7 +34308,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2909",
     "svg": "YP_2909.svg",
-    "demi": 0.4947
+    "demi": 0.4947,
+    "ref_x": 0.9162,
+    "ref_y": 0.9162
    },
    "methode": {
     "points": 1,
@@ -33651,7 +34353,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2910",
     "svg": "YP_2910.svg",
-    "demi": 0.5698
+    "demi": 0.5698,
+    "ref_x": 1.0662,
+    "ref_y": 1.0662
    },
    "methode": {
     "points": 1,
@@ -33694,7 +34398,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2911",
     "svg": "YP_2911.svg",
-    "demi": 0.339
+    "demi": 0.339,
+    "ref_x": 0.6255,
+    "ref_y": 0.626
    },
    "methode": {
     "points": 1,
@@ -33739,7 +34445,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2912",
     "svg": "YP_2912.svg",
-    "demi": 0.5623
+    "demi": 0.5623,
+    "ref_x": 0.4796,
+    "ref_y": 0.526
    },
    "methode": {
     "points": 1,
@@ -33784,7 +34492,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "YP_2913",
     "svg": "YP_2913.svg",
-    "demi": 0.5625
+    "demi": 0.5625,
+    "ref_x": 0.3683,
+    "ref_y": 0.6926
    },
    "methode": {
     "points": 1,
@@ -33933,7 +34643,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "ZP_1561",
     "svg": "ZP_1561.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -33976,7 +34688,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "ZP_1562",
     "svg": "ZP_1562.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,
@@ -34019,7 +34733,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "ZP_1563",
     "svg": "ZP_1563.svg",
-    "demi": 0.7342
+    "demi": 0.7342,
+    "ref_x": 1.1357,
+    "ref_y": 1.3029
    },
    "methode": {
     "points": 1,
@@ -34100,7 +34816,9 @@
     "famille_bloc": "GeoBretagne",
     "bloc": "ZP_1565",
     "svg": "ZP_1565.svg",
-    "demi": 0.115
+    "demi": 0.115,
+    "ref_x": 0.2,
+    "ref_y": 0.2
    },
    "methode": {
     "points": 1,

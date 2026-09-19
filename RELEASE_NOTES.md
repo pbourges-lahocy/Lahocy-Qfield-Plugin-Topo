@@ -1,4 +1,6 @@
-## Lahocy Topo 0.8.0 — symbologie du standard GéoBretagne
+## Lahocy Topo 0.8.1 — symbologie du standard GéoBretagne
+
+0.8.1 : choix du nombre de points de pose d'un symbole (1, 2 ou 3), plus d'étiquettes de nom sur les objets dessinés.
 
 Le projet dessine désormais les objets **comme le standard** : couleur et épaisseur des calques,
 types de ligne avec leurs tirets et leurs textes intégrés (« aep », « ep », « » »…), hachures du

@@ -513,7 +513,7 @@ Item {
   function startPending(kind, obj) {
     const m = obj.methode || {};
     let needed = 1, mode = "";
-    if (kind === "symbole") needed = m.points || 1;
+    if (kind === "symbole") needed = symbolePointsChoice[obj.code] || m.points || 1;
     else if (kind === "texte") { needed = (m.placement === "1pt") ? 1 : 2; }
     else if (kind === "entree") needed = 2;
     else if (kind === "escalier") needed = m.points || 3;
@@ -548,6 +548,17 @@ Item {
   }
 
   function setRectanglePoints(n) { rectanglePoints = n; if (pending && pending.kind === "rectangle") { pending.needed = n; refreshUi(); } }
+
+  /** Nombre de points de pose d'un symbole choisi par l'opérateur (mémorisé par objet pour la session). */
+  property var symbolePointsChoice: ({})
+  function setSymbolePoints(n) {
+    if (!pending || pending.kind !== "symbole") return;
+    symbolePointsChoice[pending.code] = n;
+    pending.needed = n;
+    if (pending.points.length > n) pending.points = pending.points.slice(0, n);
+    setMessage((pending.obj.libelle_audio || pending.obj.nom) + " – méthode " + n + " point" + (n > 1 ? "s" : "") + regleLeve(pending.obj));
+    refreshUi();
+  }
   function setRayon(r, lock) { rayonCercle = r; rayonVerrouille = lock; if (pending && pending.kind === "cercle") { pending.needed = (lock && r > 0) ? 1 : (pending.mode3 ? 3 : 2); refreshUi(); } }
   function setCercle3Points(b) { if (pending && pending.kind === "cercle") { pending.mode3 = b; pending.needed = b ? 3 : ((rayonVerrouille && rayonCercle > 0) ? 1 : 2); refreshUi(); } }
 
@@ -572,10 +583,15 @@ Item {
         const sd = -(pts[2].x - pts[1].x) * Math.sin(a) + (pts[2].y - pts[1].y) * Math.cos(a);
         d23 = Math.abs(sd); cote = sd < 0 ? -1 : 1;
       }
-      const ex = (m.verrou_longueur || !(m.longueur > 0) || d12 <= 0) ? 1 : d12 / m.longueur;
-      let ey = (m.verrou_largeur || !(m.largeur > 0) || d23 <= 0) ? 1 : d23 / m.largeur;
-      if (pts.length === 2) ey = ex;   // 2 points : rotation + même échelle en X et Y
       const sy = obj.symbole || {};
+      // dimensions de référence : celles du carnet ; si l'opérateur a choisi plus de points que
+      // le carnet, celles du bloc (ref_x / ref_y) pour que les points levés donnent l'échelle
+      const plus = pts.length > (m.points || 1);
+      const refX = (m.longueur > 0) ? m.longueur : (plus ? (sy.ref_x || 0) : 0);
+      const refY = (m.largeur > 0) ? m.largeur : (plus ? (sy.ref_y || 0) : 0);
+      const ex = (m.verrou_longueur || !(refX > 0) || d12 <= 0) ? 1 : d12 / refX;
+      let ey = (m.verrou_largeur || !(refY > 0) || d23 <= 0) ? 1 : d23 / refY;
+      if (pts.length === 2) ey = ex;   // 2 points : rotation + même échelle en X et Y
       fid = db.createFeature("symbole", Core.pointWkt(pts[0]), Object.assign(base, {
         "famille_bloc": sy.famille_bloc || "", "bloc": sy.bloc || "", "taille": sy.demi ? 2 * sy.demi : 0,
         "rotation": rot, "echelle_x": ex, "echelle_y": ey, "dist_12": d12, "dist_23": d23, "nb_points": pts.length, "symetrie": cote < 0 ? 1 : 0,

@@ -58,6 +58,10 @@ ColumnLayout {
     Layout.fillWidth: true
     visible: ["symbole", "texte", "entree", "escalier"].indexOf(opts.fam) >= 0
     spacing: 3
+    // nombre de points de pose du symbole (valeur du carnet par défaut)
+    TopoBtn { visible: opts.fam === "symbole"; width: opts.b; height: opts.b; ui: "point_unique"; text: "1 point"; fontSize: 7; checked: engine.pendingNeeded === 1; onClicked: engine.setSymbolePoints(1) }
+    TopoBtn { visible: opts.fam === "symbole"; width: opts.b; height: opts.b; ui: "ligne"; text: "2 points"; fontSize: 7; checked: engine.pendingNeeded === 2; onClicked: engine.setSymbolePoints(2) }
+    TopoBtn { visible: opts.fam === "symbole"; width: opts.b; height: opts.b; ui: "rect3"; text: "3 points"; fontSize: 7; checked: engine.pendingNeeded === 3; onClicked: engine.setSymbolePoints(3) }
     TopoBtn { visible: opts.fam === "texte"; width: opts.b; height: opts.b; ui: "modifier"; text: "modifier"; fontSize: 7; onClicked: engine.requestDialog("texte", { "obj": engine.currentObj, "liste": [], "defaut": engine.pendingText }) }
     TopoBtn { visible: opts.fam === "symbole"; width: opts.b; height: opts.b; ui: "symetrie"; text: "symétrie"; fontSize: 7; enabled: engine.lastPlaced !== null; onClicked: engine.adjustSymetrie() }
     TopoBtn { visible: opts.fam !== "texte"; width: opts.b; height: opts.b; ui: "inverser"; text: "inverser"; fontSize: 7; enabled: engine.lastPlaced !== null; onClicked: engine.adjustInverser() }
